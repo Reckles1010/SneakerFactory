@@ -4,6 +4,7 @@
 
 ---
 
+
 ## 📌 Índice
 
 - Sobre el proyecto.
@@ -43,12 +44,11 @@ El proyecto combina programación, bases de datos, diseño web y herramientas de
 
 | Asignatura | Aplicación en el proyecto |
 |---|---|
-
-| 🗄️ Acceso a Datos | Conexión con la base de datos y operaciones CRUD. |
-| 🌐 Desarrollo de Interfaces | Diseño e implementación de la interfaz gráfica. |
-| 💻 Python | Desarrollo de la lógica y funcionalidades de la aplicación. |
-| 🧩 Sistemas de Gestión Empresarial | Gestión de procesos y funcionalidades empresariales. |
-| 🖥️ Programación de Servicios y Procesos | Ejecución y gestión de procesos y tareas. |
+| Acceso a Datos | Conexión con la base de datos y operaciones CRUD. |
+| Desarrollo de Interfaces | Diseño e implementación de la interfaz gráfica. |
+| Python | Desarrollo de la lógica y funcionalidades de la aplicación. |
+| Sistemas de Gestión Empresarial | Gestión de procesos y funcionalidades empresariales. |
+| Programación de Servicios y Procesos | Ejecución y gestión de procesos y tareas. |
 
 
 ## 🛠️ Tecnologías utilizadas
@@ -125,33 +125,33 @@ El proyecto combina programación, bases de datos, diseño web y herramientas de
 
 | Elemento | Descripción |
 |---|---|
-| Nombre | [Mercury] |
+| Nombre | Mercury |
 | Actividad | Diseño y comercialización de zapatillas. |
-| Colores corporativos | [Blanco] y [Negro]. |
-| Tipografía | [Nombre de la tipografía]. |
-| Eslogan | «[Eslogan de la marca]». |
+| Colores corporativos | Blanco y Negro. |
+| Tipografía | 'Inter', -apple-system, BlinkMacSystemFont, sans-serif. |
+| Eslogan | «Sneakers for what´s next». |
 | Público objetivo | Personas interesadas en el deporte, la moda y el calzado urbano. |
 
 ## 👥 Equipo de desarrollo
 
 | Integrante | Responsabilidades |
 |---|---|
-| [Carlos Corchado] | [Responsabilidades] |
-| [Berta Díaz] | [Responsabilidades] |
-| [Alberto Ordiales] | [Responsabilidades] |
+| Carlos Corchado | Responsabilidades |
+| Berta Díaz | Responsabilidades |
+| Alberto Ordiales | Responsabilidades |
 
 ## 🚀 Instalación y ejecución
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone (https://github.com/Reckles1010/SneakerFactory.git)
 ```
 
 ### 2. Acceder al proyecto
 
 ```bash
-cd nombre-empresa-zapatillas
+cd SneakerFactory
 ```
 
 ### 3. Configurar la base de datos
@@ -183,6 +183,5 @@ Configurar los parámetros de conexión a la base de datos y ejecutar los compon
 
 ---
 
-*Hecho con pasión, código e innovación.*
 
  **Proyecto académico · 2.º DAM · Curso 2026–2027**
