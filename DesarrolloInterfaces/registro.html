@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta — MERCURY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/LogoM.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="inicio.html" class="header__logo">
+                MERCURY<span class="header__logo-highlight">/</span>
+            </a>
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="inicio.html#essencials" class="header__link">Novedades</a>
+                </li>
+                <li class="header__item">
+                    <a href="catalogo.html" class="header__link">Catálogo</a>
+                </li>
+                <li class="header__item">
+                    <a href="historia.html" class="header__link">Nuestra historia</a>
+                </li>
+            </ul>
+            <div class="header__actions">
+                <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="header__cart-badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="auth-page">
+        <section class="auth-card">
+            <div class="auth-card__header">
+                <span class="auth-card__subtitle">MERCURY / REGISTRO</span>
+                <h1 class="auth-card__title">UNIRSE AL CLUB</h1>
+                <p class="auth-card__description">Crea tu cuenta para acceder a compras rápidas, drops exclusivos y ventajas especiales.</p>
+            </div>
+            <form class="auth-form" id="registerForm" novalidate>
+                <div class="auth-form__row">
+                    <div class="auth-form__group">
+                        <label for="regName" class="auth-form__label">NOMBRE</label>
+                        <input type="text" id="regName" class="auth-form__input" placeholder="Ariadna" required>
+                        <span class="auth-form__error" id="nameError">El nombre es obligatorio.</span>
+                    </div>
+                    <div class="auth-form__group">
+                        <label for="regLastName" class="auth-form__label">APELLIDOS</label>
+                        <input type="text" id="regLastName" class="auth-form__input" placeholder="García" required>
+                        <span class="auth-form__error" id="lastNameError">Los apellidos son obligatorios.</span>
+                    </div>
+                </div>
+                <div class="auth-form__group">
+                    <label for="regEmail" class="auth-form__label">CORREO ELECTRÓNICO</label>
+                    <input type="email" id="regEmail" class="auth-form__input" placeholder="tu@email.com" required>
+                    <span class="auth-form__error" id="regEmailError">Introduce un correo electrónico válido.</span>
+                </div>
+                <div class="auth-form__group">
+                    <label for="regPassword" class="auth-form__label">CONTRASEÑA</label>
+                    <input type="password" id="regPassword" class="auth-form__input" placeholder="••••••••" required minlength="8">
+                    <span class="auth-form__error" id="regPasswordError">Mínimo 8 caracteres.</span>
+                </div>
+                <div class="auth-form__checkbox-group">
+                    <label class="auth-form__checkbox-label">
+                        <input type="checkbox" id="termsCheck" required>
+                        <span>Acepto los <a href="#" class="auth-card__link">Términos y Condiciones</a> y la <a href="#" class="auth-card__link">Política de Privacidad</a>.</span>
+                    </label>
+                    <span class="auth-form__error" id="termsError">Debes aceptar las condiciones para continuar.</span>
+                </div>
+                <button type="submit" class="auth-form__submit-btn">
+                    <span>Crear cuenta</span>
+                    <span>↗</span>
+                </button>
+            </form>
+            <div class="auth-card__footer">
+                <p>¿Ya tienes una cuenta? <a href="login.html" class="auth-card__link">Inicia sesión aquí</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="inicio.html" class="footer__logo">
+                    MERCURY <span class="footer__logo-highlight">/</span> STUDIO
+                </a>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Devoluciones</a></li>
+                    <li><a href="#" class="footer__link">Contacto</a></li>
+                    <li><a href="#" class="footer__link">Instagram</a></li>
+                    <li><a href="#" class="footer__link">TikTok</a></li>
+                    <li><a href="#" class="footer__link">Privacidad</a></li>
+                </ul>
+                <div class="footer__copyright">© 2026 Mercury Studio.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
