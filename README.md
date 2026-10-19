@@ -1,4 +1,4 @@
-# 👟 [MERCURY]
+# 👟 MERCURY
 
 > ⚡ **Diseño, tecnología e innovación en cada paso.**
 
@@ -23,7 +23,7 @@
 
 Este proyecto forma parte del segundo curso del ciclo formativo de **Desarrollo de Aplicaciones Multiplataforma (DAM)**.
 
-Consiste en desarrollar una solución tecnológica para **[Mercury]**, una empresa ficticia dedicada al diseño y comercialización de zapatillas y relacionados.
+Consiste en desarrollar una solución tecnológica para **Mercury**, una empresa ficticia dedicada al diseño y comercialización de zapatillas y relacionados.
 
 El proyecto combina programación, bases de datos, diseño web y herramientas de desarrollo para construir una aplicación que permita presentar los productos y gestionar la información de la empresa.
 
