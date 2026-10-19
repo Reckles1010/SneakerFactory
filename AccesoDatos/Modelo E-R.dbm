@@ -3,7 +3,7 @@
 CAUTION: Do not modify this file unless you know what you are doing.
  Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="0.75" max-obj-count="10"
+<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="0.7" max-obj-count="10"
 	 default-schema="public" default-owner="postgres"
 	 layers="Default layer"
 	 active-layers="0"
@@ -52,7 +52,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</constraint>
 </table>
 
-<table name="Pedido" layers="0" collapse-mode="2" max-obj-count="8" z-value="0">
+<table name="Pedido" layers="0" collapse-mode="2" max-obj-count="9" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="540" y="400"/>
@@ -261,5 +261,14 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	 src-table="public.&quot;Trabajador&quot;"
 	 dst-table="public.&quot;Pedido&quot;"
 	 src-required="false" dst-required="false"/>
+
+<relationship name="Modelo_has_many_Pedido" type="rel1n" layers="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#198b89"
+	 src-table="public.&quot;Modelo&quot;"
+	 dst-table="public.&quot;Pedido&quot;"
+	 src-required="true" dst-required="false"/>
 
 </dbmodel>
