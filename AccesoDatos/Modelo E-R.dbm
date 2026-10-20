@@ -27,7 +27,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="text" length="0"/>
 	</column>
 	<column name="nombre">
-		<type name="smallint" length="0"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="direccion" not-null="true">
 		<type name="text" length="0"/>
