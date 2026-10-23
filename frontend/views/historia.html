@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURY · Historia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/LogoM.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="inicio.html" class="header__logo">
+                MERCURY<span class="header__logo-highlight">/</span>
+            </a>
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="inicio.html" class="header__link">Inicio</a>
+                </li>
+                <li class="header__item">
+                    <a href="catalogo.html" class="header__link">Catálogo</a>
+                </li>
+                <li class="header__item">
+                    <a href="historia.html" class="header__link">Personalización</a>
+                </li>
+            </ul>
+            <div class="header__actions">
+                <a href="login.html" class="header__auth-btn" aria-label="Iniciar sesión o registrarse"
+                    title="Mi Cuenta / Acceso">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+                <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="header__cart-badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="story__hero">
+            <div class="story__hero-image">
+                <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?q=80&w=1800&auto=format&fit=crop"
+                    alt="Zapatillas Mercury como símbolo de movimiento y estilo">
+            </div>
+            <div class="story__hero-content">
+                <span class="story__hero-tag">MERCURY · DESDE MADRID</span>
+                <h1 class="story__hero-title">
+                    NO SE TRATA<br>
+                    DE SEGUIR.<br>
+                    <span>SE TRATA DE CREAR.</span>
+                </h1>
+                <p class="story__hero-description">
+                    NO SIGAS EL <span>MOLDE.</span>
+                </p>
+                <p class="story__cta-description">
+                    Encuentra las zapatillas que encajan contigo.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="marquee">
+            <div class="marquee__track">
+                <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
+            </div>
+        </div>
+
+        <section class="customizer">
+            <section class="customizer__intro">
+                <p class="catalog__title">MERCURY CUSTOM LAB</p>
+                <br>
+                <p class="customizer__description">Diseña tu propio estilo.</p>
+            </section>
+
+            <div class="customizer__layout">
+                <section class="customizer__preview-panel" aria-label="Vista previa del diseño">
+                    <div class="customizer__preview-top">
+                        <span class="customizer__preview-label">VISTA PREVIA</span>
+                    </div>
+
+                    <div class="customizer__stage" id="customizerStage" data-pattern="none">
+
+                        <div class="customizer__visual customizer__visual--shoe" id="shoePreview">
+                            <svg class="customizer__shoe-svg" viewBox="0 0 560 360" role="img"
+                                aria-label="Zapatilla MERCURY" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="shoePattern" patternUnits="userSpaceOnUse" width="24" height="24">
+                                        <circle cx="6" cy="6" r="3" fill="#ffffff" opacity=".7" />
+                                    </pattern>
+                                    <linearGradient id="shoeShade" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#ffffff" stop-opacity=".15" />
+                                        <stop offset="100%" stop-color="#000000" stop-opacity=".12" />
+                                    </linearGradient>
+                                </defs>
+
+                                <ellipse cx="282" cy="292" rx="215" ry="18" fill="#000000" opacity=".10" />
+
+                                <g class="customizer__shoe-art">
+                                    <path class="customizer__shoe-sole"
+                                        d="M67 246 Q92 235 125 241 L189 252 Q241 264 301 252 L367 236 Q400 229 427 242 L485 270 Q506 280 500 294 Q496 305 475 307 L122 307 Q83 305 66 288 Q55 274 67 246Z"
+                                        fill="#f4f4f5" stroke="#d4d4d8" stroke-width="3" />
+
+                                    <path d="M77 281 Q150 296 241 293 Q376 295 494 283" fill="none" stroke="#c4c4c8"
+                                        stroke-width="3" stroke-linecap="round" />
+
+                                    <path class="customizer__shoe-main"
+                                        d="M78 240 Q101 222 126 194 L177 130 Q192 111 214 117 L274 139 Q302 151 324 177 L362 215 Q387 232 424 241 L477 264 Q490 271 485 281 Q477 290 455 289 L137 286 Q95 283 78 266 Q69 255 78 240Z"
+                                        fill="#179fb5" stroke="#0b6678" stroke-width="3" />
+
+                                    <path class="customizer__shoe-panel"
+                                        d="M127 195 L177 130 Q192 111 214 117 L258 133 L221 205 L166 250 L104 248Z"
+                                        fill="#f4f4f5" stroke="#d4d4d8" stroke-width="3" stroke-linejoin="round" />
+
+                                    <path
+                                        d="M258 133 Q299 151 324 177 L362 215 Q383 232 424 241 L396 265 L286 242 L221 205Z"
+                                        fill="url(#shoeShade)" />
+
+                                    <path class="customizer__shoe-print"
+                                        d="M78 240 Q101 222 126 194 L177 130 Q192 111 214 117 L274 139 Q302 151 324 177 L362 215 Q387 232 424 241 L477 264 Q490 271 485 281 Q477 290 455 289 L137 286 Q95 283 78 266 Q69 255 78 240Z"
+                                        fill="url(#shoePattern)" pointer-events="none" />
+
+                                    <path d="M214 119 L224 174 L274 203 L324 177" fill="none" stroke="#ffffff"
+                                        stroke-opacity=".65" stroke-width="3" />
+
+                                    <path d="M105 250 Q160 258 207 239 L258 211 L303 239" fill="none" stroke="#ffffff"
+                                        stroke-opacity=".7" stroke-width="4" stroke-linecap="round" />
+
+                                    <path class="customizer__shoe-laces"
+                                        d="M215 145 L268 168 M206 160 L260 183 M196 175 L250 198 M188 190 L239 212"
+                                        fill="none" stroke="#080808" stroke-width="7" stroke-linecap="round" />
+
+                                    <path d="M190 129 Q199 125 207 128 L220 136" fill="none" stroke="#ffffff"
+                                        stroke-width="4" stroke-linecap="round" />
+
+                                    <path d="M128 195 L166 250" fill="none" stroke="#ffffff" stroke-opacity=".75"
+                                        stroke-width="3" />
+
+                                    <path d="M364 216 Q390 235 425 242" fill="none" stroke="#ffffff"
+                                        stroke-opacity=".45" stroke-width="3" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="customizer__visual customizer__visual--sock" id="sockPreview" hidden>
+                            <svg class="customizer__sock-svg" viewBox="0 0 300 360" role="img"
+                                aria-label="Calcetín MERCURY" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="sockPattern" patternUnits="userSpaceOnUse" width="22" height="22">
+                                        <circle cx="6" cy="6" r="2.7" fill="#ffffff" opacity=".75" />
+                                    </pattern>
+                                    <linearGradient id="sockShade" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0%" stop-color="#000000" stop-opacity=".12" />
+                                        <stop offset="45%" stop-color="#ffffff" stop-opacity=".12" />
+                                        <stop offset="100%" stop-color="#000000" stop-opacity=".08" />
+                                    </linearGradient>
+                                </defs>
+
+                                <ellipse cx="148" cy="321" rx="78" ry="10" fill="#000000" opacity=".10" />
+
+                                <g class="customizer__sock-art">
+                                    <path class="customizer__sock-main"
+                                        d="M94 36 Q94 26 106 26 L188 26 Q200 26 200 38 L198 190 Q198 220 218 241 L242 266 Q254 280 244 294 Q235 308 213 308 L111 308 Q89 308 77 293 Q67 280 79 264 L99 237 Q111 220 111 194 L109 39 Q109 36 106 36Z"
+                                        fill="#179fb5" stroke="#0b6678" stroke-width="3" stroke-linejoin="round" />
+
+                                    <path class="customizer__sock-panel"
+                                        d="M94 36 Q94 26 106 26 L188 26 Q200 26 200 38 L199 70 L110 70 L109 39 Q109 36 106 36Z"
+                                        fill="#f4f4f5" stroke="#d4d4d8" stroke-width="2.5" stroke-linejoin="round" />
+
+                                    <path class="customizer__sock-print"
+                                        d="M94 36 Q94 26 106 26 L188 26 Q200 26 200 38 L198 190 Q198 220 218 241 L242 266 Q254 280 244 294 Q235 308 213 308 L111 308 Q89 308 77 293 Q67 280 79 264 L99 237 Q111 220 111 194 L109 39 Q109 36 106 36Z"
+                                        fill="url(#sockPattern)" pointer-events="none" />
+
+                                    <path d="M94 44 L199 44" fill="none" stroke="#ffffff" stroke-opacity=".7"
+                                        stroke-width="3" />
+
+                                    <path d="M111 76 L110 191 Q110 221 91 245 L77 265 Q69 278 80 290" fill="none"
+                                        stroke="#ffffff" stroke-opacity=".45" stroke-width="3" stroke-linecap="round" />
+
+                                    <path d="M200 78 L199 190 Q199 221 219 243" fill="none" stroke="#000000"
+                                        stroke-opacity=".10" stroke-width="3" stroke-linecap="round" />
+
+                                    <path
+                                        d="M95 36 Q94 26 106 26 L188 26 Q200 26 200 38 L198 190 Q198 220 218 241 L242 266 Q254 280 244 294 Q235 308 213 308 L111 308 Q89 308 77 293 Q67 280 79 264 L99 237 Q111 220 111 194 L109 39 Q109 36 106 36Z"
+                                        fill="url(#sockShade)" />
+
+                                    <path
+                                        d="M100 28 L100 67 M110 28 L110 67 M120 28 L120 67 M130 28 L130 67 M140 28 L140 67 M150 28 L150 67 M160 28 L160 67 M170 28 L170 67 M180 28 L180 67 M190 28 L190 67"
+                                        stroke="#ffffff" stroke-opacity=".22" stroke-width="2" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <span class="customizer__stage-caption" id="stageCaption">ZAPATILLAS MERCURY</span>
+                    </div>
+
+                    <div class="customizer__product-switch" role="group" aria-label="Elige qué producto personalizar">
+                        <button class="customizer__product customizer__product--selected" type="button"
+                            data-product="shoe" aria-pressed="true">Zapatillas</button>
+                        <button class="customizer__product" type="button" data-product="sock"
+                            aria-pressed="false">Calcetines</button>
+                        <button class="customizer__product" type="button" data-product="set"
+                            aria-pressed="false">Conjunto</button>
+                    </div>
+
+                    <div class="customizer__price-row">
+                        <div>
+                            <span class="customizer__price-label">PRECIO ESTIMADO</span>
+                            <p class="customizer__price" id="priceValue">89,99 €</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="customizer__controls" aria-label="Opciones de personalización">
+                    <div class="customizer__section">
+                        <div class="customizer__section-heading">
+                            <span class="customizer__step">01</span>
+                            <div>
+                                <h2 class="customizer__section-title">Elige tu diseño</h2>
+                                <p class="customizer__section-description">Empieza con una combinación base.</p>
+                            </div>
+                        </div>
+
+                        <div class="customizer__designs">
+                            <button class="customizer__design customizer__design--selected" type="button"
+                                data-design="classic"><span
+                                    class="customizer__design-sample customizer__design-sample--classic"></span><span
+                                    class="customizer__design-name">Essential</span></button>
+                            <button class="customizer__design" type="button" data-design="ocean"><span
+                                    class="customizer__design-sample customizer__design-sample--ocean"></span><span
+                                    class="customizer__design-name">Ocean</span></button>
+                            <button class="customizer__design" type="button" data-design="sunset"><span
+                                    class="customizer__design-sample customizer__design-sample--sunset"></span><span
+                                    class="customizer__design-name">Sunset</span></button>
+                            <button class="customizer__design" type="button" data-design="graphic"><span
+                                    class="customizer__design-sample customizer__design-sample--graphic"></span><span
+                                    class="customizer__design-name">Graphic</span></button>
+                        </div>
+                    </div>
+
+                    <div class="customizer__section">
+                        <div class="customizer__section-heading">
+                            <span class="customizer__step">02</span>
+                            <div>
+                                <h2 class="customizer__section-title">Personaliza los colores</h2>
+                                <p class="customizer__section-description">Selecciona una zona y aplica un color.</p>
+                            </div>
+                        </div>
+
+                        <div class="customizer__zones" id="zoneOptions">
+                            <button class="customizer__zone customizer__zone--selected" type="button"
+                                data-zone="main">Base</button>
+                            <button class="customizer__zone" type="button" data-zone="panel">Panel</button>
+                            <button class="customizer__zone" type="button" data-zone="sole">Suela</button>
+                            <button class="customizer__zone" type="button" data-zone="laces">Cordones</button>
+                        </div>
+
+                        <div class="customizer__palette" id="colorPalette" aria-label="Paleta de colores"></div>
+                        <p class="customizer__selected-color" id="selectedColorLabel">Color seleccionado: Blanco</p>
+                    </div>
+
+                    <div class="customizer__section">
+                        <div class="customizer__section-heading">
+                            <span class="customizer__step">03</span>
+                            <div>
+                                <h2 class="customizer__section-title">Añade un estampado</h2>
+                                <p class="customizer__section-description">Elige un acabado para tu diseño.</p>
+                            </div>
+                        </div>
+
+                        <div class="customizer__patterns">
+                            <button class="customizer__pattern customizer__pattern--selected" type="button"
+                                data-pattern="none"><span
+                                    class="customizer__pattern-sample customizer__pattern-sample--none"></span><span>Sin
+                                    estampado</span></button>
+                            <button class="customizer__pattern" type="button" data-pattern="dots"><span
+                                    class="customizer__pattern-sample customizer__pattern-sample--dots"></span><span>Puntos</span></button>
+                            <button class="customizer__pattern" type="button" data-pattern="stripes"><span
+                                    class="customizer__pattern-sample customizer__pattern-sample--stripes"></span><span>Rayas</span></button>
+                            <button class="customizer__pattern" type="button" data-pattern="graphic"><span
+                                    class="customizer__pattern-sample customizer__pattern-sample--graphic"></span><span>Gráfico</span></button>
+                        </div>
+                    </div>
+
+                    <div class="customizer__actions">
+                        <button class="customizer__button" id="resetButton"
+                            type="button">Restablecer</button>
+                        <button class="customizer__button" id="saveButton"
+                            type="button">Guardar diseño</button>
+                    </div>
+                    <p class="customizer__feedback" id="feedback" role="status" aria-live="polite"></p>
+                </section>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="inicio.html" class="footer__logo">
+                    MERCURY<span class="footer__logo-highlight">/</span>
+                </a>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Devoluciones</a></li>
+                    <li><a href="#" class="footer__link">Contacto</a></li>
+                    <li><a href="#" class="footer__link">Instagram</a></li>
+                    <li><a href="#" class="footer__link">TikTok</a></li>
+                    <li><a href="#" class="footer__link">Privacidad</a></li>
+                </ul>
+                <div class="footer__copyright">
+                    © 2026 Mercury.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="help-widget" aria-label="Ayuda">?</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
