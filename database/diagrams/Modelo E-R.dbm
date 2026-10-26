@@ -91,7 +91,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</customidxs>
 </table>
 
-<table name="Linea de pedido" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+<table name="Linea de pedido" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="560" y="120"/>
@@ -101,7 +101,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="talla" not-null="true">
 		<type name="numeric" length="0"/>
 	</column>
-	<column name="color" not-null="true">
+	<column name="colorBase" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="colorPanel">
+		<type name="text" length="0"/>
+	</column>
+	<column name="colorSuela">
+		<type name="text" length="0"/>
+	</column>
+	<column name="colorCordones">
 		<type name="text" length="0"/>
 	</column>
 	<constraint name="Linea de pedido_pk" type="pk-constr" table="public.&quot;Linea de pedido&quot;">

@@ -1,0 +1,3680 @@
+L1,42,Blanco,Negro,Blanco,Azul marino
+L2,39,Negro,Turquesa,Blanco,Negro
+L3,44,Azul marino,Blanco,Negro,Morado
+L4,40,Verde oliva,Negro,Blanco,Violeta
+L5,41,Blanco,Rosa palo,Negro,Blanco
+L6,43,Verde oliva,Turquesa,Blanco,Negro
+L7,38,Rosa palo,Violeta,Blanco,Morado
+L8,42,Negro,Blanco,Azul marino,Turquesa
+L9,40,Turquesa,Negro,Blanco,Verde oliva
+L10,45,Morado,Violeta,Negro,Blanco
+L11,39,Violeta,Blanco,Negro,Rosa palo
+L12,44,Negro,Azul marino,Blanco,Turquesa
+L13,41,Blanco,Verde oliva,Negro,Morado
+L14,37,Azul marino,Turquesa,Blanco,Negro
+L15,43,Verde oliva,Blanco,Negro,Violeta
+L16,42,Turquesa,Negro,Blanco,Rosa palo
+L17,38,Negro,Morado,Blanco,Azul marino
+L18,40,Blanco,Violeta,Negro,Turquesa
+L19,44,Azul marino,Blanco,Negro,Verde oliva
+L20,41,Rosa palo,Negro,Blanco,Morado
+L21,38,Blanco,Turquesa,Negro,Violeta
+L22,40,Negro,Verde oliva,Blanco,Azul marino
+L23,42,Azul marino,Morado,Negro,Blanco
+L24,44,Violeta,Blanco,Negro,Turquesa
+L25,39,Verde oliva,Rosa palo,Blanco,Negro
+L26,41,Morado,Negro,Blanco,Azul marino
+L27,43,Negro,Turquesa,Blanco,Violeta
+L28,45,Blanco,Azul marino,Negro,Verde oliva
+L29,37,Rosa palo,Blanco,Negro,Morado
+L30,42,Turquesa,Violeta,Blanco,Negro
+L31,40,Verde oliva,Negro,Blanco,Azul marino
+L32,44,Azul marino,Turquesa,Negro,Blanco
+L33,39,Negro,Morado,Blanco,Rosa palo
+L34,41,Blanco,Verde oliva,Negro,Turquesa
+L35,43,Violeta,Negro,Blanco,Azul marino
+L36,38,Morado,Blanco,Negro,Verde oliva
+L37,45,Azul marino,Rosa palo,Blanco,Negro
+L38,40,Negro,Turquesa,Blanco,Morado
+L39,42,Verde oliva,Azul marino,Negro,Blanco
+L40,44,Blanco,Violeta,Negro,Turquesa
+L41,39,Turquesa,Blanco,Negro,Rosa palo
+L42,42,Negro,Verde oliva,Blanco,Morado
+L43,40,Blanco,Azul marino,Negro,Violeta
+L44,43,Morado,Turquesa,Blanco,Negro
+L45,38,Verde oliva,Blanco,Negro,Rosa palo
+L46,41,Rosa palo,Morado,Blanco,Azul marino
+L47,44,Negro,Violeta,Blanco,Turquesa
+L48,37,Blanco,Verde oliva,Negro,Morado
+L49,45,Azul marino,Negro,Blanco,Rosa palo
+L50,40,Turquesa,Blanco,Negro,Verde oliva
+L51,42,Verde oliva,Morado,Blanco,Azul marino
+L52,39,Violeta,Negro,Blanco,Turquesa
+L53,43,Blanco,Azul marino,Negro,Rosa palo
+L54,41,Negro,Verde oliva,Blanco,Morado
+L55,38,Turquesa,Violeta,Negro,Blanco
+L56,44,Morado,Blanco,Negro,Azul marino
+L57,40,Verde oliva,Turquesa,Blanco,Rosa palo
+L58,42,Blanco,Negro,Azul marino,Morado
+L59,37,Negro,Violeta,Blanco,Turquesa
+L60,45,Rosa palo,Blanco,Negro,Verde oliva
+L61,41,Azul marino,Morado,Blanco,Negro
+L62,38,Violeta,Turquesa,Negro,Blanco
+L63,43,Verde oliva,Negro,Blanco,Azul marino
+L64,39,Blanco,Rosa palo,Negro,Morado
+L65,44,Negro,Azul marino,Blanco,Violeta
+L66,42,Morado,Turquesa,Negro,Blanco
+L67,37,Azul marino,Verde oliva,Blanco,Rosa palo
+L68,40,Turquesa,Negro,Blanco,Morado
+L69,45,Verde oliva,Violeta,Negro,Blanco
+L70,41,Blanco,Turquesa,Negro,Azul marino
+L71,38,Negro,Rosa palo,Blanco,Verde oliva
+L72,43,Azul marino,Blanco,Negro,Morado
+L73,39,Violeta,Verde oliva,Blanco,Turquesa
+L74,44,Verde oliva,Negro,Blanco,Rosa palo
+L75,42,Blanco,Morado,Negro,Azul marino
+L76,40,Rosa palo,Turquesa,Blanco,Negro
+L77,37,Negro,Azul marino,Blanco,Violeta
+L78,45,Azul marino,Verde oliva,Negro,Blanco
+L79,41,Morado,Rosa palo,Blanco,Turquesa
+L80,43,Blanco,Negro,Verde oliva,Azul marino
+L81,37,Negro,Azul marino,Violeta,Verde oliva
+L82,38,Turquesa,Morado,Rosa palo,Blanco
+L83,39,Azul marino,Violeta,Verde oliva,Negro
+L84,40,Morado,Rosa palo,Blanco,Turquesa
+L85,41,Violeta,Verde oliva,Negro,Azul marino
+L86,42,Rosa palo,Blanco,Turquesa,Morado
+L87,43,Verde oliva,Negro,Azul marino,Violeta
+L88,44,Blanco,Turquesa,Morado,Rosa palo
+L89,45,Negro,Azul marino,Violeta,Verde oliva
+L90,37,Turquesa,Morado,Rosa palo,Blanco
+L91,38,Azul marino,Violeta,Verde oliva,Negro
+L92,39,Morado,Rosa palo,Blanco,Turquesa
+L93,40,Violeta,Verde oliva,Negro,Azul marino
+L94,41,Rosa palo,Blanco,Turquesa,Morado
+L95,42,Verde oliva,Negro,Azul marino,Violeta
+L96,43,Blanco,Turquesa,Morado,Rosa palo
+L97,44,Negro,Azul marino,Violeta,Verde oliva
+L98,45,Turquesa,Morado,Rosa palo,Blanco
+L99,37,Azul marino,Violeta,Verde oliva,Negro
+L100,38,Morado,Rosa palo,Blanco,Turquesa
+L101,39,Violeta,Verde oliva,Negro,Azul marino
+L102,40,Rosa palo,Blanco,Turquesa,Morado
+L103,41,Verde oliva,Negro,Azul marino,Violeta
+L104,42,Blanco,Turquesa,Morado,Rosa palo
+L105,43,Negro,Azul marino,Violeta,Verde oliva
+L106,44,Turquesa,Morado,Rosa palo,Blanco
+L107,45,Azul marino,Violeta,Verde oliva,Negro
+L108,37,Morado,Rosa palo,Blanco,Turquesa
+L109,38,Violeta,Verde oliva,Negro,Azul marino
+L110,39,Rosa palo,Blanco,Turquesa,Morado
+L111,40,Verde oliva,Negro,Azul marino,Violeta
+L112,41,Blanco,Turquesa,Morado,Rosa palo
+L113,42,Negro,Azul marino,Violeta,Verde oliva
+L114,43,Turquesa,Morado,Rosa palo,Blanco
+L115,44,Azul marino,Violeta,Verde oliva,Negro
+L116,45,Morado,Rosa palo,Blanco,Turquesa
+L117,37,Violeta,Verde oliva,Negro,Azul marino
+L118,38,Rosa palo,Blanco,Turquesa,Morado
+L119,39,Verde oliva,Negro,Azul marino,Violeta
+L120,40,Blanco,Turquesa,Morado,Rosa palo
+L121,41,Negro,Azul marino,Violeta,Verde oliva
+L122,42,Turquesa,Morado,Rosa palo,Blanco
+L123,43,Azul marino,Violeta,Verde oliva,Negro
+L124,44,Morado,Rosa palo,Blanco,Turquesa
+L125,45,Violeta,Verde oliva,Negro,Azul marino
+L126,37,Rosa palo,Blanco,Turquesa,Morado
+L127,38,Verde oliva,Negro,Azul marino,Violeta
+L128,39,Blanco,Turquesa,Morado,Rosa palo
+L129,40,Negro,Azul marino,Violeta,Verde oliva
+L130,41,Turquesa,Morado,Rosa palo,Blanco
+L131,42,Azul marino,Violeta,Verde oliva,Negro
+L132,43,Morado,Rosa palo,Blanco,Turquesa
+L133,44,Violeta,Verde oliva,Negro,Azul marino
+L134,45,Rosa palo,Blanco,Turquesa,Morado
+L135,37,Verde oliva,Negro,Azul marino,Violeta
+L136,38,Blanco,Turquesa,Morado,Rosa palo
+L137,39,Negro,Azul marino,Violeta,Verde oliva
+L138,40,Turquesa,Morado,Rosa palo,Blanco
+L139,41,Azul marino,Violeta,Verde oliva,Negro
+L140,42,Morado,Rosa palo,Blanco,Turquesa
+L141,43,Violeta,Verde oliva,Negro,Azul marino
+L142,44,Rosa palo,Blanco,Turquesa,Morado
+L143,45,Verde oliva,Negro,Azul marino,Violeta
+L144,37,Blanco,Turquesa,Morado,Rosa palo
+L145,38,Negro,Azul marino,Violeta,Verde oliva
+L146,39,Turquesa,Morado,Rosa palo,Blanco
+L147,40,Azul marino,Violeta,Verde oliva,Negro
+L148,41,Morado,Rosa palo,Blanco,Turquesa
+L149,42,Violeta,Verde oliva,Negro,Azul marino
+L150,43,Rosa palo,Blanco,Turquesa,Morado
+L151,44,Verde oliva,Negro,Azul marino,Violeta
+L152,45,Blanco,Turquesa,Morado,Rosa palo
+L153,37,Negro,Azul marino,Violeta,Verde oliva
+L154,38,Turquesa,Morado,Rosa palo,Blanco
+L155,39,Azul marino,Violeta,Verde oliva,Negro
+L156,40,Morado,Rosa palo,Blanco,Turquesa
+L157,41,Violeta,Verde oliva,Negro,Azul marino
+L158,42,Rosa palo,Blanco,Turquesa,Morado
+L159,43,Verde oliva,Negro,Azul marino,Violeta
+L160,44,Blanco,Turquesa,Morado,Rosa palo
+L161,45,Negro,Azul marino,Violeta,Verde oliva
+L162,37,Turquesa,Morado,Rosa palo,Blanco
+L163,38,Azul marino,Violeta,Verde oliva,Negro
+L164,39,Morado,Rosa palo,Blanco,Turquesa
+L165,40,Violeta,Verde oliva,Negro,Azul marino
+L166,41,Rosa palo,Blanco,Turquesa,Morado
+L167,42,Verde oliva,Negro,Azul marino,Violeta
+L168,43,Blanco,Turquesa,Morado,Rosa palo
+L169,44,Negro,Azul marino,Violeta,Verde oliva
+L170,45,Turquesa,Morado,Rosa palo,Blanco
+L171,37,Azul marino,Violeta,Verde oliva,Negro
+L172,38,Morado,Rosa palo,Blanco,Turquesa
+L173,39,Violeta,Verde oliva,Negro,Azul marino
+L174,40,Rosa palo,Blanco,Turquesa,Morado
+L175,41,Verde oliva,Negro,Azul marino,Violeta
+L176,42,Blanco,Turquesa,Morado,Rosa palo
+L177,43,Negro,Azul marino,Violeta,Verde oliva
+L178,44,Turquesa,Morado,Rosa palo,Blanco
+L179,45,Azul marino,Violeta,Verde oliva,Negro
+L180,37,Morado,Rosa palo,Blanco,Turquesa
+L181,38,Violeta,Verde oliva,Negro,Azul marino
+L182,39,Rosa palo,Blanco,Turquesa,Morado
+L183,40,Verde oliva,Negro,Azul marino,Violeta
+L184,41,Blanco,Turquesa,Morado,Rosa palo
+L185,42,Negro,Azul marino,Violeta,Verde oliva
+L186,43,Turquesa,Morado,Rosa palo,Blanco
+L187,44,Azul marino,Violeta,Verde oliva,Negro
+L188,45,Morado,Rosa palo,Blanco,Turquesa
+L189,37,Violeta,Verde oliva,Negro,Azul marino
+L190,38,Rosa palo,Blanco,Turquesa,Morado
+L191,39,Verde oliva,Negro,Azul marino,Violeta
+L192,40,Blanco,Turquesa,Morado,Rosa palo
+L193,41,Negro,Azul marino,Violeta,Verde oliva
+L194,42,Turquesa,Morado,Rosa palo,Blanco
+L195,43,Azul marino,Violeta,Verde oliva,Negro
+L196,44,Morado,Rosa palo,Blanco,Turquesa
+L197,45,Violeta,Verde oliva,Negro,Azul marino
+L198,37,Rosa palo,Blanco,Turquesa,Morado
+L199,38,Verde oliva,Negro,Azul marino,Violeta
+L200,39,Blanco,Turquesa,Morado,Rosa palo
+L201,40,Negro,Azul marino,Violeta,Verde oliva
+L202,41,Turquesa,Morado,Rosa palo,Blanco
+L203,42,Azul marino,Violeta,Verde oliva,Negro
+L204,43,Morado,Rosa palo,Blanco,Turquesa
+L205,44,Violeta,Verde oliva,Negro,Azul marino
+L206,45,Rosa palo,Blanco,Turquesa,Morado
+L207,37,Verde oliva,Negro,Azul marino,Violeta
+L208,38,Blanco,Turquesa,Morado,Rosa palo
+L209,39,Negro,Azul marino,Violeta,Verde oliva
+L210,40,Turquesa,Morado,Rosa palo,Blanco
+L211,41,Azul marino,Violeta,Verde oliva,Negro
+L212,42,Morado,Rosa palo,Blanco,Turquesa
+L213,43,Violeta,Verde oliva,Negro,Azul marino
+L214,44,Rosa palo,Blanco,Turquesa,Morado
+L215,45,Verde oliva,Negro,Azul marino,Violeta
+L216,37,Blanco,Turquesa,Morado,Rosa palo
+L217,38,Negro,Azul marino,Violeta,Verde oliva
+L218,39,Turquesa,Morado,Rosa palo,Blanco
+L219,40,Azul marino,Violeta,Verde oliva,Negro
+L220,41,Morado,Rosa palo,Blanco,Turquesa
+L221,42,Violeta,Verde oliva,Negro,Azul marino
+L222,43,Rosa palo,Blanco,Turquesa,Morado
+L223,44,Verde oliva,Negro,Azul marino,Violeta
+L224,45,Blanco,Turquesa,Morado,Rosa palo
+L225,37,Negro,Azul marino,Violeta,Verde oliva
+L226,38,Turquesa,Morado,Rosa palo,Blanco
+L227,39,Azul marino,Violeta,Verde oliva,Negro
+L228,40,Morado,Rosa palo,Blanco,Turquesa
+L229,41,Violeta,Verde oliva,Negro,Azul marino
+L230,42,Rosa palo,Blanco,Turquesa,Morado
+L231,43,Verde oliva,Negro,Azul marino,Violeta
+L232,44,Blanco,Turquesa,Morado,Rosa palo
+L233,45,Negro,Azul marino,Violeta,Verde oliva
+L234,37,Turquesa,Morado,Rosa palo,Blanco
+L235,38,Azul marino,Violeta,Verde oliva,Negro
+L236,39,Morado,Rosa palo,Blanco,Turquesa
+L237,40,Violeta,Verde oliva,Negro,Azul marino
+L238,41,Rosa palo,Blanco,Turquesa,Morado
+L239,42,Verde oliva,Negro,Azul marino,Violeta
+L240,43,Blanco,Turquesa,Morado,Rosa palo
+L241,44,Negro,Azul marino,Violeta,Verde oliva
+L242,45,Turquesa,Morado,Rosa palo,Blanco
+L243,37,Azul marino,Violeta,Verde oliva,Negro
+L244,38,Morado,Rosa palo,Blanco,Turquesa
+L245,39,Violeta,Verde oliva,Negro,Azul marino
+L246,40,Rosa palo,Blanco,Turquesa,Morado
+L247,41,Verde oliva,Negro,Azul marino,Violeta
+L248,42,Blanco,Turquesa,Morado,Rosa palo
+L249,43,Negro,Azul marino,Violeta,Verde oliva
+L250,44,Turquesa,Morado,Rosa palo,Blanco
+L251,45,Azul marino,Violeta,Verde oliva,Negro
+L252,37,Morado,Rosa palo,Blanco,Turquesa
+L253,38,Violeta,Verde oliva,Negro,Azul marino
+L254,39,Rosa palo,Blanco,Turquesa,Morado
+L255,40,Verde oliva,Negro,Azul marino,Violeta
+L256,41,Blanco,Turquesa,Morado,Rosa palo
+L257,42,Negro,Azul marino,Violeta,Verde oliva
+L258,43,Turquesa,Morado,Rosa palo,Blanco
+L259,44,Azul marino,Violeta,Verde oliva,Negro
+L260,45,Morado,Rosa palo,Blanco,Turquesa
+L261,37,Violeta,Verde oliva,Negro,Azul marino
+L262,38,Rosa palo,Blanco,Turquesa,Morado
+L263,39,Verde oliva,Negro,Azul marino,Violeta
+L264,40,Blanco,Turquesa,Morado,Rosa palo
+L265,41,Negro,Azul marino,Violeta,Verde oliva
+L266,42,Turquesa,Morado,Rosa palo,Blanco
+L267,43,Azul marino,Violeta,Verde oliva,Negro
+L268,44,Morado,Rosa palo,Blanco,Turquesa
+L269,45,Violeta,Verde oliva,Negro,Azul marino
+L270,37,Rosa palo,Blanco,Turquesa,Morado
+L271,38,Verde oliva,Negro,Azul marino,Violeta
+L272,39,Blanco,Turquesa,Morado,Rosa palo
+L273,40,Negro,Azul marino,Violeta,Verde oliva
+L274,41,Turquesa,Morado,Rosa palo,Blanco
+L275,42,Azul marino,Violeta,Verde oliva,Negro
+L276,43,Morado,Rosa palo,Blanco,Turquesa
+L277,44,Violeta,Verde oliva,Negro,Azul marino
+L278,45,Rosa palo,Blanco,Turquesa,Morado
+L279,37,Verde oliva,Negro,Azul marino,Violeta
+L280,38,Blanco,Turquesa,Morado,Rosa palo
+L281,39,Negro,Azul marino,Violeta,Verde oliva
+L282,40,Turquesa,Morado,Rosa palo,Blanco
+L283,41,Azul marino,Violeta,Verde oliva,Negro
+L284,42,Morado,Rosa palo,Blanco,Turquesa
+L285,43,Violeta,Verde oliva,Negro,Azul marino
+L286,44,Rosa palo,Blanco,Turquesa,Morado
+L287,45,Verde oliva,Negro,Azul marino,Violeta
+L288,37,Blanco,Turquesa,Morado,Rosa palo
+L289,38,Negro,Azul marino,Violeta,Verde oliva
+L290,39,Turquesa,Morado,Rosa palo,Blanco
+L291,40,Azul marino,Violeta,Verde oliva,Negro
+L292,41,Morado,Rosa palo,Blanco,Turquesa
+L293,42,Violeta,Verde oliva,Negro,Azul marino
+L294,43,Rosa palo,Blanco,Turquesa,Morado
+L295,44,Verde oliva,Negro,Azul marino,Violeta
+L296,45,Blanco,Turquesa,Morado,Rosa palo
+L297,37,Negro,Azul marino,Violeta,Verde oliva
+L298,38,Turquesa,Morado,Rosa palo,Blanco
+L299,39,Azul marino,Violeta,Verde oliva,Negro
+L300,40,Morado,Rosa palo,Blanco,Turquesa
+L301,41,Violeta,Verde oliva,Negro,Azul marino
+L302,42,Rosa palo,Blanco,Turquesa,Morado
+L303,43,Verde oliva,Negro,Azul marino,Violeta
+L304,44,Blanco,Turquesa,Morado,Rosa palo
+L305,45,Negro,Azul marino,Violeta,Verde oliva
+L306,37,Turquesa,Morado,Rosa palo,Blanco
+L307,38,Azul marino,Violeta,Verde oliva,Negro
+L308,39,Morado,Rosa palo,Blanco,Turquesa
+L309,40,Violeta,Verde oliva,Negro,Azul marino
+L310,41,Rosa palo,Blanco,Turquesa,Morado
+L311,42,Verde oliva,Negro,Azul marino,Violeta
+L312,43,Blanco,Turquesa,Morado,Rosa palo
+L313,44,Negro,Azul marino,Violeta,Verde oliva
+L314,45,Turquesa,Morado,Rosa palo,Blanco
+L315,37,Azul marino,Violeta,Verde oliva,Negro
+L316,38,Morado,Rosa palo,Blanco,Turquesa
+L317,39,Violeta,Verde oliva,Negro,Azul marino
+L318,40,Rosa palo,Blanco,Turquesa,Morado
+L319,41,Verde oliva,Negro,Azul marino,Violeta
+L320,42,Blanco,Turquesa,Morado,Rosa palo
+L321,43,Negro,Azul marino,Violeta,Verde oliva
+L322,44,Turquesa,Morado,Rosa palo,Blanco
+L323,45,Azul marino,Violeta,Verde oliva,Negro
+L324,37,Morado,Rosa palo,Blanco,Turquesa
+L325,38,Violeta,Verde oliva,Negro,Azul marino
+L326,39,Rosa palo,Blanco,Turquesa,Morado
+L327,40,Verde oliva,Negro,Azul marino,Violeta
+L328,41,Blanco,Turquesa,Morado,Rosa palo
+L329,42,Negro,Azul marino,Violeta,Verde oliva
+L330,43,Turquesa,Morado,Rosa palo,Blanco
+L331,44,Azul marino,Violeta,Verde oliva,Negro
+L332,45,Morado,Rosa palo,Blanco,Turquesa
+L333,37,Violeta,Verde oliva,Negro,Azul marino
+L334,38,Rosa palo,Blanco,Turquesa,Morado
+L335,39,Verde oliva,Negro,Azul marino,Violeta
+L336,40,Blanco,Turquesa,Morado,Rosa palo
+L337,41,Negro,Azul marino,Violeta,Verde oliva
+L338,42,Turquesa,Morado,Rosa palo,Blanco
+L339,43,Azul marino,Violeta,Verde oliva,Negro
+L340,44,Morado,Rosa palo,Blanco,Turquesa
+L341,45,Violeta,Verde oliva,Negro,Azul marino
+L342,37,Rosa palo,Blanco,Turquesa,Morado
+L343,38,Verde oliva,Negro,Azul marino,Violeta
+L344,39,Blanco,Turquesa,Morado,Rosa palo
+L345,40,Negro,Azul marino,Violeta,Verde oliva
+L346,41,Turquesa,Morado,Rosa palo,Blanco
+L347,42,Azul marino,Violeta,Verde oliva,Negro
+L348,43,Morado,Rosa palo,Blanco,Turquesa
+L349,44,Violeta,Verde oliva,Negro,Azul marino
+L350,45,Rosa palo,Blanco,Turquesa,Morado
+L351,37,Verde oliva,Negro,Azul marino,Violeta
+L352,38,Blanco,Turquesa,Morado,Rosa palo
+L353,39,Negro,Azul marino,Violeta,Verde oliva
+L354,40,Turquesa,Morado,Rosa palo,Blanco
+L355,41,Azul marino,Violeta,Verde oliva,Negro
+L356,42,Morado,Rosa palo,Blanco,Turquesa
+L357,43,Violeta,Verde oliva,Negro,Azul marino
+L358,44,Rosa palo,Blanco,Turquesa,Morado
+L359,45,Verde oliva,Negro,Azul marino,Violeta
+L360,37,Blanco,Turquesa,Morado,Rosa palo
+L361,38,Negro,Azul marino,Violeta,Verde oliva
+L362,39,Turquesa,Morado,Rosa palo,Blanco
+L363,40,Azul marino,Violeta,Verde oliva,Negro
+L364,41,Morado,Rosa palo,Blanco,Turquesa
+L365,42,Violeta,Verde oliva,Negro,Azul marino
+L366,43,Rosa palo,Blanco,Turquesa,Morado
+L367,44,Verde oliva,Negro,Azul marino,Violeta
+L368,45,Blanco,Turquesa,Morado,Rosa palo
+L369,37,Negro,Azul marino,Violeta,Verde oliva
+L370,38,Turquesa,Morado,Rosa palo,Blanco
+L371,39,Azul marino,Violeta,Verde oliva,Negro
+L372,40,Morado,Rosa palo,Blanco,Turquesa
+L373,41,Violeta,Verde oliva,Negro,Azul marino
+L374,42,Rosa palo,Blanco,Turquesa,Morado
+L375,43,Verde oliva,Negro,Azul marino,Violeta
+L376,44,Blanco,Turquesa,Morado,Rosa palo
+L377,45,Negro,Azul marino,Violeta,Verde oliva
+L378,37,Turquesa,Morado,Rosa palo,Blanco
+L379,38,Azul marino,Violeta,Verde oliva,Negro
+L380,39,Morado,Rosa palo,Blanco,Turquesa
+L381,40,Violeta,Verde oliva,Negro,Azul marino
+L382,41,Rosa palo,Blanco,Turquesa,Morado
+L383,42,Verde oliva,Negro,Azul marino,Violeta
+L384,43,Blanco,Turquesa,Morado,Rosa palo
+L385,44,Negro,Azul marino,Violeta,Verde oliva
+L386,45,Turquesa,Morado,Rosa palo,Blanco
+L387,37,Azul marino,Violeta,Verde oliva,Negro
+L388,38,Morado,Rosa palo,Blanco,Turquesa
+L389,39,Violeta,Verde oliva,Negro,Azul marino
+L390,40,Rosa palo,Blanco,Turquesa,Morado
+L391,41,Verde oliva,Negro,Azul marino,Violeta
+L392,42,Blanco,Turquesa,Morado,Rosa palo
+L393,43,Negro,Azul marino,Violeta,Verde oliva
+L394,44,Turquesa,Morado,Rosa palo,Blanco
+L395,45,Azul marino,Violeta,Verde oliva,Negro
+L396,37,Morado,Rosa palo,Blanco,Turquesa
+L397,38,Violeta,Verde oliva,Negro,Azul marino
+L398,39,Rosa palo,Blanco,Turquesa,Morado
+L399,40,Verde oliva,Negro,Azul marino,Violeta
+L400,41,Blanco,Turquesa,Morado,Rosa palo
+L401,42,Negro,Azul marino,Violeta,Verde oliva
+L402,43,Turquesa,Morado,Rosa palo,Blanco
+L403,44,Azul marino,Violeta,Verde oliva,Negro
+L404,45,Morado,Rosa palo,Blanco,Turquesa
+L405,37,Violeta,Verde oliva,Negro,Azul marino
+L406,38,Rosa palo,Blanco,Turquesa,Morado
+L407,39,Verde oliva,Negro,Azul marino,Violeta
+L408,40,Blanco,Turquesa,Morado,Rosa palo
+L409,41,Negro,Azul marino,Violeta,Verde oliva
+L410,42,Turquesa,Morado,Rosa palo,Blanco
+L411,43,Azul marino,Violeta,Verde oliva,Negro
+L412,44,Morado,Rosa palo,Blanco,Turquesa
+L413,45,Violeta,Verde oliva,Negro,Azul marino
+L414,37,Rosa palo,Blanco,Turquesa,Morado
+L415,38,Verde oliva,Negro,Azul marino,Violeta
+L416,39,Blanco,Turquesa,Morado,Rosa palo
+L417,40,Negro,Azul marino,Violeta,Verde oliva
+L418,41,Turquesa,Morado,Rosa palo,Blanco
+L419,42,Azul marino,Violeta,Verde oliva,Negro
+L420,43,Morado,Rosa palo,Blanco,Turquesa
+L421,44,Violeta,Verde oliva,Negro,Azul marino
+L422,45,Rosa palo,Blanco,Turquesa,Morado
+L423,37,Verde oliva,Negro,Azul marino,Violeta
+L424,38,Blanco,Turquesa,Morado,Rosa palo
+L425,39,Negro,Azul marino,Violeta,Verde oliva
+L426,40,Turquesa,Morado,Rosa palo,Blanco
+L427,41,Azul marino,Violeta,Verde oliva,Negro
+L428,42,Morado,Rosa palo,Blanco,Turquesa
+L429,43,Violeta,Verde oliva,Negro,Azul marino
+L430,44,Rosa palo,Blanco,Turquesa,Morado
+L431,45,Verde oliva,Negro,Azul marino,Violeta
+L432,37,Blanco,Turquesa,Morado,Rosa palo
+L433,38,Negro,Azul marino,Violeta,Verde oliva
+L434,39,Turquesa,Morado,Rosa palo,Blanco
+L435,40,Azul marino,Violeta,Verde oliva,Negro
+L436,41,Morado,Rosa palo,Blanco,Turquesa
+L437,42,Violeta,Verde oliva,Negro,Azul marino
+L438,43,Rosa palo,Blanco,Turquesa,Morado
+L439,44,Verde oliva,Negro,Azul marino,Violeta
+L440,45,Blanco,Turquesa,Morado,Rosa palo
+L441,37,Negro,Azul marino,Violeta,Verde oliva
+L442,38,Turquesa,Morado,Rosa palo,Blanco
+L443,39,Azul marino,Violeta,Verde oliva,Negro
+L444,40,Morado,Rosa palo,Blanco,Turquesa
+L445,41,Violeta,Verde oliva,Negro,Azul marino
+L446,42,Rosa palo,Blanco,Turquesa,Morado
+L447,43,Verde oliva,Negro,Azul marino,Violeta
+L448,44,Blanco,Turquesa,Morado,Rosa palo
+L449,45,Negro,Azul marino,Violeta,Verde oliva
+L450,37,Turquesa,Morado,Rosa palo,Blanco
+L451,38,Azul marino,Violeta,Verde oliva,Negro
+L452,39,Morado,Rosa palo,Blanco,Turquesa
+L453,40,Violeta,Verde oliva,Negro,Azul marino
+L454,41,Rosa palo,Blanco,Turquesa,Morado
+L455,42,Verde oliva,Negro,Azul marino,Violeta
+L456,43,Blanco,Turquesa,Morado,Rosa palo
+L457,44,Negro,Azul marino,Violeta,Verde oliva
+L458,45,Turquesa,Morado,Rosa palo,Blanco
+L459,37,Azul marino,Violeta,Verde oliva,Negro
+L460,38,Morado,Rosa palo,Blanco,Turquesa
+L461,39,Violeta,Verde oliva,Negro,Azul marino
+L462,40,Rosa palo,Blanco,Turquesa,Morado
+L463,41,Verde oliva,Negro,Azul marino,Violeta
+L464,42,Blanco,Turquesa,Morado,Rosa palo
+L465,43,Negro,Azul marino,Violeta,Verde oliva
+L466,44,Turquesa,Morado,Rosa palo,Blanco
+L467,45,Azul marino,Violeta,Verde oliva,Negro
+L468,37,Morado,Rosa palo,Blanco,Turquesa
+L469,38,Violeta,Verde oliva,Negro,Azul marino
+L470,39,Rosa palo,Blanco,Turquesa,Morado
+L471,40,Verde oliva,Negro,Azul marino,Violeta
+L472,41,Blanco,Turquesa,Morado,Rosa palo
+L473,42,Negro,Azul marino,Violeta,Verde oliva
+L474,43,Turquesa,Morado,Rosa palo,Blanco
+L475,44,Azul marino,Violeta,Verde oliva,Negro
+L476,45,Morado,Rosa palo,Blanco,Turquesa
+L477,37,Violeta,Verde oliva,Negro,Azul marino
+L478,38,Rosa palo,Blanco,Turquesa,Morado
+L479,39,Verde oliva,Negro,Azul marino,Violeta
+L480,40,Blanco,Turquesa,Morado,Rosa palo
+L481,41,Negro,Azul marino,Violeta,Verde oliva
+L482,42,Turquesa,Morado,Rosa palo,Blanco
+L483,43,Azul marino,Violeta,Verde oliva,Negro
+L484,44,Morado,Rosa palo,Blanco,Turquesa
+L485,45,Violeta,Verde oliva,Negro,Azul marino
+L486,37,Rosa palo,Blanco,Turquesa,Morado
+L487,38,Verde oliva,Negro,Azul marino,Violeta
+L488,39,Blanco,Turquesa,Morado,Rosa palo
+L489,40,Negro,Azul marino,Violeta,Verde oliva
+L490,41,Turquesa,Morado,Rosa palo,Blanco
+L491,42,Azul marino,Violeta,Verde oliva,Negro
+L492,43,Morado,Rosa palo,Blanco,Turquesa
+L493,44,Violeta,Verde oliva,Negro,Azul marino
+L494,45,Rosa palo,Blanco,Turquesa,Morado
+L495,37,Verde oliva,Negro,Azul marino,Violeta
+L496,38,Blanco,Turquesa,Morado,Rosa palo
+L497,39,Negro,Azul marino,Violeta,Verde oliva
+L498,40,Turquesa,Morado,Rosa palo,Blanco
+L499,41,Azul marino,Violeta,Verde oliva,Negro
+L500,42,Morado,Rosa palo,Blanco,Turquesa
+L501,43,Violeta,Verde oliva,Negro,Azul marino
+L502,44,Rosa palo,Blanco,Turquesa,Morado
+L503,45,Verde oliva,Negro,Azul marino,Violeta
+L504,37,Blanco,Turquesa,Morado,Rosa palo
+L505,38,Negro,Azul marino,Violeta,Verde oliva
+L506,39,Turquesa,Morado,Rosa palo,Blanco
+L507,40,Azul marino,Violeta,Verde oliva,Negro
+L508,41,Morado,Rosa palo,Blanco,Turquesa
+L509,42,Violeta,Verde oliva,Negro,Azul marino
+L510,43,Rosa palo,Blanco,Turquesa,Morado
+L511,44,Verde oliva,Negro,Azul marino,Violeta
+L512,45,Blanco,Turquesa,Morado,Rosa palo
+L513,37,Negro,Azul marino,Violeta,Verde oliva
+L514,38,Turquesa,Morado,Rosa palo,Blanco
+L515,39,Azul marino,Violeta,Verde oliva,Negro
+L516,40,Morado,Rosa palo,Blanco,Turquesa
+L517,41,Violeta,Verde oliva,Negro,Azul marino
+L518,42,Rosa palo,Blanco,Turquesa,Morado
+L519,43,Verde oliva,Negro,Azul marino,Violeta
+L520,44,Blanco,Turquesa,Morado,Rosa palo
+L521,45,Negro,Azul marino,Violeta,Verde oliva
+L522,37,Turquesa,Morado,Rosa palo,Blanco
+L523,38,Azul marino,Violeta,Verde oliva,Negro
+L524,39,Morado,Rosa palo,Blanco,Turquesa
+L525,40,Violeta,Verde oliva,Negro,Azul marino
+L526,41,Rosa palo,Blanco,Turquesa,Morado
+L527,42,Verde oliva,Negro,Azul marino,Violeta
+L528,43,Blanco,Turquesa,Morado,Rosa palo
+L529,44,Negro,Azul marino,Violeta,Verde oliva
+L530,45,Turquesa,Morado,Rosa palo,Blanco
+L531,37,Azul marino,Violeta,Verde oliva,Negro
+L532,38,Morado,Rosa palo,Blanco,Turquesa
+L533,39,Violeta,Verde oliva,Negro,Azul marino
+L534,40,Rosa palo,Blanco,Turquesa,Morado
+L535,41,Verde oliva,Negro,Azul marino,Violeta
+L536,42,Blanco,Turquesa,Morado,Rosa palo
+L537,43,Negro,Azul marino,Violeta,Verde oliva
+L538,44,Turquesa,Morado,Rosa palo,Blanco
+L539,45,Azul marino,Violeta,Verde oliva,Negro
+L540,37,Morado,Rosa palo,Blanco,Turquesa
+L541,38,Violeta,Verde oliva,Negro,Azul marino
+L542,39,Rosa palo,Blanco,Turquesa,Morado
+L543,40,Verde oliva,Negro,Azul marino,Violeta
+L544,41,Blanco,Turquesa,Morado,Rosa palo
+L545,42,Negro,Azul marino,Violeta,Verde oliva
+L546,43,Turquesa,Morado,Rosa palo,Blanco
+L547,44,Azul marino,Violeta,Verde oliva,Negro
+L548,45,Morado,Rosa palo,Blanco,Turquesa
+L549,37,Violeta,Verde oliva,Negro,Azul marino
+L550,38,Rosa palo,Blanco,Turquesa,Morado
+L551,39,Verde oliva,Negro,Azul marino,Violeta
+L552,40,Blanco,Turquesa,Morado,Rosa palo
+L553,41,Negro,Azul marino,Violeta,Verde oliva
+L554,42,Turquesa,Morado,Rosa palo,Blanco
+L555,43,Azul marino,Violeta,Verde oliva,Negro
+L556,44,Morado,Rosa palo,Blanco,Turquesa
+L557,45,Violeta,Verde oliva,Negro,Azul marino
+L558,37,Rosa palo,Blanco,Turquesa,Morado
+L559,38,Verde oliva,Negro,Azul marino,Violeta
+L560,39,Blanco,Turquesa,Morado,Rosa palo
+L561,40,Negro,Azul marino,Violeta,Verde oliva
+L562,41,Turquesa,Morado,Rosa palo,Blanco
+L563,42,Azul marino,Violeta,Verde oliva,Negro
+L564,43,Morado,Rosa palo,Blanco,Turquesa
+L565,44,Violeta,Verde oliva,Negro,Azul marino
+L566,45,Rosa palo,Blanco,Turquesa,Morado
+L567,37,Verde oliva,Negro,Azul marino,Violeta
+L568,38,Blanco,Turquesa,Morado,Rosa palo
+L569,39,Negro,Azul marino,Violeta,Verde oliva
+L570,40,Turquesa,Morado,Rosa palo,Blanco
+L571,41,Azul marino,Violeta,Verde oliva,Negro
+L572,42,Morado,Rosa palo,Blanco,Turquesa
+L573,43,Violeta,Verde oliva,Negro,Azul marino
+L574,44,Rosa palo,Blanco,Turquesa,Morado
+L575,45,Verde oliva,Negro,Azul marino,Violeta
+L576,37,Blanco,Turquesa,Morado,Rosa palo
+L577,38,Negro,Azul marino,Violeta,Verde oliva
+L578,39,Turquesa,Morado,Rosa palo,Blanco
+L579,40,Azul marino,Violeta,Verde oliva,Negro
+L580,41,Morado,Rosa palo,Blanco,Turquesa
+L581,42,Violeta,Verde oliva,Negro,Azul marino
+L582,43,Rosa palo,Blanco,Turquesa,Morado
+L583,44,Verde oliva,Negro,Azul marino,Violeta
+L584,45,Blanco,Turquesa,Morado,Rosa palo
+L585,37,Negro,Azul marino,Violeta,Verde oliva
+L586,38,Turquesa,Morado,Rosa palo,Blanco
+L587,39,Azul marino,Violeta,Verde oliva,Negro
+L588,40,Morado,Rosa palo,Blanco,Turquesa
+L589,41,Violeta,Verde oliva,Negro,Azul marino
+L590,42,Rosa palo,Blanco,Turquesa,Morado
+L591,43,Verde oliva,Negro,Azul marino,Violeta
+L592,44,Blanco,Turquesa,Morado,Rosa palo
+L593,45,Negro,Azul marino,Violeta,Verde oliva
+L594,37,Turquesa,Morado,Rosa palo,Blanco
+L595,38,Azul marino,Violeta,Verde oliva,Negro
+L596,39,Morado,Rosa palo,Blanco,Turquesa
+L597,40,Violeta,Verde oliva,Negro,Azul marino
+L598,41,Rosa palo,Blanco,Turquesa,Morado
+L599,42,Verde oliva,Negro,Azul marino,Violeta
+L600,43,Blanco,Turquesa,Morado,Rosa palo
+L601,44,Negro,Azul marino,Violeta,Verde oliva
+L602,45,Turquesa,Morado,Rosa palo,Blanco
+L603,37,Azul marino,Violeta,Verde oliva,Negro
+L604,38,Morado,Rosa palo,Blanco,Turquesa
+L605,39,Violeta,Verde oliva,Negro,Azul marino
+L606,40,Rosa palo,Blanco,Turquesa,Morado
+L607,41,Verde oliva,Negro,Azul marino,Violeta
+L608,42,Blanco,Turquesa,Morado,Rosa palo
+L609,43,Negro,Azul marino,Violeta,Verde oliva
+L610,44,Turquesa,Morado,Rosa palo,Blanco
+L611,45,Azul marino,Violeta,Verde oliva,Negro
+L612,37,Morado,Rosa palo,Blanco,Turquesa
+L613,38,Violeta,Verde oliva,Negro,Azul marino
+L614,39,Rosa palo,Blanco,Turquesa,Morado
+L615,40,Verde oliva,Negro,Azul marino,Violeta
+L616,41,Blanco,Turquesa,Morado,Rosa palo
+L617,42,Negro,Azul marino,Violeta,Verde oliva
+L618,43,Turquesa,Morado,Rosa palo,Blanco
+L619,44,Azul marino,Violeta,Verde oliva,Negro
+L620,45,Morado,Rosa palo,Blanco,Turquesa
+L621,37,Violeta,Verde oliva,Negro,Azul marino
+L622,38,Rosa palo,Blanco,Turquesa,Morado
+L623,39,Verde oliva,Negro,Azul marino,Violeta
+L624,40,Blanco,Turquesa,Morado,Rosa palo
+L625,41,Negro,Azul marino,Violeta,Verde oliva
+L626,42,Turquesa,Morado,Rosa palo,Blanco
+L627,43,Azul marino,Violeta,Verde oliva,Negro
+L628,44,Morado,Rosa palo,Blanco,Turquesa
+L629,45,Violeta,Verde oliva,Negro,Azul marino
+L630,37,Rosa palo,Blanco,Turquesa,Morado
+L631,38,Verde oliva,Negro,Azul marino,Violeta
+L632,39,Blanco,Turquesa,Morado,Rosa palo
+L633,40,Negro,Azul marino,Violeta,Verde oliva
+L634,41,Turquesa,Morado,Rosa palo,Blanco
+L635,42,Azul marino,Violeta,Verde oliva,Negro
+L636,43,Morado,Rosa palo,Blanco,Turquesa
+L637,44,Violeta,Verde oliva,Negro,Azul marino
+L638,45,Rosa palo,Blanco,Turquesa,Morado
+L639,37,Verde oliva,Negro,Azul marino,Violeta
+L640,38,Blanco,Turquesa,Morado,Rosa palo
+L641,39,Negro,Azul marino,Violeta,Verde oliva
+L642,40,Turquesa,Morado,Rosa palo,Blanco
+L643,41,Azul marino,Violeta,Verde oliva,Negro
+L644,42,Morado,Rosa palo,Blanco,Turquesa
+L645,43,Violeta,Verde oliva,Negro,Azul marino
+L646,44,Rosa palo,Blanco,Turquesa,Morado
+L647,45,Verde oliva,Negro,Azul marino,Violeta
+L648,37,Blanco,Turquesa,Morado,Rosa palo
+L649,38,Negro,Azul marino,Violeta,Verde oliva
+L650,39,Turquesa,Morado,Rosa palo,Blanco
+L651,40,Azul marino,Violeta,Verde oliva,Negro
+L652,41,Morado,Rosa palo,Blanco,Turquesa
+L653,42,Violeta,Verde oliva,Negro,Azul marino
+L654,43,Rosa palo,Blanco,Turquesa,Morado
+L655,44,Verde oliva,Negro,Azul marino,Violeta
+L656,45,Blanco,Turquesa,Morado,Rosa palo
+L657,37,Negro,Azul marino,Violeta,Verde oliva
+L658,38,Turquesa,Morado,Rosa palo,Blanco
+L659,39,Azul marino,Violeta,Verde oliva,Negro
+L660,40,Morado,Rosa palo,Blanco,Turquesa
+L661,41,Violeta,Verde oliva,Negro,Azul marino
+L662,42,Rosa palo,Blanco,Turquesa,Morado
+L663,43,Verde oliva,Negro,Azul marino,Violeta
+L664,44,Blanco,Turquesa,Morado,Rosa palo
+L665,45,Negro,Azul marino,Violeta,Verde oliva
+L666,37,Turquesa,Morado,Rosa palo,Blanco
+L667,38,Azul marino,Violeta,Verde oliva,Negro
+L668,39,Morado,Rosa palo,Blanco,Turquesa
+L669,40,Violeta,Verde oliva,Negro,Azul marino
+L670,41,Rosa palo,Blanco,Turquesa,Morado
+L671,42,Verde oliva,Negro,Azul marino,Violeta
+L672,43,Blanco,Turquesa,Morado,Rosa palo
+L673,44,Negro,Azul marino,Violeta,Verde oliva
+L674,45,Turquesa,Morado,Rosa palo,Blanco
+L675,37,Azul marino,Violeta,Verde oliva,Negro
+L676,38,Morado,Rosa palo,Blanco,Turquesa
+L677,39,Violeta,Verde oliva,Negro,Azul marino
+L678,40,Rosa palo,Blanco,Turquesa,Morado
+L679,41,Verde oliva,Negro,Azul marino,Violeta
+L680,42,Blanco,Turquesa,Morado,Rosa palo
+L681,43,Negro,Azul marino,Violeta,Verde oliva
+L682,44,Turquesa,Morado,Rosa palo,Blanco
+L683,45,Azul marino,Violeta,Verde oliva,Negro
+L684,37,Morado,Rosa palo,Blanco,Turquesa
+L685,38,Violeta,Verde oliva,Negro,Azul marino
+L686,39,Rosa palo,Blanco,Turquesa,Morado
+L687,40,Verde oliva,Negro,Azul marino,Violeta
+L688,41,Blanco,Turquesa,Morado,Rosa palo
+L689,42,Negro,Azul marino,Violeta,Verde oliva
+L690,43,Turquesa,Morado,Rosa palo,Blanco
+L691,44,Azul marino,Violeta,Verde oliva,Negro
+L692,45,Morado,Rosa palo,Blanco,Turquesa
+L693,37,Violeta,Verde oliva,Negro,Azul marino
+L694,38,Rosa palo,Blanco,Turquesa,Morado
+L695,39,Verde oliva,Negro,Azul marino,Violeta
+L696,40,Blanco,Turquesa,Morado,Rosa palo
+L697,41,Negro,Azul marino,Violeta,Verde oliva
+L698,42,Turquesa,Morado,Rosa palo,Blanco
+L699,43,Azul marino,Violeta,Verde oliva,Negro
+L700,44,Morado,Rosa palo,Blanco,Turquesa
+L701,45,Violeta,Verde oliva,Negro,Azul marino
+L702,37,Rosa palo,Blanco,Turquesa,Morado
+L703,38,Verde oliva,Negro,Azul marino,Violeta
+L704,39,Blanco,Turquesa,Morado,Rosa palo
+L705,40,Negro,Azul marino,Violeta,Verde oliva
+L706,41,Turquesa,Morado,Rosa palo,Blanco
+L707,42,Azul marino,Violeta,Verde oliva,Negro
+L708,43,Morado,Rosa palo,Blanco,Turquesa
+L709,44,Violeta,Verde oliva,Negro,Azul marino
+L710,45,Rosa palo,Blanco,Turquesa,Morado
+L711,37,Verde oliva,Negro,Azul marino,Violeta
+L712,38,Blanco,Turquesa,Morado,Rosa palo
+L713,39,Negro,Azul marino,Violeta,Verde oliva
+L714,40,Turquesa,Morado,Rosa palo,Blanco
+L715,41,Azul marino,Violeta,Verde oliva,Negro
+L716,42,Morado,Rosa palo,Blanco,Turquesa
+L717,43,Violeta,Verde oliva,Negro,Azul marino
+L718,44,Rosa palo,Blanco,Turquesa,Morado
+L719,45,Verde oliva,Negro,Azul marino,Violeta
+L720,37,Blanco,Turquesa,Morado,Rosa palo
+L721,38,Negro,Azul marino,Violeta,Verde oliva
+L722,39,Turquesa,Morado,Rosa palo,Blanco
+L723,40,Azul marino,Violeta,Verde oliva,Negro
+L724,41,Morado,Rosa palo,Blanco,Turquesa
+L725,42,Violeta,Verde oliva,Negro,Azul marino
+L726,43,Rosa palo,Blanco,Turquesa,Morado
+L727,44,Verde oliva,Negro,Azul marino,Violeta
+L728,45,Blanco,Turquesa,Morado,Rosa palo
+L729,37,Negro,Azul marino,Violeta,Verde oliva
+L730,38,Turquesa,Morado,Rosa palo,Blanco
+L731,39,Azul marino,Violeta,Verde oliva,Negro
+L732,40,Morado,Rosa palo,Blanco,Turquesa
+L733,41,Violeta,Verde oliva,Negro,Azul marino
+L734,42,Rosa palo,Blanco,Turquesa,Morado
+L735,43,Verde oliva,Negro,Azul marino,Violeta
+L736,44,Blanco,Turquesa,Morado,Rosa palo
+L737,45,Negro,Azul marino,Violeta,Verde oliva
+L738,37,Turquesa,Morado,Rosa palo,Blanco
+L739,38,Azul marino,Violeta,Verde oliva,Negro
+L740,39,Morado,Rosa palo,Blanco,Turquesa
+L741,40,Violeta,Verde oliva,Negro,Azul marino
+L742,41,Rosa palo,Blanco,Turquesa,Morado
+L743,42,Verde oliva,Negro,Azul marino,Violeta
+L744,43,Blanco,Turquesa,Morado,Rosa palo
+L745,44,Negro,Azul marino,Violeta,Verde oliva
+L746,45,Turquesa,Morado,Rosa palo,Blanco
+L747,37,Azul marino,Violeta,Verde oliva,Negro
+L748,38,Morado,Rosa palo,Blanco,Turquesa
+L749,39,Violeta,Verde oliva,Negro,Azul marino
+L750,40,Rosa palo,Blanco,Turquesa,Morado
+L751,41,Verde oliva,Negro,Azul marino,Violeta
+L752,42,Blanco,Turquesa,Morado,Rosa palo
+L753,43,Negro,Azul marino,Violeta,Verde oliva
+L754,44,Turquesa,Morado,Rosa palo,Blanco
+L755,45,Azul marino,Violeta,Verde oliva,Negro
+L756,37,Morado,Rosa palo,Blanco,Turquesa
+L757,38,Violeta,Verde oliva,Negro,Azul marino
+L758,39,Rosa palo,Blanco,Turquesa,Morado
+L759,40,Verde oliva,Negro,Azul marino,Violeta
+L760,41,Blanco,Turquesa,Morado,Rosa palo
+L761,42,Negro,Azul marino,Violeta,Verde oliva
+L762,43,Turquesa,Morado,Rosa palo,Blanco
+L763,44,Azul marino,Violeta,Verde oliva,Negro
+L764,45,Morado,Rosa palo,Blanco,Turquesa
+L765,37,Violeta,Verde oliva,Negro,Azul marino
+L766,38,Rosa palo,Blanco,Turquesa,Morado
+L767,39,Verde oliva,Negro,Azul marino,Violeta
+L768,40,Blanco,Turquesa,Morado,Rosa palo
+L769,41,Negro,Azul marino,Violeta,Verde oliva
+L770,42,Turquesa,Morado,Rosa palo,Blanco
+L771,43,Azul marino,Violeta,Verde oliva,Negro
+L772,44,Morado,Rosa palo,Blanco,Turquesa
+L773,45,Violeta,Verde oliva,Negro,Azul marino
+L774,37,Rosa palo,Blanco,Turquesa,Morado
+L775,38,Verde oliva,Negro,Azul marino,Violeta
+L776,39,Blanco,Turquesa,Morado,Rosa palo
+L777,40,Negro,Azul marino,Violeta,Verde oliva
+L778,41,Turquesa,Morado,Rosa palo,Blanco
+L779,42,Azul marino,Violeta,Verde oliva,Negro
+L780,43,Morado,Rosa palo,Blanco,Turquesa
+L781,44,Violeta,Verde oliva,Negro,Azul marino
+L782,45,Rosa palo,Blanco,Turquesa,Morado
+L783,37,Verde oliva,Negro,Azul marino,Violeta
+L784,38,Blanco,Turquesa,Morado,Rosa palo
+L785,39,Negro,Azul marino,Violeta,Verde oliva
+L786,40,Turquesa,Morado,Rosa palo,Blanco
+L787,41,Azul marino,Violeta,Verde oliva,Negro
+L788,42,Morado,Rosa palo,Blanco,Turquesa
+L789,43,Violeta,Verde oliva,Negro,Azul marino
+L790,44,Rosa palo,Blanco,Turquesa,Morado
+L791,45,Verde oliva,Negro,Azul marino,Violeta
+L792,37,Blanco,Turquesa,Morado,Rosa palo
+L793,38,Negro,Azul marino,Violeta,Verde oliva
+L794,39,Turquesa,Morado,Rosa palo,Blanco
+L795,40,Azul marino,Violeta,Verde oliva,Negro
+L796,41,Morado,Rosa palo,Blanco,Turquesa
+L797,42,Violeta,Verde oliva,Negro,Azul marino
+L798,43,Rosa palo,Blanco,Turquesa,Morado
+L799,44,Verde oliva,Negro,Azul marino,Violeta
+L800,45,Blanco,Turquesa,Morado,Rosa palo
+L801,37,Negro,Azul marino,Violeta,Verde oliva
+L802,38,Turquesa,Morado,Rosa palo,Blanco
+L803,39,Azul marino,Violeta,Verde oliva,Negro
+L804,40,Morado,Rosa palo,Blanco,Turquesa
+L805,41,Violeta,Verde oliva,Negro,Azul marino
+L806,42,Rosa palo,Blanco,Turquesa,Morado
+L807,43,Verde oliva,Negro,Azul marino,Violeta
+L808,44,Blanco,Turquesa,Morado,Rosa palo
+L809,45,Negro,Azul marino,Violeta,Verde oliva
+L810,37,Turquesa,Morado,Rosa palo,Blanco
+L811,38,Azul marino,Violeta,Verde oliva,Negro
+L812,39,Morado,Rosa palo,Blanco,Turquesa
+L813,40,Violeta,Verde oliva,Negro,Azul marino
+L814,41,Rosa palo,Blanco,Turquesa,Morado
+L815,42,Verde oliva,Negro,Azul marino,Violeta
+L816,43,Blanco,Turquesa,Morado,Rosa palo
+L817,44,Negro,Azul marino,Violeta,Verde oliva
+L818,45,Turquesa,Morado,Rosa palo,Blanco
+L819,37,Azul marino,Violeta,Verde oliva,Negro
+L820,38,Morado,Rosa palo,Blanco,Turquesa
+L821,39,Violeta,Verde oliva,Negro,Azul marino
+L822,40,Rosa palo,Blanco,Turquesa,Morado
+L823,41,Verde oliva,Negro,Azul marino,Violeta
+L824,42,Blanco,Turquesa,Morado,Rosa palo
+L825,43,Negro,Azul marino,Violeta,Verde oliva
+L826,44,Turquesa,Morado,Rosa palo,Blanco
+L827,45,Azul marino,Violeta,Verde oliva,Negro
+L828,37,Morado,Rosa palo,Blanco,Turquesa
+L829,38,Violeta,Verde oliva,Negro,Azul marino
+L830,39,Rosa palo,Blanco,Turquesa,Morado
+L831,40,Verde oliva,Negro,Azul marino,Violeta
+L832,41,Blanco,Turquesa,Morado,Rosa palo
+L833,42,Negro,Azul marino,Violeta,Verde oliva
+L834,43,Turquesa,Morado,Rosa palo,Blanco
+L835,44,Azul marino,Violeta,Verde oliva,Negro
+L836,45,Morado,Rosa palo,Blanco,Turquesa
+L837,37,Violeta,Verde oliva,Negro,Azul marino
+L838,38,Rosa palo,Blanco,Turquesa,Morado
+L839,39,Verde oliva,Negro,Azul marino,Violeta
+L840,40,Blanco,Turquesa,Morado,Rosa palo
+L841,41,Negro,Azul marino,Violeta,Verde oliva
+L842,42,Turquesa,Morado,Rosa palo,Blanco
+L843,43,Azul marino,Violeta,Verde oliva,Negro
+L844,44,Morado,Rosa palo,Blanco,Turquesa
+L845,45,Violeta,Verde oliva,Negro,Azul marino
+L846,37,Rosa palo,Blanco,Turquesa,Morado
+L847,38,Verde oliva,Negro,Azul marino,Violeta
+L848,39,Blanco,Turquesa,Morado,Rosa palo
+L849,40,Negro,Azul marino,Violeta,Verde oliva
+L850,41,Turquesa,Morado,Rosa palo,Blanco
+L851,42,Azul marino,Violeta,Verde oliva,Negro
+L852,43,Morado,Rosa palo,Blanco,Turquesa
+L853,44,Violeta,Verde oliva,Negro,Azul marino
+L854,45,Rosa palo,Blanco,Turquesa,Morado
+L855,37,Verde oliva,Negro,Azul marino,Violeta
+L856,38,Blanco,Turquesa,Morado,Rosa palo
+L857,39,Negro,Azul marino,Violeta,Verde oliva
+L858,40,Turquesa,Morado,Rosa palo,Blanco
+L859,41,Azul marino,Violeta,Verde oliva,Negro
+L860,42,Morado,Rosa palo,Blanco,Turquesa
+L861,43,Violeta,Verde oliva,Negro,Azul marino
+L862,44,Rosa palo,Blanco,Turquesa,Morado
+L863,45,Verde oliva,Negro,Azul marino,Violeta
+L864,37,Blanco,Turquesa,Morado,Rosa palo
+L865,38,Negro,Azul marino,Violeta,Verde oliva
+L866,39,Turquesa,Morado,Rosa palo,Blanco
+L867,40,Azul marino,Violeta,Verde oliva,Negro
+L868,41,Morado,Rosa palo,Blanco,Turquesa
+L869,42,Violeta,Verde oliva,Negro,Azul marino
+L870,43,Rosa palo,Blanco,Turquesa,Morado
+L871,44,Verde oliva,Negro,Azul marino,Violeta
+L872,45,Blanco,Turquesa,Morado,Rosa palo
+L873,37,Negro,Azul marino,Violeta,Verde oliva
+L874,38,Turquesa,Morado,Rosa palo,Blanco
+L875,39,Azul marino,Violeta,Verde oliva,Negro
+L876,40,Morado,Rosa palo,Blanco,Turquesa
+L877,41,Violeta,Verde oliva,Negro,Azul marino
+L878,42,Rosa palo,Blanco,Turquesa,Morado
+L879,43,Verde oliva,Negro,Azul marino,Violeta
+L880,44,Blanco,Turquesa,Morado,Rosa palo
+L881,45,Negro,Azul marino,Violeta,Verde oliva
+L882,37,Turquesa,Morado,Rosa palo,Blanco
+L883,38,Azul marino,Violeta,Verde oliva,Negro
+L884,39,Morado,Rosa palo,Blanco,Turquesa
+L885,40,Violeta,Verde oliva,Negro,Azul marino
+L886,41,Rosa palo,Blanco,Turquesa,Morado
+L887,42,Verde oliva,Negro,Azul marino,Violeta
+L888,43,Blanco,Turquesa,Morado,Rosa palo
+L889,44,Negro,Azul marino,Violeta,Verde oliva
+L890,45,Turquesa,Morado,Rosa palo,Blanco
+L891,37,Azul marino,Violeta,Verde oliva,Negro
+L892,38,Morado,Rosa palo,Blanco,Turquesa
+L893,39,Violeta,Verde oliva,Negro,Azul marino
+L894,40,Rosa palo,Blanco,Turquesa,Morado
+L895,41,Verde oliva,Negro,Azul marino,Violeta
+L896,42,Blanco,Turquesa,Morado,Rosa palo
+L897,43,Negro,Azul marino,Violeta,Verde oliva
+L898,44,Turquesa,Morado,Rosa palo,Blanco
+L899,45,Azul marino,Violeta,Verde oliva,Negro
+L900,37,Morado,Rosa palo,Blanco,Turquesa
+L901,38,Violeta,Verde oliva,Negro,Azul marino
+L902,39,Rosa palo,Blanco,Turquesa,Morado
+L903,40,Verde oliva,Negro,Azul marino,Violeta
+L904,41,Blanco,Turquesa,Morado,Rosa palo
+L905,42,Negro,Azul marino,Violeta,Verde oliva
+L906,43,Turquesa,Morado,Rosa palo,Blanco
+L907,44,Azul marino,Violeta,Verde oliva,Negro
+L908,45,Morado,Rosa palo,Blanco,Turquesa
+L909,37,Violeta,Verde oliva,Negro,Azul marino
+L910,38,Rosa palo,Blanco,Turquesa,Morado
+L911,39,Verde oliva,Negro,Azul marino,Violeta
+L912,40,Blanco,Turquesa,Morado,Rosa palo
+L913,41,Negro,Azul marino,Violeta,Verde oliva
+L914,42,Turquesa,Morado,Rosa palo,Blanco
+L915,43,Azul marino,Violeta,Verde oliva,Negro
+L916,44,Morado,Rosa palo,Blanco,Turquesa
+L917,45,Violeta,Verde oliva,Negro,Azul marino
+L918,37,Rosa palo,Blanco,Turquesa,Morado
+L919,38,Verde oliva,Negro,Azul marino,Violeta
+L920,39,Blanco,Turquesa,Morado,Rosa palo
+L921,40,Negro,Azul marino,Violeta,Verde oliva
+L922,41,Turquesa,Morado,Rosa palo,Blanco
+L923,42,Azul marino,Violeta,Verde oliva,Negro
+L924,43,Morado,Rosa palo,Blanco,Turquesa
+L925,44,Violeta,Verde oliva,Negro,Azul marino
+L926,45,Rosa palo,Blanco,Turquesa,Morado
+L927,37,Verde oliva,Negro,Azul marino,Violeta
+L928,38,Blanco,Turquesa,Morado,Rosa palo
+L929,39,Negro,Azul marino,Violeta,Verde oliva
+L930,40,Turquesa,Morado,Rosa palo,Blanco
+L931,41,Azul marino,Violeta,Verde oliva,Negro
+L932,42,Morado,Rosa palo,Blanco,Turquesa
+L933,43,Violeta,Verde oliva,Negro,Azul marino
+L934,44,Rosa palo,Blanco,Turquesa,Morado
+L935,45,Verde oliva,Negro,Azul marino,Violeta
+L936,37,Blanco,Turquesa,Morado,Rosa palo
+L937,38,Negro,Azul marino,Violeta,Verde oliva
+L938,39,Turquesa,Morado,Rosa palo,Blanco
+L939,40,Azul marino,Violeta,Verde oliva,Negro
+L940,41,Morado,Rosa palo,Blanco,Turquesa
+L941,42,Violeta,Verde oliva,Negro,Azul marino
+L942,43,Rosa palo,Blanco,Turquesa,Morado
+L943,44,Verde oliva,Negro,Azul marino,Violeta
+L944,45,Blanco,Turquesa,Morado,Rosa palo
+L945,37,Negro,Azul marino,Violeta,Verde oliva
+L946,38,Turquesa,Morado,Rosa palo,Blanco
+L947,39,Azul marino,Violeta,Verde oliva,Negro
+L948,40,Morado,Rosa palo,Blanco,Turquesa
+L949,41,Violeta,Verde oliva,Negro,Azul marino
+L950,42,Rosa palo,Blanco,Turquesa,Morado
+L951,43,Verde oliva,Negro,Azul marino,Violeta
+L952,44,Blanco,Turquesa,Morado,Rosa palo
+L953,45,Negro,Azul marino,Violeta,Verde oliva
+L954,37,Turquesa,Morado,Rosa palo,Blanco
+L955,38,Azul marino,Violeta,Verde oliva,Negro
+L956,39,Morado,Rosa palo,Blanco,Turquesa
+L957,40,Violeta,Verde oliva,Negro,Azul marino
+L958,41,Rosa palo,Blanco,Turquesa,Morado
+L959,42,Verde oliva,Negro,Azul marino,Violeta
+L960,43,Blanco,Turquesa,Morado,Rosa palo
+L961,44,Negro,Azul marino,Violeta,Verde oliva
+L962,45,Turquesa,Morado,Rosa palo,Blanco
+L963,37,Azul marino,Violeta,Verde oliva,Negro
+L964,38,Morado,Rosa palo,Blanco,Turquesa
+L965,39,Violeta,Verde oliva,Negro,Azul marino
+L966,40,Rosa palo,Blanco,Turquesa,Morado
+L967,41,Verde oliva,Negro,Azul marino,Violeta
+L968,42,Blanco,Turquesa,Morado,Rosa palo
+L969,43,Negro,Azul marino,Violeta,Verde oliva
+L970,44,Turquesa,Morado,Rosa palo,Blanco
+L971,45,Azul marino,Violeta,Verde oliva,Negro
+L972,37,Morado,Rosa palo,Blanco,Turquesa
+L973,38,Violeta,Verde oliva,Negro,Azul marino
+L974,39,Rosa palo,Blanco,Turquesa,Morado
+L975,40,Verde oliva,Negro,Azul marino,Violeta
+L976,41,Blanco,Turquesa,Morado,Rosa palo
+L977,42,Negro,Azul marino,Violeta,Verde oliva
+L978,43,Turquesa,Morado,Rosa palo,Blanco
+L979,44,Azul marino,Violeta,Verde oliva,Negro
+L980,45,Morado,Rosa palo,Blanco,Turquesa
+L981,37,Violeta,Verde oliva,Negro,Azul marino
+L982,38,Rosa palo,Blanco,Turquesa,Morado
+L983,39,Verde oliva,Negro,Azul marino,Violeta
+L984,40,Blanco,Turquesa,Morado,Rosa palo
+L985,41,Negro,Azul marino,Violeta,Verde oliva
+L986,42,Turquesa,Morado,Rosa palo,Blanco
+L987,43,Azul marino,Violeta,Verde oliva,Negro
+L988,44,Morado,Rosa palo,Blanco,Turquesa
+L989,45,Violeta,Verde oliva,Negro,Azul marino
+L990,37,Rosa palo,Blanco,Turquesa,Morado
+L991,38,Verde oliva,Negro,Azul marino,Violeta
+L992,39,Blanco,Turquesa,Morado,Rosa palo
+L993,40,Negro,Azul marino,Violeta,Verde oliva
+L994,41,Turquesa,Morado,Rosa palo,Blanco
+L995,42,Azul marino,Violeta,Verde oliva,Negro
+L996,43,Morado,Rosa palo,Blanco,Turquesa
+L997,44,Violeta,Verde oliva,Negro,Azul marino
+L998,45,Rosa palo,Blanco,Turquesa,Morado
+L999,37,Verde oliva,Negro,Azul marino,Violeta
+L1000,38,Blanco,Turquesa,Morado,Rosa palo
+L1001,39,Negro,Azul marino,Violeta,Verde oliva
+L1002,40,Turquesa,Morado,Rosa palo,Blanco
+L1003,41,Azul marino,Violeta,Verde oliva,Negro
+L1004,42,Morado,Rosa palo,Blanco,Turquesa
+L1005,43,Violeta,Verde oliva,Negro,Azul marino
+L1006,44,Rosa palo,Blanco,Turquesa,Morado
+L1007,45,Verde oliva,Negro,Azul marino,Violeta
+L1008,37,Blanco,Turquesa,Morado,Rosa palo
+L1009,38,Negro,Azul marino,Violeta,Verde oliva
+L1010,39,Turquesa,Morado,Rosa palo,Blanco
+L1011,40,Azul marino,Violeta,Verde oliva,Negro
+L1012,41,Morado,Rosa palo,Blanco,Turquesa
+L1013,42,Violeta,Verde oliva,Negro,Azul marino
+L1014,43,Rosa palo,Blanco,Turquesa,Morado
+L1015,44,Verde oliva,Negro,Azul marino,Violeta
+L1016,45,Blanco,Turquesa,Morado,Rosa palo
+L1017,37,Negro,Azul marino,Violeta,Verde oliva
+L1018,38,Turquesa,Morado,Rosa palo,Blanco
+L1019,39,Azul marino,Violeta,Verde oliva,Negro
+L1020,40,Morado,Rosa palo,Blanco,Turquesa
+L1021,41,Violeta,Verde oliva,Negro,Azul marino
+L1022,42,Rosa palo,Blanco,Turquesa,Morado
+L1023,43,Verde oliva,Negro,Azul marino,Violeta
+L1024,44,Blanco,Turquesa,Morado,Rosa palo
+L1025,45,Negro,Azul marino,Violeta,Verde oliva
+L1026,37,Turquesa,Morado,Rosa palo,Blanco
+L1027,38,Azul marino,Violeta,Verde oliva,Negro
+L1028,39,Morado,Rosa palo,Blanco,Turquesa
+L1029,40,Violeta,Verde oliva,Negro,Azul marino
+L1030,41,Rosa palo,Blanco,Turquesa,Morado
+L1031,42,Verde oliva,Negro,Azul marino,Violeta
+L1032,43,Blanco,Turquesa,Morado,Rosa palo
+L1033,44,Negro,Azul marino,Violeta,Verde oliva
+L1034,45,Turquesa,Morado,Rosa palo,Blanco
+L1035,37,Azul marino,Violeta,Verde oliva,Negro
+L1036,38,Morado,Rosa palo,Blanco,Turquesa
+L1037,39,Violeta,Verde oliva,Negro,Azul marino
+L1038,40,Rosa palo,Blanco,Turquesa,Morado
+L1039,41,Verde oliva,Negro,Azul marino,Violeta
+L1040,42,Blanco,Turquesa,Morado,Rosa palo
+L1041,43,Negro,Azul marino,Violeta,Verde oliva
+L1042,44,Turquesa,Morado,Rosa palo,Blanco
+L1043,45,Azul marino,Violeta,Verde oliva,Negro
+L1044,37,Morado,Rosa palo,Blanco,Turquesa
+L1045,38,Violeta,Verde oliva,Negro,Azul marino
+L1046,39,Rosa palo,Blanco,Turquesa,Morado
+L1047,40,Verde oliva,Negro,Azul marino,Violeta
+L1048,41,Blanco,Turquesa,Morado,Rosa palo
+L1049,42,Negro,Azul marino,Violeta,Verde oliva
+L1050,43,Turquesa,Morado,Rosa palo,Blanco
+L1051,44,Azul marino,Violeta,Verde oliva,Negro
+L1052,45,Morado,Rosa palo,Blanco,Turquesa
+L1053,37,Violeta,Verde oliva,Negro,Azul marino
+L1054,38,Rosa palo,Blanco,Turquesa,Morado
+L1055,39,Verde oliva,Negro,Azul marino,Violeta
+L1056,40,Blanco,Turquesa,Morado,Rosa palo
+L1057,41,Negro,Azul marino,Violeta,Verde oliva
+L1058,42,Turquesa,Morado,Rosa palo,Blanco
+L1059,43,Azul marino,Violeta,Verde oliva,Negro
+L1060,44,Morado,Rosa palo,Blanco,Turquesa
+L1061,45,Violeta,Verde oliva,Negro,Azul marino
+L1062,37,Rosa palo,Blanco,Turquesa,Morado
+L1063,38,Verde oliva,Negro,Azul marino,Violeta
+L1064,39,Blanco,Turquesa,Morado,Rosa palo
+L1065,40,Negro,Azul marino,Violeta,Verde oliva
+L1066,41,Turquesa,Morado,Rosa palo,Blanco
+L1067,42,Azul marino,Violeta,Verde oliva,Negro
+L1068,43,Morado,Rosa palo,Blanco,Turquesa
+L1069,44,Violeta,Verde oliva,Negro,Azul marino
+L1070,45,Rosa palo,Blanco,Turquesa,Morado
+L1071,37,Verde oliva,Negro,Azul marino,Violeta
+L1072,38,Blanco,Turquesa,Morado,Rosa palo
+L1073,39,Negro,Azul marino,Violeta,Verde oliva
+L1074,40,Turquesa,Morado,Rosa palo,Blanco
+L1075,41,Azul marino,Violeta,Verde oliva,Negro
+L1076,42,Morado,Rosa palo,Blanco,Turquesa
+L1077,43,Violeta,Verde oliva,Negro,Azul marino
+L1078,44,Rosa palo,Blanco,Turquesa,Morado
+L1079,45,Verde oliva,Negro,Azul marino,Violeta
+L1080,37,Blanco,Turquesa,Morado,Rosa palo
+L1081,38,Negro,Azul marino,Violeta,Verde oliva
+L1082,39,Turquesa,Morado,Rosa palo,Blanco
+L1083,40,Azul marino,Violeta,Verde oliva,Negro
+L1084,41,Morado,Rosa palo,Blanco,Turquesa
+L1085,42,Violeta,Verde oliva,Negro,Azul marino
+L1086,43,Rosa palo,Blanco,Turquesa,Morado
+L1087,44,Verde oliva,Negro,Azul marino,Violeta
+L1088,45,Blanco,Turquesa,Morado,Rosa palo
+L1089,37,Negro,Azul marino,Violeta,Verde oliva
+L1090,38,Turquesa,Morado,Rosa palo,Blanco
+L1091,39,Azul marino,Violeta,Verde oliva,Negro
+L1092,40,Morado,Rosa palo,Blanco,Turquesa
+L1093,41,Violeta,Verde oliva,Negro,Azul marino
+L1094,42,Rosa palo,Blanco,Turquesa,Morado
+L1095,43,Verde oliva,Negro,Azul marino,Violeta
+L1096,44,Blanco,Turquesa,Morado,Rosa palo
+L1097,45,Negro,Azul marino,Violeta,Verde oliva
+L1098,37,Turquesa,Morado,Rosa palo,Blanco
+L1099,38,Azul marino,Violeta,Verde oliva,Negro
+L1100,39,Morado,Rosa palo,Blanco,Turquesa
+L1101,40,Violeta,Verde oliva,Negro,Azul marino
+L1102,41,Rosa palo,Blanco,Turquesa,Morado
+L1103,42,Verde oliva,Negro,Azul marino,Violeta
+L1104,43,Blanco,Turquesa,Morado,Rosa palo
+L1105,44,Negro,Azul marino,Violeta,Verde oliva
+L1106,45,Turquesa,Morado,Rosa palo,Blanco
+L1107,37,Azul marino,Violeta,Verde oliva,Negro
+L1108,38,Morado,Rosa palo,Blanco,Turquesa
+L1109,39,Violeta,Verde oliva,Negro,Azul marino
+L1110,40,Rosa palo,Blanco,Turquesa,Morado
+L1111,41,Verde oliva,Negro,Azul marino,Violeta
+L1112,42,Blanco,Turquesa,Morado,Rosa palo
+L1113,43,Negro,Azul marino,Violeta,Verde oliva
+L1114,44,Turquesa,Morado,Rosa palo,Blanco
+L1115,45,Azul marino,Violeta,Verde oliva,Negro
+L1116,37,Morado,Rosa palo,Blanco,Turquesa
+L1117,38,Violeta,Verde oliva,Negro,Azul marino
+L1118,39,Rosa palo,Blanco,Turquesa,Morado
+L1119,40,Verde oliva,Negro,Azul marino,Violeta
+L1120,41,Blanco,Turquesa,Morado,Rosa palo
+L1121,42,Negro,Azul marino,Violeta,Verde oliva
+L1122,43,Turquesa,Morado,Rosa palo,Blanco
+L1123,44,Azul marino,Violeta,Verde oliva,Negro
+L1124,45,Morado,Rosa palo,Blanco,Turquesa
+L1125,37,Violeta,Verde oliva,Negro,Azul marino
+L1126,38,Rosa palo,Blanco,Turquesa,Morado
+L1127,39,Verde oliva,Negro,Azul marino,Violeta
+L1128,40,Blanco,Turquesa,Morado,Rosa palo
+L1129,41,Negro,Azul marino,Violeta,Verde oliva
+L1130,42,Turquesa,Morado,Rosa palo,Blanco
+L1131,43,Azul marino,Violeta,Verde oliva,Negro
+L1132,44,Morado,Rosa palo,Blanco,Turquesa
+L1133,45,Violeta,Verde oliva,Negro,Azul marino
+L1134,37,Rosa palo,Blanco,Turquesa,Morado
+L1135,38,Verde oliva,Negro,Azul marino,Violeta
+L1136,39,Blanco,Turquesa,Morado,Rosa palo
+L1137,40,Negro,Azul marino,Violeta,Verde oliva
+L1138,41,Turquesa,Morado,Rosa palo,Blanco
+L1139,42,Azul marino,Violeta,Verde oliva,Negro
+L1140,43,Morado,Rosa palo,Blanco,Turquesa
+L1141,44,Violeta,Verde oliva,Negro,Azul marino
+L1142,45,Rosa palo,Blanco,Turquesa,Morado
+L1143,37,Verde oliva,Negro,Azul marino,Violeta
+L1144,38,Blanco,Turquesa,Morado,Rosa palo
+L1145,39,Negro,Azul marino,Violeta,Verde oliva
+L1146,40,Turquesa,Morado,Rosa palo,Blanco
+L1147,41,Azul marino,Violeta,Verde oliva,Negro
+L1148,42,Morado,Rosa palo,Blanco,Turquesa
+L1149,43,Violeta,Verde oliva,Negro,Azul marino
+L1150,44,Rosa palo,Blanco,Turquesa,Morado
+L1151,45,Verde oliva,Negro,Azul marino,Violeta
+L1152,37,Blanco,Turquesa,Morado,Rosa palo
+L1153,38,Negro,Azul marino,Violeta,Verde oliva
+L1154,39,Turquesa,Morado,Rosa palo,Blanco
+L1155,40,Azul marino,Violeta,Verde oliva,Negro
+L1156,41,Morado,Rosa palo,Blanco,Turquesa
+L1157,42,Violeta,Verde oliva,Negro,Azul marino
+L1158,43,Rosa palo,Blanco,Turquesa,Morado
+L1159,44,Verde oliva,Negro,Azul marino,Violeta
+L1160,45,Blanco,Turquesa,Morado,Rosa palo
+L1161,37,Negro,Azul marino,Violeta,Verde oliva
+L1162,38,Turquesa,Morado,Rosa palo,Blanco
+L1163,39,Azul marino,Violeta,Verde oliva,Negro
+L1164,40,Morado,Rosa palo,Blanco,Turquesa
+L1165,41,Violeta,Verde oliva,Negro,Azul marino
+L1166,42,Rosa palo,Blanco,Turquesa,Morado
+L1167,43,Verde oliva,Negro,Azul marino,Violeta
+L1168,44,Blanco,Turquesa,Morado,Rosa palo
+L1169,45,Negro,Azul marino,Violeta,Verde oliva
+L1170,37,Turquesa,Morado,Rosa palo,Blanco
+L1171,38,Azul marino,Violeta,Verde oliva,Negro
+L1172,39,Morado,Rosa palo,Blanco,Turquesa
+L1173,40,Violeta,Verde oliva,Negro,Azul marino
+L1174,41,Rosa palo,Blanco,Turquesa,Morado
+L1175,42,Verde oliva,Negro,Azul marino,Violeta
+L1176,43,Blanco,Turquesa,Morado,Rosa palo
+L1177,44,Negro,Azul marino,Violeta,Verde oliva
+L1178,45,Turquesa,Morado,Rosa palo,Blanco
+L1179,37,Azul marino,Violeta,Verde oliva,Negro
+L1180,38,Morado,Rosa palo,Blanco,Turquesa
+L1181,39,Violeta,Verde oliva,Negro,Azul marino
+L1182,40,Rosa palo,Blanco,Turquesa,Morado
+L1183,41,Verde oliva,Negro,Azul marino,Violeta
+L1184,42,Blanco,Turquesa,Morado,Rosa palo
+L1185,43,Negro,Azul marino,Violeta,Verde oliva
+L1186,44,Turquesa,Morado,Rosa palo,Blanco
+L1187,45,Azul marino,Violeta,Verde oliva,Negro
+L1188,37,Morado,Rosa palo,Blanco,Turquesa
+L1189,38,Violeta,Verde oliva,Negro,Azul marino
+L1190,39,Rosa palo,Blanco,Turquesa,Morado
+L1191,40,Verde oliva,Negro,Azul marino,Violeta
+L1192,41,Blanco,Turquesa,Morado,Rosa palo
+L1193,42,Negro,Azul marino,Violeta,Verde oliva
+L1194,43,Turquesa,Morado,Rosa palo,Blanco
+L1195,44,Azul marino,Violeta,Verde oliva,Negro
+L1196,45,Morado,Rosa palo,Blanco,Turquesa
+L1197,37,Violeta,Verde oliva,Negro,Azul marino
+L1198,38,Rosa palo,Blanco,Turquesa,Morado
+L1199,39,Verde oliva,Negro,Azul marino,Violeta
+L1200,40,Blanco,Turquesa,Morado,Rosa palo
+L1201,41,Negro,Azul marino,Violeta,Verde oliva
+L1202,42,Turquesa,Morado,Rosa palo,Blanco
+L1203,43,Azul marino,Violeta,Verde oliva,Negro
+L1204,44,Morado,Rosa palo,Blanco,Turquesa
+L1205,45,Violeta,Verde oliva,Negro,Azul marino
+L1206,37,Rosa palo,Blanco,Turquesa,Morado
+L1207,38,Verde oliva,Negro,Azul marino,Violeta
+L1208,39,Blanco,Turquesa,Morado,Rosa palo
+L1209,40,Negro,Azul marino,Violeta,Verde oliva
+L1210,41,Turquesa,Morado,Rosa palo,Blanco
+L1211,42,Azul marino,Violeta,Verde oliva,Negro
+L1212,43,Morado,Rosa palo,Blanco,Turquesa
+L1213,44,Violeta,Verde oliva,Negro,Azul marino
+L1214,45,Rosa palo,Blanco,Turquesa,Morado
+L1215,37,Verde oliva,Negro,Azul marino,Violeta
+L1216,38,Blanco,Turquesa,Morado,Rosa palo
+L1217,39,Negro,Azul marino,Violeta,Verde oliva
+L1218,40,Turquesa,Morado,Rosa palo,Blanco
+L1219,41,Azul marino,Violeta,Verde oliva,Negro
+L1220,42,Morado,Rosa palo,Blanco,Turquesa
+L1221,43,Violeta,Verde oliva,Negro,Azul marino
+L1222,44,Rosa palo,Blanco,Turquesa,Morado
+L1223,45,Verde oliva,Negro,Azul marino,Violeta
+L1224,37,Blanco,Turquesa,Morado,Rosa palo
+L1225,38,Negro,Azul marino,Violeta,Verde oliva
+L1226,39,Turquesa,Morado,Rosa palo,Blanco
+L1227,40,Azul marino,Violeta,Verde oliva,Negro
+L1228,41,Morado,Rosa palo,Blanco,Turquesa
+L1229,42,Violeta,Verde oliva,Negro,Azul marino
+L1230,43,Rosa palo,Blanco,Turquesa,Morado
+L1231,44,Verde oliva,Negro,Azul marino,Violeta
+L1232,45,Blanco,Turquesa,Morado,Rosa palo
+L1233,37,Negro,Azul marino,Violeta,Verde oliva
+L1234,38,Turquesa,Morado,Rosa palo,Blanco
+L1235,39,Azul marino,Violeta,Verde oliva,Negro
+L1236,40,Morado,Rosa palo,Blanco,Turquesa
+L1237,41,Violeta,Verde oliva,Negro,Azul marino
+L1238,42,Rosa palo,Blanco,Turquesa,Morado
+L1239,43,Verde oliva,Negro,Azul marino,Violeta
+L1240,44,Blanco,Turquesa,Morado,Rosa palo
+L1241,45,Negro,Azul marino,Violeta,Verde oliva
+L1242,37,Turquesa,Morado,Rosa palo,Blanco
+L1243,38,Azul marino,Violeta,Verde oliva,Negro
+L1244,39,Morado,Rosa palo,Blanco,Turquesa
+L1245,40,Violeta,Verde oliva,Negro,Azul marino
+L1246,41,Rosa palo,Blanco,Turquesa,Morado
+L1247,42,Verde oliva,Negro,Azul marino,Violeta
+L1248,43,Blanco,Turquesa,Morado,Rosa palo
+L1249,44,Negro,Azul marino,Violeta,Verde oliva
+L1250,45,Turquesa,Morado,Rosa palo,Blanco
+L1251,37,Azul marino,Violeta,Verde oliva,Negro
+L1252,38,Morado,Rosa palo,Blanco,Turquesa
+L1253,39,Violeta,Verde oliva,Negro,Azul marino
+L1254,40,Rosa palo,Blanco,Turquesa,Morado
+L1255,41,Verde oliva,Negro,Azul marino,Violeta
+L1256,42,Blanco,Turquesa,Morado,Rosa palo
+L1257,43,Negro,Azul marino,Violeta,Verde oliva
+L1258,44,Turquesa,Morado,Rosa palo,Blanco
+L1259,45,Azul marino,Violeta,Verde oliva,Negro
+L1260,37,Morado,Rosa palo,Blanco,Turquesa
+L1261,38,Violeta,Verde oliva,Negro,Azul marino
+L1262,39,Rosa palo,Blanco,Turquesa,Morado
+L1263,40,Verde oliva,Negro,Azul marino,Violeta
+L1264,41,Blanco,Turquesa,Morado,Rosa palo
+L1265,42,Negro,Azul marino,Violeta,Verde oliva
+L1266,43,Turquesa,Morado,Rosa palo,Blanco
+L1267,44,Azul marino,Violeta,Verde oliva,Negro
+L1268,45,Morado,Rosa palo,Blanco,Turquesa
+L1269,37,Violeta,Verde oliva,Negro,Azul marino
+L1270,38,Rosa palo,Blanco,Turquesa,Morado
+L1271,39,Verde oliva,Negro,Azul marino,Violeta
+L1272,40,Blanco,Turquesa,Morado,Rosa palo
+L1273,41,Negro,Azul marino,Violeta,Verde oliva
+L1274,42,Turquesa,Morado,Rosa palo,Blanco
+L1275,43,Azul marino,Violeta,Verde oliva,Negro
+L1276,44,Morado,Rosa palo,Blanco,Turquesa
+L1277,45,Violeta,Verde oliva,Negro,Azul marino
+L1278,37,Rosa palo,Blanco,Turquesa,Morado
+L1279,38,Verde oliva,Negro,Azul marino,Violeta
+L1280,39,Blanco,Turquesa,Morado,Rosa palo
+L1281,40,Negro,Azul marino,Violeta,Verde oliva
+L1282,41,Turquesa,Morado,Rosa palo,Blanco
+L1283,42,Azul marino,Violeta,Verde oliva,Negro
+L1284,43,Morado,Rosa palo,Blanco,Turquesa
+L1285,44,Violeta,Verde oliva,Negro,Azul marino
+L1286,45,Rosa palo,Blanco,Turquesa,Morado
+L1287,37,Verde oliva,Negro,Azul marino,Violeta
+L1288,38,Blanco,Turquesa,Morado,Rosa palo
+L1289,39,Negro,Azul marino,Violeta,Verde oliva
+L1290,40,Turquesa,Morado,Rosa palo,Blanco
+L1291,41,Azul marino,Violeta,Verde oliva,Negro
+L1292,42,Morado,Rosa palo,Blanco,Turquesa
+L1293,43,Violeta,Verde oliva,Negro,Azul marino
+L1294,44,Rosa palo,Blanco,Turquesa,Morado
+L1295,45,Verde oliva,Negro,Azul marino,Violeta
+L1296,37,Blanco,Turquesa,Morado,Rosa palo
+L1297,38,Negro,Azul marino,Violeta,Verde oliva
+L1298,39,Turquesa,Morado,Rosa palo,Blanco
+L1299,40,Azul marino,Violeta,Verde oliva,Negro
+L1300,41,Morado,Rosa palo,Blanco,Turquesa
+L1301,42,Violeta,Verde oliva,Negro,Azul marino
+L1302,43,Rosa palo,Blanco,Turquesa,Morado
+L1303,44,Verde oliva,Negro,Azul marino,Violeta
+L1304,45,Blanco,Turquesa,Morado,Rosa palo
+L1305,37,Negro,Azul marino,Violeta,Verde oliva
+L1306,38,Turquesa,Morado,Rosa palo,Blanco
+L1307,39,Azul marino,Violeta,Verde oliva,Negro
+L1308,40,Morado,Rosa palo,Blanco,Turquesa
+L1309,41,Violeta,Verde oliva,Negro,Azul marino
+L1310,42,Rosa palo,Blanco,Turquesa,Morado
+L1311,43,Verde oliva,Negro,Azul marino,Violeta
+L1312,44,Blanco,Turquesa,Morado,Rosa palo
+L1313,45,Negro,Azul marino,Violeta,Verde oliva
+L1314,37,Turquesa,Morado,Rosa palo,Blanco
+L1315,38,Azul marino,Violeta,Verde oliva,Negro
+L1316,39,Morado,Rosa palo,Blanco,Turquesa
+L1317,40,Violeta,Verde oliva,Negro,Azul marino
+L1318,41,Rosa palo,Blanco,Turquesa,Morado
+L1319,42,Verde oliva,Negro,Azul marino,Violeta
+L1320,43,Blanco,Turquesa,Morado,Rosa palo
+L1321,44,Negro,Azul marino,Violeta,Verde oliva
+L1322,45,Turquesa,Morado,Rosa palo,Blanco
+L1323,37,Azul marino,Violeta,Verde oliva,Negro
+L1324,38,Morado,Rosa palo,Blanco,Turquesa
+L1325,39,Violeta,Verde oliva,Negro,Azul marino
+L1326,40,Rosa palo,Blanco,Turquesa,Morado
+L1327,41,Verde oliva,Negro,Azul marino,Violeta
+L1328,42,Blanco,Turquesa,Morado,Rosa palo
+L1329,43,Negro,Azul marino,Violeta,Verde oliva
+L1330,44,Turquesa,Morado,Rosa palo,Blanco
+L1331,45,Azul marino,Violeta,Verde oliva,Negro
+L1332,37,Morado,Rosa palo,Blanco,Turquesa
+L1333,38,Violeta,Verde oliva,Negro,Azul marino
+L1334,39,Rosa palo,Blanco,Turquesa,Morado
+L1335,40,Verde oliva,Negro,Azul marino,Violeta
+L1336,41,Blanco,Turquesa,Morado,Rosa palo
+L1337,42,Negro,Azul marino,Violeta,Verde oliva
+L1338,43,Turquesa,Morado,Rosa palo,Blanco
+L1339,44,Azul marino,Violeta,Verde oliva,Negro
+L1340,45,Morado,Rosa palo,Blanco,Turquesa
+L1341,37,Violeta,Verde oliva,Negro,Azul marino
+L1342,38,Rosa palo,Blanco,Turquesa,Morado
+L1343,39,Verde oliva,Negro,Azul marino,Violeta
+L1344,40,Blanco,Turquesa,Morado,Rosa palo
+L1345,41,Negro,Azul marino,Violeta,Verde oliva
+L1346,42,Turquesa,Morado,Rosa palo,Blanco
+L1347,43,Azul marino,Violeta,Verde oliva,Negro
+L1348,44,Morado,Rosa palo,Blanco,Turquesa
+L1349,45,Violeta,Verde oliva,Negro,Azul marino
+L1350,37,Rosa palo,Blanco,Turquesa,Morado
+L1351,38,Verde oliva,Negro,Azul marino,Violeta
+L1352,39,Blanco,Turquesa,Morado,Rosa palo
+L1353,40,Negro,Azul marino,Violeta,Verde oliva
+L1354,41,Turquesa,Morado,Rosa palo,Blanco
+L1355,42,Azul marino,Violeta,Verde oliva,Negro
+L1356,43,Morado,Rosa palo,Blanco,Turquesa
+L1357,44,Violeta,Verde oliva,Negro,Azul marino
+L1358,45,Rosa palo,Blanco,Turquesa,Morado
+L1359,37,Verde oliva,Negro,Azul marino,Violeta
+L1360,38,Blanco,Turquesa,Morado,Rosa palo
+L1361,39,Negro,Azul marino,Violeta,Verde oliva
+L1362,40,Turquesa,Morado,Rosa palo,Blanco
+L1363,41,Azul marino,Violeta,Verde oliva,Negro
+L1364,42,Morado,Rosa palo,Blanco,Turquesa
+L1365,43,Violeta,Verde oliva,Negro,Azul marino
+L1366,44,Rosa palo,Blanco,Turquesa,Morado
+L1367,45,Verde oliva,Negro,Azul marino,Violeta
+L1368,37,Blanco,Turquesa,Morado,Rosa palo
+L1369,38,Negro,Azul marino,Violeta,Verde oliva
+L1370,39,Turquesa,Morado,Rosa palo,Blanco
+L1371,40,Azul marino,Violeta,Verde oliva,Negro
+L1372,41,Morado,Rosa palo,Blanco,Turquesa
+L1373,42,Violeta,Verde oliva,Negro,Azul marino
+L1374,43,Rosa palo,Blanco,Turquesa,Morado
+L1375,44,Verde oliva,Negro,Azul marino,Violeta
+L1376,45,Blanco,Turquesa,Morado,Rosa palo
+L1377,37,Negro,Azul marino,Violeta,Verde oliva
+L1378,38,Turquesa,Morado,Rosa palo,Blanco
+L1379,39,Azul marino,Violeta,Verde oliva,Negro
+L1380,40,Morado,Rosa palo,Blanco,Turquesa
+L1381,41,Violeta,Verde oliva,Negro,Azul marino
+L1382,42,Rosa palo,Blanco,Turquesa,Morado
+L1383,43,Verde oliva,Negro,Azul marino,Violeta
+L1384,44,Blanco,Turquesa,Morado,Rosa palo
+L1385,45,Negro,Azul marino,Violeta,Verde oliva
+L1386,37,Turquesa,Morado,Rosa palo,Blanco
+L1387,38,Azul marino,Violeta,Verde oliva,Negro
+L1388,39,Morado,Rosa palo,Blanco,Turquesa
+L1389,40,Violeta,Verde oliva,Negro,Azul marino
+L1390,41,Rosa palo,Blanco,Turquesa,Morado
+L1391,42,Verde oliva,Negro,Azul marino,Violeta
+L1392,43,Blanco,Turquesa,Morado,Rosa palo
+L1393,44,Negro,Azul marino,Violeta,Verde oliva
+L1394,45,Turquesa,Morado,Rosa palo,Blanco
+L1395,37,Azul marino,Violeta,Verde oliva,Negro
+L1396,38,Morado,Rosa palo,Blanco,Turquesa
+L1397,39,Violeta,Verde oliva,Negro,Azul marino
+L1398,40,Rosa palo,Blanco,Turquesa,Morado
+L1399,41,Verde oliva,Negro,Azul marino,Violeta
+L1400,42,Blanco,Turquesa,Morado,Rosa palo
+L1401,43,Negro,Azul marino,Violeta,Verde oliva
+L1402,44,Turquesa,Morado,Rosa palo,Blanco
+L1403,45,Azul marino,Violeta,Verde oliva,Negro
+L1404,37,Morado,Rosa palo,Blanco,Turquesa
+L1405,38,Violeta,Verde oliva,Negro,Azul marino
+L1406,39,Rosa palo,Blanco,Turquesa,Morado
+L1407,40,Verde oliva,Negro,Azul marino,Violeta
+L1408,41,Blanco,Turquesa,Morado,Rosa palo
+L1409,42,Negro,Azul marino,Violeta,Verde oliva
+L1410,43,Turquesa,Morado,Rosa palo,Blanco
+L1411,44,Azul marino,Violeta,Verde oliva,Negro
+L1412,45,Morado,Rosa palo,Blanco,Turquesa
+L1413,37,Violeta,Verde oliva,Negro,Azul marino
+L1414,38,Rosa palo,Blanco,Turquesa,Morado
+L1415,39,Verde oliva,Negro,Azul marino,Violeta
+L1416,40,Blanco,Turquesa,Morado,Rosa palo
+L1417,41,Negro,Azul marino,Violeta,Verde oliva
+L1418,42,Turquesa,Morado,Rosa palo,Blanco
+L1419,43,Azul marino,Violeta,Verde oliva,Negro
+L1420,44,Morado,Rosa palo,Blanco,Turquesa
+L1421,45,Violeta,Verde oliva,Negro,Azul marino
+L1422,37,Rosa palo,Blanco,Turquesa,Morado
+L1423,38,Verde oliva,Negro,Azul marino,Violeta
+L1424,39,Blanco,Turquesa,Morado,Rosa palo
+L1425,40,Negro,Azul marino,Violeta,Verde oliva
+L1426,41,Turquesa,Morado,Rosa palo,Blanco
+L1427,42,Azul marino,Violeta,Verde oliva,Negro
+L1428,43,Morado,Rosa palo,Blanco,Turquesa
+L1429,44,Violeta,Verde oliva,Negro,Azul marino
+L1430,45,Rosa palo,Blanco,Turquesa,Morado
+L1431,37,Verde oliva,Negro,Azul marino,Violeta
+L1432,38,Blanco,Turquesa,Morado,Rosa palo
+L1433,39,Negro,Azul marino,Violeta,Verde oliva
+L1434,40,Turquesa,Morado,Rosa palo,Blanco
+L1435,41,Azul marino,Violeta,Verde oliva,Negro
+L1436,42,Morado,Rosa palo,Blanco,Turquesa
+L1437,43,Violeta,Verde oliva,Negro,Azul marino
+L1438,44,Rosa palo,Blanco,Turquesa,Morado
+L1439,45,Verde oliva,Negro,Azul marino,Violeta
+L1440,37,Blanco,Turquesa,Morado,Rosa palo
+L1441,38,Negro,Azul marino,Violeta,Verde oliva
+L1442,39,Turquesa,Morado,Rosa palo,Blanco
+L1443,40,Azul marino,Violeta,Verde oliva,Negro
+L1444,41,Morado,Rosa palo,Blanco,Turquesa
+L1445,42,Violeta,Verde oliva,Negro,Azul marino
+L1446,43,Rosa palo,Blanco,Turquesa,Morado
+L1447,44,Verde oliva,Negro,Azul marino,Violeta
+L1448,45,Blanco,Turquesa,Morado,Rosa palo
+L1449,37,Negro,Azul marino,Violeta,Verde oliva
+L1450,38,Turquesa,Morado,Rosa palo,Blanco
+L1451,39,Azul marino,Violeta,Verde oliva,Negro
+L1452,40,Morado,Rosa palo,Blanco,Turquesa
+L1453,41,Violeta,Verde oliva,Negro,Azul marino
+L1454,42,Rosa palo,Blanco,Turquesa,Morado
+L1455,43,Verde oliva,Negro,Azul marino,Violeta
+L1456,44,Blanco,Turquesa,Morado,Rosa palo
+L1457,45,Negro,Azul marino,Violeta,Verde oliva
+L1458,37,Turquesa,Morado,Rosa palo,Blanco
+L1459,38,Azul marino,Violeta,Verde oliva,Negro
+L1460,39,Morado,Rosa palo,Blanco,Turquesa
+L1461,40,Violeta,Verde oliva,Negro,Azul marino
+L1462,41,Rosa palo,Blanco,Turquesa,Morado
+L1463,42,Verde oliva,Negro,Azul marino,Violeta
+L1464,43,Blanco,Turquesa,Morado,Rosa palo
+L1465,44,Negro,Azul marino,Violeta,Verde oliva
+L1466,45,Turquesa,Morado,Rosa palo,Blanco
+L1467,37,Azul marino,Violeta,Verde oliva,Negro
+L1468,38,Morado,Rosa palo,Blanco,Turquesa
+L1469,39,Violeta,Verde oliva,Negro,Azul marino
+L1470,40,Rosa palo,Blanco,Turquesa,Morado
+L1471,41,Verde oliva,Negro,Azul marino,Violeta
+L1472,42,Blanco,Turquesa,Morado,Rosa palo
+L1473,43,Negro,Azul marino,Violeta,Verde oliva
+L1474,44,Turquesa,Morado,Rosa palo,Blanco
+L1475,45,Azul marino,Violeta,Verde oliva,Negro
+L1476,37,Morado,Rosa palo,Blanco,Turquesa
+L1477,38,Violeta,Verde oliva,Negro,Azul marino
+L1478,39,Rosa palo,Blanco,Turquesa,Morado
+L1479,40,Verde oliva,Negro,Azul marino,Violeta
+L1480,41,Blanco,Turquesa,Morado,Rosa palo
+L1481,42,Negro,Azul marino,Violeta,Verde oliva
+L1482,43,Turquesa,Morado,Rosa palo,Blanco
+L1483,44,Azul marino,Violeta,Verde oliva,Negro
+L1484,45,Morado,Rosa palo,Blanco,Turquesa
+L1485,37,Violeta,Verde oliva,Negro,Azul marino
+L1486,38,Rosa palo,Blanco,Turquesa,Morado
+L1487,39,Verde oliva,Negro,Azul marino,Violeta
+L1488,40,Blanco,Turquesa,Morado,Rosa palo
+L1489,41,Negro,Azul marino,Violeta,Verde oliva
+L1490,42,Turquesa,Morado,Rosa palo,Blanco
+L1491,43,Azul marino,Violeta,Verde oliva,Negro
+L1492,44,Morado,Rosa palo,Blanco,Turquesa
+L1493,45,Violeta,Verde oliva,Negro,Azul marino
+L1494,37,Rosa palo,Blanco,Turquesa,Morado
+L1495,38,Verde oliva,Negro,Azul marino,Violeta
+L1496,39,Blanco,Turquesa,Morado,Rosa palo
+L1497,40,Negro,Azul marino,Violeta,Verde oliva
+L1498,41,Turquesa,Morado,Rosa palo,Blanco
+L1499,42,Azul marino,Violeta,Verde oliva,Negro
+L1500,43,Morado,Rosa palo,Blanco,Turquesa
+L1501,44,Violeta,Verde oliva,Negro,Azul marino
+L1502,45,Rosa palo,Blanco,Turquesa,Morado
+L1503,37,Verde oliva,Negro,Azul marino,Violeta
+L1504,38,Blanco,Turquesa,Morado,Rosa palo
+L1505,39,Negro,Azul marino,Violeta,Verde oliva
+L1506,40,Turquesa,Morado,Rosa palo,Blanco
+L1507,41,Azul marino,Violeta,Verde oliva,Negro
+L1508,42,Morado,Rosa palo,Blanco,Turquesa
+L1509,43,Violeta,Verde oliva,Negro,Azul marino
+L1510,44,Rosa palo,Blanco,Turquesa,Morado
+L1511,45,Verde oliva,Negro,Azul marino,Violeta
+L1512,37,Blanco,Turquesa,Morado,Rosa palo
+L1513,38,Negro,Azul marino,Violeta,Verde oliva
+L1514,39,Turquesa,Morado,Rosa palo,Blanco
+L1515,40,Azul marino,Violeta,Verde oliva,Negro
+L1516,41,Morado,Rosa palo,Blanco,Turquesa
+L1517,42,Violeta,Verde oliva,Negro,Azul marino
+L1518,43,Rosa palo,Blanco,Turquesa,Morado
+L1519,44,Verde oliva,Negro,Azul marino,Violeta
+L1520,45,Blanco,Turquesa,Morado,Rosa palo
+L1521,37,Negro,Azul marino,Violeta,Verde oliva
+L1522,38,Turquesa,Morado,Rosa palo,Blanco
+L1523,39,Azul marino,Violeta,Verde oliva,Negro
+L1524,40,Morado,Rosa palo,Blanco,Turquesa
+L1525,41,Violeta,Verde oliva,Negro,Azul marino
+L1526,42,Rosa palo,Blanco,Turquesa,Morado
+L1527,43,Verde oliva,Negro,Azul marino,Violeta
+L1528,44,Blanco,Turquesa,Morado,Rosa palo
+L1529,45,Negro,Azul marino,Violeta,Verde oliva
+L1530,37,Turquesa,Morado,Rosa palo,Blanco
+L1531,38,Azul marino,Violeta,Verde oliva,Negro
+L1532,39,Morado,Rosa palo,Blanco,Turquesa
+L1533,40,Violeta,Verde oliva,Negro,Azul marino
+L1534,41,Rosa palo,Blanco,Turquesa,Morado
+L1535,42,Verde oliva,Negro,Azul marino,Violeta
+L1536,43,Blanco,Turquesa,Morado,Rosa palo
+L1537,44,Negro,Azul marino,Violeta,Verde oliva
+L1538,45,Turquesa,Morado,Rosa palo,Blanco
+L1539,37,Azul marino,Violeta,Verde oliva,Negro
+L1540,38,Morado,Rosa palo,Blanco,Turquesa
+L1541,39,Violeta,Verde oliva,Negro,Azul marino
+L1542,40,Rosa palo,Blanco,Turquesa,Morado
+L1543,41,Verde oliva,Negro,Azul marino,Violeta
+L1544,42,Blanco,Turquesa,Morado,Rosa palo
+L1545,43,Negro,Azul marino,Violeta,Verde oliva
+L1546,44,Turquesa,Morado,Rosa palo,Blanco
+L1547,45,Azul marino,Violeta,Verde oliva,Negro
+L1548,37,Morado,Rosa palo,Blanco,Turquesa
+L1549,38,Violeta,Verde oliva,Negro,Azul marino
+L1550,39,Rosa palo,Blanco,Turquesa,Morado
+L1551,40,Verde oliva,Negro,Azul marino,Violeta
+L1552,41,Blanco,Turquesa,Morado,Rosa palo
+L1553,42,Negro,Azul marino,Violeta,Verde oliva
+L1554,43,Turquesa,Morado,Rosa palo,Blanco
+L1555,44,Azul marino,Violeta,Verde oliva,Negro
+L1556,45,Morado,Rosa palo,Blanco,Turquesa
+L1557,37,Violeta,Verde oliva,Negro,Azul marino
+L1558,38,Rosa palo,Blanco,Turquesa,Morado
+L1559,39,Verde oliva,Negro,Azul marino,Violeta
+L1560,40,Blanco,Turquesa,Morado,Rosa palo
+L1561,41,Negro,Azul marino,Violeta,Verde oliva
+L1562,42,Turquesa,Morado,Rosa palo,Blanco
+L1563,43,Azul marino,Violeta,Verde oliva,Negro
+L1564,44,Morado,Rosa palo,Blanco,Turquesa
+L1565,45,Violeta,Verde oliva,Negro,Azul marino
+L1566,37,Rosa palo,Blanco,Turquesa,Morado
+L1567,38,Verde oliva,Negro,Azul marino,Violeta
+L1568,39,Blanco,Turquesa,Morado,Rosa palo
+L1569,40,Negro,Azul marino,Violeta,Verde oliva
+L1570,41,Turquesa,Morado,Rosa palo,Blanco
+L1571,42,Azul marino,Violeta,Verde oliva,Negro
+L1572,43,Morado,Rosa palo,Blanco,Turquesa
+L1573,44,Violeta,Verde oliva,Negro,Azul marino
+L1574,45,Rosa palo,Blanco,Turquesa,Morado
+L1575,37,Verde oliva,Negro,Azul marino,Violeta
+L1576,38,Blanco,Turquesa,Morado,Rosa palo
+L1577,39,Negro,Azul marino,Violeta,Verde oliva
+L1578,40,Turquesa,Morado,Rosa palo,Blanco
+L1579,41,Azul marino,Violeta,Verde oliva,Negro
+L1580,42,Morado,Rosa palo,Blanco,Turquesa
+L1581,43,Violeta,Verde oliva,Negro,Azul marino
+L1582,44,Rosa palo,Blanco,Turquesa,Morado
+L1583,45,Verde oliva,Negro,Azul marino,Violeta
+L1584,37,Blanco,Turquesa,Morado,Rosa palo
+L1585,38,Negro,Azul marino,Violeta,Verde oliva
+L1586,39,Turquesa,Morado,Rosa palo,Blanco
+L1587,40,Azul marino,Violeta,Verde oliva,Negro
+L1588,41,Morado,Rosa palo,Blanco,Turquesa
+L1589,42,Violeta,Verde oliva,Negro,Azul marino
+L1590,43,Rosa palo,Blanco,Turquesa,Morado
+L1591,44,Verde oliva,Negro,Azul marino,Violeta
+L1592,45,Blanco,Turquesa,Morado,Rosa palo
+L1593,37,Negro,Azul marino,Violeta,Verde oliva
+L1594,38,Turquesa,Morado,Rosa palo,Blanco
+L1595,39,Azul marino,Violeta,Verde oliva,Negro
+L1596,40,Morado,Rosa palo,Blanco,Turquesa
+L1597,41,Violeta,Verde oliva,Negro,Azul marino
+L1598,42,Rosa palo,Blanco,Turquesa,Morado
+L1599,43,Verde oliva,Negro,Azul marino,Violeta
+L1600,44,Blanco,Turquesa,Morado,Rosa palo
+L1601,45,Negro,Azul marino,Violeta,Verde oliva
+L1602,37,Turquesa,Morado,Rosa palo,Blanco
+L1603,38,Azul marino,Violeta,Verde oliva,Negro
+L1604,39,Morado,Rosa palo,Blanco,Turquesa
+L1605,40,Violeta,Verde oliva,Negro,Azul marino
+L1606,41,Rosa palo,Blanco,Turquesa,Morado
+L1607,42,Verde oliva,Negro,Azul marino,Violeta
+L1608,43,Blanco,Turquesa,Morado,Rosa palo
+L1609,44,Negro,Azul marino,Violeta,Verde oliva
+L1610,45,Turquesa,Morado,Rosa palo,Blanco
+L1611,37,Azul marino,Violeta,Verde oliva,Negro
+L1612,38,Morado,Rosa palo,Blanco,Turquesa
+L1613,39,Violeta,Verde oliva,Negro,Azul marino
+L1614,40,Rosa palo,Blanco,Turquesa,Morado
+L1615,41,Verde oliva,Negro,Azul marino,Violeta
+L1616,42,Blanco,Turquesa,Morado,Rosa palo
+L1617,43,Negro,Azul marino,Violeta,Verde oliva
+L1618,44,Turquesa,Morado,Rosa palo,Blanco
+L1619,45,Azul marino,Violeta,Verde oliva,Negro
+L1620,37,Morado,Rosa palo,Blanco,Turquesa
+L1621,38,Violeta,Verde oliva,Negro,Azul marino
+L1622,39,Rosa palo,Blanco,Turquesa,Morado
+L1623,40,Verde oliva,Negro,Azul marino,Violeta
+L1624,41,Blanco,Turquesa,Morado,Rosa palo
+L1625,42,Negro,Azul marino,Violeta,Verde oliva
+L1626,43,Turquesa,Morado,Rosa palo,Blanco
+L1627,44,Azul marino,Violeta,Verde oliva,Negro
+L1628,45,Morado,Rosa palo,Blanco,Turquesa
+L1629,37,Violeta,Verde oliva,Negro,Azul marino
+L1630,38,Rosa palo,Blanco,Turquesa,Morado
+L1631,39,Verde oliva,Negro,Azul marino,Violeta
+L1632,40,Blanco,Turquesa,Morado,Rosa palo
+L1633,41,Negro,Azul marino,Violeta,Verde oliva
+L1634,42,Turquesa,Morado,Rosa palo,Blanco
+L1635,43,Azul marino,Violeta,Verde oliva,Negro
+L1636,44,Morado,Rosa palo,Blanco,Turquesa
+L1637,45,Violeta,Verde oliva,Negro,Azul marino
+L1638,37,Rosa palo,Blanco,Turquesa,Morado
+L1639,38,Verde oliva,Negro,Azul marino,Violeta
+L1640,39,Blanco,Turquesa,Morado,Rosa palo
+L1641,40,Negro,Azul marino,Violeta,Verde oliva
+L1642,41,Turquesa,Morado,Rosa palo,Blanco
+L1643,42,Azul marino,Violeta,Verde oliva,Negro
+L1644,43,Morado,Rosa palo,Blanco,Turquesa
+L1645,44,Violeta,Verde oliva,Negro,Azul marino
+L1646,45,Rosa palo,Blanco,Turquesa,Morado
+L1647,37,Verde oliva,Negro,Azul marino,Violeta
+L1648,38,Blanco,Turquesa,Morado,Rosa palo
+L1649,39,Negro,Azul marino,Violeta,Verde oliva
+L1650,40,Turquesa,Morado,Rosa palo,Blanco
+L1651,41,Azul marino,Violeta,Verde oliva,Negro
+L1652,42,Morado,Rosa palo,Blanco,Turquesa
+L1653,43,Violeta,Verde oliva,Negro,Azul marino
+L1654,44,Rosa palo,Blanco,Turquesa,Morado
+L1655,45,Verde oliva,Negro,Azul marino,Violeta
+L1656,37,Blanco,Turquesa,Morado,Rosa palo
+L1657,38,Negro,Azul marino,Violeta,Verde oliva
+L1658,39,Turquesa,Morado,Rosa palo,Blanco
+L1659,40,Azul marino,Violeta,Verde oliva,Negro
+L1660,41,Morado,Rosa palo,Blanco,Turquesa
+L1661,42,Violeta,Verde oliva,Negro,Azul marino
+L1662,43,Rosa palo,Blanco,Turquesa,Morado
+L1663,44,Verde oliva,Negro,Azul marino,Violeta
+L1664,45,Blanco,Turquesa,Morado,Rosa palo
+L1665,37,Negro,Azul marino,Violeta,Verde oliva
+L1666,38,Turquesa,Morado,Rosa palo,Blanco
+L1667,39,Azul marino,Violeta,Verde oliva,Negro
+L1668,40,Morado,Rosa palo,Blanco,Turquesa
+L1669,41,Violeta,Verde oliva,Negro,Azul marino
+L1670,42,Rosa palo,Blanco,Turquesa,Morado
+L1671,43,Verde oliva,Negro,Azul marino,Violeta
+L1672,44,Blanco,Turquesa,Morado,Rosa palo
+L1673,45,Negro,Azul marino,Violeta,Verde oliva
+L1674,37,Turquesa,Morado,Rosa palo,Blanco
+L1675,38,Azul marino,Violeta,Verde oliva,Negro
+L1676,39,Morado,Rosa palo,Blanco,Turquesa
+L1677,40,Violeta,Verde oliva,Negro,Azul marino
+L1678,41,Rosa palo,Blanco,Turquesa,Morado
+L1679,42,Verde oliva,Negro,Azul marino,Violeta
+L1680,43,Blanco,Turquesa,Morado,Rosa palo
+L1681,44,Negro,Azul marino,Violeta,Verde oliva
+L1682,45,Turquesa,Morado,Rosa palo,Blanco
+L1683,37,Azul marino,Violeta,Verde oliva,Negro
+L1684,38,Morado,Rosa palo,Blanco,Turquesa
+L1685,39,Violeta,Verde oliva,Negro,Azul marino
+L1686,40,Rosa palo,Blanco,Turquesa,Morado
+L1687,41,Verde oliva,Negro,Azul marino,Violeta
+L1688,42,Blanco,Turquesa,Morado,Rosa palo
+L1689,43,Negro,Azul marino,Violeta,Verde oliva
+L1690,44,Turquesa,Morado,Rosa palo,Blanco
+L1691,45,Azul marino,Violeta,Verde oliva,Negro
+L1692,37,Morado,Rosa palo,Blanco,Turquesa
+L1693,38,Violeta,Verde oliva,Negro,Azul marino
+L1694,39,Rosa palo,Blanco,Turquesa,Morado
+L1695,40,Verde oliva,Negro,Azul marino,Violeta
+L1696,41,Blanco,Turquesa,Morado,Rosa palo
+L1697,42,Negro,Azul marino,Violeta,Verde oliva
+L1698,43,Turquesa,Morado,Rosa palo,Blanco
+L1699,44,Azul marino,Violeta,Verde oliva,Negro
+L1700,45,Morado,Rosa palo,Blanco,Turquesa
+L1701,37,Violeta,Verde oliva,Negro,Azul marino
+L1702,38,Rosa palo,Blanco,Turquesa,Morado
+L1703,39,Verde oliva,Negro,Azul marino,Violeta
+L1704,40,Blanco,Turquesa,Morado,Rosa palo
+L1705,41,Negro,Azul marino,Violeta,Verde oliva
+L1706,42,Turquesa,Morado,Rosa palo,Blanco
+L1707,43,Azul marino,Violeta,Verde oliva,Negro
+L1708,44,Morado,Rosa palo,Blanco,Turquesa
+L1709,45,Violeta,Verde oliva,Negro,Azul marino
+L1710,37,Rosa palo,Blanco,Turquesa,Morado
+L1711,38,Verde oliva,Negro,Azul marino,Violeta
+L1712,39,Blanco,Turquesa,Morado,Rosa palo
+L1713,40,Negro,Azul marino,Violeta,Verde oliva
+L1714,41,Turquesa,Morado,Rosa palo,Blanco
+L1715,42,Azul marino,Violeta,Verde oliva,Negro
+L1716,43,Morado,Rosa palo,Blanco,Turquesa
+L1717,44,Violeta,Verde oliva,Negro,Azul marino
+L1718,45,Rosa palo,Blanco,Turquesa,Morado
+L1719,37,Verde oliva,Negro,Azul marino,Violeta
+L1720,38,Blanco,Turquesa,Morado,Rosa palo
+L1721,39,Negro,Azul marino,Violeta,Verde oliva
+L1722,40,Turquesa,Morado,Rosa palo,Blanco
+L1723,41,Azul marino,Violeta,Verde oliva,Negro
+L1724,42,Morado,Rosa palo,Blanco,Turquesa
+L1725,43,Violeta,Verde oliva,Negro,Azul marino
+L1726,44,Rosa palo,Blanco,Turquesa,Morado
+L1727,45,Verde oliva,Negro,Azul marino,Violeta
+L1728,37,Blanco,Turquesa,Morado,Rosa palo
+L1729,38,Negro,Azul marino,Violeta,Verde oliva
+L1730,39,Turquesa,Morado,Rosa palo,Blanco
+L1731,40,Azul marino,Violeta,Verde oliva,Negro
+L1732,41,Morado,Rosa palo,Blanco,Turquesa
+L1733,42,Violeta,Verde oliva,Negro,Azul marino
+L1734,43,Rosa palo,Blanco,Turquesa,Morado
+L1735,44,Verde oliva,Negro,Azul marino,Violeta
+L1736,45,Blanco,Turquesa,Morado,Rosa palo
+L1737,37,Negro,Azul marino,Violeta,Verde oliva
+L1738,38,Turquesa,Morado,Rosa palo,Blanco
+L1739,39,Azul marino,Violeta,Verde oliva,Negro
+L1740,40,Morado,Rosa palo,Blanco,Turquesa
+L1741,41,Violeta,Verde oliva,Negro,Azul marino
+L1742,42,Rosa palo,Blanco,Turquesa,Morado
+L1743,43,Verde oliva,Negro,Azul marino,Violeta
+L1744,44,Blanco,Turquesa,Morado,Rosa palo
+L1745,45,Negro,Azul marino,Violeta,Verde oliva
+L1746,37,Turquesa,Morado,Rosa palo,Blanco
+L1747,38,Azul marino,Violeta,Verde oliva,Negro
+L1748,39,Morado,Rosa palo,Blanco,Turquesa
+L1749,40,Violeta,Verde oliva,Negro,Azul marino
+L1750,41,Rosa palo,Blanco,Turquesa,Morado
+L1751,42,Verde oliva,Negro,Azul marino,Violeta
+L1752,43,Blanco,Turquesa,Morado,Rosa palo
+L1753,44,Negro,Azul marino,Violeta,Verde oliva
+L1754,45,Turquesa,Morado,Rosa palo,Blanco
+L1755,37,Azul marino,Violeta,Verde oliva,Negro
+L1756,38,Morado,Rosa palo,Blanco,Turquesa
+L1757,39,Violeta,Verde oliva,Negro,Azul marino
+L1758,40,Rosa palo,Blanco,Turquesa,Morado
+L1759,41,Verde oliva,Negro,Azul marino,Violeta
+L1760,42,Blanco,Turquesa,Morado,Rosa palo
+L1761,43,Negro,Azul marino,Violeta,Verde oliva
+L1762,44,Turquesa,Morado,Rosa palo,Blanco
+L1763,45,Azul marino,Violeta,Verde oliva,Negro
+L1764,37,Morado,Rosa palo,Blanco,Turquesa
+L1765,38,Violeta,Verde oliva,Negro,Azul marino
+L1766,39,Rosa palo,Blanco,Turquesa,Morado
+L1767,40,Verde oliva,Negro,Azul marino,Violeta
+L1768,41,Blanco,Turquesa,Morado,Rosa palo
+L1769,42,Negro,Azul marino,Violeta,Verde oliva
+L1770,43,Turquesa,Morado,Rosa palo,Blanco
+L1771,44,Azul marino,Violeta,Verde oliva,Negro
+L1772,45,Morado,Rosa palo,Blanco,Turquesa
+L1773,37,Violeta,Verde oliva,Negro,Azul marino
+L1774,38,Rosa palo,Blanco,Turquesa,Morado
+L1775,39,Verde oliva,Negro,Azul marino,Violeta
+L1776,40,Blanco,Turquesa,Morado,Rosa palo
+L1777,41,Negro,Azul marino,Violeta,Verde oliva
+L1778,42,Turquesa,Morado,Rosa palo,Blanco
+L1779,43,Azul marino,Violeta,Verde oliva,Negro
+L1780,44,Morado,Rosa palo,Blanco,Turquesa
+L1781,45,Violeta,Verde oliva,Negro,Azul marino
+L1782,37,Rosa palo,Blanco,Turquesa,Morado
+L1783,38,Verde oliva,Negro,Azul marino,Violeta
+L1784,39,Blanco,Turquesa,Morado,Rosa palo
+L1785,40,Negro,Azul marino,Violeta,Verde oliva
+L1786,41,Turquesa,Morado,Rosa palo,Blanco
+L1787,42,Azul marino,Violeta,Verde oliva,Negro
+L1788,43,Morado,Rosa palo,Blanco,Turquesa
+L1789,44,Violeta,Verde oliva,Negro,Azul marino
+L1790,45,Rosa palo,Blanco,Turquesa,Morado
+L1791,37,Verde oliva,Negro,Azul marino,Violeta
+L1792,38,Blanco,Turquesa,Morado,Rosa palo
+L1793,39,Negro,Azul marino,Violeta,Verde oliva
+L1794,40,Turquesa,Morado,Rosa palo,Blanco
+L1795,41,Azul marino,Violeta,Verde oliva,Negro
+L1796,42,Morado,Rosa palo,Blanco,Turquesa
+L1797,43,Violeta,Verde oliva,Negro,Azul marino
+L1798,44,Rosa palo,Blanco,Turquesa,Morado
+L1799,45,Verde oliva,Negro,Azul marino,Violeta
+L1800,37,Blanco,Turquesa,Morado,Rosa palo
+L1801,38,Negro,Azul marino,Violeta,Verde oliva
+L1802,39,Turquesa,Morado,Rosa palo,Blanco
+L1803,40,Azul marino,Violeta,Verde oliva,Negro
+L1804,41,Morado,Rosa palo,Blanco,Turquesa
+L1805,42,Violeta,Verde oliva,Negro,Azul marino
+L1806,43,Rosa palo,Blanco,Turquesa,Morado
+L1807,44,Verde oliva,Negro,Azul marino,Violeta
+L1808,45,Blanco,Turquesa,Morado,Rosa palo
+L1809,37,Negro,Azul marino,Violeta,Verde oliva
+L1810,38,Turquesa,Morado,Rosa palo,Blanco
+L1811,39,Azul marino,Violeta,Verde oliva,Negro
+L1812,40,Morado,Rosa palo,Blanco,Turquesa
+L1813,41,Violeta,Verde oliva,Negro,Azul marino
+L1814,42,Rosa palo,Blanco,Turquesa,Morado
+L1815,43,Verde oliva,Negro,Azul marino,Violeta
+L1816,44,Blanco,Turquesa,Morado,Rosa palo
+L1817,45,Negro,Azul marino,Violeta,Verde oliva
+L1818,37,Turquesa,Morado,Rosa palo,Blanco
+L1819,38,Azul marino,Violeta,Verde oliva,Negro
+L1820,39,Morado,Rosa palo,Blanco,Turquesa
+L1821,40,Violeta,Verde oliva,Negro,Azul marino
+L1822,41,Rosa palo,Blanco,Turquesa,Morado
+L1823,42,Verde oliva,Negro,Azul marino,Violeta
+L1824,43,Blanco,Turquesa,Morado,Rosa palo
+L1825,44,Negro,Azul marino,Violeta,Verde oliva
+L1826,45,Turquesa,Morado,Rosa palo,Blanco
+L1827,37,Azul marino,Violeta,Verde oliva,Negro
+L1828,38,Morado,Rosa palo,Blanco,Turquesa
+L1829,39,Violeta,Verde oliva,Negro,Azul marino
+L1830,40,Rosa palo,Blanco,Turquesa,Morado
+L1831,41,Verde oliva,Negro,Azul marino,Violeta
+L1832,42,Blanco,Turquesa,Morado,Rosa palo
+L1833,43,Negro,Azul marino,Violeta,Verde oliva
+L1834,44,Turquesa,Morado,Rosa palo,Blanco
+L1835,45,Azul marino,Violeta,Verde oliva,Negro
+L1836,37,Morado,Rosa palo,Blanco,Turquesa
+L1837,38,Violeta,Verde oliva,Negro,Azul marino
+L1838,39,Rosa palo,Blanco,Turquesa,Morado
+L1839,40,Verde oliva,Negro,Azul marino,Violeta
+L1840,41,Blanco,Turquesa,Morado,Rosa palo
+L1841,42,Negro,Azul marino,Violeta,Verde oliva
+L1842,43,Turquesa,Morado,Rosa palo,Blanco
+L1843,44,Azul marino,Violeta,Verde oliva,Negro
+L1844,45,Morado,Rosa palo,Blanco,Turquesa
+L1845,37,Violeta,Verde oliva,Negro,Azul marino
+L1846,38,Rosa palo,Blanco,Turquesa,Morado
+L1847,39,Verde oliva,Negro,Azul marino,Violeta
+L1848,40,Blanco,Turquesa,Morado,Rosa palo
+L1849,41,Negro,Azul marino,Violeta,Verde oliva
+L1850,42,Turquesa,Morado,Rosa palo,Blanco
+L1851,43,Azul marino,Violeta,Verde oliva,Negro
+L1852,44,Morado,Rosa palo,Blanco,Turquesa
+L1853,45,Violeta,Verde oliva,Negro,Azul marino
+L1854,37,Rosa palo,Blanco,Turquesa,Morado
+L1855,38,Verde oliva,Negro,Azul marino,Violeta
+L1856,39,Blanco,Turquesa,Morado,Rosa palo
+L1857,40,Negro,Azul marino,Violeta,Verde oliva
+L1858,41,Turquesa,Morado,Rosa palo,Blanco
+L1859,42,Azul marino,Violeta,Verde oliva,Negro
+L1860,43,Morado,Rosa palo,Blanco,Turquesa
+L1861,44,Violeta,Verde oliva,Negro,Azul marino
+L1862,45,Rosa palo,Blanco,Turquesa,Morado
+L1863,37,Verde oliva,Negro,Azul marino,Violeta
+L1864,38,Blanco,Turquesa,Morado,Rosa palo
+L1865,39,Negro,Azul marino,Violeta,Verde oliva
+L1866,40,Turquesa,Morado,Rosa palo,Blanco
+L1867,41,Azul marino,Violeta,Verde oliva,Negro
+L1868,42,Morado,Rosa palo,Blanco,Turquesa
+L1869,43,Violeta,Verde oliva,Negro,Azul marino
+L1870,44,Rosa palo,Blanco,Turquesa,Morado
+L1871,45,Verde oliva,Negro,Azul marino,Violeta
+L1872,37,Blanco,Turquesa,Morado,Rosa palo
+L1873,38,Negro,Azul marino,Violeta,Verde oliva
+L1874,39,Turquesa,Morado,Rosa palo,Blanco
+L1875,40,Azul marino,Violeta,Verde oliva,Negro
+L1876,41,Morado,Rosa palo,Blanco,Turquesa
+L1877,42,Violeta,Verde oliva,Negro,Azul marino
+L1878,43,Rosa palo,Blanco,Turquesa,Morado
+L1879,44,Verde oliva,Negro,Azul marino,Violeta
+L1880,45,Blanco,Turquesa,Morado,Rosa palo
+L1881,37,Negro,Azul marino,Violeta,Verde oliva
+L1882,38,Turquesa,Morado,Rosa palo,Blanco
+L1883,39,Azul marino,Violeta,Verde oliva,Negro
+L1884,40,Morado,Rosa palo,Blanco,Turquesa
+L1885,41,Violeta,Verde oliva,Negro,Azul marino
+L1886,42,Rosa palo,Blanco,Turquesa,Morado
+L1887,43,Verde oliva,Negro,Azul marino,Violeta
+L1888,44,Blanco,Turquesa,Morado,Rosa palo
+L1889,45,Negro,Azul marino,Violeta,Verde oliva
+L1890,37,Turquesa,Morado,Rosa palo,Blanco
+L1891,38,Azul marino,Violeta,Verde oliva,Negro
+L1892,39,Morado,Rosa palo,Blanco,Turquesa
+L1893,40,Violeta,Verde oliva,Negro,Azul marino
+L1894,41,Rosa palo,Blanco,Turquesa,Morado
+L1895,42,Verde oliva,Negro,Azul marino,Violeta
+L1896,43,Blanco,Turquesa,Morado,Rosa palo
+L1897,44,Negro,Azul marino,Violeta,Verde oliva
+L1898,45,Turquesa,Morado,Rosa palo,Blanco
+L1899,37,Azul marino,Violeta,Verde oliva,Negro
+L1900,38,Morado,Rosa palo,Blanco,Turquesa
+L1901,39,Violeta,Verde oliva,Negro,Azul marino
+L1902,40,Rosa palo,Blanco,Turquesa,Morado
+L1903,41,Verde oliva,Negro,Azul marino,Violeta
+L1904,42,Blanco,Turquesa,Morado,Rosa palo
+L1905,43,Negro,Azul marino,Violeta,Verde oliva
+L1906,44,Turquesa,Morado,Rosa palo,Blanco
+L1907,45,Azul marino,Violeta,Verde oliva,Negro
+L1908,37,Morado,Rosa palo,Blanco,Turquesa
+L1909,38,Violeta,Verde oliva,Negro,Azul marino
+L1910,39,Rosa palo,Blanco,Turquesa,Morado
+L1911,40,Verde oliva,Negro,Azul marino,Violeta
+L1912,41,Blanco,Turquesa,Morado,Rosa palo
+L1913,42,Negro,Azul marino,Violeta,Verde oliva
+L1914,43,Turquesa,Morado,Rosa palo,Blanco
+L1915,44,Azul marino,Violeta,Verde oliva,Negro
+L1916,45,Morado,Rosa palo,Blanco,Turquesa
+L1917,37,Violeta,Verde oliva,Negro,Azul marino
+L1918,38,Rosa palo,Blanco,Turquesa,Morado
+L1919,39,Verde oliva,Negro,Azul marino,Violeta
+L1920,40,Blanco,Turquesa,Morado,Rosa palo
+L1921,41,Negro,Azul marino,Violeta,Verde oliva
+L1922,42,Turquesa,Morado,Rosa palo,Blanco
+L1923,43,Azul marino,Violeta,Verde oliva,Negro
+L1924,44,Morado,Rosa palo,Blanco,Turquesa
+L1925,45,Violeta,Verde oliva,Negro,Azul marino
+L1926,37,Rosa palo,Blanco,Turquesa,Morado
+L1927,38,Verde oliva,Negro,Azul marino,Violeta
+L1928,39,Blanco,Turquesa,Morado,Rosa palo
+L1929,40,Negro,Azul marino,Violeta,Verde oliva
+L1930,41,Turquesa,Morado,Rosa palo,Blanco
+L1931,42,Azul marino,Violeta,Verde oliva,Negro
+L1932,43,Morado,Rosa palo,Blanco,Turquesa
+L1933,44,Violeta,Verde oliva,Negro,Azul marino
+L1934,45,Rosa palo,Blanco,Turquesa,Morado
+L1935,37,Verde oliva,Negro,Azul marino,Violeta
+L1936,38,Blanco,Turquesa,Morado,Rosa palo
+L1937,39,Negro,Azul marino,Violeta,Verde oliva
+L1938,40,Turquesa,Morado,Rosa palo,Blanco
+L1939,41,Azul marino,Violeta,Verde oliva,Negro
+L1940,42,Morado,Rosa palo,Blanco,Turquesa
+L1941,43,Violeta,Verde oliva,Negro,Azul marino
+L1942,44,Rosa palo,Blanco,Turquesa,Morado
+L1943,45,Verde oliva,Negro,Azul marino,Violeta
+L1944,37,Blanco,Turquesa,Morado,Rosa palo
+L1945,38,Negro,Azul marino,Violeta,Verde oliva
+L1946,39,Turquesa,Morado,Rosa palo,Blanco
+L1947,40,Azul marino,Violeta,Verde oliva,Negro
+L1948,41,Morado,Rosa palo,Blanco,Turquesa
+L1949,42,Violeta,Verde oliva,Negro,Azul marino
+L1950,43,Rosa palo,Blanco,Turquesa,Morado
+L1951,44,Verde oliva,Negro,Azul marino,Violeta
+L1952,45,Blanco,Turquesa,Morado,Rosa palo
+L1953,37,Negro,Azul marino,Violeta,Verde oliva
+L1954,38,Turquesa,Morado,Rosa palo,Blanco
+L1955,39,Azul marino,Violeta,Verde oliva,Negro
+L1956,40,Morado,Rosa palo,Blanco,Turquesa
+L1957,41,Violeta,Verde oliva,Negro,Azul marino
+L1958,42,Rosa palo,Blanco,Turquesa,Morado
+L1959,43,Verde oliva,Negro,Azul marino,Violeta
+L1960,44,Blanco,Turquesa,Morado,Rosa palo
+L1961,45,Negro,Azul marino,Violeta,Verde oliva
+L1962,37,Turquesa,Morado,Rosa palo,Blanco
+L1963,38,Azul marino,Violeta,Verde oliva,Negro
+L1964,39,Morado,Rosa palo,Blanco,Turquesa
+L1965,40,Violeta,Verde oliva,Negro,Azul marino
+L1966,41,Rosa palo,Blanco,Turquesa,Morado
+L1967,42,Verde oliva,Negro,Azul marino,Violeta
+L1968,43,Blanco,Turquesa,Morado,Rosa palo
+L1969,44,Negro,Azul marino,Violeta,Verde oliva
+L1970,45,Turquesa,Morado,Rosa palo,Blanco
+L1971,37,Azul marino,Violeta,Verde oliva,Negro
+L1972,38,Morado,Rosa palo,Blanco,Turquesa
+L1973,39,Violeta,Verde oliva,Negro,Azul marino
+L1974,40,Rosa palo,Blanco,Turquesa,Morado
+L1975,41,Verde oliva,Negro,Azul marino,Violeta
+L1976,42,Blanco,Turquesa,Morado,Rosa palo
+L1977,43,Negro,Azul marino,Violeta,Verde oliva
+L1978,44,Turquesa,Morado,Rosa palo,Blanco
+L1979,45,Azul marino,Violeta,Verde oliva,Negro
+L1980,37,Morado,Rosa palo,Blanco,Turquesa
+L1981,38,Violeta,Verde oliva,Negro,Azul marino
+L1982,39,Rosa palo,Blanco,Turquesa,Morado
+L1983,40,Verde oliva,Negro,Azul marino,Violeta
+L1984,41,Blanco,Turquesa,Morado,Rosa palo
+L1985,42,Negro,Azul marino,Violeta,Verde oliva
+L1986,43,Turquesa,Morado,Rosa palo,Blanco
+L1987,44,Azul marino,Violeta,Verde oliva,Negro
+L1988,45,Morado,Rosa palo,Blanco,Turquesa
+L1989,37,Violeta,Verde oliva,Negro,Azul marino
+L1990,38,Rosa palo,Blanco,Turquesa,Morado
+L1991,39,Verde oliva,Negro,Azul marino,Violeta
+L1992,40,Blanco,Turquesa,Morado,Rosa palo
+L1993,41,Negro,Azul marino,Violeta,Verde oliva
+L1994,42,Turquesa,Morado,Rosa palo,Blanco
+L1995,43,Azul marino,Violeta,Verde oliva,Negro
+L1996,44,Morado,Rosa palo,Blanco,Turquesa
+L1997,45,Violeta,Verde oliva,Negro,Azul marino
+L1998,37,Rosa palo,Blanco,Turquesa,Morado
+L1999,38,Verde oliva,Negro,Azul marino,Violeta
+L2000,39,Blanco,Turquesa,Morado,Rosa palo
+L2001,40,Negro,Azul marino,Violeta,Verde oliva
+L2002,41,Turquesa,Morado,Rosa palo,Blanco
+L2003,42,Azul marino,Violeta,Verde oliva,Negro
+L2004,43,Morado,Rosa palo,Blanco,Turquesa
+L2005,44,Violeta,Verde oliva,Negro,Azul marino
+L2006,45,Rosa palo,Blanco,Turquesa,Morado
+L2007,37,Verde oliva,Negro,Azul marino,Violeta
+L2008,38,Blanco,Turquesa,Morado,Rosa palo
+L2009,39,Negro,Azul marino,Violeta,Verde oliva
+L2010,40,Turquesa,Morado,Rosa palo,Blanco
+L2011,41,Azul marino,Violeta,Verde oliva,Negro
+L2012,42,Morado,Rosa palo,Blanco,Turquesa
+L2013,43,Violeta,Verde oliva,Negro,Azul marino
+L2014,44,Rosa palo,Blanco,Turquesa,Morado
+L2015,45,Verde oliva,Negro,Azul marino,Violeta
+L2016,37,Blanco,Turquesa,Morado,Rosa palo
+L2017,38,Negro,Azul marino,Violeta,Verde oliva
+L2018,39,Turquesa,Morado,Rosa palo,Blanco
+L2019,40,Azul marino,Violeta,Verde oliva,Negro
+L2020,41,Morado,Rosa palo,Blanco,Turquesa
+L2021,42,Violeta,Verde oliva,Negro,Azul marino
+L2022,43,Rosa palo,Blanco,Turquesa,Morado
+L2023,44,Verde oliva,Negro,Azul marino,Violeta
+L2024,45,Blanco,Turquesa,Morado,Rosa palo
+L2025,37,Negro,Azul marino,Violeta,Verde oliva
+L2026,38,Turquesa,Morado,Rosa palo,Blanco
+L2027,39,Azul marino,Violeta,Verde oliva,Negro
+L2028,40,Morado,Rosa palo,Blanco,Turquesa
+L2029,41,Violeta,Verde oliva,Negro,Azul marino
+L2030,42,Rosa palo,Blanco,Turquesa,Morado
+L2031,43,Verde oliva,Negro,Azul marino,Violeta
+L2032,44,Blanco,Turquesa,Morado,Rosa palo
+L2033,45,Negro,Azul marino,Violeta,Verde oliva
+L2034,37,Turquesa,Morado,Rosa palo,Blanco
+L2035,38,Azul marino,Violeta,Verde oliva,Negro
+L2036,39,Morado,Rosa palo,Blanco,Turquesa
+L2037,40,Violeta,Verde oliva,Negro,Azul marino
+L2038,41,Rosa palo,Blanco,Turquesa,Morado
+L2039,42,Verde oliva,Negro,Azul marino,Violeta
+L2040,43,Blanco,Turquesa,Morado,Rosa palo
+L2041,44,Negro,Azul marino,Violeta,Verde oliva
+L2042,45,Turquesa,Morado,Rosa palo,Blanco
+L2043,37,Azul marino,Violeta,Verde oliva,Negro
+L2044,38,Morado,Rosa palo,Blanco,Turquesa
+L2045,39,Violeta,Verde oliva,Negro,Azul marino
+L2046,40,Rosa palo,Blanco,Turquesa,Morado
+L2047,41,Verde oliva,Negro,Azul marino,Violeta
+L2048,42,Blanco,Turquesa,Morado,Rosa palo
+L2049,43,Negro,Azul marino,Violeta,Verde oliva
+L2050,44,Turquesa,Morado,Rosa palo,Blanco
+L2051,45,Azul marino,Violeta,Verde oliva,Negro
+L2052,37,Morado,Rosa palo,Blanco,Turquesa
+L2053,38,Violeta,Verde oliva,Negro,Azul marino
+L2054,39,Rosa palo,Blanco,Turquesa,Morado
+L2055,40,Verde oliva,Negro,Azul marino,Violeta
+L2056,41,Blanco,Turquesa,Morado,Rosa palo
+L2057,42,Negro,Azul marino,Violeta,Verde oliva
+L2058,43,Turquesa,Morado,Rosa palo,Blanco
+L2059,44,Azul marino,Violeta,Verde oliva,Negro
+L2060,45,Morado,Rosa palo,Blanco,Turquesa
+L2061,37,Violeta,Verde oliva,Negro,Azul marino
+L2062,38,Rosa palo,Blanco,Turquesa,Morado
+L2063,39,Verde oliva,Negro,Azul marino,Violeta
+L2064,40,Blanco,Turquesa,Morado,Rosa palo
+L2065,41,Negro,Azul marino,Violeta,Verde oliva
+L2066,42,Turquesa,Morado,Rosa palo,Blanco
+L2067,43,Azul marino,Violeta,Verde oliva,Negro
+L2068,44,Morado,Rosa palo,Blanco,Turquesa
+L2069,45,Violeta,Verde oliva,Negro,Azul marino
+L2070,37,Rosa palo,Blanco,Turquesa,Morado
+L2071,38,Verde oliva,Negro,Azul marino,Violeta
+L2072,39,Blanco,Turquesa,Morado,Rosa palo
+L2073,40,Negro,Azul marino,Violeta,Verde oliva
+L2074,41,Turquesa,Morado,Rosa palo,Blanco
+L2075,42,Azul marino,Violeta,Verde oliva,Negro
+L2076,43,Morado,Rosa palo,Blanco,Turquesa
+L2077,44,Violeta,Verde oliva,Negro,Azul marino
+L2078,45,Rosa palo,Blanco,Turquesa,Morado
+L2079,37,Verde oliva,Negro,Azul marino,Violeta
+L2080,38,Blanco,Turquesa,Morado,Rosa palo
+L2081,39,Negro,Azul marino,Violeta,Verde oliva
+L2082,40,Turquesa,Morado,Rosa palo,Blanco
+L2083,41,Azul marino,Violeta,Verde oliva,Negro
+L2084,42,Morado,Rosa palo,Blanco,Turquesa
+L2085,43,Violeta,Verde oliva,Negro,Azul marino
+L2086,44,Rosa palo,Blanco,Turquesa,Morado
+L2087,45,Verde oliva,Negro,Azul marino,Violeta
+L2088,37,Blanco,Turquesa,Morado,Rosa palo
+L2089,38,Negro,Azul marino,Violeta,Verde oliva
+L2090,39,Turquesa,Morado,Rosa palo,Blanco
+L2091,40,Azul marino,Violeta,Verde oliva,Negro
+L2092,41,Morado,Rosa palo,Blanco,Turquesa
+L2093,42,Violeta,Verde oliva,Negro,Azul marino
+L2094,43,Rosa palo,Blanco,Turquesa,Morado
+L2095,44,Verde oliva,Negro,Azul marino,Violeta
+L2096,45,Blanco,Turquesa,Morado,Rosa palo
+L2097,37,Negro,Azul marino,Violeta,Verde oliva
+L2098,38,Turquesa,Morado,Rosa palo,Blanco
+L2099,39,Azul marino,Violeta,Verde oliva,Negro
+L2100,40,Morado,Rosa palo,Blanco,Turquesa
+L2101,41,Violeta,Verde oliva,Negro,Azul marino
+L2102,42,Rosa palo,Blanco,Turquesa,Morado
+L2103,43,Verde oliva,Negro,Azul marino,Violeta
+L2104,44,Blanco,Turquesa,Morado,Rosa palo
+L2105,45,Negro,Azul marino,Violeta,Verde oliva
+L2106,37,Turquesa,Morado,Rosa palo,Blanco
+L2107,38,Azul marino,Violeta,Verde oliva,Negro
+L2108,39,Morado,Rosa palo,Blanco,Turquesa
+L2109,40,Violeta,Verde oliva,Negro,Azul marino
+L2110,41,Rosa palo,Blanco,Turquesa,Morado
+L2111,42,Verde oliva,Negro,Azul marino,Violeta
+L2112,43,Blanco,Turquesa,Morado,Rosa palo
+L2113,44,Negro,Azul marino,Violeta,Verde oliva
+L2114,45,Turquesa,Morado,Rosa palo,Blanco
+L2115,37,Azul marino,Violeta,Verde oliva,Negro
+L2116,38,Morado,Rosa palo,Blanco,Turquesa
+L2117,39,Violeta,Verde oliva,Negro,Azul marino
+L2118,40,Rosa palo,Blanco,Turquesa,Morado
+L2119,41,Verde oliva,Negro,Azul marino,Violeta
+L2120,42,Blanco,Turquesa,Morado,Rosa palo
+L2121,43,Negro,Azul marino,Violeta,Verde oliva
+L2122,44,Turquesa,Morado,Rosa palo,Blanco
+L2123,45,Azul marino,Violeta,Verde oliva,Negro
+L2124,37,Morado,Rosa palo,Blanco,Turquesa
+L2125,38,Violeta,Verde oliva,Negro,Azul marino
+L2126,39,Rosa palo,Blanco,Turquesa,Morado
+L2127,40,Verde oliva,Negro,Azul marino,Violeta
+L2128,41,Blanco,Turquesa,Morado,Rosa palo
+L2129,42,Negro,Azul marino,Violeta,Verde oliva
+L2130,43,Turquesa,Morado,Rosa palo,Blanco
+L2131,44,Azul marino,Violeta,Verde oliva,Negro
+L2132,45,Morado,Rosa palo,Blanco,Turquesa
+L2133,37,Violeta,Verde oliva,Negro,Azul marino
+L2134,38,Rosa palo,Blanco,Turquesa,Morado
+L2135,39,Verde oliva,Negro,Azul marino,Violeta
+L2136,40,Blanco,Turquesa,Morado,Rosa palo
+L2137,41,Negro,Azul marino,Violeta,Verde oliva
+L2138,42,Turquesa,Morado,Rosa palo,Blanco
+L2139,43,Azul marino,Violeta,Verde oliva,Negro
+L2140,44,Morado,Rosa palo,Blanco,Turquesa
+L2141,45,Violeta,Verde oliva,Negro,Azul marino
+L2142,37,Rosa palo,Blanco,Turquesa,Morado
+L2143,38,Verde oliva,Negro,Azul marino,Violeta
+L2144,39,Blanco,Turquesa,Morado,Rosa palo
+L2145,40,Negro,Azul marino,Violeta,Verde oliva
+L2146,41,Turquesa,Morado,Rosa palo,Blanco
+L2147,42,Azul marino,Violeta,Verde oliva,Negro
+L2148,43,Morado,Rosa palo,Blanco,Turquesa
+L2149,44,Violeta,Verde oliva,Negro,Azul marino
+L2150,45,Rosa palo,Blanco,Turquesa,Morado
+L2151,37,Verde oliva,Negro,Azul marino,Violeta
+L2152,38,Blanco,Turquesa,Morado,Rosa palo
+L2153,39,Negro,Azul marino,Violeta,Verde oliva
+L2154,40,Turquesa,Morado,Rosa palo,Blanco
+L2155,41,Azul marino,Violeta,Verde oliva,Negro
+L2156,42,Morado,Rosa palo,Blanco,Turquesa
+L2157,43,Violeta,Verde oliva,Negro,Azul marino
+L2158,44,Rosa palo,Blanco,Turquesa,Morado
+L2159,45,Verde oliva,Negro,Azul marino,Violeta
+L2160,37,Blanco,Turquesa,Morado,Rosa palo
+L2161,38,Negro,Azul marino,Violeta,Verde oliva
+L2162,39,Turquesa,Morado,Rosa palo,Blanco
+L2163,40,Azul marino,Violeta,Verde oliva,Negro
+L2164,41,Morado,Rosa palo,Blanco,Turquesa
+L2165,42,Violeta,Verde oliva,Negro,Azul marino
+L2166,43,Rosa palo,Blanco,Turquesa,Morado
+L2167,44,Verde oliva,Negro,Azul marino,Violeta
+L2168,45,Blanco,Turquesa,Morado,Rosa palo
+L2169,37,Negro,Azul marino,Violeta,Verde oliva
+L2170,38,Turquesa,Morado,Rosa palo,Blanco
+L2171,39,Azul marino,Violeta,Verde oliva,Negro
+L2172,40,Morado,Rosa palo,Blanco,Turquesa
+L2173,41,Violeta,Verde oliva,Negro,Azul marino
+L2174,42,Rosa palo,Blanco,Turquesa,Morado
+L2175,43,Verde oliva,Negro,Azul marino,Violeta
+L2176,44,Blanco,Turquesa,Morado,Rosa palo
+L2177,45,Negro,Azul marino,Violeta,Verde oliva
+L2178,37,Turquesa,Morado,Rosa palo,Blanco
+L2179,38,Azul marino,Violeta,Verde oliva,Negro
+L2180,39,Morado,Rosa palo,Blanco,Turquesa
+L2181,40,Violeta,Verde oliva,Negro,Azul marino
+L2182,41,Rosa palo,Blanco,Turquesa,Morado
+L2183,42,Verde oliva,Negro,Azul marino,Violeta
+L2184,43,Blanco,Turquesa,Morado,Rosa palo
+L2185,44,Negro,Azul marino,Violeta,Verde oliva
+L2186,45,Turquesa,Morado,Rosa palo,Blanco
+L2187,37,Azul marino,Violeta,Verde oliva,Negro
+L2188,38,Morado,Rosa palo,Blanco,Turquesa
+L2189,39,Violeta,Verde oliva,Negro,Azul marino
+L2190,40,Rosa palo,Blanco,Turquesa,Morado
+L2191,41,Verde oliva,Negro,Azul marino,Violeta
+L2192,42,Blanco,Turquesa,Morado,Rosa palo
+L2193,43,Negro,Azul marino,Violeta,Verde oliva
+L2194,44,Turquesa,Morado,Rosa palo,Blanco
+L2195,45,Azul marino,Violeta,Verde oliva,Negro
+L2196,37,Morado,Rosa palo,Blanco,Turquesa
+L2197,38,Violeta,Verde oliva,Negro,Azul marino
+L2198,39,Rosa palo,Blanco,Turquesa,Morado
+L2199,40,Verde oliva,Negro,Azul marino,Violeta
+L2200,41,Blanco,Turquesa,Morado,Rosa palo
+L2201,42,Negro,Azul marino,Violeta,Verde oliva
+L2202,43,Turquesa,Morado,Rosa palo,Blanco
+L2203,44,Azul marino,Violeta,Verde oliva,Negro
+L2204,45,Morado,Rosa palo,Blanco,Turquesa
+L2205,37,Violeta,Verde oliva,Negro,Azul marino
+L2206,38,Rosa palo,Blanco,Turquesa,Morado
+L2207,39,Verde oliva,Negro,Azul marino,Violeta
+L2208,40,Blanco,Turquesa,Morado,Rosa palo
+L2209,41,Negro,Azul marino,Violeta,Verde oliva
+L2210,42,Turquesa,Morado,Rosa palo,Blanco
+L2211,43,Azul marino,Violeta,Verde oliva,Negro
+L2212,44,Morado,Rosa palo,Blanco,Turquesa
+L2213,45,Violeta,Verde oliva,Negro,Azul marino
+L2214,37,Rosa palo,Blanco,Turquesa,Morado
+L2215,38,Verde oliva,Negro,Azul marino,Violeta
+L2216,39,Blanco,Turquesa,Morado,Rosa palo
+L2217,40,Negro,Azul marino,Violeta,Verde oliva
+L2218,41,Turquesa,Morado,Rosa palo,Blanco
+L2219,42,Azul marino,Violeta,Verde oliva,Negro
+L2220,43,Morado,Rosa palo,Blanco,Turquesa
+L2221,44,Violeta,Verde oliva,Negro,Azul marino
+L2222,45,Rosa palo,Blanco,Turquesa,Morado
+L2223,37,Verde oliva,Negro,Azul marino,Violeta
+L2224,38,Blanco,Turquesa,Morado,Rosa palo
+L2225,39,Negro,Azul marino,Violeta,Verde oliva
+L2226,40,Turquesa,Morado,Rosa palo,Blanco
+L2227,41,Azul marino,Violeta,Verde oliva,Negro
+L2228,42,Morado,Rosa palo,Blanco,Turquesa
+L2229,43,Violeta,Verde oliva,Negro,Azul marino
+L2230,44,Rosa palo,Blanco,Turquesa,Morado
+L2231,45,Verde oliva,Negro,Azul marino,Violeta
+L2232,37,Blanco,Turquesa,Morado,Rosa palo
+L2233,38,Negro,Azul marino,Violeta,Verde oliva
+L2234,39,Turquesa,Morado,Rosa palo,Blanco
+L2235,40,Azul marino,Violeta,Verde oliva,Negro
+L2236,41,Morado,Rosa palo,Blanco,Turquesa
+L2237,42,Violeta,Verde oliva,Negro,Azul marino
+L2238,43,Rosa palo,Blanco,Turquesa,Morado
+L2239,44,Verde oliva,Negro,Azul marino,Violeta
+L2240,45,Blanco,Turquesa,Morado,Rosa palo
+L2241,37,Negro,Azul marino,Violeta,Verde oliva
+L2242,38,Turquesa,Morado,Rosa palo,Blanco
+L2243,39,Azul marino,Violeta,Verde oliva,Negro
+L2244,40,Morado,Rosa palo,Blanco,Turquesa
+L2245,41,Violeta,Verde oliva,Negro,Azul marino
+L2246,42,Rosa palo,Blanco,Turquesa,Morado
+L2247,43,Verde oliva,Negro,Azul marino,Violeta
+L2248,44,Blanco,Turquesa,Morado,Rosa palo
+L2249,45,Negro,Azul marino,Violeta,Verde oliva
+L2250,37,Turquesa,Morado,Rosa palo,Blanco
+L2251,38,Azul marino,Violeta,Verde oliva,Negro
+L2252,39,Morado,Rosa palo,Blanco,Turquesa
+L2253,40,Violeta,Verde oliva,Negro,Azul marino
+L2254,41,Rosa palo,Blanco,Turquesa,Morado
+L2255,42,Verde oliva,Negro,Azul marino,Violeta
+L2256,43,Blanco,Turquesa,Morado,Rosa palo
+L2257,44,Negro,Azul marino,Violeta,Verde oliva
+L2258,45,Turquesa,Morado,Rosa palo,Blanco
+L2259,37,Azul marino,Violeta,Verde oliva,Negro
+L2260,38,Morado,Rosa palo,Blanco,Turquesa
+L2261,39,Violeta,Verde oliva,Negro,Azul marino
+L2262,40,Rosa palo,Blanco,Turquesa,Morado
+L2263,41,Verde oliva,Negro,Azul marino,Violeta
+L2264,42,Blanco,Turquesa,Morado,Rosa palo
+L2265,43,Negro,Azul marino,Violeta,Verde oliva
+L2266,44,Turquesa,Morado,Rosa palo,Blanco
+L2267,45,Azul marino,Violeta,Verde oliva,Negro
+L2268,37,Morado,Rosa palo,Blanco,Turquesa
+L2269,38,Violeta,Verde oliva,Negro,Azul marino
+L2270,39,Rosa palo,Blanco,Turquesa,Morado
+L2271,40,Verde oliva,Negro,Azul marino,Violeta
+L2272,41,Blanco,Turquesa,Morado,Rosa palo
+L2273,42,Negro,Azul marino,Violeta,Verde oliva
+L2274,43,Turquesa,Morado,Rosa palo,Blanco
+L2275,44,Azul marino,Violeta,Verde oliva,Negro
+L2276,45,Morado,Rosa palo,Blanco,Turquesa
+L2277,37,Violeta,Verde oliva,Negro,Azul marino
+L2278,38,Rosa palo,Blanco,Turquesa,Morado
+L2279,39,Verde oliva,Negro,Azul marino,Violeta
+L2280,40,Blanco,Turquesa,Morado,Rosa palo
+L2281,41,Negro,Azul marino,Violeta,Verde oliva
+L2282,42,Turquesa,Morado,Rosa palo,Blanco
+L2283,43,Azul marino,Violeta,Verde oliva,Negro
+L2284,44,Morado,Rosa palo,Blanco,Turquesa
+L2285,45,Violeta,Verde oliva,Negro,Azul marino
+L2286,37,Rosa palo,Blanco,Turquesa,Morado
+L2287,38,Verde oliva,Negro,Azul marino,Violeta
+L2288,39,Blanco,Turquesa,Morado,Rosa palo
+L2289,40,Negro,Azul marino,Violeta,Verde oliva
+L2290,41,Turquesa,Morado,Rosa palo,Blanco
+L2291,42,Azul marino,Violeta,Verde oliva,Negro
+L2292,43,Morado,Rosa palo,Blanco,Turquesa
+L2293,44,Violeta,Verde oliva,Negro,Azul marino
+L2294,45,Rosa palo,Blanco,Turquesa,Morado
+L2295,37,Verde oliva,Negro,Azul marino,Violeta
+L2296,38,Blanco,Turquesa,Morado,Rosa palo
+L2297,39,Negro,Azul marino,Violeta,Verde oliva
+L2298,40,Turquesa,Morado,Rosa palo,Blanco
+L2299,41,Azul marino,Violeta,Verde oliva,Negro
+L2300,42,Morado,Rosa palo,Blanco,Turquesa
+L2301,43,Violeta,Verde oliva,Negro,Azul marino
+L2302,44,Rosa palo,Blanco,Turquesa,Morado
+L2303,45,Verde oliva,Negro,Azul marino,Violeta
+L2304,37,Blanco,Turquesa,Morado,Rosa palo
+L2305,38,Negro,Azul marino,Violeta,Verde oliva
+L2306,39,Turquesa,Morado,Rosa palo,Blanco
+L2307,40,Azul marino,Violeta,Verde oliva,Negro
+L2308,41,Morado,Rosa palo,Blanco,Turquesa
+L2309,42,Violeta,Verde oliva,Negro,Azul marino
+L2310,43,Rosa palo,Blanco,Turquesa,Morado
+L2311,44,Verde oliva,Negro,Azul marino,Violeta
+L2312,45,Blanco,Turquesa,Morado,Rosa palo
+L2313,37,Negro,Azul marino,Violeta,Verde oliva
+L2314,38,Turquesa,Morado,Rosa palo,Blanco
+L2315,39,Azul marino,Violeta,Verde oliva,Negro
+L2316,40,Morado,Rosa palo,Blanco,Turquesa
+L2317,41,Violeta,Verde oliva,Negro,Azul marino
+L2318,42,Rosa palo,Blanco,Turquesa,Morado
+L2319,43,Verde oliva,Negro,Azul marino,Violeta
+L2320,44,Blanco,Turquesa,Morado,Rosa palo
+L2321,45,Negro,Azul marino,Violeta,Verde oliva
+L2322,37,Turquesa,Morado,Rosa palo,Blanco
+L2323,38,Azul marino,Violeta,Verde oliva,Negro
+L2324,39,Morado,Rosa palo,Blanco,Turquesa
+L2325,40,Violeta,Verde oliva,Negro,Azul marino
+L2326,41,Rosa palo,Blanco,Turquesa,Morado
+L2327,42,Verde oliva,Negro,Azul marino,Violeta
+L2328,43,Blanco,Turquesa,Morado,Rosa palo
+L2329,44,Negro,Azul marino,Violeta,Verde oliva
+L2330,45,Turquesa,Morado,Rosa palo,Blanco
+L2331,37,Azul marino,Violeta,Verde oliva,Negro
+L2332,38,Morado,Rosa palo,Blanco,Turquesa
+L2333,39,Violeta,Verde oliva,Negro,Azul marino
+L2334,40,Rosa palo,Blanco,Turquesa,Morado
+L2335,41,Verde oliva,Negro,Azul marino,Violeta
+L2336,42,Blanco,Turquesa,Morado,Rosa palo
+L2337,43,Negro,Azul marino,Violeta,Verde oliva
+L2338,44,Turquesa,Morado,Rosa palo,Blanco
+L2339,45,Azul marino,Violeta,Verde oliva,Negro
+L2340,37,Morado,Rosa palo,Blanco,Turquesa
+L2341,38,Violeta,Verde oliva,Negro,Azul marino
+L2342,39,Rosa palo,Blanco,Turquesa,Morado
+L2343,40,Verde oliva,Negro,Azul marino,Violeta
+L2344,41,Blanco,Turquesa,Morado,Rosa palo
+L2345,42,Negro,Azul marino,Violeta,Verde oliva
+L2346,43,Turquesa,Morado,Rosa palo,Blanco
+L2347,44,Azul marino,Violeta,Verde oliva,Negro
+L2348,45,Morado,Rosa palo,Blanco,Turquesa
+L2349,37,Violeta,Verde oliva,Negro,Azul marino
+L2350,38,Rosa palo,Blanco,Turquesa,Morado
+L2351,39,Verde oliva,Negro,Azul marino,Violeta
+L2352,40,Blanco,Turquesa,Morado,Rosa palo
+L2353,41,Negro,Azul marino,Violeta,Verde oliva
+L2354,42,Turquesa,Morado,Rosa palo,Blanco
+L2355,43,Azul marino,Violeta,Verde oliva,Negro
+L2356,44,Morado,Rosa palo,Blanco,Turquesa
+L2357,45,Violeta,Verde oliva,Negro,Azul marino
+L2358,37,Rosa palo,Blanco,Turquesa,Morado
+L2359,38,Verde oliva,Negro,Azul marino,Violeta
+L2360,39,Blanco,Turquesa,Morado,Rosa palo
+L2361,40,Negro,Azul marino,Violeta,Verde oliva
+L2362,41,Turquesa,Morado,Rosa palo,Blanco
+L2363,42,Azul marino,Violeta,Verde oliva,Negro
+L2364,43,Morado,Rosa palo,Blanco,Turquesa
+L2365,44,Violeta,Verde oliva,Negro,Azul marino
+L2366,45,Rosa palo,Blanco,Turquesa,Morado
+L2367,37,Verde oliva,Negro,Azul marino,Violeta
+L2368,38,Blanco,Turquesa,Morado,Rosa palo
+L2369,39,Negro,Azul marino,Violeta,Verde oliva
+L2370,40,Turquesa,Morado,Rosa palo,Blanco
+L2371,41,Azul marino,Violeta,Verde oliva,Negro
+L2372,42,Morado,Rosa palo,Blanco,Turquesa
+L2373,43,Violeta,Verde oliva,Negro,Azul marino
+L2374,44,Rosa palo,Blanco,Turquesa,Morado
+L2375,45,Verde oliva,Negro,Azul marino,Violeta
+L2376,37,Blanco,Turquesa,Morado,Rosa palo
+L2377,38,Negro,Azul marino,Violeta,Verde oliva
+L2378,39,Turquesa,Morado,Rosa palo,Blanco
+L2379,40,Azul marino,Violeta,Verde oliva,Negro
+L2380,41,Morado,Rosa palo,Blanco,Turquesa
+L2381,42,Violeta,Verde oliva,Negro,Azul marino
+L2382,43,Rosa palo,Blanco,Turquesa,Morado
+L2383,44,Verde oliva,Negro,Azul marino,Violeta
+L2384,45,Blanco,Turquesa,Morado,Rosa palo
+L2385,37,Negro,Azul marino,Violeta,Verde oliva
+L2386,38,Turquesa,Morado,Rosa palo,Blanco
+L2387,39,Azul marino,Violeta,Verde oliva,Negro
+L2388,40,Morado,Rosa palo,Blanco,Turquesa
+L2389,41,Violeta,Verde oliva,Negro,Azul marino
+L2390,42,Rosa palo,Blanco,Turquesa,Morado
+L2391,43,Verde oliva,Negro,Azul marino,Violeta
+L2392,44,Blanco,Turquesa,Morado,Rosa palo
+L2393,45,Negro,Azul marino,Violeta,Verde oliva
+L2394,37,Turquesa,Morado,Rosa palo,Blanco
+L2395,38,Azul marino,Violeta,Verde oliva,Negro
+L2396,39,Morado,Rosa palo,Blanco,Turquesa
+L2397,40,Violeta,Verde oliva,Negro,Azul marino
+L2398,41,Rosa palo,Blanco,Turquesa,Morado
+L2399,42,Verde oliva,Negro,Azul marino,Violeta
+L2400,43,Blanco,Turquesa,Morado,Rosa palo
+L2401,44,Negro,Azul marino,Violeta,Verde oliva
+L2402,45,Turquesa,Morado,Rosa palo,Blanco
+L2403,37,Azul marino,Violeta,Verde oliva,Negro
+L2404,38,Morado,Rosa palo,Blanco,Turquesa
+L2405,39,Violeta,Verde oliva,Negro,Azul marino
+L2406,40,Rosa palo,Blanco,Turquesa,Morado
+L2407,41,Verde oliva,Negro,Azul marino,Violeta
+L2408,42,Blanco,Turquesa,Morado,Rosa palo
+L2409,43,Negro,Azul marino,Violeta,Verde oliva
+L2410,44,Turquesa,Morado,Rosa palo,Blanco
+L2411,45,Azul marino,Violeta,Verde oliva,Negro
+L2412,37,Morado,Rosa palo,Blanco,Turquesa
+L2413,38,Violeta,Verde oliva,Negro,Azul marino
+L2414,39,Rosa palo,Blanco,Turquesa,Morado
+L2415,40,Verde oliva,Negro,Azul marino,Violeta
+L2416,41,Blanco,Turquesa,Morado,Rosa palo
+L2417,42,Negro,Azul marino,Violeta,Verde oliva
+L2418,43,Turquesa,Morado,Rosa palo,Blanco
+L2419,44,Azul marino,Violeta,Verde oliva,Negro
+L2420,45,Morado,Rosa palo,Blanco,Turquesa
+L2421,37,Violeta,Verde oliva,Negro,Azul marino
+L2422,38,Rosa palo,Blanco,Turquesa,Morado
+L2423,39,Verde oliva,Negro,Azul marino,Violeta
+L2424,40,Blanco,Turquesa,Morado,Rosa palo
+L2425,41,Negro,Azul marino,Violeta,Verde oliva
+L2426,42,Turquesa,Morado,Rosa palo,Blanco
+L2427,43,Azul marino,Violeta,Verde oliva,Negro
+L2428,44,Morado,Rosa palo,Blanco,Turquesa
+L2429,45,Violeta,Verde oliva,Negro,Azul marino
+L2430,37,Rosa palo,Blanco,Turquesa,Morado
+L2431,38,Verde oliva,Negro,Azul marino,Violeta
+L2432,39,Blanco,Turquesa,Morado,Rosa palo
+L2433,40,Negro,Azul marino,Violeta,Verde oliva
+L2434,41,Turquesa,Morado,Rosa palo,Blanco
+L2435,42,Azul marino,Violeta,Verde oliva,Negro
+L2436,43,Morado,Rosa palo,Blanco,Turquesa
+L2437,44,Violeta,Verde oliva,Negro,Azul marino
+L2438,45,Rosa palo,Blanco,Turquesa,Morado
+L2439,37,Verde oliva,Negro,Azul marino,Violeta
+L2440,38,Blanco,Turquesa,Morado,Rosa palo
+L2441,39,Negro,Azul marino,Violeta,Verde oliva
+L2442,40,Turquesa,Morado,Rosa palo,Blanco
+L2443,41,Azul marino,Violeta,Verde oliva,Negro
+L2444,42,Morado,Rosa palo,Blanco,Turquesa
+L2445,43,Violeta,Verde oliva,Negro,Azul marino
+L2446,44,Rosa palo,Blanco,Turquesa,Morado
+L2447,45,Verde oliva,Negro,Azul marino,Violeta
+L2448,37,Blanco,Turquesa,Morado,Rosa palo
+L2449,38,Negro,Azul marino,Violeta,Verde oliva
+L2450,39,Turquesa,Morado,Rosa palo,Blanco
+L2451,40,Azul marino,Violeta,Verde oliva,Negro
+L2452,41,Morado,Rosa palo,Blanco,Turquesa
+L2453,42,Violeta,Verde oliva,Negro,Azul marino
+L2454,43,Rosa palo,Blanco,Turquesa,Morado
+L2455,44,Verde oliva,Negro,Azul marino,Violeta
+L2456,45,Blanco,Turquesa,Morado,Rosa palo
+L2457,37,Negro,Azul marino,Violeta,Verde oliva
+L2458,38,Turquesa,Morado,Rosa palo,Blanco
+L2459,39,Azul marino,Violeta,Verde oliva,Negro
+L2460,40,Morado,Rosa palo,Blanco,Turquesa
+L2461,41,Violeta,Verde oliva,Negro,Azul marino
+L2462,42,Rosa palo,Blanco,Turquesa,Morado
+L2463,43,Verde oliva,Negro,Azul marino,Violeta
+L2464,44,Blanco,Turquesa,Morado,Rosa palo
+L2465,45,Negro,Azul marino,Violeta,Verde oliva
+L2466,37,Turquesa,Morado,Rosa palo,Blanco
+L2467,38,Azul marino,Violeta,Verde oliva,Negro
+L2468,39,Morado,Rosa palo,Blanco,Turquesa
+L2469,40,Violeta,Verde oliva,Negro,Azul marino
+L2470,41,Rosa palo,Blanco,Turquesa,Morado
+L2471,42,Verde oliva,Negro,Azul marino,Violeta
+L2472,43,Blanco,Turquesa,Morado,Rosa palo
+L2473,44,Negro,Azul marino,Violeta,Verde oliva
+L2474,45,Turquesa,Morado,Rosa palo,Blanco
+L2475,37,Azul marino,Violeta,Verde oliva,Negro
+L2476,38,Morado,Rosa palo,Blanco,Turquesa
+L2477,39,Violeta,Verde oliva,Negro,Azul marino
+L2478,40,Rosa palo,Blanco,Turquesa,Morado
+L2479,41,Verde oliva,Negro,Azul marino,Violeta
+L2480,42,Blanco,Turquesa,Morado,Rosa palo
+L2481,43,Negro,Azul marino,Violeta,Verde oliva
+L2482,44,Turquesa,Morado,Rosa palo,Blanco
+L2483,45,Azul marino,Violeta,Verde oliva,Negro
+L2484,37,Morado,Rosa palo,Blanco,Turquesa
+L2485,38,Violeta,Verde oliva,Negro,Azul marino
+L2486,39,Rosa palo,Blanco,Turquesa,Morado
+L2487,40,Verde oliva,Negro,Azul marino,Violeta
+L2488,41,Blanco,Turquesa,Morado,Rosa palo
+L2489,42,Negro,Azul marino,Violeta,Verde oliva
+L2490,43,Turquesa,Morado,Rosa palo,Blanco
+L2491,44,Azul marino,Violeta,Verde oliva,Negro
+L2492,45,Morado,Rosa palo,Blanco,Turquesa
+L2493,37,Violeta,Verde oliva,Negro,Azul marino
+L2494,38,Rosa palo,Blanco,Turquesa,Morado
+L2495,39,Verde oliva,Negro,Azul marino,Violeta
+L2496,40,Blanco,Turquesa,Morado,Rosa palo
+L2497,41,Negro,Azul marino,Violeta,Verde oliva
+L2498,42,Turquesa,Morado,Rosa palo,Blanco
+L2499,43,Azul marino,Violeta,Verde oliva,Negro
+L2500,44,Morado,Rosa palo,Blanco,Turquesa
+L2501,45,Violeta,Verde oliva,Negro,Azul marino
+L2502,37,Rosa palo,Blanco,Turquesa,Morado
+L2503,38,Verde oliva,Negro,Azul marino,Violeta
+L2504,39,Blanco,Turquesa,Morado,Rosa palo
+L2505,40,Negro,Azul marino,Violeta,Verde oliva
+L2506,41,Turquesa,Morado,Rosa palo,Blanco
+L2507,42,Azul marino,Violeta,Verde oliva,Negro
+L2508,43,Morado,Rosa palo,Blanco,Turquesa
+L2509,44,Violeta,Verde oliva,Negro,Azul marino
+L2510,45,Rosa palo,Blanco,Turquesa,Morado
+L2511,37,Verde oliva,Negro,Azul marino,Violeta
+L2512,38,Blanco,Turquesa,Morado,Rosa palo
+L2513,39,Negro,Azul marino,Violeta,Verde oliva
+L2514,40,Turquesa,Morado,Rosa palo,Blanco
+L2515,41,Azul marino,Violeta,Verde oliva,Negro
+L2516,42,Morado,Rosa palo,Blanco,Turquesa
+L2517,43,Violeta,Verde oliva,Negro,Azul marino
+L2518,44,Rosa palo,Blanco,Turquesa,Morado
+L2519,45,Verde oliva,Negro,Azul marino,Violeta
+L2520,37,Blanco,Turquesa,Morado,Rosa palo
+L2521,38,Negro,Azul marino,Violeta,Verde oliva
+L2522,39,Turquesa,Morado,Rosa palo,Blanco
+L2523,40,Azul marino,Violeta,Verde oliva,Negro
+L2524,41,Morado,Rosa palo,Blanco,Turquesa
+L2525,42,Violeta,Verde oliva,Negro,Azul marino
+L2526,43,Rosa palo,Blanco,Turquesa,Morado
+L2527,44,Verde oliva,Negro,Azul marino,Violeta
+L2528,45,Blanco,Turquesa,Morado,Rosa palo
+L2529,37,Negro,Azul marino,Violeta,Verde oliva
+L2530,38,Turquesa,Morado,Rosa palo,Blanco
+L2531,39,Azul marino,Violeta,Verde oliva,Negro
+L2532,40,Morado,Rosa palo,Blanco,Turquesa
+L2533,41,Violeta,Verde oliva,Negro,Azul marino
+L2534,42,Rosa palo,Blanco,Turquesa,Morado
+L2535,43,Verde oliva,Negro,Azul marino,Violeta
+L2536,44,Blanco,Turquesa,Morado,Rosa palo
+L2537,45,Negro,Azul marino,Violeta,Verde oliva
+L2538,37,Turquesa,Morado,Rosa palo,Blanco
+L2539,38,Azul marino,Violeta,Verde oliva,Negro
+L2540,39,Morado,Rosa palo,Blanco,Turquesa
+L2541,40,Violeta,Verde oliva,Negro,Azul marino
+L2542,41,Rosa palo,Blanco,Turquesa,Morado
+L2543,42,Verde oliva,Negro,Azul marino,Violeta
+L2544,43,Blanco,Turquesa,Morado,Rosa palo
+L2545,44,Negro,Azul marino,Violeta,Verde oliva
+L2546,45,Turquesa,Morado,Rosa palo,Blanco
+L2547,37,Azul marino,Violeta,Verde oliva,Negro
+L2548,38,Morado,Rosa palo,Blanco,Turquesa
+L2549,39,Violeta,Verde oliva,Negro,Azul marino
+L2550,40,Rosa palo,Blanco,Turquesa,Morado
+L2551,41,Verde oliva,Negro,Azul marino,Violeta
+L2552,42,Blanco,Turquesa,Morado,Rosa palo
+L2553,43,Negro,Azul marino,Violeta,Verde oliva
+L2554,44,Turquesa,Morado,Rosa palo,Blanco
+L2555,45,Azul marino,Violeta,Verde oliva,Negro
+L2556,37,Morado,Rosa palo,Blanco,Turquesa
+L2557,38,Violeta,Verde oliva,Negro,Azul marino
+L2558,39,Rosa palo,Blanco,Turquesa,Morado
+L2559,40,Verde oliva,Negro,Azul marino,Violeta
+L2560,41,Blanco,Turquesa,Morado,Rosa palo
+L2561,42,Negro,Azul marino,Violeta,Verde oliva
+L2562,43,Turquesa,Morado,Rosa palo,Blanco
+L2563,44,Azul marino,Violeta,Verde oliva,Negro
+L2564,45,Morado,Rosa palo,Blanco,Turquesa
+L2565,37,Violeta,Verde oliva,Negro,Azul marino
+L2566,38,Rosa palo,Blanco,Turquesa,Morado
+L2567,39,Verde oliva,Negro,Azul marino,Violeta
+L2568,40,Blanco,Turquesa,Morado,Rosa palo
+L2569,41,Negro,Azul marino,Violeta,Verde oliva
+L2570,42,Turquesa,Morado,Rosa palo,Blanco
+L2571,43,Azul marino,Violeta,Verde oliva,Negro
+L2572,44,Morado,Rosa palo,Blanco,Turquesa
+L2573,45,Violeta,Verde oliva,Negro,Azul marino
+L2574,37,Rosa palo,Blanco,Turquesa,Morado
+L2575,38,Verde oliva,Negro,Azul marino,Violeta
+L2576,39,Blanco,Turquesa,Morado,Rosa palo
+L2577,40,Negro,Azul marino,Violeta,Verde oliva
+L2578,41,Turquesa,Morado,Rosa palo,Blanco
+L2579,42,Azul marino,Violeta,Verde oliva,Negro
+L2580,43,Morado,Rosa palo,Blanco,Turquesa
+L2581,44,Violeta,Verde oliva,Negro,Azul marino
+L2582,45,Rosa palo,Blanco,Turquesa,Morado
+L2583,37,Verde oliva,Negro,Azul marino,Violeta
+L2584,38,Blanco,Turquesa,Morado,Rosa palo
+L2585,39,Negro,Azul marino,Violeta,Verde oliva
+L2586,40,Turquesa,Morado,Rosa palo,Blanco
+L2587,41,Azul marino,Violeta,Verde oliva,Negro
+L2588,42,Morado,Rosa palo,Blanco,Turquesa
+L2589,43,Violeta,Verde oliva,Negro,Azul marino
+L2590,44,Rosa palo,Blanco,Turquesa,Morado
+L2591,45,Verde oliva,Negro,Azul marino,Violeta
+L2592,37,Blanco,Turquesa,Morado,Rosa palo
+L2593,38,Negro,Azul marino,Violeta,Verde oliva
+L2594,39,Turquesa,Morado,Rosa palo,Blanco
+L2595,40,Azul marino,Violeta,Verde oliva,Negro
+L2596,41,Morado,Rosa palo,Blanco,Turquesa
+L2597,42,Violeta,Verde oliva,Negro,Azul marino
+L2598,43,Rosa palo,Blanco,Turquesa,Morado
+L2599,44,Verde oliva,Negro,Azul marino,Violeta
+L2600,45,Blanco,Turquesa,Morado,Rosa palo
+L2601,37,Negro,Azul marino,Violeta,Verde oliva
+L2602,38,Turquesa,Morado,Rosa palo,Blanco
+L2603,39,Azul marino,Violeta,Verde oliva,Negro
+L2604,40,Morado,Rosa palo,Blanco,Turquesa
+L2605,41,Violeta,Verde oliva,Negro,Azul marino
+L2606,42,Rosa palo,Blanco,Turquesa,Morado
+L2607,43,Verde oliva,Negro,Azul marino,Violeta
+L2608,44,Blanco,Turquesa,Morado,Rosa palo
+L2609,45,Negro,Azul marino,Violeta,Verde oliva
+L2610,37,Turquesa,Morado,Rosa palo,Blanco
+L2611,38,Azul marino,Violeta,Verde oliva,Negro
+L2612,39,Morado,Rosa palo,Blanco,Turquesa
+L2613,40,Violeta,Verde oliva,Negro,Azul marino
+L2614,41,Rosa palo,Blanco,Turquesa,Morado
+L2615,42,Verde oliva,Negro,Azul marino,Violeta
+L2616,43,Blanco,Turquesa,Morado,Rosa palo
+L2617,44,Negro,Azul marino,Violeta,Verde oliva
+L2618,45,Turquesa,Morado,Rosa palo,Blanco
+L2619,37,Azul marino,Violeta,Verde oliva,Negro
+L2620,38,Morado,Rosa palo,Blanco,Turquesa
+L2621,39,Violeta,Verde oliva,Negro,Azul marino
+L2622,40,Rosa palo,Blanco,Turquesa,Morado
+L2623,41,Verde oliva,Negro,Azul marino,Violeta
+L2624,42,Blanco,Turquesa,Morado,Rosa palo
+L2625,43,Negro,Azul marino,Violeta,Verde oliva
+L2626,44,Turquesa,Morado,Rosa palo,Blanco
+L2627,45,Azul marino,Violeta,Verde oliva,Negro
+L2628,37,Morado,Rosa palo,Blanco,Turquesa
+L2629,38,Violeta,Verde oliva,Negro,Azul marino
+L2630,39,Rosa palo,Blanco,Turquesa,Morado
+L2631,40,Verde oliva,Negro,Azul marino,Violeta
+L2632,41,Blanco,Turquesa,Morado,Rosa palo
+L2633,42,Negro,Azul marino,Violeta,Verde oliva
+L2634,43,Turquesa,Morado,Rosa palo,Blanco
+L2635,44,Azul marino,Violeta,Verde oliva,Negro
+L2636,45,Morado,Rosa palo,Blanco,Turquesa
+L2637,37,Violeta,Verde oliva,Negro,Azul marino
+L2638,38,Rosa palo,Blanco,Turquesa,Morado
+L2639,39,Verde oliva,Negro,Azul marino,Violeta
+L2640,40,Blanco,Turquesa,Morado,Rosa palo
+L2641,41,Negro,Azul marino,Violeta,Verde oliva
+L2642,42,Turquesa,Morado,Rosa palo,Blanco
+L2643,43,Azul marino,Violeta,Verde oliva,Negro
+L2644,44,Morado,Rosa palo,Blanco,Turquesa
+L2645,45,Violeta,Verde oliva,Negro,Azul marino
+L2646,37,Rosa palo,Blanco,Turquesa,Morado
+L2647,38,Verde oliva,Negro,Azul marino,Violeta
+L2648,39,Blanco,Turquesa,Morado,Rosa palo
+L2649,40,Negro,Azul marino,Violeta,Verde oliva
+L2650,41,Turquesa,Morado,Rosa palo,Blanco
+L2651,42,Azul marino,Violeta,Verde oliva,Negro
+L2652,43,Morado,Rosa palo,Blanco,Turquesa
+L2653,44,Violeta,Verde oliva,Negro,Azul marino
+L2654,45,Rosa palo,Blanco,Turquesa,Morado
+L2655,37,Verde oliva,Negro,Azul marino,Violeta
+L2656,38,Blanco,Turquesa,Morado,Rosa palo
+L2657,39,Negro,Azul marino,Violeta,Verde oliva
+L2658,40,Turquesa,Morado,Rosa palo,Blanco
+L2659,41,Azul marino,Violeta,Verde oliva,Negro
+L2660,42,Morado,Rosa palo,Blanco,Turquesa
+L2661,43,Violeta,Verde oliva,Negro,Azul marino
+L2662,44,Rosa palo,Blanco,Turquesa,Morado
+L2663,45,Verde oliva,Negro,Azul marino,Violeta
+L2664,37,Blanco,Turquesa,Morado,Rosa palo
+L2665,38,Negro,Azul marino,Violeta,Verde oliva
+L2666,39,Turquesa,Morado,Rosa palo,Blanco
+L2667,40,Azul marino,Violeta,Verde oliva,Negro
+L2668,41,Morado,Rosa palo,Blanco,Turquesa
+L2669,42,Violeta,Verde oliva,Negro,Azul marino
+L2670,43,Rosa palo,Blanco,Turquesa,Morado
+L2671,44,Verde oliva,Negro,Azul marino,Violeta
+L2672,45,Blanco,Turquesa,Morado,Rosa palo
+L2673,37,Negro,Azul marino,Violeta,Verde oliva
+L2674,38,Turquesa,Morado,Rosa palo,Blanco
+L2675,39,Azul marino,Violeta,Verde oliva,Negro
+L2676,40,Morado,Rosa palo,Blanco,Turquesa
+L2677,41,Violeta,Verde oliva,Negro,Azul marino
+L2678,42,Rosa palo,Blanco,Turquesa,Morado
+L2679,43,Verde oliva,Negro,Azul marino,Violeta
+L2680,44,Blanco,Turquesa,Morado,Rosa palo
+L2681,45,Negro,Azul marino,Violeta,Verde oliva
+L2682,37,Turquesa,Morado,Rosa palo,Blanco
+L2683,38,Azul marino,Violeta,Verde oliva,Negro
+L2684,39,Morado,Rosa palo,Blanco,Turquesa
+L2685,40,Violeta,Verde oliva,Negro,Azul marino
+L2686,41,Rosa palo,Blanco,Turquesa,Morado
+L2687,42,Verde oliva,Negro,Azul marino,Violeta
+L2688,43,Blanco,Turquesa,Morado,Rosa palo
+L2689,44,Negro,Azul marino,Violeta,Verde oliva
+L2690,45,Turquesa,Morado,Rosa palo,Blanco
+L2691,37,Azul marino,Violeta,Verde oliva,Negro
+L2692,38,Morado,Rosa palo,Blanco,Turquesa
+L2693,39,Violeta,Verde oliva,Negro,Azul marino
+L2694,40,Rosa palo,Blanco,Turquesa,Morado
+L2695,41,Verde oliva,Negro,Azul marino,Violeta
+L2696,42,Blanco,Turquesa,Morado,Rosa palo
+L2697,43,Negro,Azul marino,Violeta,Verde oliva
+L2698,44,Turquesa,Morado,Rosa palo,Blanco
+L2699,45,Azul marino,Violeta,Verde oliva,Negro
+L2700,37,Morado,Rosa palo,Blanco,Turquesa
+L2701,38,Violeta,Verde oliva,Negro,Azul marino
+L2702,39,Rosa palo,Blanco,Turquesa,Morado
+L2703,40,Verde oliva,Negro,Azul marino,Violeta
+L2704,41,Blanco,Turquesa,Morado,Rosa palo
+L2705,42,Negro,Azul marino,Violeta,Verde oliva
+L2706,43,Turquesa,Morado,Rosa palo,Blanco
+L2707,44,Azul marino,Violeta,Verde oliva,Negro
+L2708,45,Morado,Rosa palo,Blanco,Turquesa
+L2709,37,Violeta,Verde oliva,Negro,Azul marino
+L2710,38,Rosa palo,Blanco,Turquesa,Morado
+L2711,39,Verde oliva,Negro,Azul marino,Violeta
+L2712,40,Blanco,Turquesa,Morado,Rosa palo
+L2713,41,Negro,Azul marino,Violeta,Verde oliva
+L2714,42,Turquesa,Morado,Rosa palo,Blanco
+L2715,43,Azul marino,Violeta,Verde oliva,Negro
+L2716,44,Morado,Rosa palo,Blanco,Turquesa
+L2717,45,Violeta,Verde oliva,Negro,Azul marino
+L2718,37,Rosa palo,Blanco,Turquesa,Morado
+L2719,38,Verde oliva,Negro,Azul marino,Violeta
+L2720,39,Blanco,Turquesa,Morado,Rosa palo
+L2721,40,Negro,Azul marino,Violeta,Verde oliva
+L2722,41,Turquesa,Morado,Rosa palo,Blanco
+L2723,42,Azul marino,Violeta,Verde oliva,Negro
+L2724,43,Morado,Rosa palo,Blanco,Turquesa
+L2725,44,Violeta,Verde oliva,Negro,Azul marino
+L2726,45,Rosa palo,Blanco,Turquesa,Morado
+L2727,37,Verde oliva,Negro,Azul marino,Violeta
+L2728,38,Blanco,Turquesa,Morado,Rosa palo
+L2729,39,Negro,Azul marino,Violeta,Verde oliva
+L2730,40,Turquesa,Morado,Rosa palo,Blanco
+L2731,41,Azul marino,Violeta,Verde oliva,Negro
+L2732,42,Morado,Rosa palo,Blanco,Turquesa
+L2733,43,Violeta,Verde oliva,Negro,Azul marino
+L2734,44,Rosa palo,Blanco,Turquesa,Morado
+L2735,45,Verde oliva,Negro,Azul marino,Violeta
+L2736,37,Blanco,Turquesa,Morado,Rosa palo
+L2737,38,Negro,Azul marino,Violeta,Verde oliva
+L2738,39,Turquesa,Morado,Rosa palo,Blanco
+L2739,40,Azul marino,Violeta,Verde oliva,Negro
+L2740,41,Morado,Rosa palo,Blanco,Turquesa
+L2741,42,Violeta,Verde oliva,Negro,Azul marino
+L2742,43,Rosa palo,Blanco,Turquesa,Morado
+L2743,44,Verde oliva,Negro,Azul marino,Violeta
+L2744,45,Blanco,Turquesa,Morado,Rosa palo
+L2745,37,Negro,Azul marino,Violeta,Verde oliva
+L2746,38,Turquesa,Morado,Rosa palo,Blanco
+L2747,39,Azul marino,Violeta,Verde oliva,Negro
+L2748,40,Morado,Rosa palo,Blanco,Turquesa
+L2749,41,Violeta,Verde oliva,Negro,Azul marino
+L2750,42,Rosa palo,Blanco,Turquesa,Morado
+L2751,43,Verde oliva,Negro,Azul marino,Violeta
+L2752,44,Blanco,Turquesa,Morado,Rosa palo
+L2753,45,Negro,Azul marino,Violeta,Verde oliva
+L2754,37,Turquesa,Morado,Rosa palo,Blanco
+L2755,38,Azul marino,Violeta,Verde oliva,Negro
+L2756,39,Morado,Rosa palo,Blanco,Turquesa
+L2757,40,Violeta,Verde oliva,Negro,Azul marino
+L2758,41,Rosa palo,Blanco,Turquesa,Morado
+L2759,42,Verde oliva,Negro,Azul marino,Violeta
+L2760,43,Blanco,Turquesa,Morado,Rosa palo
+L2761,44,Negro,Azul marino,Violeta,Verde oliva
+L2762,45,Turquesa,Morado,Rosa palo,Blanco
+L2763,37,Azul marino,Violeta,Verde oliva,Negro
+L2764,38,Morado,Rosa palo,Blanco,Turquesa
+L2765,39,Violeta,Verde oliva,Negro,Azul marino
+L2766,40,Rosa palo,Blanco,Turquesa,Morado
+L2767,41,Verde oliva,Negro,Azul marino,Violeta
+L2768,42,Blanco,Turquesa,Morado,Rosa palo
+L2769,43,Negro,Azul marino,Violeta,Verde oliva
+L2770,44,Turquesa,Morado,Rosa palo,Blanco
+L2771,45,Azul marino,Violeta,Verde oliva,Negro
+L2772,37,Morado,Rosa palo,Blanco,Turquesa
+L2773,38,Violeta,Verde oliva,Negro,Azul marino
+L2774,39,Rosa palo,Blanco,Turquesa,Morado
+L2775,40,Verde oliva,Negro,Azul marino,Violeta
+L2776,41,Blanco,Turquesa,Morado,Rosa palo
+L2777,42,Negro,Azul marino,Violeta,Verde oliva
+L2778,43,Turquesa,Morado,Rosa palo,Blanco
+L2779,44,Azul marino,Violeta,Verde oliva,Negro
+L2780,45,Morado,Rosa palo,Blanco,Turquesa
+L2781,37,Violeta,Verde oliva,Negro,Azul marino
+L2782,38,Rosa palo,Blanco,Turquesa,Morado
+L2783,39,Verde oliva,Negro,Azul marino,Violeta
+L2784,40,Blanco,Turquesa,Morado,Rosa palo
+L2785,41,Negro,Azul marino,Violeta,Verde oliva
+L2786,42,Turquesa,Morado,Rosa palo,Blanco
+L2787,43,Azul marino,Violeta,Verde oliva,Negro
+L2788,44,Morado,Rosa palo,Blanco,Turquesa
+L2789,45,Violeta,Verde oliva,Negro,Azul marino
+L2790,37,Rosa palo,Blanco,Turquesa,Morado
+L2791,38,Verde oliva,Negro,Azul marino,Violeta
+L2792,39,Blanco,Turquesa,Morado,Rosa palo
+L2793,40,Negro,Azul marino,Violeta,Verde oliva
+L2794,41,Turquesa,Morado,Rosa palo,Blanco
+L2795,42,Azul marino,Violeta,Verde oliva,Negro
+L2796,43,Morado,Rosa palo,Blanco,Turquesa
+L2797,44,Violeta,Verde oliva,Negro,Azul marino
+L2798,45,Rosa palo,Blanco,Turquesa,Morado
+L2799,37,Verde oliva,Negro,Azul marino,Violeta
+L2800,38,Blanco,Turquesa,Morado,Rosa palo
+L2801,39,Negro,Azul marino,Violeta,Verde oliva
+L2802,40,Turquesa,Morado,Rosa palo,Blanco
+L2803,41,Azul marino,Violeta,Verde oliva,Negro
+L2804,42,Morado,Rosa palo,Blanco,Turquesa
+L2805,43,Violeta,Verde oliva,Negro,Azul marino
+L2806,44,Rosa palo,Blanco,Turquesa,Morado
+L2807,45,Verde oliva,Negro,Azul marino,Violeta
+L2808,37,Blanco,Turquesa,Morado,Rosa palo
+L2809,38,Negro,Azul marino,Violeta,Verde oliva
+L2810,39,Turquesa,Morado,Rosa palo,Blanco
+L2811,40,Azul marino,Violeta,Verde oliva,Negro
+L2812,41,Morado,Rosa palo,Blanco,Turquesa
+L2813,42,Violeta,Verde oliva,Negro,Azul marino
+L2814,43,Rosa palo,Blanco,Turquesa,Morado
+L2815,44,Verde oliva,Negro,Azul marino,Violeta
+L2816,45,Blanco,Turquesa,Morado,Rosa palo
+L2817,37,Negro,Azul marino,Violeta,Verde oliva
+L2818,38,Turquesa,Morado,Rosa palo,Blanco
+L2819,39,Azul marino,Violeta,Verde oliva,Negro
+L2820,40,Morado,Rosa palo,Blanco,Turquesa
+L2821,41,Violeta,Verde oliva,Negro,Azul marino
+L2822,42,Rosa palo,Blanco,Turquesa,Morado
+L2823,43,Verde oliva,Negro,Azul marino,Violeta
+L2824,44,Blanco,Turquesa,Morado,Rosa palo
+L2825,45,Negro,Azul marino,Violeta,Verde oliva
+L2826,37,Turquesa,Morado,Rosa palo,Blanco
+L2827,38,Azul marino,Violeta,Verde oliva,Negro
+L2828,39,Morado,Rosa palo,Blanco,Turquesa
+L2829,40,Violeta,Verde oliva,Negro,Azul marino
+L2830,41,Rosa palo,Blanco,Turquesa,Morado
+L2831,42,Verde oliva,Negro,Azul marino,Violeta
+L2832,43,Blanco,Turquesa,Morado,Rosa palo
+L2833,44,Negro,Azul marino,Violeta,Verde oliva
+L2834,45,Turquesa,Morado,Rosa palo,Blanco
+L2835,37,Azul marino,Violeta,Verde oliva,Negro
+L2836,38,Morado,Rosa palo,Blanco,Turquesa
+L2837,39,Violeta,Verde oliva,Negro,Azul marino
+L2838,40,Rosa palo,Blanco,Turquesa,Morado
+L2839,41,Verde oliva,Negro,Azul marino,Violeta
+L2840,42,Blanco,Turquesa,Morado,Rosa palo
+L2841,43,Negro,Azul marino,Violeta,Verde oliva
+L2842,44,Turquesa,Morado,Rosa palo,Blanco
+L2843,45,Azul marino,Violeta,Verde oliva,Negro
+L2844,37,Morado,Rosa palo,Blanco,Turquesa
+L2845,38,Violeta,Verde oliva,Negro,Azul marino
+L2846,39,Rosa palo,Blanco,Turquesa,Morado
+L2847,40,Verde oliva,Negro,Azul marino,Violeta
+L2848,41,Blanco,Turquesa,Morado,Rosa palo
+L2849,42,Negro,Azul marino,Violeta,Verde oliva
+L2850,43,Turquesa,Morado,Rosa palo,Blanco
+L2851,44,Azul marino,Violeta,Verde oliva,Negro
+L2852,45,Morado,Rosa palo,Blanco,Turquesa
+L2853,37,Violeta,Verde oliva,Negro,Azul marino
+L2854,38,Rosa palo,Blanco,Turquesa,Morado
+L2855,39,Verde oliva,Negro,Azul marino,Violeta
+L2856,40,Blanco,Turquesa,Morado,Rosa palo
+L2857,41,Negro,Azul marino,Violeta,Verde oliva
+L2858,42,Turquesa,Morado,Rosa palo,Blanco
+L2859,43,Azul marino,Violeta,Verde oliva,Negro
+L2860,44,Morado,Rosa palo,Blanco,Turquesa
+L2861,45,Violeta,Verde oliva,Negro,Azul marino
+L2862,37,Rosa palo,Blanco,Turquesa,Morado
+L2863,38,Verde oliva,Negro,Azul marino,Violeta
+L2864,39,Blanco,Turquesa,Morado,Rosa palo
+L2865,40,Negro,Azul marino,Violeta,Verde oliva
+L2866,41,Turquesa,Morado,Rosa palo,Blanco
+L2867,42,Azul marino,Violeta,Verde oliva,Negro
+L2868,43,Morado,Rosa palo,Blanco,Turquesa
+L2869,44,Violeta,Verde oliva,Negro,Azul marino
+L2870,45,Rosa palo,Blanco,Turquesa,Morado
+L2871,37,Verde oliva,Negro,Azul marino,Violeta
+L2872,38,Blanco,Turquesa,Morado,Rosa palo
+L2873,39,Negro,Azul marino,Violeta,Verde oliva
+L2874,40,Turquesa,Morado,Rosa palo,Blanco
+L2875,41,Azul marino,Violeta,Verde oliva,Negro
+L2876,42,Morado,Rosa palo,Blanco,Turquesa
+L2877,43,Violeta,Verde oliva,Negro,Azul marino
+L2878,44,Rosa palo,Blanco,Turquesa,Morado
+L2879,45,Verde oliva,Negro,Azul marino,Violeta
+L2880,37,Blanco,Turquesa,Morado,Rosa palo
+L2881,38,Negro,Azul marino,Violeta,Verde oliva
+L2882,39,Turquesa,Morado,Rosa palo,Blanco
+L2883,40,Azul marino,Violeta,Verde oliva,Negro
+L2884,41,Morado,Rosa palo,Blanco,Turquesa
+L2885,42,Violeta,Verde oliva,Negro,Azul marino
+L2886,43,Rosa palo,Blanco,Turquesa,Morado
+L2887,44,Verde oliva,Negro,Azul marino,Violeta
+L2888,45,Blanco,Turquesa,Morado,Rosa palo
+L2889,37,Negro,Azul marino,Violeta,Verde oliva
+L2890,38,Turquesa,Morado,Rosa palo,Blanco
+L2891,39,Azul marino,Violeta,Verde oliva,Negro
+L2892,40,Morado,Rosa palo,Blanco,Turquesa
+L2893,41,Violeta,Verde oliva,Negro,Azul marino
+L2894,42,Rosa palo,Blanco,Turquesa,Morado
+L2895,43,Verde oliva,Negro,Azul marino,Violeta
+L2896,44,Blanco,Turquesa,Morado,Rosa palo
+L2897,45,Negro,Azul marino,Violeta,Verde oliva
+L2898,37,Turquesa,Morado,Rosa palo,Blanco
+L2899,38,Azul marino,Violeta,Verde oliva,Negro
+L2900,39,Morado,Rosa palo,Blanco,Turquesa
+L2901,40,Violeta,Verde oliva,Negro,Azul marino
+L2902,41,Rosa palo,Blanco,Turquesa,Morado
+L2903,42,Verde oliva,Negro,Azul marino,Violeta
+L2904,43,Blanco,Turquesa,Morado,Rosa palo
+L2905,44,Negro,Azul marino,Violeta,Verde oliva
+L2906,45,Turquesa,Morado,Rosa palo,Blanco
+L2907,37,Azul marino,Violeta,Verde oliva,Negro
+L2908,38,Morado,Rosa palo,Blanco,Turquesa
+L2909,39,Violeta,Verde oliva,Negro,Azul marino
+L2910,40,Rosa palo,Blanco,Turquesa,Morado
+L2911,41,Verde oliva,Negro,Azul marino,Violeta
+L2912,42,Blanco,Turquesa,Morado,Rosa palo
+L2913,43,Negro,Azul marino,Violeta,Verde oliva
+L2914,44,Turquesa,Morado,Rosa palo,Blanco
+L2915,45,Azul marino,Violeta,Verde oliva,Negro
+L2916,37,Morado,Rosa palo,Blanco,Turquesa
+L2917,38,Violeta,Verde oliva,Negro,Azul marino
+L2918,39,Rosa palo,Blanco,Turquesa,Morado
+L2919,40,Verde oliva,Negro,Azul marino,Violeta
+L2920,41,Blanco,Turquesa,Morado,Rosa palo
+L2921,42,Negro,Azul marino,Violeta,Verde oliva
+L2922,43,Turquesa,Morado,Rosa palo,Blanco
+L2923,44,Azul marino,Violeta,Verde oliva,Negro
+L2924,45,Morado,Rosa palo,Blanco,Turquesa
+L2925,37,Violeta,Verde oliva,Negro,Azul marino
+L2926,38,Rosa palo,Blanco,Turquesa,Morado
+L2927,39,Verde oliva,Negro,Azul marino,Violeta
+L2928,40,Blanco,Turquesa,Morado,Rosa palo
+L2929,41,Negro,Azul marino,Violeta,Verde oliva
+L2930,42,Turquesa,Morado,Rosa palo,Blanco
+L2931,43,Azul marino,Violeta,Verde oliva,Negro
+L2932,44,Morado,Rosa palo,Blanco,Turquesa
+L2933,45,Violeta,Verde oliva,Negro,Azul marino
+L2934,37,Rosa palo,Blanco,Turquesa,Morado
+L2935,38,Verde oliva,Negro,Azul marino,Violeta
+L2936,39,Blanco,Turquesa,Morado,Rosa palo
+L2937,40,Negro,Azul marino,Violeta,Verde oliva
+L2938,41,Turquesa,Morado,Rosa palo,Blanco
+L2939,42,Azul marino,Violeta,Verde oliva,Negro
+L2940,43,Morado,Rosa palo,Blanco,Turquesa
+L2941,44,Violeta,Verde oliva,Negro,Azul marino
+L2942,45,Rosa palo,Blanco,Turquesa,Morado
+L2943,37,Verde oliva,Negro,Azul marino,Violeta
+L2944,38,Blanco,Turquesa,Morado,Rosa palo
+L2945,39,Negro,Azul marino,Violeta,Verde oliva
+L2946,40,Turquesa,Morado,Rosa palo,Blanco
+L2947,41,Azul marino,Violeta,Verde oliva,Negro
+L2948,42,Morado,Rosa palo,Blanco,Turquesa
+L2949,43,Violeta,Verde oliva,Negro,Azul marino
+L2950,44,Rosa palo,Blanco,Turquesa,Morado
+L2951,45,Verde oliva,Negro,Azul marino,Violeta
+L2952,37,Blanco,Turquesa,Morado,Rosa palo
+L2953,38,Negro,Azul marino,Violeta,Verde oliva
+L2954,39,Turquesa,Morado,Rosa palo,Blanco
+L2955,40,Azul marino,Violeta,Verde oliva,Negro
+L2956,41,Morado,Rosa palo,Blanco,Turquesa
+L2957,42,Violeta,Verde oliva,Negro,Azul marino
+L2958,43,Rosa palo,Blanco,Turquesa,Morado
+L2959,44,Verde oliva,Negro,Azul marino,Violeta
+L2960,45,Blanco,Turquesa,Morado,Rosa palo
+L2961,37,Negro,Azul marino,Violeta,Verde oliva
+L2962,38,Turquesa,Morado,Rosa palo,Blanco
+L2963,39,Azul marino,Violeta,Verde oliva,Negro
+L2964,40,Morado,Rosa palo,Blanco,Turquesa
+L2965,41,Violeta,Verde oliva,Negro,Azul marino
+L2966,42,Rosa palo,Blanco,Turquesa,Morado
+L2967,43,Verde oliva,Negro,Azul marino,Violeta
+L2968,44,Blanco,Turquesa,Morado,Rosa palo
+L2969,45,Negro,Azul marino,Violeta,Verde oliva
+L2970,37,Turquesa,Morado,Rosa palo,Blanco
+L2971,38,Azul marino,Violeta,Verde oliva,Negro
+L2972,39,Morado,Rosa palo,Blanco,Turquesa
+L2973,40,Violeta,Verde oliva,Negro,Azul marino
+L2974,41,Rosa palo,Blanco,Turquesa,Morado
+L2975,42,Verde oliva,Negro,Azul marino,Violeta
+L2976,43,Blanco,Turquesa,Morado,Rosa palo
+L2977,44,Negro,Azul marino,Violeta,Verde oliva
+L2978,45,Turquesa,Morado,Rosa palo,Blanco
+L2979,37,Azul marino,Violeta,Verde oliva,Negro
+L2980,38,Morado,Rosa palo,Blanco,Turquesa
+L2981,39,Violeta,Verde oliva,Negro,Azul marino
+L2982,40,Rosa palo,Blanco,Turquesa,Morado
+L2983,41,Verde oliva,Negro,Azul marino,Violeta
+L2984,42,Blanco,Turquesa,Morado,Rosa palo
+L2985,43,Negro,Azul marino,Violeta,Verde oliva
+L2986,44,Turquesa,Morado,Rosa palo,Blanco
+L2987,45,Azul marino,Violeta,Verde oliva,Negro
+L2988,37,Morado,Rosa palo,Blanco,Turquesa
+L2989,38,Violeta,Verde oliva,Negro,Azul marino
+L2990,39,Rosa palo,Blanco,Turquesa,Morado
+L2991,40,Verde oliva,Negro,Azul marino,Violeta
+L2992,41,Blanco,Turquesa,Morado,Rosa palo
+L2993,42,Negro,Azul marino,Violeta,Verde oliva
+L2994,43,Turquesa,Morado,Rosa palo,Blanco
+L2995,44,Azul marino,Violeta,Verde oliva,Negro
+L2996,45,Morado,Rosa palo,Blanco,Turquesa
+L2997,37,Violeta,Verde oliva,Negro,Azul marino
+L2998,38,Rosa palo,Blanco,Turquesa,Morado
+L2999,39,Verde oliva,Negro,Azul marino,Violeta
+L3000,40,Blanco,Turquesa,Morado,Rosa palo
+L3001,41,Negro,Azul marino,Violeta,Verde oliva
+L3002,42,Turquesa,Morado,Rosa palo,Blanco
+L3003,43,Azul marino,Violeta,Verde oliva,Negro
+L3004,44,Morado,Rosa palo,Blanco,Turquesa
+L3005,45,Violeta,Verde oliva,Negro,Azul marino
+L3006,37,Rosa palo,Blanco,Turquesa,Morado
+L3007,38,Verde oliva,Negro,Azul marino,Violeta
+L3008,39,Blanco,Turquesa,Morado,Rosa palo
+L3009,40,Negro,Azul marino,Violeta,Verde oliva
+L3010,41,Turquesa,Morado,Rosa palo,Blanco
+L3011,42,Azul marino,Violeta,Verde oliva,Negro
+L3012,43,Morado,Rosa palo,Blanco,Turquesa
+L3013,44,Violeta,Verde oliva,Negro,Azul marino
+L3014,45,Rosa palo,Blanco,Turquesa,Morado
+L3015,37,Verde oliva,Negro,Azul marino,Violeta
+L3016,38,Blanco,Turquesa,Morado,Rosa palo
+L3017,39,Negro,Azul marino,Violeta,Verde oliva
+L3018,40,Turquesa,Morado,Rosa palo,Blanco
+L3019,41,Azul marino,Violeta,Verde oliva,Negro
+L3020,42,Morado,Rosa palo,Blanco,Turquesa
+L3021,43,Violeta,Verde oliva,Negro,Azul marino
+L3022,44,Rosa palo,Blanco,Turquesa,Morado
+L3023,45,Verde oliva,Negro,Azul marino,Violeta
+L3024,37,Blanco,Turquesa,Morado,Rosa palo
+L3025,38,Negro,Azul marino,Violeta,Verde oliva
+L3026,39,Turquesa,Morado,Rosa palo,Blanco
+L3027,40,Azul marino,Violeta,Verde oliva,Negro
+L3028,41,Morado,Rosa palo,Blanco,Turquesa
+L3029,42,Violeta,Verde oliva,Negro,Azul marino
+L3030,43,Rosa palo,Blanco,Turquesa,Morado
+L3031,44,Verde oliva,Negro,Azul marino,Violeta
+L3032,45,Blanco,Turquesa,Morado,Rosa palo
+L3033,37,Negro,Azul marino,Violeta,Verde oliva
+L3034,38,Turquesa,Morado,Rosa palo,Blanco
+L3035,39,Azul marino,Violeta,Verde oliva,Negro
+L3036,40,Morado,Rosa palo,Blanco,Turquesa
+L3037,41,Violeta,Verde oliva,Negro,Azul marino
+L3038,42,Rosa palo,Blanco,Turquesa,Morado
+L3039,43,Verde oliva,Negro,Azul marino,Violeta
+L3040,44,Blanco,Turquesa,Morado,Rosa palo
+L3041,45,Negro,Azul marino,Violeta,Verde oliva
+L3042,37,Turquesa,Morado,Rosa palo,Blanco
+L3043,38,Azul marino,Violeta,Verde oliva,Negro
+L3044,39,Morado,Rosa palo,Blanco,Turquesa
+L3045,40,Violeta,Verde oliva,Negro,Azul marino
+L3046,41,Rosa palo,Blanco,Turquesa,Morado
+L3047,42,Verde oliva,Negro,Azul marino,Violeta
+L3048,43,Blanco,Turquesa,Morado,Rosa palo
+L3049,44,Negro,Azul marino,Violeta,Verde oliva
+L3050,45,Turquesa,Morado,Rosa palo,Blanco
+L3051,37,Azul marino,Violeta,Verde oliva,Negro
+L3052,38,Morado,Rosa palo,Blanco,Turquesa
+L3053,39,Violeta,Verde oliva,Negro,Azul marino
+L3054,40,Rosa palo,Blanco,Turquesa,Morado
+L3055,41,Verde oliva,Negro,Azul marino,Violeta
+L3056,42,Blanco,Turquesa,Morado,Rosa palo
+L3057,43,Negro,Azul marino,Violeta,Verde oliva
+L3058,44,Turquesa,Morado,Rosa palo,Blanco
+L3059,45,Azul marino,Violeta,Verde oliva,Negro
+L3060,37,Morado,Rosa palo,Blanco,Turquesa
+L3061,38,Violeta,Verde oliva,Negro,Azul marino
+L3062,39,Rosa palo,Blanco,Turquesa,Morado
+L3063,40,Verde oliva,Negro,Azul marino,Violeta
+L3064,41,Blanco,Turquesa,Morado,Rosa palo
+L3065,42,Negro,Azul marino,Violeta,Verde oliva
+L3066,43,Turquesa,Morado,Rosa palo,Blanco
+L3067,44,Azul marino,Violeta,Verde oliva,Negro
+L3068,45,Morado,Rosa palo,Blanco,Turquesa
+L3069,37,Violeta,Verde oliva,Negro,Azul marino
+L3070,38,Rosa palo,Blanco,Turquesa,Morado
+L3071,39,Verde oliva,Negro,Azul marino,Violeta
+L3072,40,Blanco,Turquesa,Morado,Rosa palo
+L3073,41,Negro,Azul marino,Violeta,Verde oliva
+L3074,42,Turquesa,Morado,Rosa palo,Blanco
+L3075,43,Azul marino,Violeta,Verde oliva,Negro
+L3076,44,Morado,Rosa palo,Blanco,Turquesa
+L3077,45,Violeta,Verde oliva,Negro,Azul marino
+L3078,37,Rosa palo,Blanco,Turquesa,Morado
+L3079,38,Verde oliva,Negro,Azul marino,Violeta
+L3080,39,Blanco,Turquesa,Morado,Rosa palo
+L3081,40,Negro,Azul marino,Violeta,Verde oliva
+L3082,41,Turquesa,Morado,Rosa palo,Blanco
+L3083,42,Azul marino,Violeta,Verde oliva,Negro
+L3084,43,Morado,Rosa palo,Blanco,Turquesa
+L3085,44,Violeta,Verde oliva,Negro,Azul marino
+L3086,45,Rosa palo,Blanco,Turquesa,Morado
+L3087,37,Verde oliva,Negro,Azul marino,Violeta
+L3088,38,Blanco,Turquesa,Morado,Rosa palo
+L3089,39,Negro,Azul marino,Violeta,Verde oliva
+L3090,40,Turquesa,Morado,Rosa palo,Blanco
+L3091,41,Azul marino,Violeta,Verde oliva,Negro
+L3092,42,Morado,Rosa palo,Blanco,Turquesa
+L3093,43,Violeta,Verde oliva,Negro,Azul marino
+L3094,44,Rosa palo,Blanco,Turquesa,Morado
+L3095,45,Verde oliva,Negro,Azul marino,Violeta
+L3096,37,Blanco,Turquesa,Morado,Rosa palo
+L3097,38,Negro,Azul marino,Violeta,Verde oliva
+L3098,39,Turquesa,Morado,Rosa palo,Blanco
+L3099,40,Azul marino,Violeta,Verde oliva,Negro
+L3100,41,Morado,Rosa palo,Blanco,Turquesa
+L3101,42,Violeta,Verde oliva,Negro,Azul marino
+L3102,43,Rosa palo,Blanco,Turquesa,Morado
+L3103,44,Verde oliva,Negro,Azul marino,Violeta
+L3104,45,Blanco,Turquesa,Morado,Rosa palo
+L3105,37,Negro,Azul marino,Violeta,Verde oliva
+L3106,38,Turquesa,Morado,Rosa palo,Blanco
+L3107,39,Azul marino,Violeta,Verde oliva,Negro
+L3108,40,Morado,Rosa palo,Blanco,Turquesa
+L3109,41,Violeta,Verde oliva,Negro,Azul marino
+L3110,42,Rosa palo,Blanco,Turquesa,Morado
+L3111,43,Verde oliva,Negro,Azul marino,Violeta
+L3112,44,Blanco,Turquesa,Morado,Rosa palo
+L3113,45,Negro,Azul marino,Violeta,Verde oliva
+L3114,37,Turquesa,Morado,Rosa palo,Blanco
+L3115,38,Azul marino,Violeta,Verde oliva,Negro
+L3116,39,Morado,Rosa palo,Blanco,Turquesa
+L3117,40,Violeta,Verde oliva,Negro,Azul marino
+L3118,41,Rosa palo,Blanco,Turquesa,Morado
+L3119,42,Verde oliva,Negro,Azul marino,Violeta
+L3120,43,Blanco,Turquesa,Morado,Rosa palo
+L3121,44,Negro,Azul marino,Violeta,Verde oliva
+L3122,45,Turquesa,Morado,Rosa palo,Blanco
+L3123,37,Azul marino,Violeta,Verde oliva,Negro
+L3124,38,Morado,Rosa palo,Blanco,Turquesa
+L3125,39,Violeta,Verde oliva,Negro,Azul marino
+L3126,40,Rosa palo,Blanco,Turquesa,Morado
+L3127,41,Verde oliva,Negro,Azul marino,Violeta
+L3128,42,Blanco,Turquesa,Morado,Rosa palo
+L3129,43,Negro,Azul marino,Violeta,Verde oliva
+L3130,44,Turquesa,Morado,Rosa palo,Blanco
+L3131,45,Azul marino,Violeta,Verde oliva,Negro
+L3132,37,Morado,Rosa palo,Blanco,Turquesa
+L3133,38,Violeta,Verde oliva,Negro,Azul marino
+L3134,39,Rosa palo,Blanco,Turquesa,Morado
+L3135,40,Verde oliva,Negro,Azul marino,Violeta
+L3136,41,Blanco,Turquesa,Morado,Rosa palo
+L3137,42,Negro,Azul marino,Violeta,Verde oliva
+L3138,43,Turquesa,Morado,Rosa palo,Blanco
+L3139,44,Azul marino,Violeta,Verde oliva,Negro
+L3140,45,Morado,Rosa palo,Blanco,Turquesa
+L3141,37,Violeta,Verde oliva,Negro,Azul marino
+L3142,38,Rosa palo,Blanco,Turquesa,Morado
+L3143,39,Verde oliva,Negro,Azul marino,Violeta
+L3144,40,Blanco,Turquesa,Morado,Rosa palo
+L3145,41,Negro,Azul marino,Violeta,Verde oliva
+L3146,42,Turquesa,Morado,Rosa palo,Blanco
+L3147,43,Azul marino,Violeta,Verde oliva,Negro
+L3148,44,Morado,Rosa palo,Blanco,Turquesa
+L3149,45,Violeta,Verde oliva,Negro,Azul marino
+L3150,37,Rosa palo,Blanco,Turquesa,Morado
+L3151,38,Verde oliva,Negro,Azul marino,Violeta
+L3152,39,Blanco,Turquesa,Morado,Rosa palo
+L3153,40,Negro,Azul marino,Violeta,Verde oliva
+L3154,41,Turquesa,Morado,Rosa palo,Blanco
+L3155,42,Azul marino,Violeta,Verde oliva,Negro
+L3156,43,Morado,Rosa palo,Blanco,Turquesa
+L3157,44,Violeta,Verde oliva,Negro,Azul marino
+L3158,45,Rosa palo,Blanco,Turquesa,Morado
+L3159,37,Verde oliva,Negro,Azul marino,Violeta
+L3160,38,Blanco,Turquesa,Morado,Rosa palo
+L3161,39,Negro,Azul marino,Violeta,Verde oliva
+L3162,40,Turquesa,Morado,Rosa palo,Blanco
+L3163,41,Azul marino,Violeta,Verde oliva,Negro
+L3164,42,Morado,Rosa palo,Blanco,Turquesa
+L3165,43,Violeta,Verde oliva,Negro,Azul marino
+L3166,44,Rosa palo,Blanco,Turquesa,Morado
+L3167,45,Verde oliva,Negro,Azul marino,Violeta
+L3168,37,Blanco,Turquesa,Morado,Rosa palo
+L3169,38,Negro,Azul marino,Violeta,Verde oliva
+L3170,39,Turquesa,Morado,Rosa palo,Blanco
+L3171,40,Azul marino,Violeta,Verde oliva,Negro
+L3172,41,Morado,Rosa palo,Blanco,Turquesa
+L3173,42,Violeta,Verde oliva,Negro,Azul marino
+L3174,43,Rosa palo,Blanco,Turquesa,Morado
+L3175,44,Verde oliva,Negro,Azul marino,Violeta
+L3176,45,Blanco,Turquesa,Morado,Rosa palo
+L3177,37,Negro,Azul marino,Violeta,Verde oliva
+L3178,38,Turquesa,Morado,Rosa palo,Blanco
+L3179,39,Azul marino,Violeta,Verde oliva,Negro
+L3180,40,Morado,Rosa palo,Blanco,Turquesa
+L3181,41,Violeta,Verde oliva,Negro,Azul marino
+L3182,42,Rosa palo,Blanco,Turquesa,Morado
+L3183,43,Verde oliva,Negro,Azul marino,Violeta
+L3184,44,Blanco,Turquesa,Morado,Rosa palo
+L3185,45,Negro,Azul marino,Violeta,Verde oliva
+L3186,37,Turquesa,Morado,Rosa palo,Blanco
+L3187,38,Azul marino,Violeta,Verde oliva,Negro
+L3188,39,Morado,Rosa palo,Blanco,Turquesa
+L3189,40,Violeta,Verde oliva,Negro,Azul marino
+L3190,41,Rosa palo,Blanco,Turquesa,Morado
+L3191,42,Verde oliva,Negro,Azul marino,Violeta
+L3192,43,Blanco,Turquesa,Morado,Rosa palo
+L3193,44,Negro,Azul marino,Violeta,Verde oliva
+L3194,45,Turquesa,Morado,Rosa palo,Blanco
+L3195,37,Azul marino,Violeta,Verde oliva,Negro
+L3196,38,Morado,Rosa palo,Blanco,Turquesa
+L3197,39,Violeta,Verde oliva,Negro,Azul marino
+L3198,40,Rosa palo,Blanco,Turquesa,Morado
+L3199,41,Verde oliva,Negro,Azul marino,Violeta
+L3200,42,Blanco,Turquesa,Morado,Rosa palo
+L3201,43,Negro,Azul marino,Violeta,Verde oliva
+L3202,44,Turquesa,Morado,Rosa palo,Blanco
+L3203,45,Azul marino,Violeta,Verde oliva,Negro
+L3204,37,Morado,Rosa palo,Blanco,Turquesa
+L3205,38,Violeta,Verde oliva,Negro,Azul marino
+L3206,39,Rosa palo,Blanco,Turquesa,Morado
+L3207,40,Verde oliva,Negro,Azul marino,Violeta
+L3208,41,Blanco,Turquesa,Morado,Rosa palo
+L3209,42,Negro,Azul marino,Violeta,Verde oliva
+L3210,43,Turquesa,Morado,Rosa palo,Blanco
+L3211,44,Azul marino,Violeta,Verde oliva,Negro
+L3212,45,Morado,Rosa palo,Blanco,Turquesa
+L3213,37,Violeta,Verde oliva,Negro,Azul marino
+L3214,38,Rosa palo,Blanco,Turquesa,Morado
+L3215,39,Verde oliva,Negro,Azul marino,Violeta
+L3216,40,Blanco,Turquesa,Morado,Rosa palo
+L3217,41,Negro,Azul marino,Violeta,Verde oliva
+L3218,42,Turquesa,Morado,Rosa palo,Blanco
+L3219,43,Azul marino,Violeta,Verde oliva,Negro
+L3220,44,Morado,Rosa palo,Blanco,Turquesa
+L3221,45,Violeta,Verde oliva,Negro,Azul marino
+L3222,37,Rosa palo,Blanco,Turquesa,Morado
+L3223,38,Verde oliva,Negro,Azul marino,Violeta
+L3224,39,Blanco,Turquesa,Morado,Rosa palo
+L3225,40,Negro,Azul marino,Violeta,Verde oliva
+L3226,41,Turquesa,Morado,Rosa palo,Blanco
+L3227,42,Azul marino,Violeta,Verde oliva,Negro
+L3228,43,Morado,Rosa palo,Blanco,Turquesa
+L3229,44,Violeta,Verde oliva,Negro,Azul marino
+L3230,45,Rosa palo,Blanco,Turquesa,Morado
+L3231,37,Verde oliva,Negro,Azul marino,Violeta
+L3232,38,Blanco,Turquesa,Morado,Rosa palo
+L3233,39,Negro,Azul marino,Violeta,Verde oliva
+L3234,40,Turquesa,Morado,Rosa palo,Blanco
+L3235,41,Azul marino,Violeta,Verde oliva,Negro
+L3236,42,Morado,Rosa palo,Blanco,Turquesa
+L3237,43,Violeta,Verde oliva,Negro,Azul marino
+L3238,44,Rosa palo,Blanco,Turquesa,Morado
+L3239,45,Verde oliva,Negro,Azul marino,Violeta
+L3240,37,Blanco,Turquesa,Morado,Rosa palo
+L3241,38,Negro,Azul marino,Violeta,Verde oliva
+L3242,39,Turquesa,Morado,Rosa palo,Blanco
+L3243,40,Azul marino,Violeta,Verde oliva,Negro
+L3244,41,Morado,Rosa palo,Blanco,Turquesa
+L3245,42,Violeta,Verde oliva,Negro,Azul marino
+L3246,43,Rosa palo,Blanco,Turquesa,Morado
+L3247,44,Verde oliva,Negro,Azul marino,Violeta
+L3248,45,Blanco,Turquesa,Morado,Rosa palo
+L3249,37,Negro,Azul marino,Violeta,Verde oliva
+L3250,38,Turquesa,Morado,Rosa palo,Blanco
+L3251,39,Azul marino,Violeta,Verde oliva,Negro
+L3252,40,Morado,Rosa palo,Blanco,Turquesa
+L3253,41,Violeta,Verde oliva,Negro,Azul marino
+L3254,42,Rosa palo,Blanco,Turquesa,Morado
+L3255,43,Verde oliva,Negro,Azul marino,Violeta
+L3256,44,Blanco,Turquesa,Morado,Rosa palo
+L3257,45,Negro,Azul marino,Violeta,Verde oliva
+L3258,37,Turquesa,Morado,Rosa palo,Blanco
+L3259,38,Azul marino,Violeta,Verde oliva,Negro
+L3260,39,Morado,Rosa palo,Blanco,Turquesa
+L3261,40,Violeta,Verde oliva,Negro,Azul marino
+L3262,41,Rosa palo,Blanco,Turquesa,Morado
+L3263,42,Verde oliva,Negro,Azul marino,Violeta
+L3264,43,Blanco,Turquesa,Morado,Rosa palo
+L3265,44,Negro,Azul marino,Violeta,Verde oliva
+L3266,45,Turquesa,Morado,Rosa palo,Blanco
+L3267,37,Azul marino,Violeta,Verde oliva,Negro
+L3268,38,Morado,Rosa palo,Blanco,Turquesa
+L3269,39,Violeta,Verde oliva,Negro,Azul marino
+L3270,40,Rosa palo,Blanco,Turquesa,Morado
+L3271,41,Verde oliva,Negro,Azul marino,Violeta
+L3272,42,Blanco,Turquesa,Morado,Rosa palo
+L3273,43,Negro,Azul marino,Violeta,Verde oliva
+L3274,44,Turquesa,Morado,Rosa palo,Blanco
+L3275,45,Azul marino,Violeta,Verde oliva,Negro
+L3276,37,Morado,Rosa palo,Blanco,Turquesa
+L3277,38,Violeta,Verde oliva,Negro,Azul marino
+L3278,39,Rosa palo,Blanco,Turquesa,Morado
+L3279,40,Verde oliva,Negro,Azul marino,Violeta
+L3280,41,Blanco,Turquesa,Morado,Rosa palo
+L3281,42,Negro,Azul marino,Violeta,Verde oliva
+L3282,43,Turquesa,Morado,Rosa palo,Blanco
+L3283,44,Azul marino,Violeta,Verde oliva,Negro
+L3284,45,Morado,Rosa palo,Blanco,Turquesa
+L3285,37,Violeta,Verde oliva,Negro,Azul marino
+L3286,38,Rosa palo,Blanco,Turquesa,Morado
+L3287,39,Verde oliva,Negro,Azul marino,Violeta
+L3288,40,Blanco,Turquesa,Morado,Rosa palo
+L3289,41,Negro,Azul marino,Violeta,Verde oliva
+L3290,42,Turquesa,Morado,Rosa palo,Blanco
+L3291,43,Azul marino,Violeta,Verde oliva,Negro
+L3292,44,Morado,Rosa palo,Blanco,Turquesa
+L3293,45,Violeta,Verde oliva,Negro,Azul marino
+L3294,37,Rosa palo,Blanco,Turquesa,Morado
+L3295,38,Verde oliva,Negro,Azul marino,Violeta
+L3296,39,Blanco,Turquesa,Morado,Rosa palo
+L3297,40,Negro,Azul marino,Violeta,Verde oliva
+L3298,41,Turquesa,Morado,Rosa palo,Blanco
+L3299,42,Azul marino,Violeta,Verde oliva,Negro
+L3300,43,Morado,Rosa palo,Blanco,Turquesa
+L3301,44,Violeta,Verde oliva,Negro,Azul marino
+L3302,45,Rosa palo,Blanco,Turquesa,Morado
+L3303,37,Verde oliva,Negro,Azul marino,Violeta
+L3304,38,Blanco,Turquesa,Morado,Rosa palo
+L3305,39,Negro,Azul marino,Violeta,Verde oliva
+L3306,40,Turquesa,Morado,Rosa palo,Blanco
+L3307,41,Azul marino,Violeta,Verde oliva,Negro
+L3308,42,Morado,Rosa palo,Blanco,Turquesa
+L3309,43,Violeta,Verde oliva,Negro,Azul marino
+L3310,44,Rosa palo,Blanco,Turquesa,Morado
+L3311,45,Verde oliva,Negro,Azul marino,Violeta
+L3312,37,Blanco,Turquesa,Morado,Rosa palo
+L3313,38,Negro,Azul marino,Violeta,Verde oliva
+L3314,39,Turquesa,Morado,Rosa palo,Blanco
+L3315,40,Azul marino,Violeta,Verde oliva,Negro
+L3316,41,Morado,Rosa palo,Blanco,Turquesa
+L3317,42,Violeta,Verde oliva,Negro,Azul marino
+L3318,43,Rosa palo,Blanco,Turquesa,Morado
+L3319,44,Verde oliva,Negro,Azul marino,Violeta
+L3320,45,Blanco,Turquesa,Morado,Rosa palo
+L3321,37,Negro,Azul marino,Violeta,Verde oliva
+L3322,38,Turquesa,Morado,Rosa palo,Blanco
+L3323,39,Azul marino,Violeta,Verde oliva,Negro
+L3324,40,Morado,Rosa palo,Blanco,Turquesa
+L3325,41,Violeta,Verde oliva,Negro,Azul marino
+L3326,42,Rosa palo,Blanco,Turquesa,Morado
+L3327,43,Verde oliva,Negro,Azul marino,Violeta
+L3328,44,Blanco,Turquesa,Morado,Rosa palo
+L3329,45,Negro,Azul marino,Violeta,Verde oliva
+L3330,37,Turquesa,Morado,Rosa palo,Blanco
+L3331,38,Azul marino,Violeta,Verde oliva,Negro
+L3332,39,Morado,Rosa palo,Blanco,Turquesa
+L3333,40,Violeta,Verde oliva,Negro,Azul marino
+L3334,41,Rosa palo,Blanco,Turquesa,Morado
+L3335,42,Verde oliva,Negro,Azul marino,Violeta
+L3336,43,Blanco,Turquesa,Morado,Rosa palo
+L3337,44,Negro,Azul marino,Violeta,Verde oliva
+L3338,45,Turquesa,Morado,Rosa palo,Blanco
+L3339,37,Azul marino,Violeta,Verde oliva,Negro
+L3340,38,Morado,Rosa palo,Blanco,Turquesa
+L3341,39,Violeta,Verde oliva,Negro,Azul marino
+L3342,40,Rosa palo,Blanco,Turquesa,Morado
+L3343,41,Verde oliva,Negro,Azul marino,Violeta
+L3344,42,Blanco,Turquesa,Morado,Rosa palo
+L3345,43,Negro,Azul marino,Violeta,Verde oliva
+L3346,44,Turquesa,Morado,Rosa palo,Blanco
+L3347,45,Azul marino,Violeta,Verde oliva,Negro
+L3348,37,Morado,Rosa palo,Blanco,Turquesa
+L3349,38,Violeta,Verde oliva,Negro,Azul marino
+L3350,39,Rosa palo,Blanco,Turquesa,Morado
+L3351,40,Verde oliva,Negro,Azul marino,Violeta
+L3352,41,Blanco,Turquesa,Morado,Rosa palo
+L3353,42,Negro,Azul marino,Violeta,Verde oliva
+L3354,43,Turquesa,Morado,Rosa palo,Blanco
+L3355,44,Azul marino,Violeta,Verde oliva,Negro
+L3356,45,Morado,Rosa palo,Blanco,Turquesa
+L3357,37,Violeta,Verde oliva,Negro,Azul marino
+L3358,38,Rosa palo,Blanco,Turquesa,Morado
+L3359,39,Verde oliva,Negro,Azul marino,Violeta
+L3360,40,Blanco,Turquesa,Morado,Rosa palo
+L3361,41,Negro,Azul marino,Violeta,Verde oliva
+L3362,42,Turquesa,Morado,Rosa palo,Blanco
+L3363,43,Azul marino,Violeta,Verde oliva,Negro
+L3364,44,Morado,Rosa palo,Blanco,Turquesa
+L3365,45,Violeta,Verde oliva,Negro,Azul marino
+L3366,37,Rosa palo,Blanco,Turquesa,Morado
+L3367,38,Verde oliva,Negro,Azul marino,Violeta
+L3368,39,Blanco,Turquesa,Morado,Rosa palo
+L3369,40,Negro,Azul marino,Violeta,Verde oliva
+L3370,41,Turquesa,Morado,Rosa palo,Blanco
+L3371,42,Azul marino,Violeta,Verde oliva,Negro
+L3372,43,Morado,Rosa palo,Blanco,Turquesa
+L3373,44,Violeta,Verde oliva,Negro,Azul marino
+L3374,45,Rosa palo,Blanco,Turquesa,Morado
+L3375,37,Verde oliva,Negro,Azul marino,Violeta
+L3376,38,Blanco,Turquesa,Morado,Rosa palo
+L3377,39,Negro,Azul marino,Violeta,Verde oliva
+L3378,40,Turquesa,Morado,Rosa palo,Blanco
+L3379,41,Azul marino,Violeta,Verde oliva,Negro
+L3380,42,Morado,Rosa palo,Blanco,Turquesa
+L3381,43,Violeta,Verde oliva,Negro,Azul marino
+L3382,44,Rosa palo,Blanco,Turquesa,Morado
+L3383,45,Verde oliva,Negro,Azul marino,Violeta
+L3384,37,Blanco,Turquesa,Morado,Rosa palo
+L3385,38,Negro,Azul marino,Violeta,Verde oliva
+L3386,39,Turquesa,Morado,Rosa palo,Blanco
+L3387,40,Azul marino,Violeta,Verde oliva,Negro
+L3388,41,Morado,Rosa palo,Blanco,Turquesa
+L3389,42,Violeta,Verde oliva,Negro,Azul marino
+L3390,43,Rosa palo,Blanco,Turquesa,Morado
+L3391,44,Verde oliva,Negro,Azul marino,Violeta
+L3392,45,Blanco,Turquesa,Morado,Rosa palo
+L3393,37,Negro,Azul marino,Violeta,Verde oliva
+L3394,38,Turquesa,Morado,Rosa palo,Blanco
+L3395,39,Azul marino,Violeta,Verde oliva,Negro
+L3396,40,Morado,Rosa palo,Blanco,Turquesa
+L3397,41,Violeta,Verde oliva,Negro,Azul marino
+L3398,42,Rosa palo,Blanco,Turquesa,Morado
+L3399,43,Verde oliva,Negro,Azul marino,Violeta
+L3400,44,Blanco,Turquesa,Morado,Rosa palo
+L3401,45,Negro,Azul marino,Violeta,Verde oliva
+L3402,37,Turquesa,Morado,Rosa palo,Blanco
+L3403,38,Azul marino,Violeta,Verde oliva,Negro
+L3404,39,Morado,Rosa palo,Blanco,Turquesa
+L3405,40,Violeta,Verde oliva,Negro,Azul marino
+L3406,41,Rosa palo,Blanco,Turquesa,Morado
+L3407,42,Verde oliva,Negro,Azul marino,Violeta
+L3408,43,Blanco,Turquesa,Morado,Rosa palo
+L3409,44,Negro,Azul marino,Violeta,Verde oliva
+L3410,45,Turquesa,Morado,Rosa palo,Blanco
+L3411,37,Azul marino,Violeta,Verde oliva,Negro
+L3412,38,Morado,Rosa palo,Blanco,Turquesa
+L3413,39,Violeta,Verde oliva,Negro,Azul marino
+L3414,40,Rosa palo,Blanco,Turquesa,Morado
+L3415,41,Verde oliva,Negro,Azul marino,Violeta
+L3416,42,Blanco,Turquesa,Morado,Rosa palo
+L3417,43,Negro,Azul marino,Violeta,Verde oliva
+L3418,44,Turquesa,Morado,Rosa palo,Blanco
+L3419,45,Azul marino,Violeta,Verde oliva,Negro
+L3420,37,Morado,Rosa palo,Blanco,Turquesa
+L3421,38,Violeta,Verde oliva,Negro,Azul marino
+L3422,39,Rosa palo,Blanco,Turquesa,Morado
+L3423,40,Verde oliva,Negro,Azul marino,Violeta
+L3424,41,Blanco,Turquesa,Morado,Rosa palo
+L3425,42,Negro,Azul marino,Violeta,Verde oliva
+L3426,43,Turquesa,Morado,Rosa palo,Blanco
+L3427,44,Azul marino,Violeta,Verde oliva,Negro
+L3428,45,Morado,Rosa palo,Blanco,Turquesa
+L3429,37,Violeta,Verde oliva,Negro,Azul marino
+L3430,38,Rosa palo,Blanco,Turquesa,Morado
+L3431,39,Verde oliva,Negro,Azul marino,Violeta
+L3432,40,Blanco,Turquesa,Morado,Rosa palo
+L3433,41,Negro,Azul marino,Violeta,Verde oliva
+L3434,42,Turquesa,Morado,Rosa palo,Blanco
+L3435,43,Azul marino,Violeta,Verde oliva,Negro
+L3436,44,Morado,Rosa palo,Blanco,Turquesa
+L3437,45,Violeta,Verde oliva,Negro,Azul marino
+L3438,37,Rosa palo,Blanco,Turquesa,Morado
+L3439,38,Verde oliva,Negro,Azul marino,Violeta
+L3440,39,Blanco,Turquesa,Morado,Rosa palo
+L3441,40,Negro,Azul marino,Violeta,Verde oliva
+L3442,41,Turquesa,Morado,Rosa palo,Blanco
+L3443,42,Azul marino,Violeta,Verde oliva,Negro
+L3444,43,Morado,Rosa palo,Blanco,Turquesa
+L3445,44,Violeta,Verde oliva,Negro,Azul marino
+L3446,45,Rosa palo,Blanco,Turquesa,Morado
+L3447,37,Verde oliva,Negro,Azul marino,Violeta
+L3448,38,Blanco,Turquesa,Morado,Rosa palo
+L3449,39,Negro,Azul marino,Violeta,Verde oliva
+L3450,40,Turquesa,Morado,Rosa palo,Blanco
+L3451,41,Azul marino,Violeta,Verde oliva,Negro
+L3452,42,Morado,Rosa palo,Blanco,Turquesa
+L3453,43,Violeta,Verde oliva,Negro,Azul marino
+L3454,44,Rosa palo,Blanco,Turquesa,Morado
+L3455,45,Verde oliva,Negro,Azul marino,Violeta
+L3456,37,Blanco,Turquesa,Morado,Rosa palo
+L3457,38,Negro,Azul marino,Violeta,Verde oliva
+L3458,39,Turquesa,Morado,Rosa palo,Blanco
+L3459,40,Azul marino,Violeta,Verde oliva,Negro
+L3460,41,Morado,Rosa palo,Blanco,Turquesa
+L3461,42,Violeta,Verde oliva,Negro,Azul marino
+L3462,43,Rosa palo,Blanco,Turquesa,Morado
+L3463,44,Verde oliva,Negro,Azul marino,Violeta
+L3464,45,Blanco,Turquesa,Morado,Rosa palo
+L3465,37,Negro,Azul marino,Violeta,Verde oliva
+L3466,38,Turquesa,Morado,Rosa palo,Blanco
+L3467,39,Azul marino,Violeta,Verde oliva,Negro
+L3468,40,Morado,Rosa palo,Blanco,Turquesa
+L3469,41,Violeta,Verde oliva,Negro,Azul marino
+L3470,42,Rosa palo,Blanco,Turquesa,Morado
+L3471,43,Verde oliva,Negro,Azul marino,Violeta
+L3472,44,Blanco,Turquesa,Morado,Rosa palo
+L3473,45,Negro,Azul marino,Violeta,Verde oliva
+L3474,37,Turquesa,Morado,Rosa palo,Blanco
+L3475,38,Azul marino,Violeta,Verde oliva,Negro
+L3476,39,Morado,Rosa palo,Blanco,Turquesa
+L3477,40,Violeta,Verde oliva,Negro,Azul marino
+L3478,41,Rosa palo,Blanco,Turquesa,Morado
+L3479,42,Verde oliva,Negro,Azul marino,Violeta
+L3480,43,Blanco,Turquesa,Morado,Rosa palo
+L3481,44,Negro,Azul marino,Violeta,Verde oliva
+L3482,45,Turquesa,Morado,Rosa palo,Blanco
+L3483,37,Azul marino,Violeta,Verde oliva,Negro
+L3484,38,Morado,Rosa palo,Blanco,Turquesa
+L3485,39,Violeta,Verde oliva,Negro,Azul marino
+L3486,40,Rosa palo,Blanco,Turquesa,Morado
+L3487,41,Verde oliva,Negro,Azul marino,Violeta
+L3488,42,Blanco,Turquesa,Morado,Rosa palo
+L3489,43,Negro,Azul marino,Violeta,Verde oliva
+L3490,44,Turquesa,Morado,Rosa palo,Blanco
+L3491,45,Azul marino,Violeta,Verde oliva,Negro
+L3492,37,Morado,Rosa palo,Blanco,Turquesa
+L3493,38,Violeta,Verde oliva,Negro,Azul marino
+L3494,39,Rosa palo,Blanco,Turquesa,Morado
+L3495,40,Verde oliva,Negro,Azul marino,Violeta
+L3496,41,Blanco,Turquesa,Morado,Rosa palo
+L3497,42,Negro,Azul marino,Violeta,Verde oliva
+L3498,43,Turquesa,Morado,Rosa palo,Blanco
+L3499,44,Azul marino,Violeta,Verde oliva,Negro
+L3500,45,Morado,Rosa palo,Blanco,Turquesa
+L3501,37,Violeta,Verde oliva,Negro,Azul marino
+L3502,38,Rosa palo,Blanco,Turquesa,Morado
+L3503,39,Verde oliva,Negro,Azul marino,Violeta
+L3504,40,Blanco,Turquesa,Morado,Rosa palo
+L3505,41,Negro,Azul marino,Violeta,Verde oliva
+L3506,42,Turquesa,Morado,Rosa palo,Blanco
+L3507,43,Azul marino,Violeta,Verde oliva,Negro
+L3508,44,Morado,Rosa palo,Blanco,Turquesa
+L3509,45,Violeta,Verde oliva,Negro,Azul marino
+L3510,37,Rosa palo,Blanco,Turquesa,Morado
+L3511,38,Verde oliva,Negro,Azul marino,Violeta
+L3512,39,Blanco,Turquesa,Morado,Rosa palo
+L3513,40,Negro,Azul marino,Violeta,Verde oliva
+L3514,41,Turquesa,Morado,Rosa palo,Blanco
+L3515,42,Azul marino,Violeta,Verde oliva,Negro
+L3516,43,Morado,Rosa palo,Blanco,Turquesa
+L3517,44,Violeta,Verde oliva,Negro,Azul marino
+L3518,45,Rosa palo,Blanco,Turquesa,Morado
+L3519,37,Verde oliva,Negro,Azul marino,Violeta
+L3520,38,Blanco,Turquesa,Morado,Rosa palo
+L3521,39,Negro,Azul marino,Violeta,Verde oliva
+L3522,40,Turquesa,Morado,Rosa palo,Blanco
+L3523,41,Azul marino,Violeta,Verde oliva,Negro
+L3524,42,Morado,Rosa palo,Blanco,Turquesa
+L3525,43,Violeta,Verde oliva,Negro,Azul marino
+L3526,44,Rosa palo,Blanco,Turquesa,Morado
+L3527,45,Verde oliva,Negro,Azul marino,Violeta
+L3528,37,Blanco,Turquesa,Morado,Rosa palo
+L3529,38,Negro,Azul marino,Violeta,Verde oliva
+L3530,39,Turquesa,Morado,Rosa palo,Blanco
+L3531,40,Azul marino,Violeta,Verde oliva,Negro
+L3532,41,Morado,Rosa palo,Blanco,Turquesa
+L3533,42,Violeta,Verde oliva,Negro,Azul marino
+L3534,43,Rosa palo,Blanco,Turquesa,Morado
+L3535,44,Verde oliva,Negro,Azul marino,Violeta
+L3536,45,Blanco,Turquesa,Morado,Rosa palo
+L3537,37,Negro,Azul marino,Violeta,Verde oliva
+L3538,38,Turquesa,Morado,Rosa palo,Blanco
+L3539,39,Azul marino,Violeta,Verde oliva,Negro
+L3540,40,Morado,Rosa palo,Blanco,Turquesa
+L3541,41,Violeta,Verde oliva,Negro,Azul marino
+L3542,42,Rosa palo,Blanco,Turquesa,Morado
+L3543,43,Verde oliva,Negro,Azul marino,Violeta
+L3544,44,Blanco,Turquesa,Morado,Rosa palo
+L3545,45,Negro,Azul marino,Violeta,Verde oliva
+L3546,37,Turquesa,Morado,Rosa palo,Blanco
+L3547,38,Azul marino,Violeta,Verde oliva,Negro
+L3548,39,Morado,Rosa palo,Blanco,Turquesa
+L3549,40,Violeta,Verde oliva,Negro,Azul marino
+L3550,41,Rosa palo,Blanco,Turquesa,Morado
+L3551,42,Verde oliva,Negro,Azul marino,Violeta
+L3552,43,Blanco,Turquesa,Morado,Rosa palo
+L3553,44,Negro,Azul marino,Violeta,Verde oliva
+L3554,45,Turquesa,Morado,Rosa palo,Blanco
+L3555,37,Azul marino,Violeta,Verde oliva,Negro
+L3556,38,Morado,Rosa palo,Blanco,Turquesa
+L3557,39,Violeta,Verde oliva,Negro,Azul marino
+L3558,40,Rosa palo,Blanco,Turquesa,Morado
+L3559,41,Verde oliva,Negro,Azul marino,Violeta
+L3560,42,Blanco,Turquesa,Morado,Rosa palo
+L3561,43,Negro,Azul marino,Violeta,Verde oliva
+L3562,44,Turquesa,Morado,Rosa palo,Blanco
+L3563,45,Azul marino,Violeta,Verde oliva,Negro
+L3564,37,Morado,Rosa palo,Blanco,Turquesa
+L3565,38,Violeta,Verde oliva,Negro,Azul marino
+L3566,39,Rosa palo,Blanco,Turquesa,Morado
+L3567,40,Verde oliva,Negro,Azul marino,Violeta
+L3568,41,Blanco,Turquesa,Morado,Rosa palo
+L3569,42,Negro,Azul marino,Violeta,Verde oliva
+L3570,43,Turquesa,Morado,Rosa palo,Blanco
+L3571,44,Azul marino,Violeta,Verde oliva,Negro
+L3572,45,Morado,Rosa palo,Blanco,Turquesa
+L3573,37,Violeta,Verde oliva,Negro,Azul marino
+L3574,38,Rosa palo,Blanco,Turquesa,Morado
+L3575,39,Verde oliva,Negro,Azul marino,Violeta
+L3576,40,Blanco,Turquesa,Morado,Rosa palo
+L3577,41,Negro,Azul marino,Violeta,Verde oliva
+L3578,42,Turquesa,Morado,Rosa palo,Blanco
+L3579,43,Azul marino,Violeta,Verde oliva,Negro
+L3580,44,Morado,Rosa palo,Blanco,Turquesa
+L3581,45,Violeta,Verde oliva,Negro,Azul marino
+L3582,37,Rosa palo,Blanco,Turquesa,Morado
+L3583,38,Verde oliva,Negro,Azul marino,Violeta
+L3584,39,Blanco,Turquesa,Morado,Rosa palo
+L3585,40,Negro,Azul marino,Violeta,Verde oliva
+L3586,41,Turquesa,Morado,Rosa palo,Blanco
+L3587,42,Azul marino,Violeta,Verde oliva,Negro
+L3588,43,Morado,Rosa palo,Blanco,Turquesa
+L3589,44,Violeta,Verde oliva,Negro,Azul marino
+L3590,45,Rosa palo,Blanco,Turquesa,Morado
+L3591,37,Verde oliva,Negro,Azul marino,Violeta
+L3592,38,Blanco,Turquesa,Morado,Rosa palo
+L3593,39,Negro,Azul marino,Violeta,Verde oliva
+L3594,40,Turquesa,Morado,Rosa palo,Blanco
+L3595,41,Azul marino,Violeta,Verde oliva,Negro
+L3596,42,Morado,Rosa palo,Blanco,Turquesa
+L3597,43,Violeta,Verde oliva,Negro,Azul marino
+L3598,44,Rosa palo,Blanco,Turquesa,Morado
+L3599,45,Verde oliva,Negro,Azul marino,Violeta
+L3600,37,Blanco,Turquesa,Morado,Rosa palo
+L3601,38,Negro,Azul marino,Violeta,Verde oliva
+L3602,39,Turquesa,Morado,Rosa palo,Blanco
+L3603,40,Azul marino,Violeta,Verde oliva,Negro
+L3604,41,Morado,Rosa palo,Blanco,Turquesa
+L3605,42,Violeta,Verde oliva,Negro,Azul marino
+L3606,43,Rosa palo,Blanco,Turquesa,Morado
+L3607,44,Verde oliva,Negro,Azul marino,Violeta
+L3608,45,Blanco,Turquesa,Morado,Rosa palo
+L3609,37,Negro,Azul marino,Violeta,Verde oliva
+L3610,38,Turquesa,Morado,Rosa palo,Blanco
+L3611,39,Azul marino,Violeta,Verde oliva,Negro
+L3612,40,Morado,Rosa palo,Blanco,Turquesa
+L3613,41,Violeta,Verde oliva,Negro,Azul marino
+L3614,42,Rosa palo,Blanco,Turquesa,Morado
+L3615,43,Verde oliva,Negro,Azul marino,Violeta
+L3616,44,Blanco,Turquesa,Morado,Rosa palo
+L3617,45,Negro,Azul marino,Violeta,Verde oliva
+L3618,37,Turquesa,Morado,Rosa palo,Blanco
+L3619,38,Azul marino,Violeta,Verde oliva,Negro
+L3620,39,Morado,Rosa palo,Blanco,Turquesa
+L3621,40,Violeta,Verde oliva,Negro,Azul marino
+L3622,41,Rosa palo,Blanco,Turquesa,Morado
+L3623,42,Verde oliva,Negro,Azul marino,Violeta
+L3624,43,Blanco,Turquesa,Morado,Rosa palo
+L3625,44,Negro,Azul marino,Violeta,Verde oliva
+L3626,45,Turquesa,Morado,Rosa palo,Blanco
+L3627,37,Azul marino,Violeta,Verde oliva,Negro
+L3628,38,Morado,Rosa palo,Blanco,Turquesa
+L3629,39,Violeta,Verde oliva,Negro,Azul marino
+L3630,40,Rosa palo,Blanco,Turquesa,Morado
+L3631,41,Verde oliva,Negro,Azul marino,Violeta
+L3632,42,Blanco,Turquesa,Morado,Rosa palo
+L3633,43,Negro,Azul marino,Violeta,Verde oliva
+L3634,44,Turquesa,Morado,Rosa palo,Blanco
+L3635,45,Azul marino,Violeta,Verde oliva,Negro
+L3636,37,Morado,Rosa palo,Blanco,Turquesa
+L3637,38,Violeta,Verde oliva,Negro,Azul marino
+L3638,39,Rosa palo,Blanco,Turquesa,Morado
+L3639,40,Verde oliva,Negro,Azul marino,Violeta
+L3640,41,Blanco,Turquesa,Morado,Rosa palo
+L3641,42,Negro,Azul marino,Violeta,Verde oliva
+L3642,43,Turquesa,Morado,Rosa palo,Blanco
+L3643,44,Azul marino,Violeta,Verde oliva,Negro
+L3644,45,Morado,Rosa palo,Blanco,Turquesa
+L3645,37,Violeta,Verde oliva,Negro,Azul marino
+L3646,38,Rosa palo,Blanco,Turquesa,Morado
+L3647,39,Verde oliva,Negro,Azul marino,Violeta
+L3648,40,Blanco,Turquesa,Morado,Rosa palo
+L3649,41,Negro,Azul marino,Violeta,Verde oliva
+L3650,42,Turquesa,Morado,Rosa palo,Blanco
+L3651,43,Azul marino,Violeta,Verde oliva,Negro
+L3652,44,Morado,Rosa palo,Blanco,Turquesa
+L3653,45,Violeta,Verde oliva,Negro,Azul marino
+L3654,37,Rosa palo,Blanco,Turquesa,Morado
+L3655,38,Verde oliva,Negro,Azul marino,Violeta
+L3656,39,Blanco,Turquesa,Morado,Rosa palo
+L3657,40,Negro,Azul marino,Violeta,Verde oliva
+L3658,41,Turquesa,Morado,Rosa palo,Blanco
+L3659,42,Azul marino,Violeta,Verde oliva,Negro
+L3660,43,Morado,Rosa palo,Blanco,Turquesa
+L3661,44,Violeta,Verde oliva,Negro,Azul marino
+L3662,45,Rosa palo,Blanco,Turquesa,Morado
+L3663,37,Verde oliva,Negro,Azul marino,Violeta
+L3664,38,Blanco,Turquesa,Morado,Rosa palo
+L3665,39,Negro,Azul marino,Violeta,Verde oliva
+L3666,40,Turquesa,Morado,Rosa palo,Blanco
+L3667,41,Azul marino,Violeta,Verde oliva,Negro
+L3668,42,Morado,Rosa palo,Blanco,Turquesa
+L3669,43,Violeta,Verde oliva,Negro,Azul marino
+L3670,44,Rosa palo,Blanco,Turquesa,Morado
+L3671,45,Verde oliva,Negro,Azul marino,Violeta
+L3672,37,Blanco,Turquesa,Morado,Rosa palo
+L3673,38,Negro,Azul marino,Violeta,Verde oliva
+L3674,39,Turquesa,Morado,Rosa palo,Blanco
+L3675,40,Azul marino,Violeta,Verde oliva,Negro
+L3676,41,Morado,Rosa palo,Blanco,Turquesa
+L3677,42,Violeta,Verde oliva,Negro,Azul marino
+L3678,43,Rosa palo,Blanco,Turquesa,Morado
+L3679,44,Verde oliva,Negro,Azul marino,Violeta
+L3680,45,Blanco,Turquesa,Morado,Rosa palo
