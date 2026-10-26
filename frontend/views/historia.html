@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERCURY · Historia</title>
+    <title>MERCURY · Customizer</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
                     <a href="catalogo.html" class="header__link">Catálogo</a>
                 </li>
                 <li class="header__item">
-                    <a href="historia.html" class="header__link">Personalización</a>
+                    <a href="historia.html" class="header__link--active">Personalización</a>
                 </li>
             </ul>
             <div class="header__actions">
@@ -39,15 +39,16 @@
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-                <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
+                <a href="carrito.html">
+                    <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
                     <span class="header__cart-badge" id="cartCount">0</span>
-                </button>
+                    </button>
+                </a>
             </div>
         </nav>
     </header>
@@ -60,24 +61,29 @@
                     alt="Zapatillas Mercury como símbolo de movimiento y estilo">
             </div>
             <div class="story__hero-content">
-                <span class="story__hero-tag">MERCURY · DESDE MADRID</span>
-                <h1 class="story__hero-title">
+                <span class="common__tag">MERCURY · DESDE MADRID</span>
+                <h1 class="common__title-secundary">
                     NO SE TRATA<br>
                     DE SEGUIR.<br>
                     <span>SE TRATA DE CREAR.</span>
                 </h1>
-                <p class="story__hero-description">
+                <p class="common__description">
                     NO SIGAS EL <span>MOLDE.</span>
                 </p>
-                <p class="story__cta-description">
-                    Encuentra las zapatillas que encajan contigo.
-                </p>
             </div>
-
         </section>
 
         <div class="marquee">
             <div class="marquee__track">
+                <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
+                <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
                 <div class="marquee__item"><span class="marquee__dot"></span> MENOS RUIDO</div>
                 <div class="marquee__item"><span class="marquee__dot"></span> DISEÑO HONESTO</div>
                 <div class="marquee__item"><span class="marquee__dot"></span> MOVIMIENTO REAL</div>
@@ -92,9 +98,9 @@
 
         <section class="customizer">
             <section class="customizer__intro">
-                <p class="catalog__title">MERCURY CUSTOM LAB</p>
+                <p class="common__title">MERCURY CUSTOM LAB</p>
                 <br>
-                <p class="customizer__description">Diseña tu propio estilo.</p>
+                <p class="common__description">Encuentra las zapatillas que encajan contigo. <br> Diseña tu propio estilo.</p>
             </section>
 
             <div class="customizer__layout">
@@ -241,7 +247,7 @@
                             <span class="customizer__step">01</span>
                             <div>
                                 <h2 class="customizer__section-title">Elige tu diseño</h2>
-                                <p class="customizer__section-description">Empieza con una combinación base.</p>
+                                <p class="common__description">Empieza con una combinación base.</p>
                             </div>
                         </div>
 
@@ -253,9 +259,9 @@
                             <button class="customizer__design" type="button" data-design="ocean"><span
                                     class="customizer__design-sample customizer__design-sample--ocean"></span><span
                                     class="customizer__design-name">Ocean</span></button>
-                            <button class="customizer__design" type="button" data-design="sunset"><span
-                                    class="customizer__design-sample customizer__design-sample--sunset"></span><span
-                                    class="customizer__design-name">Sunset</span></button>
+                            <button class="customizer__design" type="button" data-design="lavander"><span
+                                    class="customizer__design-sample customizer__design-sample--lavander"></span><span
+                                    class="customizer__design-name">Lavander</span></button>
                             <button class="customizer__design" type="button" data-design="graphic"><span
                                     class="customizer__design-sample customizer__design-sample--graphic"></span><span
                                     class="customizer__design-name">Graphic</span></button>
@@ -267,7 +273,7 @@
                             <span class="customizer__step">02</span>
                             <div>
                                 <h2 class="customizer__section-title">Personaliza los colores</h2>
-                                <p class="customizer__section-description">Selecciona una zona y aplica un color.</p>
+                                <p class="common__description">Selecciona una zona y aplica un color.</p>
                             </div>
                         </div>
 
@@ -283,42 +289,18 @@
                         <p class="customizer__selected-color" id="selectedColorLabel">Color seleccionado: Blanco</p>
                     </div>
 
-                    <div class="customizer__section">
-                        <div class="customizer__section-heading">
-                            <span class="customizer__step">03</span>
-                            <div>
-                                <h2 class="customizer__section-title">Añade un estampado</h2>
-                                <p class="customizer__section-description">Elige un acabado para tu diseño.</p>
-                            </div>
-                        </div>
-
-                        <div class="customizer__patterns">
-                            <button class="customizer__pattern customizer__pattern--selected" type="button"
-                                data-pattern="none"><span
-                                    class="customizer__pattern-sample customizer__pattern-sample--none"></span><span>Sin
-                                    estampado</span></button>
-                            <button class="customizer__pattern" type="button" data-pattern="dots"><span
-                                    class="customizer__pattern-sample customizer__pattern-sample--dots"></span><span>Puntos</span></button>
-                            <button class="customizer__pattern" type="button" data-pattern="stripes"><span
-                                    class="customizer__pattern-sample customizer__pattern-sample--stripes"></span><span>Rayas</span></button>
-                            <button class="customizer__pattern" type="button" data-pattern="graphic"><span
-                                    class="customizer__pattern-sample customizer__pattern-sample--graphic"></span><span>Gráfico</span></button>
-                        </div>
-                    </div>
-
                     <div class="customizer__actions">
-                        <button class="customizer__button" id="resetButton"
+                        <button class="common__btn-black " id="resetButton"
                             type="button">Restablecer</button>
-                        <button class="customizer__button" id="saveButton"
+                        <button class="common__btn-black " id="saveButton"
                             type="button">Guardar diseño</button>
                     </div>
                     <p class="customizer__feedback" id="feedback" role="status" aria-live="polite"></p>
                 </section>
             </div>
-
         </section>
-
     </main>
+
 
     <footer class="footer">
         <div class="container">
@@ -339,8 +321,8 @@
             </div>
         </div>
     </footer>
-    <div class="help-widget" aria-label="Ayuda">?</div>
-    <script src="script.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
