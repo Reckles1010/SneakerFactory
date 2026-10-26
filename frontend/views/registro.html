@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERCURY · SingUp</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/LogoM.png">
+    <link rel="icon" type="image/png" href="../assets/LogoM.png">
 </head>
 
 <body>
@@ -29,64 +29,81 @@
                 </li>
             </ul>
             <div class="header__actions">
-                <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                <a href="carrito.html">
+                    <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
                     <span class="header__cart-badge" id="cartCount">0</span>
-                </button>
+                    </button>
+                </a>
             </div>
         </nav>
     </header>
-    <main class="auth-page">
-        <section class="auth-card">
-            <div class="auth-card__header">
-                <span class="auth-card__subtitle">MERCURY / REGISTRO</span>
-                <h1 class="auth-card__title">UNIRSE AL CLUB</h1>
-                <p class="auth-card__description">Crea tu cuenta para acceder a compras rápidas, drops exclusivos y ventajas especiales.</p>
+
+    <main class="auth__page">
+        <section class="auth__card">
+            <div class="auth__card-header">
+                <span class="auth__card-subtitle">REGISTRO</span>
+                <h1 class="auth__card-title">UNIRSE AL CLUB</h1>
+                <p class="auth__card-description">Accede a compras rápidas, drops y ventajas.</p>
             </div>
-            <form class="auth-form" id="registerForm" novalidate>
-                <div class="auth-form__row">
-                    <div class="auth-form__group">
-                        <label for="regName" class="auth-form__label">NOMBRE</label>
-                        <input type="text" id="regName" class="auth-form__input" placeholder="Ariadna" required>
-                        <span class="auth-form__error" id="nameError">El nombre es obligatorio.</span>
+
+            <form class="auth__form" id="registerForm" novalidate>
+                <div class="auth__form-row">
+                    <div class="auth__form-group">
+                        <label for="regName" class="auth__form-label">NOMBRE</label>
+                        <input type="text" id="regName" class="auth__form-input" placeholder="Ariadna" required>
+                        <span class="auth__form-error" id="nameError">El nombre es obligatorio.</span>
                     </div>
-                    <div class="auth-form__group">
-                        <label for="regLastName" class="auth-form__label">APELLIDOS</label>
-                        <input type="text" id="regLastName" class="auth-form__input" placeholder="García" required>
-                        <span class="auth-form__error" id="lastNameError">Los apellidos son obligatorios.</span>
+
+                    <div class="auth__form-group">
+                        <label for="regLastName" class="auth__form-label">APELLIDOS</label>
+                        <input type="text" id="regLastName" class="auth__form-input" placeholder="García" required>
+                        <span class="auth__form-error" id="lastNameError">Los apellidos son obligatorios.</span>
                     </div>
                 </div>
-                <div class="auth-form__group">
-                    <label for="regEmail" class="auth-form__label">CORREO ELECTRÓNICO</label>
-                    <input type="email" id="regEmail" class="auth-form__input" placeholder="tu@email.com" required>
-                    <span class="auth-form__error" id="regEmailError">Introduce un correo electrónico válido.</span>
+
+                <div class="auth__form-group">
+                    <label for="regEmail" class="auth__form-label">CORREO ELECTRÓNICO</label>
+                    <input type="email" id="regEmail" class="auth__form-input" placeholder="tu@email.com" required>
+                    <span class="auth__form-error" id="regEmailError">Introduce un correo electrónico válido.</span>
                 </div>
-                <div class="auth-form__group">
-                    <label for="regPassword" class="auth-form__label">CONTRASEÑA</label>
-                    <input type="password" id="regPassword" class="auth-form__input" placeholder="••••••••" required minlength="8">
-                    <span class="auth-form__error" id="regPasswordError">Mínimo 8 caracteres.</span>
+
+                <div class="auth__form-group">
+                    <label for="regPassword" class="auth__form-label">CONTRASEÑA</label>
+                    <input type="password" id="regPassword" class="auth__form-input" placeholder="••••••••" required minlength="8">
+                    <span class="auth__form-error" id="regPasswordError">Mínimo 8 caracteres.</span>
                 </div>
-                <div class="auth-form__checkbox-group">
-                    <label class="auth-form__checkbox-label">
+
+                <div class="auth__form-checkbox-group">
+                    <label class="auth__form-checkbox-label">
                         <input type="checkbox" id="termsCheck" required>
-                        <span>Acepto los <a href="#" class="auth-card__link">Términos y Condiciones</a> y la <a href="#" class="auth-card__link">Política de Privacidad</a>.</span>
+                        <span>
+                            Acepto los
+                            <a href="#" class="auth__card-link">Términos y Condiciones</a>
+                            y la
+                            <a href="#" class="auth__card-link">Política de Privacidad</a>.
+                        </span>
                     </label>
-                    <span class="auth-form__error" id="termsError">Debes aceptar las condiciones para continuar.</span>
+                    <span class="auth__form-error" id="termsError">Debes aceptar las condiciones para continuar.</span>
                 </div>
-                <button type="submit" class="auth-form__submit-btn">
+
+                <button type="submit" class="auth__form-submit-btn">
                     <span>Crear cuenta</span>
                     <span>↗</span>
                 </button>
             </form>
-            <div class="auth-card__footer">
-                <p>¿Ya tienes una cuenta? <a href="login.html" class="auth-card__link">Inicia sesión aquí</a></p>
+
+            <div class="auth__card-footer">
+                <p>¿Ya tienes una cuenta? <a href="login.html" class="auth__card-link">Inicia sesión aquí</a></p>
             </div>
         </section>
     </main>
+
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -104,6 +121,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
