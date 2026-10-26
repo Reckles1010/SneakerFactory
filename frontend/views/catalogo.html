@@ -22,7 +22,7 @@
                     <a href="inicio.html" class="header__link">Inicio</a>
                 </li>
                 <li class="header__item">
-                    <a href="catalogo.html" class="header__link">Catálogo</a>
+                    <a href="catalogo.html" class="header__link--active">Catálogo</a>
                 </li>
                 <li class="header__item">
                     <a href="historia.html" class="header__link">Personalización</a>
@@ -35,111 +35,35 @@
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-                <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                <a href="carrito.html">
+                    <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
                     <span class="header__cart-badge" id="cartCount">0</span>
-                </button>
+                    </button>
+                </a>
             </div>
         </nav>
     </header>
 
     <main>
-
-        <section class="catalog container" id="essencials">
+        <section class="catalog" id="catalog">
             <div class="catalog__header">
                 <div>
-                    <h2 class="catalog__title">ESENCIALES</h2>
+                    <h2 class="common__title">COLECCIÓN</h2>
                 </div>
             </div>
-
+                <div class="catalog__filters" aria-label="Filtrar productos">
+                    <button class="catalog__filter-btn catalog__filter-btn--active" data-filter="all">Todos</button>
+                    <button class="catalog__filter-btn" data-filter="zapatillas">Zapatillas</button>
+                    <button class="catalog__filter-btn" data-filter="calcetines">Calcetines</button>
+                    <button class="catalog__filter-btn" data-filter="cordones">Cordones</button>
+                    <button class="catalog__filter-btn" data-filter="edicion-limitada">Gorras</button>
+                </div>
             <div class="catalog__grid" id="productGrid">
-                <article class="card" data-category="running">
-                    <div class="card__image-wrapper">
-                        <span class="card__badge">NUEVO</span>
-                        <button class="card__favorite-btn" aria-label="Añadir a favoritos">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Velocity 2" class="card__image">
-                        <button class="card__overlay-btn card__overlay-btn--action" data-id="1" data-name="Velocity 2" data-price="139">
-                            <span>Añadir al carrito</span>
-                            <span>+</span>
-                        </button>
-                    </div>
-                    <div class="card__details">
-                        <div>
-                            <h3 class="card__title">Velocity 2</h3>
-                            <p class="card__category">Running</p>
-                        </div>
-                        <span class="card__price">139 €</span>
-                    </div>
-                </article>
-                <article class="card" data-category="limited">
-                    <div class="card__image-wrapper">
-                        <span class="card__badge">LIMITADO</span>
-                        <button class="card__favorite-btn" aria-label="Añadir a favoritos">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop" alt="Noir Essential" class="card__image">
-                        <button class="card__overlay-btn card__overlay-btn--action" data-id="2" data-name="Noir Essential" data-price="179">
-                            <span>Añadir al carrito</span>
-                            <span>+</span>
-                        </button>
-                    </div>
-                    <div class="card__details">
-                        <div>
-                            <h3 class="card__title">Noir Essential</h3>
-                            <p class="card__category">Edición limitada</p>
-                        </div>
-                        <span class="card__price">179 €</span>
-                    </div>
-                </article>
-                <article class="card" data-category="lifestyle">
-                    <div class="card__image-wrapper">
-                        <button class="card__favorite-btn" aria-label="Añadir a favoritos">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?q=80&w=800&auto=format&fit=crop" alt="Canvas Classic" class="card__image">
-                        <button class="card__overlay-btn card__overlay-btn--action" data-id="3" data-name="Canvas Classic" data-price="99">
-                            <span>Añadir al carrito</span>
-                            <span>+</span>
-                        </button>
-                    </div>
-                    <div class="card__details">
-                        <div>
-                            <h3 class="card__title">Canvas Classic</h3>
-                            <p class="card__category">Lifestyle</p>
-                        </div>
-                        <span class="card__price">99 €</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="catalog catalog--full container" id="catalog">
-            <div class="catalog__header">
-                <div>
-                    <h2 class="catalog__title">COLECCIÓN</h2>
-                </div>
-
-            </div>
-            <div class="catalog__filters" aria-label="Filtrar productos">
-                <button class="catalog__filter-btn catalog__filter-btn--active" data-filter="all">Todos</button>
-                <button class="catalog__filter-btn" data-filter="zapatillas">Zapatillas</button>
-                <button class="catalog__filter-btn" data-filter="calcetines">Calcetines</button>
-                <button class="catalog__filter-btn" data-filter="cordones">Cordones</button>
-            </div>
-            </div>
-            <div class="catalog__grid catalog__grid--full" id="productGrid">
                 <article class="card" data-category="zapatillas">
                     <div class="card__image-wrapper">
                         <span class="card__badge">NUEVO</span>
@@ -291,42 +215,31 @@
                     </div>
                     <div class="card__details"><div><h3 class="card__title">Performance Socks</h3><p class="card__category">Calcetines técnicos</p></div><span class="card__price">20 €</span></div>
                 </article>
-                <article class="card" data-category="cordones">
+                <article class="card" data-category="calcetines">
                     <div class="card__image-wrapper">
                         <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop" alt="Cordones Pure White" class="card__image">
                         <button class="card__overlay-btn card__overlay-btn--action" data-id="21" data-name="Laces Pure White" data-price="8"><span>Añadir al carrito</span><span>+</span></button>
                     </div>
                     <div class="card__details"><div><h3 class="card__title">Laces Pure White</h3><p class="card__category">Cordones · 120 cm</p></div><span class="card__price">8 €</span></div>
                 </article>
-                <article class="card" data-category="cordones">
+                <article class="card" data-category="calcetines">
                     <div class="card__image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Cordones Neon Teal" class="card__image">
-                        <button class="card__overlay-btn card__overlay-btn--action" data-id="22" data-name="Laces Neon Teal" data-price="10"><span>Añadir al carrito</span><span>+</span></button>
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Calcetines Neon Teal" class="card__image">
+                        <button class="card__overlay-btn card__overlay-btn--action" data-id="22" data-name="Socks Neon Teal" data-price="10"><span>Añadir al carrito</span><span>+</span></button>
                     </div>
-                    <div class="card__details"><div><h3 class="card__title">Laces Neon Teal</h3><p class="card__category">Cordones · 120 cm</p></div><span class="card__price">10 €</span></div>
+                    <div class="card__details"><div><h3 class="card__title">Socks Neon Teal</h3><p class="card__category">Calcetines · 120 cm</p></div><span class="card__price">10 €</span></div>
                 </article>
-                <article class="card" data-category="cordones">
+                <article class="card" data-category="calcetines">
                     <div class="card__image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop" alt="Cordones Midnight Black" class="card__image">
-                        <button class="card__overlay-btn card__overlay-btn--action" data-id="23" data-name="Laces Midnight Black" data-price="8"><span>Añadir al carrito</span><span>+</span></button>
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop" alt="Calcetines Midnight Black" class="card__image">
+                        <button class="card__overlay-btn card__overlay-btn--action" data-id="23" data-name="Socks Midnight Black" data-price="8"><span>Añadir al carrito</span><span>+</span></button>
                     </div>
-                    <div class="card__details"><div><h3 class="card__title">Laces Midnight Black</h3><p class="card__category">Cordones · 120 cm</p></div><span class="card__price">8 €</span></div>
+                    <div class="card__details"><div><h3 class="card__title">Socks Midnight Black</h3><p class="card__category">Calcetines · 120 cm</p></div><span class="card__price">8 €</span></div>
                 </article>
             </div>
         </section>
-
-        <section class="catalog-promo">
-            <div class="container catalog-promo__content">
-                <span class="catalog__subtitle">EL UNIVERSO MERCURY</span>
-                <h2 class="catalog-promo__title">EL ESTILO ESTÁ EN LOS DETALLES.</h2>
-                <a href="historia.html" class="hero__cta-btn">
-                    Conoce nuestra historia
-                    <span>↗</span>
-                </a>
-            </div>
-        </section>
-
     </main>
+
 
     <footer class="footer">
         <div class="container">
@@ -345,7 +258,7 @@
             </div>
         </div>
     </footer>
-    <div class="help-widget" aria-label="Ayuda">?</div>
-    <script src="script.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

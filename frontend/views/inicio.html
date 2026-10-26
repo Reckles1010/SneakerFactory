@@ -19,7 +19,7 @@
             </a>
             <ul class="header__menu">
                 <li class="header__item">
-                    <a href="inicio.html" class="header__link">Inicio</a>
+                    <a href="inicio.html" class="header__link--active">Inicio</a>
                 </li>
                 <li class="header__item">
                     <a href="catalogo.html" class="header__link">Catálogo</a>
@@ -35,14 +35,16 @@
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-                <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                <a href="carrito.html">
+                    <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
                     <span class="header__cart-badge" id="cartCount">0</span>
-                </button>
+                    </button>
+                </a>
             </div>
         </nav>
     </header>
@@ -51,15 +53,15 @@
         <section class="hero">
             <div class="hero__content">
                 <div>
-                    <h1 class="hero__title">
+                    <h1 class="common__title">
                         Pisa<br>
                         <span class="hero__title-outline">fuera del</span>
                         molde
                     </h1>
-                    <p class="hero__description">
+                    <p class="common__description">
                         Zapatillas diseñadas para quienes no siguen el ritmo: lo crean. Comodidad radical, diseño sin ruido.
                     </p>
-                    <a href="#essencials" class="hero__cta-btn">
+                    <a href="#catalog" class="common__btn-black">
                         Explorar colección
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -76,7 +78,6 @@
                 <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1200&auto=format&fit=crop" alt="Colección Mono Series" class="hero__image">
                 <div class="hero__overlay">
                     <div class="hero__product-meta">
-                        <span class="hero__badge-tag">Drop 01</span>
                         <h2 class="hero__product-title">MONO SERIES</h2>
                     </div>
                     <div class="hero__price-tag">
@@ -86,10 +87,10 @@
             </div>
         </section>
 
-        <section class="story__numbers">
+        <section class="story__background">
             <div class="container__numbers">
                 <div class="story__numbers-header">
-                    <h2 class="catalog__title">
+                    <h2 class="common__title">
                         UNA IDEA.<br>MUCHAS FORMAS DE AVANZAR.
                     </h2>
                 </div>
@@ -121,52 +122,52 @@
 
         <section class="story__feature">
             <div class="story__feature-visual">
-                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1200&auto=format&fit=crop" alt="Detalle de diseño y materiales de unas zapatillas">
-                <span class="story__feature-image-label">DISEÑO CON INTENCIÓN</span>
+                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1200&auto=format&fit=crop" alt="Zapatillas">
+                <span class="story__feature-image">DISEÑO CON INTENCIÓN</span>
             </div>
             <div class="story__feature-content">
-                <span class="story__feature-tag">NUESTRA FILOSOFÍA</span>
-                <h2 class="story__feature-title">
+                <span class="common__tag">NUESTRA FILOSOFÍA</span>
+                <h2 class="common__title-secundary">
                     DISEÑADAS<br>
                     PARA MOVERSE.<br>
                     HECHAS PARA DURAR.
                 </h2>
-                <p class="story__feature-description">
+                <p class="common__description">
                     Creemos que una buena zapatilla empieza mucho antes del primer paso. Empieza con una idea clara, continúa con decisiones conscientes y termina en un producto que funciona en tu día a día.
                 </p>
-                <p class="story__feature-description">
+                <p class="common__description">
                     Por eso buscamos el equilibrio entre funcionalidad, comodidad y personalidad. Sin elementos innecesarios. Sin diseños que caducan al terminar una temporada.
                 </p>
-                <a href="catalogo.html" class="story__text-link">
-                    EXPLORA NUESTRA COLECCIÓN <span>↗</span>
+                <a href="catalogo.html" class="common__btn-white">
+                    Explora la colección <span>↗</span>
                 </a>
             </div>
         </section>
 
-        <section class="story__values">
+        <section class="story__background">
             <div class="container">
                 <div class="story__values-header">
-                    <h2 class="catalog__title">NUESTROS PRINCIPIOS</h2>
+                    <h2 class="common__title">NUESTROS PRINCIPIOS</h2>
                 </div>
                 <div class="story__values-grid">
                     <article class="story__value">
                         <span class="story__value-number">01</span>
                         <h3 class="story__value-title">DISEÑO HONESTO</h3>
-                        <p class="story__value-description">
+                        <p class="common__description">
                             Cada elemento cumple una función. Apostamos por líneas claras y diseños que hablan por sí mismos.
                         </p>
                     </article>
                     <article class="story__value">
                         <span class="story__value-number">02</span>
                         <h3 class="story__value-title">COMODIDAD REAL</h3>
-                        <p class="story__value-description">
+                        <p class="common__description">
                             El estilo importa, pero sentirte bien importa todavía más. Diseñamos pensando en el movimiento de cada día.
                         </p>
                     </article>
                     <article class="story__value">
                         <span class="story__value-number">03</span>
                         <h3 class="story__value-title">MENOS, MEJOR</h3>
-                        <p class="story__value-description">
+                        <p class="common__description">
                             Preferimos una colección cuidada a un catálogo infinito. Menos excesos, más atención al detalle.
                         </p>
                     </article>
@@ -179,7 +180,7 @@
                 <div class="newsletter__wrapper">
                     <span class="newsletter__tag">NOVEDADES ANTES QUE NADIE</span>
                     <h2 class="newsletter__title">ENTRA EN EL CLUB</h2>
-                    <p class="newsletter__description">
+                    <p class="common__description">
                         Drops exclusivos, historias y un 10% en tu primer pedido.
                     </p>
                     <form class="newsletter__form" id="newsletterForm">
@@ -190,8 +191,8 @@
                 </div>
             </div>
         </section>
-
     </main>
+
 
     <footer class="footer">
         <div class="container">
@@ -212,7 +213,7 @@
             </div>
         </div>
     </footer>
-    <div class="help-widget" aria-label="Ayuda">?</div>
-    <script src="script.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
