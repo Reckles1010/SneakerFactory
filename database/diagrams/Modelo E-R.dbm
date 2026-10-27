@@ -55,7 +55,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</constraint>
 </table>
 
-<table name="Pedido" layers="0" collapse-mode="2" max-obj-count="9" z-value="0">
+<table name="Pedido" layers="0" collapse-mode="2" max-obj-count="10" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="540" y="400"/>
@@ -71,15 +71,18 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="descuento" not-null="true">
 		<type name="boolean" length="0"/>
 	</column>
+	<column name="fecha">
+		<type name="date" length="0"/>
+	</column>
 	<constraint name="Pedido_pk" type="pk-constr" table="public.&quot;Pedido&quot;">
 		<columns names="id_pedido" ref-type="src-columns"/>
 	</constraint>
 
 	<customidxs object-type="column">
-		<object name="id_cliente_Clientes" index="7"/>
-		<object name="id_linea_Linea de pedido" index="4"/>
-		<object name="id_modelo_Modelo" index="5"/>
-		<object name="id_trabajador_Trabajador" index="6"/>
+		<object name="id_cliente_Clientes" index="8"/>
+		<object name="id_linea_Linea de pedido" index="5"/>
+		<object name="id_modelo_Modelo" index="6"/>
+		<object name="id_trabajador_Trabajador" index="7"/>
 	</customidxs>
 
 	<customidxs object-type="constraint">
@@ -213,7 +216,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	 src-required="false" dst-required="false"
 	 table-name="many_Fabrica_has_many_Almacen"/>
 
-<table name="Modelo" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+<table name="Modelo" layers="0" collapse-mode="2" max-obj-count="6" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="560" y="920"/>
@@ -226,6 +229,9 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="precio" not-null="true">
 		<type name="numeric" length="0"/>
 	</column>
+	<column name="stock">
+		<type name="numeric" length="0"/>
+	</column>
 	<constraint name="Modelo_pk" type="pk-constr" table="public.&quot;Modelo&quot;">
 		<columns names="id_modelo" ref-type="src-columns"/>
 	</constraint>
@@ -234,7 +240,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</constraint>
 
 	<customidxs object-type="column">
-		<object name="id_producto_Productos" index="3"/>
+		<object name="id_producto_Productos" index="4"/>
 	</customidxs>
 
 	<customidxs object-type="constraint">

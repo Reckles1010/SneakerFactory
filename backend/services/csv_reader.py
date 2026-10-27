@@ -1,5 +1,13 @@
 from pathlib import Path
-import tkinter as tk
+import pandas as pd
+import csv
+
+
+
+def verArchivo(ruta):
+    data = pd.read_csv(ruta, dtype=str, encoding="utf-8-sig", header=None)
+    return data
+
 
 
 rutaAlmacen = Path(__file__).parent / "../../database/csv/Almacen.csv"
@@ -14,19 +22,35 @@ rutaSucursal = Path(__file__).parent / "../../database/csv/Sucursal.csv"
 rutaTrabajadores = Path(__file__).parent / "../../database/csv/Trabajador.csv"
 
 
-
-def verArchivo(texto, ruta):
-    contenido=""
-    with open (ruta, "r", encoding="utf-8") as archivo:
-        contenido += archivo.read()
-    escribir(texto, contenido)
-
-
-def escribir(tabla, contenido):
-    for fila in tabla.get_children():
-        tabla.delete(fila)
-
-    for fila in contenido:
-        tabla.insert("", "end", values=fila)
+almacenes = verArchivo(rutaAlmacen)
+clientes = verArchivo(rutaClientes)
+fabricas = verArchivo(rutaFabrica)
+lineas = verArchivo(rutaLineas)
+almacenesFabricas = verArchivo(rutaFabricaAlmacenes)
+modelos = verArchivo(rutaModelos)
+pedidos = verArchivo(rutaPedidos)
+productos = verArchivo(rutaProductos)
+sucursales = verArchivo(rutaSucursal)
+trabajadores = verArchivo(rutaTrabajadores)
 
 
+print(clientes)
+
+tablas = {
+    "Almacenes": almacenes,
+    "Clientes": clientes,
+    "Fábricas": fabricas,
+    "Líneas": lineas,
+    "Fábricas y almacenes": almacenesFabricas,
+    "Modelos": modelos,
+    "Pedidos": pedidos,
+    "Productos": productos,
+    "Sucursales": sucursales,
+    "Trabajadores": trabajadores,
+}
+
+for nombre, df in tablas.items():
+    print(f"\n--- {nombre} ---")
+    print("Columnas:", df.columns.tolist())
+    print("Número de filas:", len(df))
+    print(df.head(3))

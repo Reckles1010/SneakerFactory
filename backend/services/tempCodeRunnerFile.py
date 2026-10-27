@@ -1,0 +1,1 @@
+verArchivo(rutaAlmacen)
