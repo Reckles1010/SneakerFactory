@@ -1,8 +1,9 @@
-S1,Avenida del Parque 30\, Madrid,A1
-S2,Calle del Mercado 12\, Valencia,A2
-S3,Avenida del Puerto 45\, Barcelona,A3
-S4,Calle de la Alameda 16\, Sevilla,A4
-S5,Calle Gran Vía 35\, Bilbao,A5
-S6,Avenida de la Aurora 20\, Málaga,A6
-S7,Paseo de la Independencia 18\, Zaragoza,A7
-S8,Avenida de Maisonnave 29\, Alicante,A8
+id_sucursal,direccion,id_almacen_Almacen
+S1,"Avenida del Parque 30, Madrid",A1
+S2,"Calle del Mercado 12, Valencia",A2
+S3,"Avenida del Puerto 45, Barcelona",A3
+S4,"Calle de la Alameda 16, Sevilla",A4
+S5,"Calle Gran Vía 35, Bilbao",A5
+S6,"Avenida de la Aurora 20, Málaga",A6
+S7,"Paseo de la Independencia 18, Zaragoza",A7
+S8,"Avenida de Maisonnave 29, Alicante",A8

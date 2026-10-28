@@ -1,3 +1,4 @@
+id_pedido,tipo,estado,descuento,fecha,id_linea_Linea de pedido,id_modelo_Modelo,id_trabajador_Trabajador,id_cliente_Clientes
 P1,Tienda,Entregado,f,2026-05-27,L1,M1,T2,C1
 P2,Online,Enviado,t,2026-05-29,L2,M5,T2,C2
 P3,Tienda,Pendiente,f,2026-05-31,L3,M2,T4,C3

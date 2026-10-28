@@ -1,1 +1,1 @@
-verArchivo(rutaAlmacen)
+            referencia = tablas[tablaReferencia]

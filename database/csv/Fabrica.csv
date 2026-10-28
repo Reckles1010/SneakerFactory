@@ -1,6 +1,7 @@
-F1,Polígono Textil Norte\, Madrid
-F2,Polígono Industrial del Este\, Valencia
-F3,Parque Industrial del Sur\, Sevilla
-F4,Polígono Industrial Oeste\, Murcia
-F5,Parque Empresarial Atlántico\, Vigo
-F6,Complejo Industrial del Norte\, Bilbao
+id_fabrica,direccion
+F1,"Polígono Textil Norte, Madrid"
+F2,"Polígono Industrial del Este, Valencia"
+F3,"Parque Industrial del Sur, Sevilla"
+F4,"Polígono Industrial Oeste, Murcia"
+F5,"Parque Empresarial Atlántico, Vigo"
+F6,"Complejo Industrial del Norte, Bilbao"

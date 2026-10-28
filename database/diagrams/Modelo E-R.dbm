@@ -71,7 +71,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="descuento" not-null="true">
 		<type name="boolean" length="0"/>
 	</column>
-	<column name="fecha">
+	<column name="fecha" not-null="true">
 		<type name="date" length="0"/>
 	</column>
 	<constraint name="Pedido_pk" type="pk-constr" table="public.&quot;Pedido&quot;">
@@ -107,13 +107,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="colorBase" not-null="true">
 		<type name="text" length="0"/>
 	</column>
-	<column name="colorPanel">
+	<column name="colorPanel" not-null="true">
 		<type name="text" length="0"/>
 	</column>
-	<column name="colorSuela">
+	<column name="colorSuela" not-null="true">
 		<type name="text" length="0"/>
 	</column>
-	<column name="colorCordones">
+	<column name="colorCordones" not-null="true">
 		<type name="text" length="0"/>
 	</column>
 	<constraint name="Linea de pedido_pk" type="pk-constr" table="public.&quot;Linea de pedido&quot;">
@@ -229,7 +229,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="precio" not-null="true">
 		<type name="numeric" length="0"/>
 	</column>
-	<column name="stock">
+	<column name="stock" not-null="true">
 		<type name="numeric" length="0"/>
 	</column>
 	<constraint name="Modelo_pk" type="pk-constr" table="public.&quot;Modelo&quot;">
