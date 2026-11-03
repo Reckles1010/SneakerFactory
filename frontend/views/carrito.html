@@ -30,70 +30,345 @@
                 </li>
             </ul>
             <div class="header__actions">
-                <a href="login.html" class="header__auth-btn" aria-label="Iniciar sesión o registrarse" title="Mi Cuenta / Acceso">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <a href="login.html" class="header__auth-btn" aria-label="Mi cuenta" title="Mi cuenta">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
 
-                <a href="carrito.html">
-                    <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <a href="carrito.html" class="header__cart-btn" aria-label="Carrito de compras">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
                     <span class="header__cart-badge" id="cartCount">0</span>
-                    </button>
                 </a>
-
             </div>
         </nav>
     </header>
 
     <main>
 
-        <section class="cart">
+        <section class="cart" id="cartLoginRequired">
             <div class="container">
-                <div class="cart__wrapper">
-                    <h2 class="common__title">TU CARRITO ESTÁ VACÍO</h2>
+                <div class="cart__access">
+
+                    <div class="cart__access-icon">
+                        <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <span class="cart__tag">MERCURY MEMBERS</span>
+                    <h1 class="common__title">
+                        TU CARRITO<br>
+                        TE ESPERA.
+                    </h1>
                     <p class="common__description">
-                        Inicia sesión o regístrate para acceder a tu carrito y disfrutar de una experiencia de compra personalizada. 
-                        
+                        Inicia sesión en tu cuenta para consultar tus
+                        productos, gestionar tu compra y finalizar tu pedido.
                     </p>
-                    <form class="newsletter__form" id="newsletterForm">
-                        <input type="email" class="newsletter__input" placeholder="tu@email.com" required id="newsletterEmail">
-                        <button type="submit" class="newsletter__submit-btn">Quiero entrar</button>
-                    </form>
-                    <p class="newsletter__feedback" id="newsletterFeedback">¡Gracias por unirte al club! Revisa tu email.</p>
+                    <div class="cart__access-actions">
+                        <a href="login.html" class="common__btn-black">
+                            INICIAR SESIÓN
+                        </a>
+                        <a href="registro.html" class="common__btn-white">
+                            CREAR CUENTA
+                        </a>
+                    </div>
+                    <p class="cart__access-note">
+                        ¿Todavía no formas parte de MERCURY?
+                        Regístrate y descubre nuestra colección.
+                    </p>
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="cart cart--checkout" id="cartCheckout" hidden>
+            <div class="container">
+                <div class="cart__header">
+                    <span class="cart__tag">MERCURY SHOPPING</span>
+                    <h1 class="common__title">
+                        TU CARRITO.
+                    </h1>
+                    <p class="common__description">
+                        Revisa tu selección y completa los datos para
+                        recibir tu pedido.
+                    </p>
+                </div>
+                <div class="cart__layout">
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__logo">
-                    MERCURY<span class="footer__logo-highlight">/</span>
+                <div class="cart__products">
+                    <div class="cart__section-header">
+                        <h2 class="cart__section-title">
+                            TUS PRODUCTOS
+                        </h2>
+                        <span id="cartProductCount">
+                            0 PRODUCTOS
+                        </span>
+                    </div>
+                    <div class="cart__items" id="cartItems"></div>
+
+                    <div class="cart__empty" id="cartEmpty" hidden>
+
+                        <h3>NO HAY PRODUCTOS</h3>
+                        <p>
+                            Todavía no has añadido ningún producto
+                            a tu carrito.
+                        </p>
+                        <a href="catalogo.html" class="common__btn-black">
+                            EXPLORAR CATÁLOGO
+                        </a>
+                    </div>
+
+                    <a href="catalogo.html" class="cart__continue">
+                        ← CONTINUAR COMPRANDO
+                    </a>
+
+                    <form class="cart__form" id="checkoutForm">
+                        <div class="cart__form-section">
+                            <div class="cart__section-header">
+                                <h2 class="cart__section-title">
+                                    01. DATOS DEL DESTINATARIO
+                                </h2>
+                            </div>
+                            <p class="cart__form-description">
+                                Indica quién recibirá el pedido.
+                            </p>
+                            <div class="cart__form-grid">
+                                <div class="cart__field cart__field--full">
+                                    <label for="recipientName">
+                                        NOMBRE COMPLETO
+                                    </label>
+                                    <input type="text" id="recipientName" name="recipientName"
+                                        placeholder="Nombre y apellidos" autocomplete="name" required>
+                                </div>
+                                <div class="cart__field">
+                                    <label for="recipientEmail">CORREO ELECTRÓNICO</label>
+
+                                    <input type="email" id="recipientEmail" name="recipientEmail"
+                                        placeholder="tu@email.com" autocomplete="email" required>
+                                </div>
+
+                                <div class="cart__field">
+                                    <label for="recipientPhone">TELÉFONO</label>
+
+                                    <input type="tel" id="recipientPhone" name="recipientPhone"
+                                        placeholder="600 000 000" autocomplete="tel" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__form-section">
+                            <div class="cart__section-header">
+                                <h2 class="cart__section-title">
+                                    02. DIRECCIÓN DE ENVÍO
+                                </h2>
+                            </div>
+                            <p class="cart__form-description">
+                                ¿Dónde quieres recibir tu pedido?
+                            </p>
+                            <div class="cart__form-grid">
+                                <div class="cart__field cart__field--full">
+                                    <label for="address">
+                                        DIRECCIÓN
+                                    </label>
+                                    <input type="text" id="address" name="address"
+                                        placeholder="Calle, avenida, plaza..." autocomplete="street-address"
+                                        required>
+                                </div>
+                                <div class="cart__field">
+                                    <label for="addressNumber">
+                                        NÚMERO / PISO / PUERTA
+                                    </label>
+                                    <input type="text" id="addressNumber" name="addressNumber"
+                                        placeholder="Nº 10, 2º A" required>
+                                </div>
+
+                                <div class="cart__field">
+                                    <label for="postalCode">
+                                        CÓDIGO POSTAL
+                                    </label>
+                                    <input type="text" id="postalCode" name="postalCode" placeholder="28001"
+                                        inputmode="numeric" autocomplete="postal-code" required>
+                                </div>
+
+                                <div class="cart__field">
+                                    <label for="city">
+                                        CIUDAD
+                                    </label>
+                                    <input type="text" id="city" name="city" placeholder="Madrid"
+                                        autocomplete="address-level2" required>
+                                </div>
+
+                                <div class="cart__field">
+                                    <label for="province">
+                                        PROVINCIA
+                                    </label>
+                                    <input type="text" id="province" name="province" placeholder="Madrid"
+                                        autocomplete="address-level1" required>
+                                </div>
+
+                                <div class="cart__field cart__field--full">
+                                    <label for="addressNotes">
+                                        INDICACIONES DE ENTREGA (OPCIONAL)
+                                    </label>
+                                    <textarea id="addressNotes" name="addressNotes" rows="3"
+                                        placeholder="Información adicional para el repartidor..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__form-section">
+                            <div class="cart__section-header">
+                                <h2 class="cart__section-title">
+                                    03. MÉTODO DE PAGO
+                                </h2>
+                            </div>
+                            <p class="cart__form-description">
+                                Selecciona tu método de pago.
+                            </p>
+                            <div class="cart__payment-option">
+                                <input type="radio" id="paymentCard" name="paymentMethod" value="card" checked>
+                                <label for="paymentCard">
+                                    <span class="cart__payment-title">
+                                        TARJETA BANCARIA
+                                    </span>
+
+                                    <span class="cart__payment-description">
+                                        Crédito o débito
+                                    </span>
+                                </label>
+                                <div class="cart__payment-icons">
+                                    VISA · Mastercard
+                                </div>
+                            </div>
+
+                            <div class="cart__card-fields">
+                                <div class="cart__field cart__field--full">
+                                    <label for="cardName">
+                                        TITULAR DE LA TARJETA
+                                    </label>
+                                    <input type="text" id="cardName" name="cardName"
+                                        placeholder="Nombre que aparece en la tarjeta" autocomplete="cc-name"
+                                        required>
+                                </div>
+
+                                <div class="cart__field cart__field--full">
+                                    <label for="cardNumber">
+                                        NÚMERO DE TARJETA
+                                    </label>
+                                    <input type="text" id="cardNumber" name="cardNumber"
+                                        placeholder="0000 0000 0000 0000" inputmode="numeric"
+                                        autocomplete="cc-number" maxlength="19" required>
+                                </div>
+
+                                <div class="cart__field">
+                                    <label for="cardExpiry">
+                                        CADUCIDAD
+                                    </label>
+                                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/AA"
+                                        autocomplete="cc-exp" maxlength="5" required>
+                                </div>
+
+                                <div class="cart__field">
+                                    <label for="cardCvv">
+                                        CVV
+                                    </label>
+                                    <input type="password" id="cardCvv" name="cardCvv" placeholder="123"
+                                        inputmode="numeric" autocomplete="cc-csc" maxlength="4" required>
+                                </div>
+
+                            </div>
+                            <p class="cart__payment-security">
+                                <span>●</span>
+                                Pago seguro. Los datos de tu tarjeta
+                                no deben almacenarse en el navegador.
+                            </p>
+                        </div>
+
+                        <div class="cart__submit">
+                            <label class="cart__terms">
+                                <input type="checkbox" id="acceptTerms" required>
+                                <span>
+                                    He leído y acepto las condiciones
+                                    de compra y la política de privacidad.
+                                </span>
+                            </label>
+                            <button type="submit" class="cart__submit-btn" id="confirmOrder">
+                                CONFIRMAR PEDIDO
+                                <span>→</span>
+                            </button>
+                            <p class="cart__feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+                        </div>
+                    </form>
                 </div>
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">Devoluciones</a></li>
-                    <li><a href="#" class="footer__link">Contacto</a></li>
-                    <li><a href="#" class="footer__link">Instagram</a></li>
-                    <li><a href="#" class="footer__link">TikTok</a></li>
-                    <li><a href="#" class="footer__link">Privacidad</a></li>
-                </ul>
-                <div class="footer__copyright">
-                    © 2026 Mercury.
-                </div>
+
+                <aside class="cart__summary">
+                    <h2 class="cart__summary-title">
+                        RESUMEN DEL PEDIDO
+                    </h2>
+                    <div class="cart__summary-row">
+                        <span>Productos</span>
+                        <span id="summarySubtotal">0,00 €</span>
+                    </div>
+                    <div class="cart__summary-row">
+                        <span>Envío</span>
+                        <span id="summaryShipping">Gratis</span>
+                    </div>
+                    <div class="cart__summary-divider"></div>
+                    <div class="cart__summary-total">
+                        <span>TOTAL</span>
+                        <strong id="summaryTotal">0,00 €</strong>
+                    </div>
+                    <p class="cart__summary-tax">
+                        IVA incluido. Gastos de envío calculados
+                        en el resumen.
+                    </p>
+                    <div class="cart__summary-info">
+                        <p>Productos seleccionados</p>
+                        <p>Envío a domicilio</p>
+                        <p>Compra segura</p>
+                    </div>
+                </aside>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                MERCURY<span class="footer__logo-highlight">/</span>
+            </div>
+
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Devoluciones</a></li>
+                <li><a href="#" class="footer__link">Contacto</a></li>
+                <li><a href="#" class="footer__link">Instagram</a></li>
+                <li><a href="#" class="footer__link">TikTok</a></li>
+                <li><a href="#" class="footer__link">Privacidad</a></li>
+            </ul>
+
+            <div class="footer__copyright">
+                © 2026 Mercury.
+            </div>
+        </div>
+    </div>
+</footer>
+
 
     <script src="../js/script.js"></script>
-    
+
 </body>
+
 </html>
