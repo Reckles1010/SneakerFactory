@@ -185,3 +185,65 @@ Configurar los parámetros de conexión a la base de datos y ejecutar los compon
 
 
  **Proyecto académico · 2.º DAM · Curso 2026–2027**
+
+
+# Sneaker Factory · Dashboard operacional
+
+## 1. Instalación
+Recomendado: Python 3.11 o superior.
+
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# Linux/macOS
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## 2. Exportaciones ACC
+Copia los cinco CSV reales en `entrada_acc/`:
+- `clientes.csv`
+- `modelos.csv`
+- `pedidos.csv`
+- `lineas_pedido.csv`
+- `stock.csv`
+
+Los nombres son el contrato inicial orientativo. Ajusta `FILES` y `ALIASES` en `config.py` al diccionario de equivalencias acordado con Acceso a Datos. No inventes columnas ni cambies los CSV originales.
+
+Formato inicial configurado: UTF-8-SIG, delimitador coma, decimal punto. Modifica `CSV_SEPARATOR`, `CSV_ENCODING` y `DECIMAL` según la exportación real de ACC.
+
+## 3. Ejecución
+```bash
+python main.py --modo real
+streamlit run app_dashboard.py
+```
+
+## 4. Actualización
+El dashboard utiliza `st.fragment(run_every="60s")`. En cada ciclo vuelve a leer los cinco ficheros, valida, reconstruye los merges y recalcula los DataFrames. También existe el botón **Actualizar ahora**. Los filtros se conservan mediante claves de sesión.
+
+La aplicación toma una instantánea coherente: captura los bytes de todos los CSV y verifica que tamaño y fecha de modificación no cambian durante la lectura. Si detecta una exportación en curso, aborta ese ciclo. Un cambio en PostgreSQL no llega al dashboard hasta que ACC exporta de nuevo los CSV.
+
+## 5. Reglas que deben acordarse con ACC
+Antes de la defensa, confirmar en `config.py`:
+- Estados que cuentan como venta: `SALES_STATES`.
+- Estados cancelados y pendientes.
+- Valores de tipo Custom.
+- Catálogo de tallas, si existe.
+- Separador, decimal, codificación y formato de fecha.
+- Moneda y criterio de reconocimiento del ingreso.
+
+El ticket medio se calcula sobre pedidos únicos, no sobre líneas. Los pedidos cancelados/pedientes permanecen en actividad, pero no se suman a ventas válidas.
+
+## 6. Seguridad de publicación
+Si falta un CSV, falta una columna obligatoria, hay claves huérfanas, IDs duplicados, cantidades/precios inválidos o estados no acordados, el pipeline aborta. No publica cálculos parciales. Si existía una ejecución íntegra anterior, queda visible como **DESACTUALIZADO** con su hora original.
+
+## 7. Salidas
+- `outputs/manifiesto_origen.csv`
+- `outputs/incidencias.csv`
+- `logs/refrescos.jsonl`
+
+El panel ofrece descargas CSV de DataFrames analíticos. Los logs no contienen credenciales.
+
+## 8. Limitaciones de esta primera integración
+Este paquete implementa el esqueleto modular, el refresco REAL, validación relacional, seis pestañas y DataFrames operativos iniciales. El contrato real de ACC debe ajustarse con una muestra de sus cinco CSV. La conciliación SQL necesita las tres cifras exportadas/consultadas por el equipo de ACC; no se deben inventar. El módulo de ML sintético y las ocho figuras PNG de memoria técnica deben incorporarse como fase separada y claramente etiquetada.

@@ -1,0 +1,11 @@
+﻿tabla,fichero,filas,columnas,bytes,mtime_ns
+almacen,Almacen.csv,8,2,340,1793700102837366300
+clientes,Clientes.csv,740,5,51702,1793700102837366300
+fabrica,Fabrica.csv,6,2,273,1793700102837366300
+lineas,Linea_pedido.csv,3680,6,166181,1793700102837366300
+many,many_Fabrica_has_many_Almacen.csv,15,2,144,1793700102851122800
+modelos,Modelo.csv,28,5,1158,1793700102845049200
+pedidos,Pedido.csv,3680,9,203298,1793700102845049200
+productos,Productos.csv,4,2,72,1793700102848222300
+sucursal,Sucursal.csv,8,3,374,1793700102848785000
+trabajador,Trabajador.csv,20,4,671,1793700102848785000
