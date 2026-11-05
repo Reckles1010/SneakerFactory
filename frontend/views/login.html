@@ -29,47 +29,58 @@
             </ul>
             <div class="header__actions">
                 <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
+                <a href="carrito.html">
+                    <button class="header__cart-btn" aria-label="Carrito de compras" id="cartBtn">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
                     <span class="header__cart-badge" id="cartCount">0</span>
-                </button>
+                    </button>
+                </a>
             </div>
         </nav>
     </header>
-    <main class="auth-page">
-        <section class="auth-card">
-            <div class="auth-card__header">
-                <span class="auth-card__subtitle">MERCURY / ACCESO</span>
-                <h1 class="auth-card__title">INICIAR SESIÓN</h1>
-                <p class="auth-card__description">Ingresa tus datos para acceder a tu cuenta y gestionar tus pedidos.</p>
+
+    <main class="auth__page">
+        <section class="auth__card">
+            <div class="auth__card-header">
+                <span class="auth__card-subtitle">MERCURY / ACCESO</span>
+                <h1 class="auth__card-title">INICIAR SESIÓN</h1>
+                <p class="auth__card-description">Ingresa tus datos para acceder a tu cuenta y gestionar tus pedidos.</p>
             </div>
-            <form class="auth-form" id="loginForm" novalidate>
-                <div class="auth-form__group">
-                    <label for="loginEmail" class="auth-form__label">CORREO ELECTRÓNICO</label>
-                    <input type="email" id="loginEmail" class="auth-form__input" placeholder="tu@email.com" required>
-                    <span class="auth-form__error" id="emailError">Introduce un correo electrónico válido.</span>
+
+            <form class="auth__form" id="loginForm" novalidate>
+                <div class="auth__form-group">
+                    <label for="loginEmail" class="auth__form-label">CORREO ELECTRÓNICO</label>
+                    <input type="email" id="loginEmail" class="auth__form-input" placeholder="tu@email.com" required>
+                    <span class="auth__form-error" id="emailError">Introduce un correo electrónico válido.</span>
                 </div>
-                <div class="auth-form__group">
-                    <div class="auth-form__label-row">
-                        <label for="loginPassword" class="auth-form__label">CONTRASEÑA</label>
-                        <a href="#" class="auth-form__forgot">¿Olvidaste tu contraseña?</a>
+
+                <div class="auth__form-group">
+                    <div class="auth__form-label-row">
+                        <label for="loginPassword" class="auth__form-label">CONTRASEÑA</label>
+                        <a href="#" class="auth__form-forgot">¿Olvidaste tu contraseña?</a>
                     </div>
-                    <input type="password" id="loginPassword" class="auth-form__input" placeholder="••••••••" required minlength="6">
-                    <span class="auth-form__error" id="passwordError">La contraseña debe tener al menos 6 caracteres.</span>
+                    <input type="password" id="loginPassword" class="auth__form-input" placeholder="••••••••" required minlength="6">
+                    <span class="auth__form-error" id="passwordError">La contraseña debe tener al menos 6 caracteres.</span>
                 </div>
-                <button type="submit" class="auth-form__submit-btn">
+
+                <button type="submit" class="auth__form-submit-btn">
                     <span>Entrar a tu cuenta</span>
                     <span>↗</span>
                 </button>
             </form>
-            <div class="auth-card__footer">
-                <p>¿Aún no tienes cuenta? <a href="registro.html" class="auth-card__link">Crea una cuenta aquí</a></p>
+
+            <div class="auth__card-footer">
+                <p>¿Aún no tienes cuenta? <a href="registro.html" class="auth__card-link">Crea una cuenta aquí</a></p>
             </div>
         </section>
     </main>
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -87,6 +98,8 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="../js/script.js"></script>
+
 </body>
 </html>

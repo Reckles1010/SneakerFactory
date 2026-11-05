@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de usuarios — MERCURY</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="inicio.html" class="header__logo">
+                MERCURY<span class="header__logo-highlight">/</span>
+            </a>
+
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="inicio.html" class="header__link">Volver a la tienda</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="users">
+        <section class="users__container">
+            <header class="users__header">
+                <div>
+                    <span class="users__subtitle">PANEL DE ADMINISTRACIÓN</span>
+                    <h1 class="users__title">Gestión de usuarios</h1>
+                    <p class="users__description">
+                        Consulta las cuentas registradas y administra sus permisos.
+                    </p>
+                </div>
+            </header>
+
+            <div class="users__toolbar">
+                <div class="users__search">
+                    <label for="userSearch" class="users__label">Buscar usuario</label>
+                    <input
+                        type="search"
+                        id="userSearch"
+                        class="users__search-input"
+                        placeholder="Nombre o correo electrónico"
+                    >
+                </div>
+                <span class="users__count" id="userCount">0 usuarios</span>
+            </div>
+
+            <div class="users__table-wrapper">
+                <table class="users__table">
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Correo electrónico</th>
+                            <th>Rol actual</th>
+                            <th>Modificar rol</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody">
+                        <tr>
+                            <td colspan="4" class="users__empty">
+                                Cargando usuarios...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="users__feedback" id="usersFeedback" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="inicio.html" class="footer__logo">
+                    MERCURY<span class="footer__logo-highlight">/</span>
+                </a>
+                <div class="footer__copyright">© 2026 Mercury.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
+

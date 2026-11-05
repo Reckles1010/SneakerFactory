@@ -1,6 +1,6 @@
 # 👟 MERCURY
 
-> ⚡ **Diseño, tecnología e innovación en cada paso.**
+> **Sneakers for what´s next**
 
 ---
 
@@ -63,7 +63,7 @@ El proyecto combina programación, bases de datos, diseño web y herramientas de
 
 ### 🗄️ Bases de datos
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### 🔧 Herramientas de desarrollo
 
@@ -81,7 +81,7 @@ El proyecto combina programación, bases de datos, diseño web y herramientas de
 | CSS3 | Diseño y presentación visual. |
 | JavaScript | Interactividad de la interfaz. |
 | SQL | Consultas y manipulación de datos. |
-| MySQL | Almacenamiento y gestión de la información. |
+| PostgreSQL | Almacenamiento y gestión de la información. |
 | Git | Control de versiones del código. |
 | GitHub | Alojamiento del repositorio y colaboración. |
 | IntelliJ IDEA | Desarrollo del código Java. |
@@ -156,7 +156,7 @@ cd SneakerFactory
 
 ### 3. Configurar la base de datos
 
-- Crear la base de datos en MySQL.
+- Crear la base de datos en PostgreSQL.
 - Ejecutar los scripts SQL de la carpeta `database/`.
 - Comprobar que las tablas y relaciones se han creado correctamente.
 
@@ -174,9 +174,9 @@ Configurar los parámetros de conexión a la base de datos y ejecutar los compon
 ## 📈 Estado del proyecto
 
 - [x] Definición inicial de la empresa.
-- [ ] Diseño de la base de datos.
+- [x] Diseño de la base de datos.
 - [ ] Desarrollo del backend.
-- [ ] Implementación de la interfaz web.
+- [x] Implementación de la interfaz web.
 - [ ] Integración de los componentes.
 - [ ] Pruebas de funcionamiento.
 - [ ] Documentación final.
