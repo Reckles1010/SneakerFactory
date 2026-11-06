@@ -171,23 +171,7 @@ Abrir los archivos con el entorno de desarrollo correspondiente:
 
 Configurar los parámetros de conexión a la base de datos y ejecutar los componentes siguiendo las instrucciones del proyecto.
 
-## 📈 Estado del proyecto
-
-- [x] Definición inicial de la empresa.
-- [x] Diseño de la base de datos.
-- [ ] Desarrollo del backend.
-- [x] Implementación de la interfaz web.
-- [ ] Integración de los componentes.
-- [ ] Pruebas de funcionamiento.
-- [ ] Documentación final.
-
----
-
-
- **Proyecto académico · 2.º DAM · Curso 2026–2027**
-
-
-# Sneaker Factory · Dashboard operacional
+# Dashboard operacional
 
 ## 1. Instalación
 Recomendado: Python 3.11 o superior.
@@ -247,3 +231,10 @@ El panel ofrece descargas CSV de DataFrames analíticos. Los logs no contienen c
 
 ## 8. Limitaciones de esta primera integración
 Este paquete implementa el esqueleto modular, el refresco REAL, validación relacional, seis pestañas y DataFrames operativos iniciales. El contrato real de ACC debe ajustarse con una muestra de sus cinco CSV. La conciliación SQL necesita las tres cifras exportadas/consultadas por el equipo de ACC; no se deben inventar. El módulo de ML sintético y las ocho figuras PNG de memoria técnica deben incorporarse como fase separada y claramente etiquetada.
+
+
+---
+
+
+ **Proyecto académico · 2.º DAM · Curso 2026–2027**
+

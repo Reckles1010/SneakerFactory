@@ -190,35 +190,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 selectedSize = null;
 
-                document.querySelectorAll('.product-popup__size').forEach(size => {
-                    size.classList.remove('product-popup__size--active');
+                document.querySelectorAll('.popup__size').forEach(size => {
+                    size.classList.remove('popup__size--active');
                 });
 
-                productPopup.classList.add('product-popup--active');
+                productPopup.classList.add('popup--active');
                 productPopup.setAttribute('aria-hidden', 'false');
 
                 document.body.classList.add('product-popup-open');
             });
         }
 
-        document.querySelectorAll('.product-popup__size').forEach(button => {
+        document.querySelectorAll('.popup__size').forEach(button => {
             button.addEventListener('click', function () {
-                document.querySelectorAll('.product-popup__size').forEach(size => {
-                    size.classList.remove('product-popup__size--active');
+                document.querySelectorAll('.popup__size').forEach(size => {
+                    size.classList.remove('popup__size--active');
                 });
 
-                this.classList.add('product-popup__size--active');
+                this.classList.add('popup__size--active');
 
                 selectedSize = this.dataset.size;
             });
         });
 
         function closeProductPopup() {
-            productPopup.classList.remove('product-popup--active');
+            productPopup.classList.remove('popup--active');
 
             productPopup.setAttribute('aria-hidden', 'true');
 
-            document.body.classList.remove('product-popup-open');
+            document.body.classList.remove('popup__open');
 
             selectedProduct = null;
             selectedSize = null;
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (
                 event.key === 'Escape' &&
-                productPopup.classList.contains('product-popup--active')
+                productPopup.classList.contains('popup--active')
             ) {
                 closeProductPopup();
             }
