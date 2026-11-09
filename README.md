@@ -247,7 +247,7 @@ Formato inicial configurado: UTF-8-SIG, delimitador coma, decimal punto. Modific
 ### 3. Ejecución
 ```bash
 python main.py --modo real
-python -m streamlit run .\data\app_dashboard.py
+python -m streamlit run .\frontend\data\app_dashboard.py   
 ```
 
 ### 4. Actualización
