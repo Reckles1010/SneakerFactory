@@ -1,4 +1,4 @@
-package psp; //La clase Informe está en el paquete psp.
+package psp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +15,6 @@ public class Informe {
 
     public static void main(String[] args) {
 
-        //La ruta donde se guardará el informe la envía el coordinador como argumento
         if (args.length < 1) {
             System.err.println("ERROR: falta la ruta del informe");
             System.exit(2);
@@ -28,7 +27,6 @@ public class Informe {
         informe.add("");
 
         try {
-            //Lee por la entrada estándar los resultados que le envía el coordinador y los añade al informe
             BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
             String linea;
             while ((linea = entrada.readLine()) != null) {

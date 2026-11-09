@@ -1,4 +1,4 @@
-package psp; //La clase FichaTaller está en el paquete psp.
+package psp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,6 @@ public class FichaTaller {
 
     public static void main(String[] args) {
 
-        //La ruta donde se guardará la ficha la envía el coordinador como argumento
         if (args.length < 1) {
             System.err.println("ERROR: falta la ruta de la ficha");
             System.exit(2);
@@ -32,16 +31,14 @@ public class FichaTaller {
         int total = 0;
 
         try {
-            //Lee el pedido por la entrada estándar
             BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
-            entrada.readLine(); //Salta la cabecera
+            entrada.readLine();
             String linea;
 
             while ((linea = entrada.readLine()) != null) {
                 if (linea.isBlank()) continue;
                 String[] campos = linea.split(";", -1);
 
-                //Los datos generales del pedido se toman de la primera fila
                 if (pedido.isEmpty()) {
                     pedido = campos[0].trim();
                     cliente = campos[1].trim();
@@ -60,7 +57,6 @@ public class FichaTaller {
             System.exit(2);
         }
 
-        //Contenido de la ficha que se entregará al taller
         List<String> ficha = new ArrayList<>();
         ficha.add("FICHA DE TALLER");
         ficha.add("Fecha: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
