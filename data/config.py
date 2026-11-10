@@ -111,7 +111,6 @@ CSV_ENCODING = "utf-8-sig"
 CSV_SEPARATOR = ","
 DECIMAL = "."
 
-# Tallas permitidas: dejar vacío para no imponer un catálogo que ACC no haya acordado.
 VALID_SIZES = []
 AUTO_REFRESH_SECONDS = 60
 RANDOM_SEED = 42

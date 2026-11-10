@@ -19,7 +19,7 @@ def filter_lines(df, start=None, end=None, models=None, sizes=None, types=None, 
 def pedidos_unicos(lineas):
     return (lineas.groupby(["id_pedido","fecha","id_cliente","estado","tipo"], dropna=False)
             .agg(pares=("cantidad","sum"), importe=("importe_linea","sum"),
-                 numero_lineas=("id_pedido","size"), modelos=("id_modelo","nunique"))
+                numero_lineas=("id_pedido","size"), modelos=("id_modelo","nunique"))
             .reset_index().assign(ticket=lambda x: np.where(x["numero_lineas"] > 0, x["importe"], np.nan)))
 
 def ventas_por_periodo(lineas):
@@ -64,7 +64,7 @@ def clientes_rfm(lineas, clientes, cutoff=None):
     r = r.merge(f, on="id_cliente", how="left", validate="one_to_one")
     r["recency_dias"] = (cutoff - r["ultima_compra"]).dt.days
     r["segmento_rfm"] = np.select([r["recency_dias"] <= 30, r["frequency"] >= 3, r["frequency"] == 1],
-                                   ["Reciente","Recurrente","Primera compra"], default="En riesgo")
+                                ["Reciente","Recurrente","Primera compra"], default="En riesgo")
     out = clientes[["id_cliente"]].drop_duplicates().merge(r, on="id_cliente", how="left", validate="one_to_one")
     out["segmento_rfm"] = out["segmento_rfm"].fillna("Sin compras válidas")
     return out
@@ -99,7 +99,7 @@ def calidad_dataframe(snapshot):
     rows = []
     for name, df in tables.items():
         rows.append({"tabla":name, "filas_recibidas":len(df), "filas_validas":len(df), "filas_rechazadas":0,
-                     "nulos_totales":int(df.isna().sum().sum()), "columnas":len(df.columns)})
+                    "nulos_totales":int(df.isna().sum().sum()), "columnas":len(df.columns)})
     return pd.DataFrame(rows)
 
 def anomalias_iqr(lineas):

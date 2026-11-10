@@ -1,7 +1,6 @@
-
 /* BASE DE DATOS*/
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 const CART_KEY = 'mercuryCart';
 const USER_KEY = 'mercuryUser';
@@ -13,10 +12,28 @@ const currency = new Intl.NumberFormat('es-ES', {
     currency: 'EUR'
 });
 
+// Ejemplo de cómo pedir los productos al servidor desde tu script.js del navegador
+async function cargarProductos() {
+    try {
+        const respuesta = await fetch('/api/productos');
+        const Productos = await respuesta.json();
+        
+        console.log("Productos obtenidos de la base de datos:", Productos);
+        
+    } catch (error) {
+        console.error("Error al cargar los productos:", error);
+    }
+}
+
+// Ejecutar al cargar la página
+document.addEventListener("DOMContentLoaded", cargarProductos);
+
+/* END REGION*/
+
 
 /* GESTIÓN CARRITO */
 
-/* Recuperar productos */
+    /* Recuperar productos */
 function getCart() {
     try {
         return JSON.parse(localStorage.getItem(CART_KEY)) || [];
@@ -26,7 +43,7 @@ function getCart() {
     }
 }
 
-/* Guardar productos */
+    /* Guardar productos */
 function saveCart(cart) {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
 
@@ -35,14 +52,14 @@ function saveCart(cart) {
     document.dispatchEvent(new CustomEvent('cartUpdated'));
 }
 
-/* Número total de unidades */
+    /* Número total de unidades */
 function getCartCount() {
     return getCart().reduce((total, product) => {
         return total + (Number(product.quantity) || 1);
     }, 0);
 }
 
-/* Actualizar contador en todas las páginas */
+    /* Actualizar contador en todas las páginas */
 function updateCartBadge() {
     const badges = document.querySelectorAll('#cartCount');
 
@@ -51,57 +68,28 @@ function updateCartBadge() {
     });
 }
 
-/* Añadir producto */
+    /* Añadir producto al carrito (suma cantidad si ya existe) */
+function addProductToCart(product) {
+    const cart = getCart();
 
-document.querySelectorAll('.card__overlay-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const card = btn.closest('.card');
+    const existing = cart.find(item =>
+        String(item.id) === String(product.id) &&
+        item.size === product.size &&
+        !item.customization &&
+        !product.customization
+    );
 
-        if (!card) return;
+    if (existing) {
+        existing.quantity = (Number(existing.quantity) || 1) + 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
 
-        const name = card.querySelector('.card__title');
-        const image = card.querySelector('.card__image');
-
-        if (!name || !image) return;
-
-        const category = card.dataset.category;
-
-        const product = {
-            id: btn.dataset.id || name.textContent.trim(),
-            name: name.textContent.trim(),
-            price: Number(btn.dataset.price) || 0,
-            size: btn.dataset.size || (
-                category === 'zapatillas' ? 'Sin especificar' : 'Única'
-            ),
-            image: image.src,
-            customization: null
-        };
-
-        if (category === 'zapatillas' && product.size === 'Sin especificar') {
-            alert('Selecciona una talla antes de continuar.');
-            return;
-        }
-
-        addProductToCart(product);
-
-        delete btn.dataset.size;
-
-        const spanText = btn.querySelector('span');
-
-        if (spanText) {
-            const originalText = spanText.textContent;
-
-            spanText.textContent = '¡Añadido!';
-
-            setTimeout(() => {
-                spanText.textContent = originalText;
-            }, 1200);
-        }
-    });
-});
+    saveCart(cart);
+}
 
 
-/* Recuperar usuario */
+    /* Recuperar usuario */
 function getCurrentUser() {
     try {
         return JSON.parse(localStorage.getItem(USER_KEY));
@@ -110,6 +98,8 @@ function getCurrentUser() {
         return null;
     }
 }
+
+/* END REGION*/
 
 
 /* POPUP DEL CATÁLOGO */
@@ -218,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             productPopup.setAttribute('aria-hidden', 'true');
 
-            document.body.classList.remove('popup__open');
+            document.body.classList.remove('product-popup-open');
 
             selectedProduct = null;
             selectedSize = null;
@@ -269,8 +259,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+/* END REGION*/
 
-    /* FILTROS DEL CATÁLOGO */
+
+/* FILTROS DEL CATÁLOGO */
 
     const filterBtns = document.querySelectorAll('.catalog__filter-btn');
 
@@ -311,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* FAVORITOS */
+/* FAVORITOS */
 
     document.querySelectorAll('.card__favorite-btn').forEach(btn => {
         btn.addEventListener('click', event => {
@@ -322,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* AÑADIR PRODUCTOS DEL CATÁLOGO */
+/* AÑADIR PRODUCTOS DEL CATÁLOGO */
 
     document.querySelectorAll('.card__overlay-btn').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -335,16 +327,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!name || !image) return;
 
-            const price = Number(btn.dataset.price) || 0;
+            const category = card.dataset.category;
 
             const product = {
                 id: btn.dataset.id || name.textContent.trim(),
                 name: name.textContent.trim(),
-                price: price,
-                size: btn.dataset.size || 'Sin especificar',
+                price: Number(btn.dataset.price) || 0,
+                size: btn.dataset.size || (
+                    category === 'zapatillas' ? 'Sin especificar' : 'Única'
+                ),
                 image: image.src,
                 customization: null
             };
+
+            if (category === 'zapatillas' && product.size === 'Sin especificar') {
+                alert('Selecciona una talla antes de continuar.');
+                return;
+            }
 
             addProductToCart(product);
 
@@ -365,7 +364,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     btn.style.backgroundColor = 'var(--color-black)';
                     btn.style.color = 'var(--color-white)';
-
                 }, 1200);
             }
         });
@@ -374,6 +372,8 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCartBadge();
 
 });
+
+/* END REGION*/
 
 
 /* LOGIN Y REGISTRO */
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 submitBtn.disabled = false;
 
-                if (submitText) submitText.textContent = 'Iniciar sesión';
+                if (submitText) submitText.textContent = 'Entrar a tu cuenta';
             }
         });
     }
@@ -567,7 +567,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 window.location.href = 'login.html';
             } catch (error) {
-                emailError.textContent = error.message;
+                emailError.textContent =
+                    error.message === 'Failed to fetch'
+                        ? 'No se pudo conectar con el servidor.'
+                        : error.message;
                 emailError.classList.add('auth__form-error--active');
             } finally {
                 submitBtn.disabled = false;
@@ -577,8 +580,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+/* END REGION*/
 
-    /* GESTIÓN DE USUARIOS */
+/* GESTIÓN DE USUARIOS */
 
     const usersTableBody = document.getElementById('usersTableBody');
 
@@ -783,6 +787,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+/* END REGION*/
 
 
 /* PÁGINA DEL CARRITO */
@@ -1022,13 +1028,15 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Finalizar compra */
 
     if (checkoutForm) {
-        checkoutForm.addEventListener('submit', event => {
+        checkoutForm.addEventListener('submit', async event => {
             event.preventDefault();
 
             feedback.textContent = '';
             feedback.style.color = '';
 
-            if (!getCurrentUser()) {
+            const user = getCurrentUser();
+
+            if (!user) {
                 feedback.textContent =
                     'Debes iniciar sesión para completar tu compra.';
                 return;
@@ -1043,6 +1051,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (!checkoutForm.reportValidity()) return;
+
             const recipient = {
                 name: document.getElementById('recipientName').value.trim(),
                 email: document.getElementById('recipientEmail').value.trim(),
@@ -1055,26 +1064,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 notes: document.getElementById('addressNotes').value.trim()
             };
 
-            const subtotal = cart.reduce((sum, product) => {
-                return sum +
-                    (Number(product.price) || 0) *
-                    (Number(product.quantity) || 1);
+            if (confirmButton) confirmButton.disabled = true;
 
-            }, 0);
+            try {
+                const response = await fetch(`${API_URL}/pedidos`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        usuarioId: user.id,
+                        destinatario: recipient,
+                        productos: cart
+                    })
+                });
 
-            const order = {
-                recipient: recipient,
-                products: cart,
-                total: subtotal + SHIPPING_PRICE,
-                date: new Date().toISOString()
-            };
+                const data = await response.json();
 
-            console.log('Pedido preparado:', order);
+                if (!response.ok) {
+                    throw new Error(
+                        data.message || 'No se pudo completar el pedido.'
+                    );
+                }
 
-            feedback.textContent =
-                'Formulario validado. El siguiente paso es conectar el backend y la pasarela de pago.';
+                saveCart([]);
+                checkoutForm.reset();
 
-            feedback.style.color = '#16845b';
+                feedback.textContent =
+                    `¡Pedido #${data.pedidoId} realizado correctamente! ` +
+                    `Total: ${currency.format(data.total)}.`;
+                feedback.style.color = '#16845b';
+
+            } catch (error) {
+                feedback.textContent =
+                    error.message === 'Failed to fetch'
+                        ? 'No se pudo conectar con el servidor.'
+                        : error.message;
+                feedback.style.color = '#c0392b';
+
+                if (confirmButton) confirmButton.disabled = false;
+            }
         });
     }
 
@@ -1545,6 +1572,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/* END REGION*/
+
 
 /* NEWSLETTER */
 
@@ -1579,3 +1608,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+/* END REGION*/

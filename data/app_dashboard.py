@@ -6,6 +6,13 @@ import json
 import streamlit as st
 import pandas as pd
 
+import streamlit as st  
+
+try:
+    from sklearn.ensemble import IsolationForest
+except ImportError:
+    IsolationForest = None
+
 from data.config import (
     INPUT_DIR,
     AUTO_REFRESH_SECONDS,
@@ -19,7 +26,7 @@ from data.analiticas import build_analytics
 from data.visualizaciones import show_df, line_chart, bar_chart
 
 st.set_page_config(
-    page_title="MERCURY | Sneaker Factory",
+    page_title="MERCURY · Dashboard operacional",
     page_icon="C:\\DAM\\2º DAM\\1ºPROYECTO\\frontend\\assets\\SinFondo.png",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -88,8 +95,6 @@ h1 {
     color: white;
 }
 
-/* FORZAR VISIBILIDAD DE LA BARRA LATERAL */
-
 section[data-testid="stSidebar"] {
     background: #080808 !important;
     display: flex !important;
@@ -102,13 +107,38 @@ section[data-testid="stSidebar"] {
     transition: none !important;
 }
 
-/* Texto de la barra lateral */
-
 section[data-testid="stSidebar"] * {
     color: #ffffff !important;
 }
 
-/* Botón para volver a desplegarla */
+section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
+    gap: 0.5rem; /* Reduce la separación general entre elementos de la barra */
+    padding-top: 0rem !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:first-child {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    height: 0px !important;
+    min-height: 0px !important;
+    visibility: hidden; /* Oculta los elementos por defecto del header si no los usas */
+}
+
+/* 2. Forzar al contenedor principal y al sidebar a subir al borde superior (0rem) */
+.stAppViewBlockContainer, 
+[data-testid="stMainBlockContainer"], 
+.block-container {
+    padding-top: 0rem !important;
+}
+
+/* 3. Subir el contenido interno de la barra lateral arriba del todo */
+section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
+    padding-top: 0rem !important;
+}
 
 button[data-testid="stSidebarCollapsedControl"] {
     display: flex !important;
@@ -177,6 +207,11 @@ button[data-testid="collapsedControl"] {
     visibility: visible !important;
     opacity: 1 !important;
     pointer-events: auto !important;
+}
+
+[data-testid="stMarkdownContainer"] {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
 }
 
 </style>
@@ -330,7 +365,7 @@ with st.sidebar:
 def dashboard_refresh():
 
     force = st.button(
-        "↻ Actualizar ahora",
+        "Actualizar ahora",
         key="refresh_now"
     )
 
@@ -435,7 +470,7 @@ def dashboard_refresh():
 
         st.warning(
             f"No hay un snapshot válido que mostrar. "
-            f"Coloca los cinco CSV en: `{INPUT_DIR}`. "
+            f"Coloca CSV en: `{INPUT_DIR}`. "
             "No se publican cálculos parciales."
         )
 
@@ -747,6 +782,186 @@ def dashboard_refresh():
             a["anomalias"],
             "anomalias_iqr"
         )
+
+        st.markdown("---")
+        st.markdown("### Detección de anomalías · Isolation Forest")
+
+        st.caption(
+            "Analiza los pedidos únicos del snapshot filtrado. "
+            "Este análisis es exploratorio: señala registros inusuales, "
+            "pero no demuestra que sean errores ni sustituye las reglas "
+            "de calidad del pipeline."
+        )
+
+        pedidos_ml = a["pedidos_unicos"].copy()
+
+        if IsolationForest is None:
+            st.warning(
+                "No está instalada la biblioteca scikit-learn. "
+                "Añade `scikit-learn` a requirements.txt e instálala "
+                "en tu entorno virtual."
+            )
+
+        elif pedidos_ml.empty:
+            st.info(
+                "No hay pedidos para analizar con los filtros actuales."
+            )
+
+        else:
+
+            columnas_numericas = pedidos_ml.select_dtypes(
+                include=["number"]
+            ).columns.tolist()
+
+            columnas_caracteristicas = [
+                columna
+                for columna in columnas_numericas
+                if not (
+                    columna.lower().startswith("id")
+                    or columna.lower().endswith("_id")
+                    or "codigo" in columna.lower()
+                    or "código" in columna.lower()
+                    or "telefono" in columna.lower()
+                    or "teléfono" in columna.lower()
+                    or "postal" in columna.lower()
+                )
+            ]
+
+            if not columnas_caracteristicas:
+                st.warning(
+                    "No se han encontrado columnas numéricas adecuadas "
+                    "en los pedidos para ejecutar Isolation Forest."
+                )
+
+            elif len(pedidos_ml) < 10:
+                st.info(
+                    "Se necesitan al menos 10 pedidos para realizar "
+                    "una detección exploratoria mínimamente útil."
+                )
+
+            else:
+                contamination = st.slider(
+                    "Proporción estimada de anomalías",
+                    min_value=0.01,
+                    max_value=0.25,
+                    value=0.05,
+                    step=0.01,
+                    help=(
+                        "Es una estimación de la proporción de registros "
+                        "atípicos que el modelo espera encontrar. "
+                        "No es una tasa de errores confirmados."
+                    ),
+                    key="isolation_contamination"
+                )
+
+                X = pedidos_ml[columnas_caracteristicas].copy()
+                X = X.replace([float("inf"), float("-inf")], pd.NA)
+
+                columnas_validas = [
+                    columna
+                    for columna in X.columns
+                    if X[columna].nunique(dropna=True) > 1
+                ]
+                X = X[columnas_validas]
+
+                if X.empty:
+                    st.warning(
+                        "Las columnas numéricas disponibles no tienen "
+                        "variación suficiente para detectar anomalías."
+                    )
+
+                else:
+                    X = X.apply(
+                        lambda columna: columna.fillna(columna.median())
+                    )
+
+                    modelo_if = IsolationForest(
+                        n_estimators=200,
+                        contamination=contamination,
+                        random_state=42,
+                        n_jobs=-1
+                    )
+
+                    etiquetas = modelo_if.fit_predict(X)
+
+                    resultado_if = pedidos_ml.copy()
+                    resultado_if["resultado_isolation_forest"] = [
+                        "Anomalía" if etiqueta == -1 else "Normal"
+                        for etiqueta in etiquetas
+                    ]
+
+                    resultado_if["score_anomalia"] = (
+                        -modelo_if.decision_function(X)
+                    )
+
+                    total_anomalias = int((etiquetas == -1).sum())
+                    total_normales = int((etiquetas == 1).sum())
+
+                    metrica_if_1, metrica_if_2, metrica_if_3 = st.columns(3)
+
+                    metrica_if_1.metric(
+                        "Pedidos analizados",
+                        f"{len(resultado_if):,}"
+                    )
+                    metrica_if_2.metric(
+                        "Anomalías detectadas",
+                        f"{total_anomalias:,}"
+                    )
+                    metrica_if_3.metric(
+                        "Pedidos normales",
+                        f"{total_normales:,}"
+                    )
+
+                    st.markdown("**Distribución de resultados**")
+                    st.bar_chart(
+                        resultado_if[
+                            "resultado_isolation_forest"
+                        ].value_counts()
+                    )
+
+                    st.markdown("**Pedidos clasificados como anómalos**")
+                    anomalos_if = (
+                        resultado_if[
+                            resultado_if[
+                                "resultado_isolation_forest"
+                            ] == "Anomalía"
+                        ]
+                        .sort_values(
+                            "score_anomalia",
+                            ascending=False
+                        )
+                    )
+
+                    if anomalos_if.empty:
+                        st.success(
+                            "Isolation Forest no ha señalado anomalías "
+                            "con la configuración actual."
+                        )
+                    else:
+                        st.dataframe(
+                            anomalos_if,
+                            use_container_width=True,
+                            hide_index=True
+                        )
+
+                    with st.expander(
+                        "Ver todos los pedidos analizados"
+                    ):
+                        st.dataframe(
+                            resultado_if.sort_values(
+                                "score_anomalia",
+                                ascending=False
+                            ),
+                            use_container_width=True,
+                            hide_index=True
+                        )
+
+                    st.caption(
+                        "Variables utilizadas: "
+                        + ", ".join(columnas_validas)
+                        + ". Un score de anomalía más alto indica "
+                        "un registro más atípico según el modelo."
+                    )
 
     with tabs[5]:
 
