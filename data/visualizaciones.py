@@ -40,7 +40,7 @@ def build_analytics(snapshot):
     tables = snapshot.get("tables", {})
     lineas = snapshot.get("lineas", pd.DataFrame())
 
-    # Extracción segura de dataframes auxiliares para métricas adicionales si se requieren
+
     clientes = tables.get("clientes", pd.DataFrame())
     modelos = tables.get("modelos", pd.DataFrame())
     pedidos = tables.get("pedidos", pd.DataFrame())
@@ -48,7 +48,7 @@ def build_analytics(snapshot):
     almacen = tables.get("almacen", pd.DataFrame())
     sucursal = tables.get("sucursal", pd.DataFrame())
 
-    # Cálculo seguro de KPIs globales operativos
+
     total_facturado = float(lineas["importe_linea"].sum()) if not lineas.empty and "importe_linea" in lineas.columns else 0.0
     total_pares = int(lineas["cantidad"].sum()) if not lineas.empty and "cantidad" in lineas.columns else 0
     total_pedidos = int(pedidos["id_pedido"].nunique()) if not pedidos.empty and "id_pedido" in pedidos.columns else 0
@@ -61,7 +61,7 @@ def build_analytics(snapshot):
         "clientes_totales": total_clientes,
     }
 
-    # Agrupaciones temporales y analíticas base
+
     ventas_por_mes = pd.DataFrame(columns=["mes", "importe_linea"])
     if not lineas.empty and "mes" in lineas.columns and "importe_linea" in lineas.columns:
         ventas_por_mes = lineas.groupby("mes", as_index=False)["importe_linea"].sum().sort_values("mes")
