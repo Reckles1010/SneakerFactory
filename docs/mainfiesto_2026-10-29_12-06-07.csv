@@ -1,0 +1,11 @@
+﻿tabla,archivo,fecha,filas,columnas,nombres_columnas,tamaño_bytes
+Almacenes,Almacen.csv,2026-10-29_12-06-07,8,2,id_almacen direccion,340
+Clientes,Clientes.csv,2026-10-29_12-06-07,740,5,id_cliente dni nombre direccion telefono,51702
+Fábricas,Fabrica.csv,2026-10-29_12-06-07,6,2,id_fabrica direccion,273
+Líneas,Linea de pedido.csv,2026-10-29_12-06-07,3680,6,id_linea talla colorBase colorPanel colorSuela colorCordones,166181
+Fábricas y almacenes,many_Fabrica_has_many_Almacen.csv,2026-10-29_12-06-07,15,2,id_fabrica_Fabrica id_almacen_Almacen,144
+Modelos,Modelo.csv,2026-10-29_12-06-07,28,5,id_modelo nombre precio stock id_producto_Productos,1158
+Pedidos,Pedido.csv,2026-10-29_12-06-07,3680,9,id_pedido tipo estado descuento fecha id_linea_Linea de pedido id_modelo_Modelo id_trabajador_Trabajador id_cliente_Clientes,203312
+Productos,Productos.csv,2026-10-29_12-06-07,4,2,id_producto tipo,72
+Sucursales,Sucursal.csv,2026-10-29_12-06-07,8,3,id_sucursal direccion id_almacen_Almacen,374
+Trabajadores,Trabajador.csv,2026-10-29_12-06-07,20,4,id_trabajador puesto nombre id_sucursal_Sucursal,671

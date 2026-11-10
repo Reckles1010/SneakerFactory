@@ -3,14 +3,14 @@
 CAUTION: Do not modify this file unless you know what you are doing.
  Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="0.7" max-obj-count="10"
+<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="0.5" max-obj-count="12"
 	 default-schema="public" default-owner="postgres"
 	 layers="Default layer"
 	 active-layers="0"
 	 layer-name-colors="#000000"
 	 layer-rect-colors="#b4b4b4"
 	 show-layer-names="false" show-layer-rects="false">
-<database name="new_database" is-template="false" allow-conns="true">
+<database name="Mercury" is-template="false" allow-conns="true">
 </database>
 
 <schema name="public" layers="0" fill-color="#e1e1e1" sql-disabled="true">
@@ -94,7 +94,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</customidxs>
 </table>
 
-<table name="Linea de pedido" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
+<table name="Linea de pedido" layers="0" collapse-mode="2" max-obj-count="9" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="560" y="120"/>
@@ -102,6 +102,9 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="text" length="0"/>
 	</column>
 	<column name="talla" not-null="true">
+		<type name="numeric" length="0"/>
+	</column>
+	<column name="cantidad" not-null="true">
 		<type name="numeric" length="0"/>
 	</column>
 	<column name="colorBase" not-null="true">
@@ -115,6 +118,9 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</column>
 	<column name="colorCordones" not-null="true">
 		<type name="text" length="0"/>
+	</column>
+	<column name="PrecioTotal">
+		<type name="numeric" length="0"/>
 	</column>
 	<constraint name="Linea de pedido_pk" type="pk-constr" table="public.&quot;Linea de pedido&quot;">
 		<columns names="id_linea" ref-type="src-columns"/>
@@ -292,5 +298,32 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	 src-table="public.&quot;Almacen&quot;"
 	 dst-table="public.&quot;Sucursal&quot;"
 	 src-required="false" dst-required="false"/>
+
+<table name="LogEventos" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1212" y="784"/>
+	<column name="id_log" not-null="true">
+		<type name="bigserial" length="0"/>
+	</column>
+	<column name="fecha" not-null="true">
+		<type name="timestamptz" length="0"/>
+	</column>
+	<column name="tabla" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="operacion" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="identificador" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="resumen" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="LogEventos_pk" type="pk-constr" table="public.&quot;LogEventos&quot;">
+		<columns names="id_log" ref-type="src-columns"/>
+	</constraint>
+</table>
 
 </dbmodel>

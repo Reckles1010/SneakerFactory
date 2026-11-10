@@ -1,0 +1,12 @@
+
+--- Resumen general [29/10/2026 12:06:07]---
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' IDs duplicados en: P123', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' IDs duplicados en: P123', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' IDs duplicados en: P123', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' IDs duplicados en: P123', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': '
+ 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' clave foránea inválida en id_modelo_Modelo: M211', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' fecha futura', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P123', 'error': ' valor duplicado en la relación id_linea_Linea de pedido: L311', 'gravedad': 'alta'}
+{'tabla': 'Pedidos', 'registro': 'P311', 'error': ' valor duplicado en la relación id_linea_Linea de pedido: L311', 'gravedad': 'alta'}

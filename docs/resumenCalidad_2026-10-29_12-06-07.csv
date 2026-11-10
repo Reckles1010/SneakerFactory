@@ -1,0 +1,11 @@
+﻿tabla,filas totales,filas validas,filas erroneas,porcentaje
+Almacenes,8,8,0,100.0
+Clientes,740,740,0,100.0
+Fábricas,6,6,0,100.0
+Líneas,3680,3680,0,100.0
+Fábricas y almacenes,15,15,0,100.0
+Modelos,28,28,0,100.0
+Pedidos,3680,3678,2,99.94565217391305
+Productos,4,4,0,100.0
+Sucursales,8,8,0,100.0
+Trabajadores,20,20,0,100.0
