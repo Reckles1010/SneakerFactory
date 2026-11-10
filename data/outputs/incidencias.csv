@@ -1,1 +1,4 @@
 ﻿tabla,registro,regla,gravedad,tratamiento
+clientes,,01_columnas_ausentes:id_cliente,BLOQUEANTE,Rechazo del snapshot
+lineas,,01_columnas_ausentes:id_linea,BLOQUEANTE,Rechazo del snapshot
+lineas,,01_columnas_ausentes:talla,BLOQUEANTE,Rechazo del snapshot

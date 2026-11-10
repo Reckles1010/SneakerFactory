@@ -26,7 +26,7 @@ try:
         PENDING_STATES,
     )
 except ImportError:
-    from config import (
+    from data.config import (
         FILES,
         INPUT_DIR,
         CSV_ENCODING,
