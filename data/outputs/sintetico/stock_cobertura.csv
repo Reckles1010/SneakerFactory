@@ -1,0 +1,121 @@
+﻿origen,generado_en,filtros,id_modelo,modelo,talla,stock_disponible,fecha_corte,demanda_28_dias,cobertura_semanas,cobertura_estado,alerta,nivel_detalle
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,37,18,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,44,37,2026-06-30,1.0,148.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,43,29,2026-06-30,1.0,116.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,42,24,2026-06-30,5.0,19.2,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,41,14,2026-06-30,1.0,56.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,40,10,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,39,10,2026-06-30,2.0,20.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,38,9,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,37,2,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,46,32,2026-06-30,2.0,64.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,45,36,2026-06-30,1.0,144.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,44,24,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,43,12,2026-06-30,2.0,24.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,45,28,2026-06-30,1.0,112.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,42,14,2026-06-30,5.0,11.2,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,40,19,2026-06-30,1.0,76.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,39,1,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,38,39,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,37,33,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,46,29,2026-06-30,1.0,116.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,45,2,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,44,0,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,43,3,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,42,33,2026-06-30,4.0,33.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,41,24,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,40,3,2026-06-30,1.0,12.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,39,25,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M8,Trail Rock,41,1,2026-06-30,1.0,4.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,38,10,2026-06-30,1.0,40.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M9,Summer Light,46,11,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,38,15,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,44,32,2026-06-30,1.0,128.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,43,29,2026-06-30,2.0,58.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,42,25,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,41,39,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,40,23,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,39,5,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,38,15,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,37,18,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,46,20,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,45,11,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,44,26,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,43,11,2026-06-30,1.0,44.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,37,7,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,42,24,2026-06-30,1.0,96.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,40,7,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,39,17,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,38,0,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,37,25,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,46,23,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,45,25,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,44,3,2026-06-30,1.0,12.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,43,0,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,42,7,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,41,15,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,40,39,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M10,Court Classic,39,31,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M11,Retro One,41,13,2026-06-30,3.0,17.333333333333332,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M7,Polar Winter,37,9,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,46,19,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,45,26,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,43,12,2026-06-30,1.0,48.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,42,6,2026-06-30,4.0,6.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,41,2,2026-06-30,3.0,2.6666666666666665,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,40,16,2026-06-30,3.0,21.333333333333332,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,39,9,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,38,18,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,37,33,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,46,15,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,45,13,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,44,21,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,43,36,2026-06-30,7.0,20.571428571428573,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,42,2,2026-06-30,7.0,1.1428571428571428,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,44,8,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,41,26,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,39,16,2026-06-30,3.0,21.333333333333332,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,38,7,2026-06-30,2.0,14.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,37,2,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,46,17,2026-06-30,1.0,68.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,45,2,2026-06-30,2.0,4.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,44,6,2026-06-30,2.0,12.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,43,0,2026-06-30,1.0,0.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,42,3,2026-06-30,4.0,3.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,41,19,2026-06-30,3.0,25.333333333333332,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,40,34,2026-06-30,3.0,45.333333333333336,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,39,29,2026-06-30,1.0,116.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M1,Breeze Urban,38,34,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M2,Nebula Run,40,29,2026-06-30,3.0,38.666666666666664,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,45,13,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M3,Vertex Street,46,2,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,37,24,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,44,0,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,43,27,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,42,31,2026-06-30,2.0,62.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,41,17,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,40,34,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,39,2,2026-06-30,1.0,8.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,38,16,2026-06-30,3.0,21.333333333333332,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M6,Street Comfort,37,20,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,46,32,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,45,23,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,44,24,2026-06-30,3.0,32.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,43,17,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,42,31,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,41,27,2026-06-30,3.0,36.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,40,36,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,39,23,2026-06-30,4.0,23.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,38,30,2026-06-30,1.0,120.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M5,Aero Motion,37,16,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,46,5,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,45,12,2026-06-30,2.0,24.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,44,12,2026-06-30,1.0,48.0,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,43,20,2026-06-30,3.0,26.666666666666668,Calculada,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,42,11,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,41,0,2026-06-30,1.0,0.0,Calculada,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,40,39,2026-06-30,0.0,,N/D,Correcto,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,39,8,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M4,Cobalt Flex,38,4,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,45,1,2026-06-30,0.0,,N/D,Stock bajo,modelo-talla
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,M12,Pro Team,46,31,2026-06-30,0.0,,N/D,Correcto,modelo-talla

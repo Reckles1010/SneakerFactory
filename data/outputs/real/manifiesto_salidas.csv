@@ -1,0 +1,19 @@
+﻿fichero,origen,generado_en,filtros,filas
+resumen_calidad.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,5
+incidencias.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,2
+kpis.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,15
+pedidos_unicos.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,3680
+evolucion_mensual.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,6
+evolucion_trimestral.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,3
+modelos_abc.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,28
+matriz_modelo_talla.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,28
+rfm.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,740
+cohortes.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,4
+stock_cobertura.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,28
+auditoria_reconciliacion.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,6
+anomalias_iqr.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,0
+custom_vs_estandar.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,2
+nulos_por_columna.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,26
+hipotesis.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,3
+kmeans_perfil.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,2
+kmeans_comparacion_k.csv,ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,4

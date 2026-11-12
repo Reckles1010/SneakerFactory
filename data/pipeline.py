@@ -1,922 +1,470 @@
+"""Ingesta, control de esquema, validación (12 reglas) e integración relacional.
 
-"""Ingesta, validación y snapshot coherente de los CSV reales de ACC."""
-
-from __future__ import annotations
-
-from pathlib import Path
+No depende de Streamlit. Dos orígenes con el MISMO motor de validación:
+    - load_and_validate(): CSV reales de ACC (origen "ACC · REAL")
+    - load_synthetic():    histórico simulado del generador (origen "SINTÉTICO")
+Los ficheros de entrada se abren solo en lectura: nunca se sobrescriben.
+"""
+import hashlib
+import time
 from datetime import datetime
 from io import BytesIO
-import json
-import time
+from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
-try:
-    from .config import (
-        FILES,
-        INPUT_DIR,
-        CSV_ENCODING,
-        CSV_SEPARATOR,
-        DECIMAL,
-        LOG_DIR,
-        OUTPUT_DIR,
-        VALID_SIZES,
-        SALES_STATES,
-        CANCEL_STATES,
-        PENDING_STATES,
-    )
-except ImportError:
-    from data.config import (
-        FILES,
-        INPUT_DIR,
-        CSV_ENCODING,
-        CSV_SEPARATOR,
-        DECIMAL,
-        LOG_DIR,
-        OUTPUT_DIR,
-        VALID_SIZES,
-        SALES_STATES,
-        CANCEL_STATES,
-        PENDING_STATES,
-    )
+from data.config import (
+    ALIASES, CSV_ENCODING, CSV_SEPARATOR, CUSTOM_VALUES, FALLBACK_COLUMNS, FILES, INPUT_DIR,
+    OUTPUT_DIR, REQUIRED, SALES_STATES, STATE_CATALOG, SYNTH_DIR, SYNTH_FILES, VALID_SIZES,
+)
+
+ORIGEN_REAL = "ACC · REAL"
+ORIGEN_SINTETICO = "SINTÉTICO"
+MAX_POR_REGLA = 50          # incidencias detalladas por (tabla, regla); el resto se resume
 
 
 class PipelineError(Exception):
-    """Error de lectura, estructura o validación del snapshot."""
+    """Fallo bloqueante: no se publica ningún cálculo parcial."""
 
     def __init__(self, message, issues=None):
         super().__init__(message)
         self.issues = issues or []
 
 
-# Columnas obligatorias según las exportaciones reales de ACC.
-REQUIRED = {
-    "clientes": ["id_cliente"],
-    "modelos": ["id_modelo", "nombre", "precio", "stock"],
-    "pedidos": [
-        "id_pedido",
-        "fecha",
-        "id_cliente_Clientes",
-        "id_modelo_Modelo",
-        "id_linea_Linea de pedido",
-        "estado",
-        "tipo",
-    ],
-    "lineas": ["id_linea", "talla"],
-    "productos": ["id_producto", "tipo"],
-    "trabajador": ["id_trabajador"],
-    "sucursal": ["id_sucursal"],
-    "almacen": ["id_almacen"],
-    "fabrica": ["id_fabrica"],
-    "many": ["id_fabrica_Fabrica", "id_almacen_Almacen"],
-}
+class Incidencias:
+    """Registro de incidencias: tabla, registro, regla, gravedad y tratamiento."""
+
+    def __init__(self):
+        self.rows, self.count, self.rechazadas = [], {}, {}
+
+    def add(self, tabla, registro, regla, gravedad, tratamiento, detalle=""):
+        k = (tabla, regla, gravedad)
+        self.count[k] = self.count.get(k, 0) + 1
+        if self.count[k] <= MAX_POR_REGLA:
+            self.rows.append({"tabla": tabla, "registro": registro, "regla": regla,
+                            "gravedad": gravedad, "tratamiento": tratamiento, "detalle": detalle})
+
+    def flag(self, tabla, df, mask, key, regla, gravedad, tratamiento, detalle=""):
+        """Registra una incidencia por cada fila de df donde mask es True; devuelve mask."""
+        mask = mask.fillna(False).astype(bool)
+        for v in df.loc[mask, key].astype(str).head(MAX_POR_REGLA + 1):
+            self.add(tabla, v, regla, gravedad, tratamiento, detalle)
+        extra = int(mask.sum()) - min(int(mask.sum()), MAX_POR_REGLA + 1)
+        if extra > 0:
+            k = (tabla, regla, gravedad)
+            self.count[k] += extra
+        return mask
+
+    def rechazar(self, tabla, n):
+        self.rechazadas[tabla] = self.rechazadas.get(tabla, 0) + int(n)
+
+    def bloqueante(self):
+        return any(g == "BLOQUEANTE" for (_, _, g) in self.count)
+
+    def frame(self):
+        rows = list(self.rows)
+        for (t, r, g), n in self.count.items():
+            if n > MAX_POR_REGLA:
+                rows.append({"tabla": t, "registro": "(resumen)", "regla": r, "gravedad": g,
+                            "tratamiento": "Ver resumen", "detalle": f"{n} registros afectados en total"})
+        cols = ["tabla", "registro", "regla", "gravedad", "tratamiento", "detalle"]
+        return pd.DataFrame(rows, columns=cols)
 
 
-# Normalización de encabezados reales de ACC.
-ALIASES = {
-    "clientes": {
-        "id_cliente": ["id_cliente"],
-        "dni": ["dni"],
-        "nombre": ["nombre"],
-        "direccion": ["direccion"],
-        "telefono": ["telefono"],
-    },
-    "modelos": {
-        "id_modelo": ["id_modelo"],
-        "nombre": ["nombre", "modelo"],
-        "precio": ["precio"],
-        "stock": ["stock"],
-        "id_producto_Productos": [
-            "id_producto_Productos",
-            "id_producto",
-        ],
-    },
-    "pedidos": {
-        "id_pedido": ["id_pedido"],
-        "tipo": ["tipo"],
-        "estado": ["estado"],
-        "descuento": ["descuento"],
-        "fecha": ["fecha"],
-        "id_linea_Linea de pedido": [
-            "id_linea_Linea de pedido",
-            "id_linea",
-        ],
-        "id_modelo_Modelo": [
-            "id_modelo_Modelo",
-            "id_modelo",
-        ],
-        "id_trabajador_Trabajador": [
-            "id_trabajador_Trabajador",
-            "id_trabajador",
-        ],
-        "id_cliente_Clientes": [
-            "id_cliente_Clientes",
-            "id_cliente",
-        ],
-    },
-    "lineas": {
-        "id_linea": ["id_linea"],
-        "talla": ["talla"],
-        "colorBase": ["colorBase", "color_base"],
-        "colorPanel": ["colorPanel", "color_panel"],
-        "colorSuela": ["colorSuela", "color_suela"],
-        "colorCordones": ["colorCordones", "color_cordones"],
-    },
-    "productos": {
-        "id_producto": ["id_producto"],
-        "tipo": ["tipo"],
-    },
-    "trabajador": {
-        "id_trabajador": ["id_trabajador"],
-        "puesto": ["puesto"],
-        "nombre": ["nombre"],
-        "id_sucursal_Sucursal": [
-            "id_sucursal_Sucursal",
-            "id_sucursal",
-        ],
-    },
-    "sucursal": {
-        "id_sucursal": ["id_sucursal"],
-        "direccion": ["direccion"],
-        "id_almacen_Almacen": [
-            "id_almacen_Almacen",
-            "id_almacen",
-        ],
-    },
-    "almacen": {
-        "id_almacen": ["id_almacen"],
-        "direccion": ["direccion"],
-    },
-    "fabrica": {
-        "id_fabrica": ["id_fabrica"],
-        "direccion": ["direccion"],
-    },
-    "many": {
-        "id_fabrica_Fabrica": [
-            "id_fabrica_Fabrica",
-            "id_fabrica",
-        ],
-        "id_almacen_Almacen": [
-            "id_almacen_Almacen",
-            "id_almacen",
-        ],
-    },
-}
+# lectura
+def _norm(txt):
+    return str(txt).strip().lower()
 
 
-def _normalise_columns(df, table):
-    """Normaliza encabezados sin perder las columnas originales."""
-
-    rename = {}
-
-    lower = {
-        str(column).strip().lower(): column
-        for column in df.columns
-    }
-
-    for canonical, alternatives in ALIASES.get(table, {}).items():
-        for candidate in alternatives:
-            original = lower.get(candidate.strip().lower())
-
-            if original is not None:
-                rename[original] = canonical
+def _renombrar(df, tabla):
+    df = df.copy()
+    df.columns = [_norm(c) for c in df.columns]
+    ren = {}
+    for canon, alts in ALIASES.get(tabla, {}).items():
+        for a in alts:
+            if _norm(a) in df.columns and canon not in ren.values():
+                ren[_norm(a)] = canon
                 break
-
-    return df.rename(columns=rename)
-
-
-def _read_snapshot(input_dir: Path):
-    """Lee todos los CSV y comprueba que no cambian durante la lectura."""
-
-    paths = {
-        key: input_dir / filename
-        for key, filename in FILES.items()
-    }
-
-    missing = [
-        path.name
-        for path in paths.values()
-        if not path.is_file()
-    ]
-
-    if missing:
-        raise PipelineError(
-            "Faltan CSV obligatorios: " + ", ".join(missing)
-        )
-
-    for _ in range(2):
-
-        before = {
-            key: (
-                path.stat().st_size,
-                path.stat().st_mtime_ns,
-            )
-            for key, path in paths.items()
-        }
-
-        payloads = {
-            key: path.read_bytes()
-            for key, path in paths.items()
-        }
-
-        after = {
-            key: (
-                path.stat().st_size,
-                path.stat().st_mtime_ns,
-            )
-            for key, path in paths.items()
-        }
-
-        if before == after:
-            return paths, payloads, after
-
-    raise PipelineError(
-        "La exportación ha cambiado durante la lectura. "
-        "Vuelve a intentarlo cuando ACC termine de exportar."
-    )
+    return df.rename(columns=ren)
 
 
-def _write_issues(issues):
-    """Guarda las incidencias de validación."""
-
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    columns = [
-        "tabla",
-        "registro",
-        "regla",
-        "gravedad",
-        "tratamiento",
-    ]
-
-    pd.DataFrame(
-        issues,
-        columns=columns,
-    ).to_csv(
-        OUTPUT_DIR / "incidencias.csv",
-        index=False,
-        encoding="utf-8-sig",
-    )
-
-    event = {
-        "at": datetime.now().astimezone().isoformat(),
-        "event": "validacion",
-        "issues": len(issues),
-    }
-
-    with (LOG_DIR / "refrescos.jsonl").open(
-        "a",
-        encoding="utf-8",
-    ) as file:
-        file.write(
-            json.dumps(event, ensure_ascii=False) + "\n"
-        )
+def _leer_csv(payload, **kw):
+    return pd.read_csv(BytesIO(payload), sep=CSV_SEPARATOR, encoding=CSV_ENCODING, dtype=str,
+                       skipinitialspace=True, skip_blank_lines=True, **kw)
 
 
-def load_and_validate(input_dir: Path = INPUT_DIR):
-    """
-    Carga las diez exportaciones reales de ACC.
+def _leer_tabla(payload, tabla, nombre, iss):
+    if not payload.strip():
+        iss.add(tabla, nombre, "01_fichero_vacio", "BLOQUEANTE", "Rechazo del snapshot")
+        return None
+    try:
+        df = _renombrar(_leer_csv(payload), tabla)
+    except Exception as exc:                       # CSV ilegible / delimitador inválido
+        iss.add(tabla, nombre, "01_fichero_ilegible", "BLOQUEANTE", "Rechazo del snapshot", str(exc))
+        return None
+    falta = [c for c in REQUIRED.get(tabla, []) if c not in df.columns]
+    fb = FALLBACK_COLUMNS.get(tabla)
+    if falta and fb:
+        try:                                       # exportación sin fila de cabecera
+            sin_cab = _leer_csv(payload, header=None)
+        except Exception:
+            sin_cab = None
+        if sin_cab is not None and sin_cab.shape[1] == len(fb):
+            sin_cab.columns = fb
+            iss.add(tabla, nombre, "01_cabecera_ausente_inferida", "ADVERTENCIA",
+                    "Se asignan nombres por posición",
+                    "El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna")
+            return _renombrar(sin_cab, tabla)
+    for c in falta:
+        iss.add(tabla, nombre, f"01_columnas_ausentes:{c}", "BLOQUEANTE", "Rechazo del snapshot")
+    return df
 
-    Devuelve:
-        tables: DataFrames originales normalizados.
-        raw: DataFrames originales sin normalizar.
-        lineas: pedidos enriquecidos con clientes, modelos y líneas.
-        issues: incidencias.
-        manifest: manifiesto de los archivos.
-    """
 
-    started = time.perf_counter()
-    checked_at = datetime.now().astimezone()
+def _estandarizar_ids(df):
+    for c in df.columns:
+        if c.startswith("id_"):
+            df[c] = df[c].astype("string").str.strip()
+    return df
 
-    paths, payloads, signatures = _read_snapshot(
-        Path(input_dir)
-    )
 
-    raw = {}
-    tables = {}
-    issues = []
-    manifest = []
-
-    def issue(
-        table,
-        record,
-        rule,
-        severity="BLOQUEANTE",
-        treatment="Rechazo del snapshot",
-    ):
-        issues.append({
-            "tabla": table,
-            "registro": str(record),
-            "regla": rule,
-            "gravedad": severity,
-            "tratamiento": treatment,
-        })
-
-    # ---------------------------------------------------------
-    # 1. LECTURA DE CSV
-    # ---------------------------------------------------------
-
-    for table, path in paths.items():
-
-        data = payloads[table]
-
-        if not data.strip():
-            issue(
-                table,
-                "",
-                "01_fichero_vacio",
-            )
-            continue
-
+# tipado
+def _fechas(s):
+    out = pd.to_datetime(s, format="%Y-%m-%d", errors="coerce")
+    resto = out.isna() & s.notna()
+    if resto.any():
         try:
-            df = pd.read_csv(
-                BytesIO(data),
-                encoding=CSV_ENCODING,
-                sep=CSV_SEPARATOR,
-                decimal=DECIMAL,
-                dtype=str,
-                keep_default_na=True,
-            )
-
-        except Exception as exc:
-            raise PipelineError(
-                f"No se pudo leer {path.name}: {exc}",
-                issues,
-            )
-
-        if df.empty or len(df.columns) == 0:
-            issue(
-                table,
-                "",
-                "01_sin_datos_o_cabeceras",
-            )
-
-        # Elimina espacios en encabezados.
-        df.columns = [
-            str(column).strip()
-            for column in df.columns
-        ]
-
-        raw[table] = df.copy()
-
-        df = _normalise_columns(df, table)
-
-        # Validación de columnas obligatorias.
-        for column in REQUIRED.get(table, []):
-
-            if column not in df.columns:
-                issue(
-                    table,
-                    "",
-                    f"01_columnas_ausentes:{column}",
-                )
-
-        tables[table] = df
-
-        manifest.append({
-            "tabla": table,
-            "fichero": path.name,
-            "filas": len(df),
-            "columnas": len(df.columns),
-            "bytes": len(data),
-            "mtime_ns": signatures[table][1],
-        })
-
-    # No continuar si faltan columnas obligatorias.
-    blocking = [
-        item
-        for item in issues
-        if item["gravedad"] == "BLOQUEANTE"
-    ]
-
-    if blocking:
-        _write_issues(issues)
-
-        raise PipelineError(
-            "Esquema o contenido incompleto. "
-            "No se publica el snapshot.",
-            issues,
-        )
-
-    # ---------------------------------------------------------
-    # 2. ACCESO A TABLAS
-    # ---------------------------------------------------------
-
-    c = tables["clientes"]
-    m = tables["modelos"]
-    p = tables["pedidos"]
-    l = tables["lineas"]
-
-    productos = tables["productos"]
-    trabajadores = tables["trabajador"]
-    sucursales = tables["sucursal"]
-    almacenes = tables["almacen"]
-    fabricas = tables["fabrica"]
-    many = tables["many"]
-
-    # ---------------------------------------------------------
-    # 3. LIMPIEZA DE IDENTIFICADORES
-    # ---------------------------------------------------------
-
-    id_columns = {
-        "clientes": ["id_cliente"],
-        "modelos": ["id_modelo", "id_producto_Productos"],
-        "pedidos": [
-            "id_pedido",
-            "id_cliente_Clientes",
-            "id_modelo_Modelo",
-            "id_linea_Linea de pedido",
-            "id_trabajador_Trabajador",
-        ],
-        "lineas": ["id_linea"],
-        "productos": ["id_producto"],
-        "trabajador": [
-            "id_trabajador",
-            "id_sucursal_Sucursal",
-        ],
-        "sucursal": [
-            "id_sucursal",
-            "id_almacen_Almacen",
-        ],
-        "almacen": ["id_almacen"],
-        "fabrica": ["id_fabrica"],
-        "many": [
-            "id_fabrica_Fabrica",
-            "id_almacen_Almacen",
-        ],
-    }
-
-    for table, columns in id_columns.items():
-
-        df = tables[table]
-
-        for column in columns:
-
-            if column in df.columns:
-                df[column] = (
-                    df[column]
-                    .astype("string")
-                    .str.strip()
-                )
-
-                df[column] = df[column].replace(
-                    "",
-                    pd.NA,
-                )
-
-    # ---------------------------------------------------------
-    # 4. CONVERSIÓN DE FECHAS Y NÚMEROS
-    # ---------------------------------------------------------
-
-    p["fecha"] = pd.to_datetime(
-        p["fecha"],
-        errors="coerce",
-        dayfirst=True,
-    )
-
-    m["precio"] = pd.to_numeric(
-        m["precio"],
-        errors="coerce",
-    )
-
-    m["stock"] = pd.to_numeric(
-        m["stock"],
-        errors="coerce",
-    )
-
-    if "descuento" in p.columns:
-
-        p["descuento"] = pd.to_numeric(
-            p["descuento"],
-            errors="coerce",
-        )
-
-    # ---------------------------------------------------------
-    # 5. IDENTIFICADORES DUPLICADOS
-    # ---------------------------------------------------------
-
-    unique_keys = [
-        ("clientes", c, "id_cliente"),
-        ("modelos", m, "id_modelo"),
-        ("pedidos", p, "id_pedido"),
-        ("lineas", l, "id_linea"),
-        ("productos", productos, "id_producto"),
-        ("trabajador", trabajadores, "id_trabajador"),
-        ("sucursal", sucursales, "id_sucursal"),
-        ("almacen", almacenes, "id_almacen"),
-        ("fabrica", fabricas, "id_fabrica"),
-    ]
-
-    for table, df, key in unique_keys:
-
-        duplicate = (
-            df[key].isna()
-            | df[key].duplicated(keep=False)
-        )
-
-        for index in df.index[duplicate]:
-
-            issue(
-                table,
-                index,
-                f"02_id_duplicado_o_nulo:{key}",
-            )
-
-    # ---------------------------------------------------------
-    # 6. VALIDACIÓN DE DATOS
-    # ---------------------------------------------------------
-
-    for index in p.index[p["fecha"].isna()]:
-
-        issue(
-            "pedidos",
-            index,
-            "04_fecha_nula_o_invalida",
-        )
-
-    for index in p.index[
-        p["id_cliente_Clientes"].isna()
-    ]:
-
-        issue(
-            "pedidos",
-            index,
-            "09_cliente_ausente",
-        )
-
-    for index in m.index[
-        m["precio"].isna() | (m["precio"] < 0)
-    ]:
-
-        issue(
-            "modelos",
-            index,
-            "06_precio_no_numerico_o_negativo",
-        )
-
-    for index in m.index[
-        m["stock"].isna() | (m["stock"] < 0)
-    ]:
-
-        issue(
-            "modelos",
-            index,
-            "11_stock_negativo_o_no_numerico",
-        )
-
-    # Las tallas son obligatorias.
-    for index in l.index[l["talla"].isna()]:
-
-        issue(
-            "lineas",
-            index,
-            "08_talla_ausente",
-        )
-
-    # Solo validar catálogo si ACC ha acordado uno.
-    if VALID_SIZES:
-
-        invalid_sizes = ~l["talla"].astype(
-            str
-        ).isin(VALID_SIZES)
-
-        for index in l.index[invalid_sizes]:
-
-            issue(
-                "lineas",
-                index,
-                "08_talla_fuera_catalogo",
-                "RECUPERABLE",
-                "Revisar catálogo de tallas",
-            )
-
-    # ---------------------------------------------------------
-    # 7. VALIDACIÓN DE ESTADOS
-    # ---------------------------------------------------------
-
-    known_states = (
-        set(SALES_STATES)
-        | set(CANCEL_STATES)
-        | set(PENDING_STATES)
-    )
-
-    known_states = {
-        str(state).lower().strip()
-        for state in (
-            list(SALES_STATES)
-            + list(CANCEL_STATES)
-            + list(PENDING_STATES)
-        )
-    }
-
-    invalid_states = ~p["estado"].astype(
-        str
-    ).str.lower().str.strip().isin(known_states)
-
-    for index in p.index[invalid_states]:
-
-        issue(
-            "pedidos",
-            index,
-            "07_estado_fuera_catalogo",
-        )
-
-    # ---------------------------------------------------------
-    # 8. VALIDACIÓN DE RELACIONES
-    # ---------------------------------------------------------
-
-    def check_foreign_key(
-        source_table,
-        source_df,
-        source_column,
-        target_table,
-        target_df,
-        target_column,
-    ):
-
-        source_values = set(
-            source_df[source_column].dropna()
-        )
-
-        target_values = set(
-            target_df[target_column].dropna()
-        )
-
-        missing = source_values - target_values
-
-        for value in missing:
-
-            issue(
-                source_table,
-                value,
-                f"03_referencia_huerfana:{source_column}",
-            )
-
-    # Pedidos -> clientes.
-    check_foreign_key(
-        "pedidos",
-        p,
-        "id_cliente_Clientes",
-        "clientes",
-        c,
-        "id_cliente",
-    )
-
-    # Pedidos -> modelos.
-    check_foreign_key(
-        "pedidos",
-        p,
-        "id_modelo_Modelo",
-        "modelos",
-        m,
-        "id_modelo",
-    )
-
-    # Pedidos -> líneas.
-    check_foreign_key(
-        "pedidos",
-        p,
-        "id_linea_Linea de pedido",
-        "lineas",
-        l,
-        "id_linea",
-    )
-
-    # Modelos -> productos.
-    check_foreign_key(
-        "modelos",
-        m,
-        "id_producto_Productos",
-        "productos",
-        productos,
-        "id_producto",
-    )
-
-    # Trabajadores -> sucursales.
-    check_foreign_key(
-        "trabajador",
-        trabajadores,
-        "id_sucursal_Sucursal",
-        "sucursal",
-        sucursales,
-        "id_sucursal",
-    )
-
-    # Sucursales -> almacenes.
-    check_foreign_key(
-        "sucursal",
-        sucursales,
-        "id_almacen_Almacen",
-        "almacen",
-        almacenes,
-        "id_almacen",
-    )
-
-    # Fábricas y almacenes.
-    check_foreign_key(
-        "many",
-        many,
-        "id_fabrica_Fabrica",
-        "fabrica",
-        fabricas,
-        "id_fabrica",
-    )
-
-    check_foreign_key(
-        "many",
-        many,
-        "id_almacen_Almacen",
-        "almacen",
-        almacenes,
-        "id_almacen",
-    )
-
-    # ---------------------------------------------------------
-    # 9. RESULTADO DE LAS VALIDACIONES
-    # ---------------------------------------------------------
-
-    blocking = [
-        item
-        for item in issues
-        if item["gravedad"] == "BLOQUEANTE"
-    ]
-
-    _write_issues(issues)
-
-    if blocking:
-
-        raise PipelineError(
-            f"Se detectaron {len(blocking)} incidencias "
-            "bloqueantes. No se publica el snapshot.",
-            issues,
-        )
-
-    # ---------------------------------------------------------
-    # 10. CONSTRUCCIÓN DE LA TABLA ANALÍTICA
-    # ---------------------------------------------------------
-
-    # Cada pedido referencia directamente:
-    # - Un cliente.
-    # - Un modelo.
-    # - Una línea de pedido.
-
-    lineas = p.merge(
-        c,
-        left_on="id_cliente_Clientes",
-        right_on="id_cliente",
-        how="left",
-        validate="many_to_one",
-        suffixes=("", "_cliente"),
-    )
-
-    lineas = lineas.merge(
-        m,
-        left_on="id_modelo_Modelo",
-        right_on="id_modelo",
-        how="left",
-        validate="many_to_one",
-        suffixes=("", "_modelo"),
-    )
-
-    lineas = lineas.merge(
-        l,
-        left_on="id_linea_Linea de pedido",
-        right_on="id_linea",
-        how="left",
-        validate="many_to_one",
-        suffixes=("", "_linea"),
-    )
-
-    lineas = lineas.merge(
-        productos,
-        left_on="id_producto_Productos",
-        right_on="id_producto",
-        how="left",
-        validate="many_to_one",
-        suffixes=("", "_producto"),
-    )
-
-    # ---------------------------------------------------------
-    # 11. CAMPOS ANALÍTICOS
-    # ---------------------------------------------------------
-
-    lineas["mes"] = (
-        lineas["fecha"]
-        .dt.to_period("M")
-        .astype("string")
-    )
-
-    lineas["estado_normalizado"] = (
-        lineas["estado"]
-        .astype(str)
-        .str.lower()
-        .str.strip()
-    )
-
-    lineas["tipo_normalizado"] = (
-        lineas["tipo"]
-        .astype(str)
-        .str.lower()
-        .str.strip()
-    )
-
-    # El precio procede del catálogo de modelos.
-    # No se inventa cantidad ni precio unitario.
-    lineas["precio_unitario"] = lineas["precio"]
-
-    # Cada registro representa un pedido, no necesariamente
-    # una unidad vendida.
-    lineas["importe_bruto"] = lineas["precio"]
-
-    if "descuento" in lineas.columns:
-
-        descuento = lineas["descuento"].fillna(0)
-
-        lineas["importe_neto"] = (
-            lineas["importe_bruto"]
-            * (1 - descuento / 100)
-        )
-
+            out[resto] = pd.to_datetime(s[resto], dayfirst=True, errors="coerce", format="mixed")
+        except Exception:
+            pass
+    return out
+
+
+def _num(s):
+    return pd.to_numeric(s.astype("string").str.replace(",", ".", regex=False), errors="coerce")
+
+
+def _bool(s):
+    m = {"t": True, "true": True, "1": True, "si": True, "sí": True,
+        "f": False, "false": False, "0": False, "no": False}
+    return s.astype("string").str.strip().str.lower().map(m).astype("boolean")
+
+
+def tipar_contrato(c):
+    """Conversión explícita de tipos. Un valor no convertible queda nulo y lo detectan las reglas."""
+    c = {k: v.copy() for k, v in c.items()}
+    p, li, st = c["pedidos"], c["lineas"], c["stock"]
+    p["fecha"] = _fechas(p["fecha"].astype("string"))
+    if "descuento" in p:
+        p["descuento"] = _bool(p["descuento"])
+    li["cantidad"] = _num(li["cantidad"])
+    if "precio_unitario" in li:
+        li["precio_unitario"] = _num(li["precio_unitario"])
     else:
+        tot = _num(li["precio_total"])
+        li["precio_unitario"] = (tot / li["cantidad"].where(li["cantidad"] > 0)).round(4)
+    li["talla"] = li["talla"].astype("string").str.strip()
+    c["modelos"]["precio"] = _num(c["modelos"]["precio"])
+    st["stock_disponible"] = _num(st["stock_disponible"])
+    st["fecha_corte"] = _fechas(st["fecha_corte"].astype("string")) if "fecha_corte" in st else pd.NaT
+    st["talla"] = st["talla"].astype("string").str.strip() if "talla" in st else pd.NA
+    return c
 
-        lineas["importe_neto"] = (
-            lineas["importe_bruto"]
-        )
 
-    # Alias para facilitar el uso en el dashboard.
-    lineas["modelo"] = lineas["nombre"]
+# Reglas 01-12
+def validar_contrato(c, iss, hoy=None):
+    """Aplica las doce comprobaciones. Devuelve las tablas válidas y el resumen de calidad."""
+    hoy = pd.Timestamp(hoy or datetime.now().date())
+    recibidas = {k: len(v) for k, v in c.items()}
+    c = {k: v.copy() for k, v in c.items()}
+    claves = {"clientes": "id_cliente", "modelos": "id_modelo", "pedidos": "id_pedido", "lineas": "id_linea"}
 
-    lineas["stock_disponible"] = lineas["stock"]
+    for t in claves:                                                     # 01 vacío
+        if c[t].empty:
+            iss.add(t, t, "01_fichero_vacio", "BLOQUEANTE", "Rechazo del snapshot")
 
-    # No se crea una cantidad ficticia.
-    lineas["cantidad"] = pd.NA
+    for t, k in claves.items():                                          # 02 IDs
+        df = c[t]
+        iss.flag(t, df, df[k].isna(), k, "02_id_nulo", "BLOQUEANTE", "Rechazo del snapshot")
+        dup = df[k].notna() & df[k].duplicated(keep=False)
+        if dup.any():
+            distintos = df[dup].drop_duplicates().groupby(k).size()
+            conflict = df[k].isin(distintos[distintos > 1].index)
+            iss.flag(t, df, dup & conflict, k, "02_id_duplicado_conflictivo", "BLOQUEANTE",
+                    "Rechazo del snapshot", "Mismo ID con contenido distinto")
+            exacto = dup & ~conflict & df.duplicated(keep="first")
+            iss.flag(t, df, exacto, k, "02_fila_duplicada_exacta", "RECUPERABLE",
+                    "Se conserva una copia", "Fila idéntica repetida")
+            iss.rechazar(t, exacto.sum())
+            c[t] = df[~exacto]
 
-    # ---------------------------------------------------------
-    # 12. TABLA DE STOCK
-    # ---------------------------------------------------------
+    cl, mo, pe, li, st = c["clientes"], c["modelos"], c["pedidos"], c["lineas"], c["stock"]
 
-    stock = m[
-        [
-            "id_modelo",
-            "nombre",
-            "stock",
-            "precio",
-        ]
-    ].copy()
+    # 09 ausencia de cliente o modelo / 03 claves huérfanas
+    iss.flag("pedidos", pe, pe["id_cliente"].isna(), "id_pedido", "09_ausencia_cliente", "BLOQUEANTE", "Rechazo del snapshot")
+    if "id_modelo" in pe:      # en el esquema real ACC el modelo viene en el pedido (1 pedido = 1 línea)
+        iss.flag("pedidos", pe, pe["id_modelo"].isna(), "id_pedido", "09_ausencia_modelo", "BLOQUEANTE", "Rechazo del snapshot")
+        iss.flag("pedidos", pe, pe["id_modelo"].notna() & ~pe["id_modelo"].isin(mo["id_modelo"]),
+                "id_pedido", "03_huerfana_modelo", "BLOQUEANTE", "Rechazo del snapshot", "Modelo inexistente")
+    iss.flag("lineas", li, li["id_modelo"].isna(), "id_linea", "09_ausencia_modelo", "BLOQUEANTE", "Rechazo del snapshot")
+    iss.flag("pedidos", pe, pe["id_cliente"].notna() & ~pe["id_cliente"].isin(cl["id_cliente"]),
+            "id_pedido", "03_huerfana_cliente", "BLOQUEANTE", "Rechazo del snapshot", "Cliente inexistente")
+    iss.flag("lineas", li, ~li["id_pedido"].isin(pe["id_pedido"]),
+            "id_linea", "03_huerfana_pedido", "BLOQUEANTE", "Rechazo del snapshot", "Línea sin pedido")
+    iss.flag("lineas", li, li["id_modelo"].notna() & ~li["id_modelo"].isin(mo["id_modelo"]),
+            "id_linea", "03_huerfana_modelo", "BLOQUEANTE", "Rechazo del snapshot", "Modelo inexistente")
 
-    stock = stock.rename(
-        columns={
-            "nombre": "modelo",
-            "stock": "stock_disponible",
-        }
-    )
+    # 04 fecha nula o imposible / 12 fecha futura
+    f_nula = iss.flag("pedidos", pe, pe["fecha"].isna(), "id_pedido", "04_fecha_nula_o_imposible",
+                    "RECUPERABLE", "Se excluye el pedido y sus líneas")
+    f_fut = iss.flag("pedidos", pe, pe["fecha"] > hoy, "id_pedido", "12_fecha_futura",
+                    "RECUPERABLE", "Se excluye el pedido y sus líneas", "Fecha posterior a hoy")
+    # 07 estado fuera de catálogo
+    est = pe["estado"].astype("string").str.strip().str.lower()
+    iss.flag("pedidos", pe, ~est.isin(STATE_CATALOG), "id_pedido", "07_estado_fuera_catalogo",
+            "ADVERTENCIA", "Se conserva como actividad; no cuenta como venta")
+    # 05 cantidad / 06 precio / 08 talla / 10 duplicidad de líneas
+    q_mal = iss.flag("lineas", li, li["cantidad"].isna() | (li["cantidad"] <= 0), "id_linea",
+                    "05_cantidad_nula_cero_o_negativa", "RECUPERABLE", "Se excluye la línea")
+    p_mal = iss.flag("lineas", li, li["precio_unitario"].isna() | (li["precio_unitario"] < 0), "id_linea",
+                    "06_precio_no_numerico_o_negativo", "RECUPERABLE", "Se excluye la línea")
+    if VALID_SIZES:
+        iss.flag("lineas", li, ~li["talla"].isin(VALID_SIZES), "id_linea", "08_talla_no_valida",
+                "ADVERTENCIA", "Se conserva marcada fuera de contrato")
+    clave = ["id_pedido", "id_modelo", "talla", "cantidad", "precio_unitario"]
+    iss.flag("lineas", li, li.duplicated(clave, keep="first"), "id_linea", "10_linea_posible_duplicado",
+            "ADVERTENCIA", "Se conserva; verificar con ACC", "Misma clave pedido-modelo-talla-cantidad-precio")
+    # 12 incoherencia comercial: precio de línea frente a catálogo
+    cat = li["id_modelo"].map(mo.drop_duplicates("id_modelo").set_index("id_modelo")["precio"])
+    es_custom = li["id_pedido"].map(pe.drop_duplicates("id_pedido").set_index("id_pedido")["tipo"]
+                                    .astype("string").str.lower()).isin(CUSTOM_VALUES)   # el Custom lleva recargo legítimo
+    dif = (((li["precio_unitario"] - cat).abs() / cat.replace(0, np.nan)) > 0.01) & ~es_custom.fillna(False)
+    iss.flag("lineas", li, dif, "id_linea", "12_precio_distinto_catalogo", "ADVERTENCIA",
+            "Se conserva el precio de la línea", "Difiere >1 % del precio del catálogo")
+    sin_linea = ~pe["id_pedido"].isin(li["id_pedido"])
+    iss.flag("pedidos", pe, sin_linea, "id_pedido", "12_pedido_sin_lineas", "ADVERTENCIA",
+            "Se conserva como actividad sin importe")
+    # 11 stock
+    neg = iss.flag("stock", st, st["stock_disponible"].isna() | (st["stock_disponible"] < 0), "id_modelo",
+                "11_stock_negativo_o_nulo", "RECUPERABLE", "Se excluye la fila de stock")
+    kk = ["id_modelo", "talla"]
+    dup_st = st.duplicated(kk, keep="last") & st["id_modelo"].notna()
+    iss.flag("stock", st, dup_st, "id_modelo", "11_stock_duplicado_modelo_talla", "ADVERTENCIA",
+            "Se conserva la fila más reciente")
 
-    stock["talla"] = pd.NA
+    # tratamiento: exclusiones
+    malos_ped = pe.loc[f_nula | f_fut, "id_pedido"]
+    pe_ok = pe[~(f_nula | f_fut)]
+    li_mask = q_mal | p_mal | li["id_pedido"].isin(malos_ped)
+    iss.rechazar("pedidos", len(pe) - len(pe_ok))
+    iss.rechazar("lineas", int(li_mask.sum()))
+    st_ok = st[~neg & ~dup_st]
+    iss.rechazar("stock", len(st) - len(st_ok))
+    out = {"clientes": cl, "modelos": mo, "pedidos": pe_ok, "lineas": li[~li_mask], "stock": st_ok}
 
-    # ---------------------------------------------------------
-    # 13. RESUMEN Y MANIFIESTO
-    # ---------------------------------------------------------
+    freq = pd.DataFrame(
+        [(g, t, n) for (t, _, g), n in iss.count.items()], columns=["gravedad", "tabla", "n"])
+    filas = []
+    for t in out:
+        rec = recibidas[t]
+        val = len(out[t])
+        sub = freq[freq["tabla"] == t].groupby("gravedad")["n"].sum()
+        filas.append({"tabla": t, "filas_recibidas": rec, "filas_validas": val,
+                    "filas_rechazadas": rec - val,
+                      "pct_calidad": round(100 * val / rec, 2) if rec else 0.0,
+                    "nulos_totales": int(out[t].isna().sum().sum()),
+                    "inc_bloqueantes": int(sub.get("BLOQUEANTE", 0)),
+                    "inc_recuperables": int(sub.get("RECUPERABLE", 0)),
+                    "inc_advertencias": int(sub.get("ADVERTENCIA", 0))})
+    return out, pd.DataFrame(filas)
 
-    elapsed = time.perf_counter() - started
 
-    result = {
-        "tables": tables,
-        "raw": raw,
-        "lineas": lineas,
-        "stock": stock,
-        "issues": pd.DataFrame(
-            issues,
-            columns=[
-                "tabla",
-                "registro",
-                "regla",
-                "gravedad",
-                "tratamiento",
-            ],
-        ),
-        "manifest": pd.DataFrame(manifest),
-        "checked_at": checked_at.isoformat(),
-        "processing_seconds": elapsed,
-        "signature": json.dumps(
-            signatures,
-            sort_keys=True,
-        ),
-        "valid_rows": {
-            key: len(value)
-            for key, value in tables.items()
-        },
-    }
+# integración
+def _merge_seguro(izq, der, on, how, validate, nombre):
+    """Merge con cardinalidad declarada, sin multiplicar filas ni perder claves en silencio."""
+    n = len(izq)
+    m = izq.merge(der, on=on, how=how, validate=validate, indicator=True)
+    if len(m) != n:
+        raise PipelineError(f"El cruce {nombre} altera el número de filas ({n} → {len(m)})")
+    if (m["_merge"] != "both").any():
+        raise PipelineError(f"El cruce {nombre} deja {(m['_merge'] != 'both').sum()} claves sin resolver")
+    return m.drop(columns="_merge")
 
-    OUTPUT_DIR.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
 
-    result["manifest"].to_csv(
-        OUTPUT_DIR / "manifiesto_origen.csv",
-        index=False,
-        encoding="utf-8-sig",
-    )
+def enriquecer(c, origen):
+    """Vista a nivel de línea (df_lineas_enriquecidas) con variables derivadas."""
+    pe, li, mo = c["pedidos"], c["lineas"], c["modelos"]
+    cols_p = ["id_pedido", "fecha", "id_cliente", "estado", "tipo"] + [x for x in ("descuento", "id_trabajador") if x in pe]
+    x = _merge_seguro(li[["id_linea", "id_pedido", "id_modelo", "talla", "cantidad", "precio_unitario"]],
+                    pe[cols_p], "id_pedido", "left", "many_to_one", "líneas×pedidos")
+    cols_m = ["id_modelo", "modelo", "precio"] + (["categoria"] if "categoria" in mo else [])
+    x = _merge_seguro(x, mo[cols_m].rename(columns={"precio": "precio_catalogo"}), "id_modelo", "left",
+                    "many_to_one", "líneas×modelos")
+    x["estado"] = x["estado"].astype("string").str.strip()
+    x["estado_normalizado"] = x["estado"].str.lower()
+    x["tipo"] = x["tipo"].astype("string").str.strip()
+    x["tipo_normalizado"] = x["tipo"].str.lower()
+    x["segmento"] = np.where(x["tipo_normalizado"].isin(CUSTOM_VALUES), "Custom", "Estándar")
+    x["es_venta"] = x["estado_normalizado"].isin(SALES_STATES)
+    x["cantidad"] = x["cantidad"].astype("int64")                       # validado: sin nulos y > 0
+    x["precio_unitario"] = x["precio_unitario"].astype("float64")
+    x["precio_catalogo"] = x["precio_catalogo"].astype("float64")
+    x["importe_linea"] = (x["cantidad"] * x["precio_unitario"]).round(2)
+    x["anio"] = x["fecha"].dt.year
+    x["mes"] = x["fecha"].dt.strftime("%Y-%m")
+    x["trimestre"] = x["fecha"].dt.year.astype(str) + "-T" + x["fecha"].dt.quarter.astype(str)
+    x["dia_semana"] = x["fecha"].dt.dayofweek
+    x["antiguedad_dias"] = (x["fecha"].max() - x["fecha"]).dt.days
+    if "descuento" in x:
+        x["con_descuento"] = x["descuento"].fillna(False).astype(bool)
+    x = x.sort_values(["fecha", "id_pedido", "id_linea"]).reset_index(drop=True)
+    x.attrs.update({"origen": origen, "funcion": "pipeline.enriquecer", "filas_origen": len(li),
+                    "fecha_corte": str(x["fecha"].max().date()) if len(x) else None, "filtros": {}})
+    return x
 
-    return result
+
+# ACC real
+def _desde_acc(raw, iss):
+    """Adapta las 10 tablas de ACC al contrato (clientes, modelos, pedidos, lineas, stock)."""
+    cl = raw["clientes"][["id_cliente"]].copy()                  # sin datos personales
+    pr = raw["productos"]
+    mo = raw["modelos"].copy()
+    if "id_producto" in mo.columns:
+        sin = mo["id_producto"].notna() & ~mo["id_producto"].isin(pr["id_producto"])
+        iss.flag("modelos", mo, sin, "id_modelo", "03_huerfana_producto", "ADVERTENCIA", "Categoría desconocida")
+        mo = mo.merge(pr.rename(columns={"tipo": "categoria"})[["id_producto", "categoria"]]
+                    .drop_duplicates("id_producto"), on="id_producto", how="left")
+    st = pd.DataFrame({"id_modelo": mo["id_modelo"], "talla": pd.NA,
+                    "stock_disponible": mo.get("stock"), "fecha_corte": pd.NA})
+    pe = raw["pedidos"].copy()
+    cols = [c for c in ("id_pedido", "fecha", "id_cliente", "estado", "tipo", "descuento",
+                        "id_trabajador", "id_linea", "id_modelo") if c in pe]
+    pe = pe[cols]
+    li = raw["lineas"].copy()
+    compartida = pe["id_linea"].notna() & pe["id_linea"].duplicated(keep=False)
+    iss.flag("pedidos", pe, compartida, "id_pedido", "10_linea_compartida_por_varios_pedidos",
+            "BLOQUEANTE", "Rechazo del snapshot")
+    uno = pe.drop_duplicates("id_linea").set_index("id_linea")
+    li["id_pedido"] = li["id_linea"].map(uno["id_pedido"])
+    li["id_modelo"] = li["id_linea"].map(uno["id_modelo"])
+    li = li[["id_linea", "id_pedido", "id_modelo", "talla", "cantidad", "precio_total"]]
+    pe = pe.drop(columns=["id_linea", "id_modelo"]).assign(id_modelo=pe["id_modelo"].values)
+    # integridad de las tablas auxiliares
+    for t, k, fk, ref, rk in (("many", "id_fabrica", "id_fabrica", "fabrica", "id_fabrica"),
+                            ("many", "id_almacen", "id_almacen", "almacen", "id_almacen"),
+                            ("sucursal", "id_sucursal", "id_almacen", "almacen", "id_almacen"),
+                            ("trabajador", "id_trabajador", "id_sucursal", "sucursal", "id_sucursal")):
+        df = raw[t]
+        if fk in df:
+            iss.flag(t, df, df[fk].notna() & ~df[fk].isin(raw[ref][rk]), k, f"03_huerfana_{fk}",
+                    "ADVERTENCIA", "Se conserva; tabla auxiliar")
+    return {"clientes": cl, "modelos": mo, "pedidos": pe, "lineas": li, "stock": st}
+
+
+def _manifest(rutas, payloads, tablas):
+    filas = []
+    ahora = datetime.now().astimezone().isoformat(timespec="seconds")
+    for t, p in rutas.items():
+        df = tablas.get(t)
+        filas.append({"tabla": t, "fichero": p.name, "fecha_analisis": ahora,
+                    "filas": 0 if df is None else len(df), "columnas": 0 if df is None else df.shape[1],
+                    "bytes": len(payloads[t]), "sha1": hashlib.sha1(payloads[t]).hexdigest()[:12]})
+    return pd.DataFrame(filas)
+
+
+def _guardar_calidad(iss_df, calidad, out_dir):
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    iss_df.to_csv(out_dir / "incidencias.csv", index=False, encoding="utf-8-sig")
+    if calidad is not None:
+        calidad.to_csv(out_dir / "resumen_calidad.csv", index=False, encoding="utf-8-sig")
+
+
+def _publicar(c, iss, raw_aux, origen, rutas, payloads, tablas_manifest, t0, escribir, out_dir):
+    c = tipar_contrato(c)
+    c, calidad = validar_contrato(c, iss)
+    st_ = c["stock"]
+    c["stock"] = st_.assign(stock_disponible=st_["stock_disponible"].astype("float64").pipe(
+        lambda v: v.astype("int64") if (v.dropna() % 1 == 0).all() and not v.isna().any() else v))
+    iss_df = iss.frame()
+    if iss.bloqueante():
+        if escribir:
+            _guardar_calidad(iss_df, calidad, out_dir)
+        bl = iss_df[iss_df["gravedad"] == "BLOQUEANTE"]
+        raise PipelineError("Esquema o contenido incompleto. No se publica el snapshot. "
+                            f"Reglas bloqueantes: {', '.join(sorted(bl['regla'].unique())[:6])}",
+                            iss_df.to_dict("records"))
+    lineas = enriquecer(c, origen)
+    if escribir:
+        _guardar_calidad(iss_df, calidad, out_dir)
+    firma = hashlib.sha1("".join(hashlib.sha1(p).hexdigest() for p in payloads.values()).encode()).hexdigest()
+    tablas = {**raw_aux, **c}
+    return {"origin": origen, "tables": tablas, "lineas": lineas, "issues": iss_df, "quality": calidad,
+            "manifest": _manifest(rutas, payloads, tablas_manifest),
+            "valid_rows": {k: len(v) for k, v in c.items()}, "signature": firma,
+            "checked_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+            "processing_seconds": time.perf_counter() - t0,
+            "fecha_corte": lineas["fecha"].max() if len(lineas) else pd.NaT}
+
+
+def _leer_referencia_sql(input_dir):
+    """Opcional: reconciliacion_acc.csv (metrica,valor_sql) con los resultados de las consultas SQL de ACC."""
+    ruta = Path(input_dir) / "reconciliacion_acc.csv"
+    try:
+        ref = pd.read_csv(ruta) if ruta.exists() else None
+        return ref if ref is not None and {"metrica", "valor_sql"} <= set(ref.columns) else None
+    except Exception:
+        return None
+
+
+def load_and_validate(input_dir=INPUT_DIR, escribir_salidas=True, out_dir=OUTPUT_DIR):
+    """Carga los CSV reales de ACC, valida y devuelve un snapshot coherente."""
+    t0 = time.perf_counter()
+    input_dir = Path(input_dir)
+    iss = Incidencias()
+    if not input_dir.is_dir():
+        raise PipelineError(f"No existe la carpeta de entrada: {input_dir}")
+    rutas, payloads, raw = {}, {}, {}
+    for t, nombre in FILES.items():
+        ruta = input_dir / nombre
+        if not ruta.exists():
+            iss.add(t, nombre, "01_fichero_ausente", "BLOQUEANTE", "Rechazo del snapshot")
+            continue
+        rutas[t], payloads[t] = ruta, ruta.read_bytes()
+    if iss.bloqueante():
+        raise PipelineError("Faltan ficheros de la exportación: "
+                            + ", ".join(FILES[r["tabla"]] for r in iss.rows), iss.frame().to_dict("records"))
+    for t in rutas:
+        df = _leer_tabla(payloads[t], t, rutas[t].name, iss)
+        if df is not None:
+            raw[t] = _estandarizar_ids(df)
+    if iss.bloqueante():
+        df = iss.frame()
+        raise PipelineError("Esquema o contenido incompleto. No se publica el snapshot.", df.to_dict("records"))
+    contrato = _desde_acc(raw, iss)
+    aux = {t: raw[t] for t in ("productos", "almacen", "fabrica", "sucursal", "trabajador", "many")}
+    snap = _publicar(contrato, iss, aux, ORIGEN_REAL, rutas, payloads, raw, t0, escribir_salidas, out_dir)
+    snap["referencia_sql"] = _leer_referencia_sql(input_dir)
+    return snap
+
+
+def load_synthetic(input_dir=SYNTH_DIR, escribir_salidas=False, out_dir=None):
+    """Carga el histórico sintético (formato del contrato) con las mismas reglas de validación."""
+    t0 = time.perf_counter()
+    input_dir = Path(input_dir)
+    iss = Incidencias()
+    rutas, payloads, raw = {}, {}, {}
+    for t, nombre in SYNTH_FILES.items():
+        ruta = input_dir / nombre
+        if not ruta.exists():
+            iss.add(t, nombre, "01_fichero_ausente", "BLOQUEANTE", "Rechazo del snapshot")
+            continue
+        rutas[t], payloads[t] = ruta, ruta.read_bytes()
+    if iss.bloqueante():
+        raise PipelineError("Faltan ficheros del conjunto sintético", iss.frame().to_dict("records"))
+    for t in rutas:
+        df = _leer_csv(payloads[t]) if payloads[t].strip() else pd.DataFrame()
+        df.columns = [_norm(x) for x in df.columns]
+        raw[t] = _estandarizar_ids(df)
+    return _publicar(raw, iss, {}, ORIGEN_SINTETICO, rutas, payloads, raw, t0, escribir_salidas,
+                    out_dir or OUTPUT_DIR / "sintetico")

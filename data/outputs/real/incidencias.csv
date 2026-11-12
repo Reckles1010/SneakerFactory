@@ -1,0 +1,3 @@
+﻿origen,generado_en,filtros,tabla,registro,regla,gravedad,tratamiento,detalle
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,clientes,Clientes.csv,01_cabecera_ausente_inferida,ADVERTENCIA,Se asignan nombres por posición,El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,Linea_pedido.csv,01_cabecera_ausente_inferida,ADVERTENCIA,Se asignan nombres por posición,El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna

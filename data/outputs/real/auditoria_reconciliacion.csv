@@ -1,0 +1,7 @@
+﻿origen,generado_en,filtros,metrica,valor_pandas,valor_sql,diferencia,estado
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos_unicos,3680.0,,,PENDIENTE (falta resultado SQL de ACC)
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos_venta,1852.0,,,PENDIENTE (falta resultado SQL de ACC)
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pares_vendidos,6371.0,,,PENDIENTE (falta resultado SQL de ACC)
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,ingresos_ventas,176060.88,,,PENDIENTE (falta resultado SQL de ACC)
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,clientes_unicos,740.0,,,PENDIENTE (falta resultado SQL de ACC)
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,ingresos_mes_2026-10,30796.36,,,PENDIENTE (falta resultado SQL de ACC)

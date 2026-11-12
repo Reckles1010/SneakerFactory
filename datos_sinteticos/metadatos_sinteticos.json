@@ -1,0 +1,12 @@
+{
+  "origen": "SINTÉTICO",
+  "semilla": 42,
+  "generado_en": "2026-11-12T08:35:09+00:00",
+  "pedidos": 900,
+  "lineas": 2147,
+  "clientes": 40,
+  "modelos": 12,
+  "meses": 18,
+  "con_incidencias_deliberadas": false,
+  "aviso": "Datos simulados: NO son ventas reales ni evidencia de demanda real de clientes."
+}
