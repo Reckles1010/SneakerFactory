@@ -468,3 +468,4 @@ def load_synthetic(input_dir=SYNTH_DIR, escribir_salidas=False, out_dir=None):
         raw[t] = _estandarizar_ids(df)
     return _publicar(raw, iss, {}, ORIGEN_SINTETICO, rutas, payloads, raw, t0, escribir_salidas,
                     out_dir or OUTPUT_DIR / "sintetico")
+

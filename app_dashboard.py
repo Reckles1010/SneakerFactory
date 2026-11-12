@@ -31,6 +31,10 @@ st.set_page_config(
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{
+    --primary-color: lightblue;
+}
+
 html, body, [class*="css"] {
     font-family: 'Inter', sans-serif;
 }
@@ -74,7 +78,7 @@ h1 {
 }
 .stButton button,
 .stDownloadButton button {
-    background: #080808;
+    background: #179fb5;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -84,6 +88,7 @@ h1 {
     background: #179fb5;
     color: white;
 }
+
 section[data-testid="stSidebar"] {
     background: #080808 !important;
     display: flex !important;
@@ -127,6 +132,7 @@ button[data-testid="stSidebarCollapsedControl"] {
     visibility: visible !important;
     opacity: 1 !important;
     pointer-events: auto !important;
+    color: red;
 }
 .mercury-brand {
     color: #080808;
@@ -162,7 +168,7 @@ button[data-testid="stSidebarCollapsedControl"] {
     font-weight: 700;
 }
 .status-error {
-    color: #b42318;
+    color: #179fb5;
     font-weight: 700;
 }
 #MainMenu {
@@ -183,6 +189,139 @@ button[data-testid="collapsedControl"] {
 [data-testid="stMarkdownContainer"] {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
+}
+/* Color de las etiquetas seleccionadas en los multiselect */
+section[data-testid="stSidebar"] [data-testid="stMultiSelect"] span[data-tag] {
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+    border: 1px solid #179fb5 !important;
+    border-radius: 5px !important;
+}
+
+/* Texto de las etiquetas */
+section[data-testid="stSidebar"] [data-testid="stMultiSelect"] span[data-tag] span {
+    color: #ffffff !important;
+}
+
+/* Botón de eliminar (X) */
+section[data-testid="stSidebar"] [data-testid="stMultiSelect"] span[data-tag] button {
+    color: #ffffff !important;
+}
+
+
+/* Texto de la pestaña seleccionada */
+.stTabs [data-testid="stTab"][aria-selected="true"] p {
+    color: #179fb5 !important;
+}
+
+/* Indicador inferior de la pestaña seleccionada */
+.stTabs [data-testid="stTab"]:hover {
+    color: #179fb5 !important;
+}
+
+/* Indicador inferior de la pestaña seleccionada */
+.stTabs [data-testid="stTab"][aria-selected="true"] .react-aria-SelectionIndicator {
+    background-color: #179fb5 !important;
+}
+
+/* Día seleccionado en el calendario */
+div[data-testid="stDateInput"] [data-selected="true"] {
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+    border-color: #179fb5 !important;
+}
+
+/* Día seleccionado al pasar el ratón */
+div[data-testid="stDateInput"] [data-selected="true"]:hover {
+    background-color: #117f91 !important;
+    color: #ffffff !important;
+}
+
+/* Día seleccionado al recibir el foco */
+div[data-testid="stDateInput"] [data-selected="true"]:focus {
+    outline-color: #179fb5 !important;
+}
+/* Indicador after del calendario */
+div[data-testid="stDateInput"] table td div::after {
+    background-color: #179fb5 !important;
+    border-color: #179fb5 !important;
+}
+section[data-testid="stSidebar"]
+[data-testid="stDateInputField"]
+[role="spinbutton"],
+section[data-testid="stSidebar"]
+[data-testid="stDateInputField"]
+[data-type="literal"] {
+    color: rgba(47, 45, 43, 0.7) !important;
+}
+
+/* Día seleccionado: azul */
+[role="button"][data-selected="true"] {
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+}
+
+/* Inicio y final del rango */
+[role="button"][data-selection-start="true"],
+[role="button"][data-selection-end="true"] {
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+}
+
+/* Rango comprendido entre las dos fechas */
+[role="button"][data-selected="true"]:not([data-selection-start="true"]):not([data-selection-end="true"]) {
+    background-color: #d9f3f8 !important;
+    color: #080808 !important;
+}
+
+[role="button"][data-selected="true"][data-selection-start="true"],
+[role="button"][data-selected="true"][data-selection-end="true"] {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+    border-color: #179fb5 !important;
+}
+
+/* Evitar que el hover cambie el azul */
+[role="button"][data-selected="true"]:hover {
+    background-color: #117f91 !important;
+    color: #ffffff !important;
+}
+
+div[data-testid="stDateInput"] [data-selected="true"],
+div[data-testid="stDateInput"] [data-selected="true"]::before,
+div[data-testid="stDateInput"] [data-selected="true"]::after {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+    border-color: #179fb5 !important;
+    box-shadow: none !important;
+}
+
+/* Inicio y final del rango */
+div[data-testid="stDateInput"] [data-selection-start="true"],
+div[data-testid="stDateInput"] [data-selection-end="true"] {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+}
+
+/* Rango intermedio */
+div[data-testid="stDateInput"] [data-selected="true"]:not([data-selection-start="true"]):not([data-selection-end="true"]) {
+    background: #d9f3f8 !important;
+    background-color: #d9f3f8 !important;
+    color: #080808 !important;
+}
+
+/* Día 27: fecha inicial seleccionada */
+div[data-testid="stDateInput"] div[role="button"][data-selection-start="true"],
+div[data-testid="stDateInput"] div[role="button"][data-selection-start="true"]::before,
+div[data-testid="stDateInput"] div[role="button"][data-selection-start="true"]::after {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+    border-color: #179fb5 !important;
+    box-shadow: none !important;
 }
 </style>
 """, unsafe_allow_html=True)
