@@ -1,8 +1,8 @@
 """Ejecución autónoma básica del pipeline real desde consola."""
 import argparse
-from config import INPUT_DIR
-from pipeline import load_and_validate
-from analiticas import build_analytics
+from data.config import INPUT_DIR
+from data.pipeline import load_and_validate
+from data.analiticas import build_analytics
 
 def main():
     parser = argparse.ArgumentParser(description="Sneaker Factory · análisis reproducible")
