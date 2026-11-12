@@ -1,0 +1,3 @@
+﻿origen,generado_en,filtros,segmento,pedidos,cancelados,pares,ingresos,pedidos_venta,ticket_medio,tasa_cancelacion_pct,cuota_ingresos_pct,cuota_pares_pct,nota
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,Online,1840,0,3640.0,94018.88,932,100.87862660944207,0.0,53.40134617071095,57.13388792968137,Custom no existe en la exportación ACC: comparación por tipo de pedido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,Tienda,1840,0,2731.0,82042.0,920,89.17608695652174,0.0,46.59865382928905,42.86611207031863,Custom no existe en la exportación ACC: comparación por tipo de pedido

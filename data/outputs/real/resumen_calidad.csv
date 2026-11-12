@@ -1,0 +1,6 @@
+﻿origen,generado_en,filtros,tabla,filas_recibidas,filas_validas,filas_rechazadas,pct_calidad,nulos_totales,inc_bloqueantes,inc_recuperables,inc_advertencias
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,clientes,740,740,0,100.0,0,0,0,1
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,28,28,0,100.0,0,0,0,0
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,3680,3680,0,100.0,0,0,0,0
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,3680,3680,0,100.0,0,0,0,1
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,stock,28,28,0,100.0,56,0,0,0

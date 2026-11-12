@@ -1,0 +1,16 @@
+﻿origen,generado_en,filtros,kpi,valor,formula,denominador
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos_actividad,3680,Nº de id_pedido distintos (todos los estados),Todos los pedidos del filtro
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos_venta,1852,id_pedido distintos con estado Entregado/Enviado (SALES_STATES),Pedidos del filtro
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos_pendientes,1828,id_pedido distintos en estado pendiente / en preparación,Pedidos del filtro
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos_cancelados,0,id_pedido distintos cancelados,Pedidos del filtro
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pares,6371.0,Σ cantidad de líneas de pedidos de venta (unidades),Líneas de venta
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,ingresos,176060.88000000003,"Σ cantidad × precio_unitario de líneas de venta (bruto, sin IVA ni descuentos)",Líneas de venta
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,ticket,95.06526997840174,ingresos / pedidos_venta,Pedidos de venta (nunca líneas)
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pares_por_pedido,3.4400647948164145,pares / pedidos_venta,Pedidos de venta
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,tasa_cancelacion_pct,0.0,pedidos_cancelados / pedidos_actividad × 100,Pedidos del filtro
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,custom_pct,,pedidos Custom / pedidos_actividad × 100 (N/D si no hay Custom),Pedidos del filtro
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,clientes_activos,384,id_cliente distintos con alguna venta,Clientes con ventas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos_vendidos,28,id_modelo distintos con alguna venta,Modelos con ventas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,talla_mas_vendida,45,talla con mayor Σ cantidad,Líneas de venta
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pareto_top20_modelos_pct,76.05878148513172,ingresos del 20 % de modelos con más ingresos / ingresos,Ingresos de venta
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,variacion_ultimo_mes_pct,-5.635888584484395,(ingresos mes − ingresos mes previo) / ingresos mes previo × 100,Meses con ventas

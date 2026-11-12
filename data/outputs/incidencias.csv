@@ -1,4 +1,3 @@
-﻿tabla,registro,regla,gravedad,tratamiento
-clientes,,01_columnas_ausentes:id_cliente,BLOQUEANTE,Rechazo del snapshot
-lineas,,01_columnas_ausentes:id_linea,BLOQUEANTE,Rechazo del snapshot
-lineas,,01_columnas_ausentes:talla,BLOQUEANTE,Rechazo del snapshot
+﻿tabla,registro,regla,gravedad,tratamiento,detalle
+clientes,Clientes.csv,01_cabecera_ausente_inferida,ADVERTENCIA,Se asignan nombres por posición,El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna
+lineas,Linea_pedido.csv,01_cabecera_ausente_inferida,ADVERTENCIA,Se asignan nombres por posición,El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna

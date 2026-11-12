@@ -1133,6 +1133,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const feedback = document.getElementById('feedback');
 
+    const sizeOptions = document.getElementById('sizeOptions');
+
+    const selectedSizeLabel = document.getElementById('selectedSizeLabel');
+
     const colors = [
         { name: 'Blanco', value: '#f4f4f5', className: 'white' },
         { name: 'Negro', value: '#080808', className: 'black' },
@@ -1151,6 +1155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         product: 'shoe',
         design: 'classic',
         zone: 'main',
+        size: null,
         colors: {
 
             main: '#f4f4f5',
@@ -1192,9 +1197,90 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    /* Tallas */
+
+    const shoeSizes = ['38', '39', '40', '41', '42', '43', '44', '45', '46'];
+
+    const sockSizes = ['35-38', '39-42', '43-46'];
+
+    function getAvailableSizes() {
+        return state.product === 'sock' ? sockSizes : shoeSizes;
+    }
+
+    /* En el conjunto, la talla del calcetín se deduce de la de la zapatilla */
+    function getSockSizeFor(shoeSize) {
+        const number = Number(shoeSize);
+
+        if (!number) return null;
+
+        if (number <= 38) return '35-38';
+
+        if (number <= 42) return '39-42';
+
+        return '43-46';
+    }
+
+    function getSizeLabel() {
+        if (!state.size) return '';
+
+        if (state.product === 'set') {
+            return `Zapatillas ${state.size} · Calcetines ${getSockSizeFor(state.size)}`;
+        }
+
+        return state.size;
+    }
+
+    function renderSizes() {
+        if (!sizeOptions) return;
+
+        sizeOptions.innerHTML = '';
+
+        getAvailableSizes().forEach(size => {
+            const button = document.createElement('button');
+
+            const selected = size === state.size;
+
+            button.type = 'button';
+
+            button.className = 'customizer__size';
+
+            if (selected) {
+                button.classList.add('customizer__size--selected');
+            }
+
+            button.textContent = size;
+
+            button.setAttribute('aria-pressed', String(selected));
+
+            button.addEventListener('click', () => {
+                state.size = size;
+
+                feedback.textContent = '';
+
+                renderSizes();
+
+                renderSummary();
+            });
+
+            sizeOptions.appendChild(button);
+        });
+
+        if (selectedSizeLabel) {
+            selectedSizeLabel.textContent =
+                `Talla seleccionada: ${getSizeLabel() || 'ninguna'}`;
+        }
+    }
+
+
     /* Mostrar producto */
 
     function renderProduct() {
+        if (!getAvailableSizes().includes(state.size)) {
+            state.size = null;
+        }
+
+        renderSizes();
+
         shoePreview.hidden = state.product === 'sock';
 
         sockPreview.hidden = state.product === 'shoe';
@@ -1382,6 +1468,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             `${productNames[state.product]} ${designNames[state.design]}, ` +
             `base ${color ? color.name.toLowerCase() : activeColors.main}. ` +
+            (getSizeLabel() ? `Talla: ${getSizeLabel()}. ` : '') +
             `Precio estimado: ${priceValue.textContent}`;
     }
 
@@ -1522,6 +1609,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (saveButton) {
         saveButton.addEventListener('click', () => {
 
+            if (!state.size) {
+                feedback.textContent =
+                    'Selecciona una talla antes de guardar el diseño.';
+                return;
+            }
+
             const productNames = {
 
                 shoe: 'Zapatillas personalizadas',
@@ -1534,7 +1627,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 product: state.product,
                 design: state.design,
                 colors: JSON.parse(JSON.stringify(state.colors)),
-                sockColors: JSON.parse(JSON.stringify(state.sockColors))
+                sockColors: JSON.parse(JSON.stringify(state.sockColors)),
+                size: state.size,
+                sockSize: state.product === 'set'
+                    ? getSockSizeFor(state.size)
+                    : null
             };
 
             const product = {
@@ -1542,7 +1639,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 id: 'custom-' + Date.now(),
                 name: productNames[state.product],
                 price: getProductPrice(),
-                size: 'Personalizado',
+                size: getSizeLabel(),
                 image: '',
                 customization: customization
             };
