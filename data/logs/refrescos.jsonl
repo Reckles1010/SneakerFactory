@@ -55,3 +55,4 @@
 {"comprobacion": "2026-11-12T11:01:54.660881+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.25635999999940395}
 {"comprobacion": "2026-11-12T11:02:14.435904+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.17862099991180003}
 {"comprobacion": "2026-11-12T11:03:15.504718+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.29168759984895587}
+{"comprobacion": "2026-11-12T11:04:15.502317+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.12819759990088642}
