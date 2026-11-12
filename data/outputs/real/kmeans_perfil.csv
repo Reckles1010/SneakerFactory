@@ -1,0 +1,3 @@
+﻿origen,generado_en,filtros,cluster,clientes,recency_media,frecuencia_media,monetary_medio,monetary_mediana,proporcion_pct,nombre
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,0,32,39.375,3.125,214.69843749999998,166.38,8.333333333333332,Inactivos o de baja frecuencia
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,1,352,14.923295454545455,4.9772727272727275,480.6549147727273,513.4,91.66666666666666,Alto valor y frecuente

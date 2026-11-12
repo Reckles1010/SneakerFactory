@@ -1,0 +1,7 @@
+﻿origen,generado_en,filtros,metrica,valor_pandas,valor_sql,diferencia,estado
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos_unicos,900.0,,,PENDIENTE (falta resultado SQL de ACC)
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos_venta,817.0,,,PENDIENTE (falta resultado SQL de ACC)
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pares_vendidos,3637.0,,,PENDIENTE (falta resultado SQL de ACC)
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,ingresos_ventas,302976.88,,,PENDIENTE (falta resultado SQL de ACC)
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,clientes_unicos,40.0,,,PENDIENTE (falta resultado SQL de ACC)
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,ingresos_mes_2026-06,9102.37,,,PENDIENTE (falta resultado SQL de ACC)

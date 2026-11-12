@@ -143,8 +143,8 @@ app.post("/api/auth/login", async (req, res) => {
 
         const resultado = await db.query(
             `SELECT id, nombre, apellidos, email, rol, password_hash
-             FROM usuarios
-             WHERE email = $1`,
+            FROM usuarios
+            WHERE email = $1`,
             [emailLimpio]
         );
 
