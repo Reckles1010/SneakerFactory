@@ -1101,6 +1101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: document.getElementById('recipientName').value.trim(),
                 email: document.getElementById('recipientEmail').value.trim(),
                 phone: document.getElementById('recipientPhone').value.trim(),
+                dni: document.getElementById('recipientDni').value.trim().toUpperCase(),
                 address: document.getElementById('address').value.trim(),
                 number: document.getElementById('addressNumber').value.trim(),
                 postalCode: document.getElementById('postalCode').value.trim(),
@@ -1108,6 +1109,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 province: document.getElementById('province').value.trim(),
                 notes: document.getElementById('addressNotes').value.trim()
             };
+
+            const dniRegex = /^([0-9]{8}|[XYZ][0-9]{7})[A-Z]$/;
+
+            if (!dniRegex.test(recipient.dni)) {
+                feedback.textContent = 'Introduce un DNI o NIE válido (por ejemplo, 12345678Z).';
+                feedback.style.color = '#c0392b';
+                return;
+            }
 
             if (confirmButton) confirmButton.disabled = true;
 
