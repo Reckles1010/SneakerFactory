@@ -108,13 +108,13 @@ FALLBACK_COLUMNS = {
 }
 
 # --- Reglas de negocio ---
-SALES_STATES = ["entregado", "enviado"]            # estados que reconocen ingreso
+SALES_STATES = ["entregado", "enviado", "en preparación", "pendiente", "cancelado"]            # estados que reconocen ingreso
 CANCEL_STATES = ["cancelado", "cancelada"]
 PENDING_STATES = ["pendiente", "en preparacion", "en preparación"]
 STATE_CATALOG = SALES_STATES + CANCEL_STATES + PENDING_STATES + ["confirmado"]
 CUSTOM_VALUES = ["custom", "personalizado", "personalizada"]
 STANDARD_VALUES = ["estandar", "estándar", "standard"]
-VALID_SIZES = [str(n) for n in range(35, 49)]      # contrato: tallas EU 35-48
+VALID_SIZES = [str(n) for n in range(35, 49)] + ["Única"]  # calzado EU 35-48 + talla única (accesorios)
 LOW_STOCK_THRESHOLD = 10
 COVERAGE_WINDOW_DAYS = 28
 CURRENCY = "€"

@@ -17,15 +17,48 @@ import pandas as pd
 
 from data.config import RANDOM_SEED, SYNTH_DIR, SYNTH_FILES
 
-MODELOS = [  # (nombre, categoría, precio, pico estacional (mes), popularidad)
-    ("Breeze Urban", "Urbana", 59.99, 6, 1.6), ("Nebula Run", "Running", 84.99, 4, 1.4),
-    ("Vertex Street", "Urbana", 69.99, 9, 1.2), ("Cobalt Flex", "Running", 79.99, 10, 1.5),
-    ("Aero Motion", "Running", 89.99, 3, 1.3), ("Street Comfort", "Urbana", 64.99, 9, 1.1),
-    ("Polar Winter", "Invierno", 99.99, 12, 0.9), ("Trail Rock", "Montaña", 109.99, 5, 0.8),
-    ("Summer Light", "Verano", 49.99, 7, 1.0), ("Court Classic", "Baloncesto", 94.99, 11, 0.7),
-    ("Retro One", "Urbana", 74.99, 1, 1.0), ("Pro Team", "Fútbol sala", 79.99, 2, 0.6)]
-TALLAS = [str(t) for t in range(37, 47)]
+# Catálogo idéntico al de la base de datos (Modelo.csv): mismos id_modelo, nombres y precios.
+# (id_modelo, nombre, categoría = tipo de Productos.csv, precio, pico estacional (mes), popularidad)
+# Pico estacional y popularidad son hipótesis de simulación (no existen en la BD).
+MODELOS = [
+    ("M1", "Zapatillas Breeze Urban", "Zapatillas", 59.99, 6, 1.6),
+    ("M2", "Zapatillas Nebula Run", "Zapatillas", 84.99, 4, 1.4),
+    ("M3", "Zapatillas Vertex Street", "Zapatillas", 69.50, 9, 1.2),
+    ("M4", "Zapatillas Cobalt Flex", "Zapatillas", 74.99, 10, 1.5),
+    ("M5", "Calcetines Cloud Smooth", "Calcetines", 3.99, 10, 1.3),
+    ("M6", "Calcetines Route Sport", "Calcetines", 4.50, 4, 1.2),
+    ("M7", "Calcetines Grid Color", "Calcetines", 2.99, 6, 1.0),
+    ("M8", "Cordones Boreal Warm", "Cordones", 9.99, 12, 0.7),
+    ("M9", "Cordones Active Pulse", "Cordones", 14.50, 4, 0.8),
+    ("M10", "Cordones Mount Soft", "Cordones", 19.99, 5, 0.6),
+    ("M11", "Gorra Horizon Classic", "Gorras", 16.99, 7, 0.9),
+    ("M12", "Gorra Prisma Street", "Gorras", 21.50, 7, 0.8),
+    ("M13", "Zapatillas Aero Motion", "Zapatillas", 64.99, 3, 1.3),
+    ("M14", "Zapatillas Urban Force", "Zapatillas", 72.50, 9, 1.1),
+    ("M15", "Zapatillas Speed Runner", "Zapatillas", 89.99, 4, 1.2),
+    ("M16", "Zapatillas Street Comfort", "Zapatillas", 54.99, 9, 1.1),
+    ("M17", "Calcetines Comfort Plus", "Calcetines", 5.99, 11, 1.1),
+    ("M18", "Calcetines Running Pro", "Calcetines", 6.50, 4, 1.0),
+    ("M19", "Calcetines Cotton Basic", "Calcetines", 3.50, 9, 1.4),
+    ("M20", "Calcetines Sport Fresh", "Calcetines", 4.99, 7, 1.0),
+    ("M21", "Cordones Winter Shield", "Cordones", 12.99, 12, 0.6),
+    ("M22", "Cordones Sport Grip", "Cordones", 16.50, 3, 0.7),
+    ("M23", "Cordones Thermal Comfort", "Cordones", 18.99, 1, 0.5),
+    ("M24", "Cordones Outdoor Flex", "Cordones", 21.99, 5, 0.5),
+    ("M25", "Gorra Urban Style", "Gorras", 18.99, 6, 1.0),
+    ("M26", "Gorra Sport Vision", "Gorras", 22.50, 7, 0.9),
+    ("M27", "Gorra Classic Cotton", "Gorras", 14.99, 8, 0.8),
+    ("M28", "Gorra Active Street", "Gorras", 19.50, 7, 0.8),
+]
+IDX_ZAPATILLAS = [i for i, m in enumerate(MODELOS) if m[2] == "Zapatillas"]
+TALLAS = [str(t) for t in range(37, 47)]          # solo calzado
+TALLA_UNICA = "Única"                              # calcetines, cordones y gorras
 P_TALLA = np.array([2, 4, 7, 11, 15, 17, 15, 11, 6, 3], dtype=float)
+
+
+def _tallas(i):
+    """Tallas disponibles del modelo i: numeración para zapatillas, 'Única' para accesorios."""
+    return TALLAS if MODELOS[i][2] == "Zapatillas" else [TALLA_UNICA]
 
 
 def generar(seed=RANDOM_SEED, n_pedidos=900, n_clientes=40, meses=18, inicio="2025-01-01", out_dir=SYNTH_DIR,
@@ -33,7 +66,7 @@ def generar(seed=RANDOM_SEED, n_pedidos=900, n_clientes=40, meses=18, inicio="20
     rng = np.random.default_rng(seed)
     ini = pd.Timestamp(inicio)
     periodos = pd.period_range(ini, periods=meses, freq="M")
-    mo = pd.DataFrame([{"id_modelo": f"M{i+1}", "modelo": n, "categoria": c, "precio": p} for i, (n, c, p, _, _) in enumerate(MODELOS)])
+    mo = pd.DataFrame([{"id_modelo": idm, "modelo": n, "categoria": c, "precio": p} for idm, n, c, p, _, _ in MODELOS])
     cl = pd.DataFrame({"id_cliente": [f"C{i+1}" for i in range(n_clientes)]})
     peso_cli = rng.pareto(1.6, n_clientes) + 1
     peso_cli /= peso_cli.sum()
@@ -45,7 +78,7 @@ def generar(seed=RANDOM_SEED, n_pedidos=900, n_clientes=40, meses=18, inicio="20
     hoy_fin = periodos[-1].end_time
     for per, n in zip(periodos, por_mes):
         # demanda del modelo en el mes: popularidad × estacionalidad (pico ±)
-        est = np.array([m[4] * (1 + 0.6 * np.cos(2 * np.pi * (per.month - m[3]) / 12)) for m in MODELOS])
+        est = np.array([m[5] * (1 + 0.6 * np.cos(2 * np.pi * (per.month - m[4]) / 12)) for m in MODELOS])
         est /= est.sum()
         for _ in range(n):
             pid = f"P{len(ped)+1:04d}"
@@ -66,15 +99,15 @@ def generar(seed=RANDOM_SEED, n_pedidos=900, n_clientes=40, meses=18, inicio="20
             for _ in range(k):
                 i = int(rng.choice(len(MODELOS), p=est))
                 n_lin += 1
-                precio = round(MODELOS[i][2] * (1.15 if custom else 1.0), 2)
-                lin.append({"id_linea": f"L{n_lin:05d}", "id_pedido": pid, "id_modelo": f"M{i+1}",
-                            "talla": rng.choice(TALLAS, p=P_TALLA / P_TALLA.sum()),
+                precio = round(MODELOS[i][3] * (1.15 if custom else 1.0), 2)
+                lin.append({"id_linea": f"L{n_lin:05d}", "id_pedido": pid, "id_modelo": MODELOS[i][0],
+                            "talla": rng.choice(TALLAS, p=P_TALLA / P_TALLA.sum()) if i in IDX_ZAPATILLAS else TALLA_UNICA,
                             "cantidad": int(rng.integers(2, 7)) if equipo else int(rng.choice([1, 1, 1, 2, 3])),
                             "precio_unitario": precio})
     pe, li = pd.DataFrame(ped), pd.DataFrame(lin)
     corte = hoy_fin.date().isoformat()
-    st = pd.DataFrame([{"id_modelo": f"M{i+1}", "talla": t, "stock_disponible": int(rng.integers(0, 40)), "fecha_corte": corte}
-                        for i in range(len(MODELOS)) for t in TALLAS])
+    st = pd.DataFrame([{"id_modelo": MODELOS[i][0], "talla": t, "stock_disponible": int(rng.integers(0, 40)), "fecha_corte": corte}
+                        for i in range(len(MODELOS)) for t in _tallas(i)])
     tablas = {"clientes": cl, "modelos": mo, "pedidos": pe, "lineas": li, "stock": st}
     if con_incidencias:
         tablas = _inyectar_incidencias(tablas)
