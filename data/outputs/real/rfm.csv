@@ -1,0 +1,741 @@
+﻿origen,generado_en,filtros,id_cliente,ultima_compra,monetary,pares,frequency,recency_dias,R,F,M,segmento_rfm
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C1,2026-10-12,579.84,18.0,6.0,15.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C2,2026-08-17,9.98,2.0,2.0,71.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C3,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C4,2026-10-15,281.95,13.0,6.0,12.0,3.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C5,2026-10-16,679.86,14.0,4.0,11.0,3.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C6,2026-08-25,23.49,2.0,2.0,63.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C7,2026-08-27,466.44,7.0,2.0,61.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C8,2026-10-19,362.40999999999997,14.0,4.0,8.0,3.0,1.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C9,2026-10-20,844.28,23.0,6.0,7.0,4.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C10,2026-09-02,25.0,2.0,2.0,55.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C11,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C12,2026-10-23,420.86,14.0,6.0,4.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C13,2026-10-24,204.9,16.0,4.0,3.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C14,2026-09-10,12.97,3.0,2.0,47.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C15,2026-09-12,106.97999999999999,2.0,2.0,45.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C16,2026-10-27,203.94,10.0,4.0,0.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C17,2026-09-28,721.87,17.0,6.0,29.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C18,2026-09-18,20.979999999999997,2.0,2.0,39.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C19,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C20,2026-10-01,627.43,16.0,6.0,26.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C21,2026-10-02,815.8,20.0,6.0,25.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C22,2026-09-26,10.49,2.0,2.0,31.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C23,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C24,2026-10-05,378.37,16.0,6.0,22.0,2.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C25,2026-10-06,167.88,16.0,4.0,21.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C26,2026-10-04,9.49,2.0,2.0,23.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C27,2026-10-06,36.489999999999995,2.0,2.0,21.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C28,2026-10-09,142.41,10.0,4.0,18.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C29,2026-10-10,414.9,16.0,6.0,17.0,2.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C30,2026-10-12,16.490000000000002,2.0,2.0,15.0,3.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C31,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C32,2026-10-16,571.38,17.0,6.0,11.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C33,2026-10-14,529.8199999999999,18.0,4.0,13.0,3.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C34,2026-10-20,21.490000000000002,2.0,2.0,7.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C35,2026-10-22,88.47,4.0,2.0,5.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C36,2026-10-17,503.40999999999997,12.0,4.0,10.0,3.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C37,2026-10-25,396.33000000000004,18.0,6.0,2.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C38,2026-10-26,24.979999999999997,2.0,2.0,1.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C39,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C40,2026-10-27,390.85,15.0,6.0,0.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C41,2026-10-22,181.9,14.0,4.0,5.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C42,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C43,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C44,2026-10-25,234.92000000000002,14.0,4.0,2.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C45,2026-10-26,652.8799999999999,18.0,4.0,1.0,4.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C46,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C47,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C48,2026-08-26,583.92,12.0,4.0,62.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C49,2026-08-27,431.84,16.0,4.0,61.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C50,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C51,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C52,2026-08-30,454.9,10.0,4.0,58.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C53,2026-08-31,116.88,14.0,4.0,57.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C54,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C55,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C56,2026-09-03,184.41,14.0,4.0,54.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C57,2026-09-04,563.86,18.0,4.0,53.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C58,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C59,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C60,2026-09-07,349.94,12.0,4.0,50.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C61,2026-09-08,589.8399999999999,16.0,4.0,49.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C62,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C63,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C64,2026-09-11,524.41,10.0,4.0,46.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C65,2026-09-12,197.86,14.0,4.0,45.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C66,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C67,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C68,2026-09-15,509.86,14.0,4.0,42.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C69,2026-09-16,218.84,18.0,4.0,41.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C70,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C71,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C72,2026-09-19,217.95999999999998,12.0,4.0,38.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C73,2026-09-20,725.88,16.0,4.0,37.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C74,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C75,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C76,2026-09-23,358.96,10.0,4.0,34.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C77,2026-09-24,521.86,14.0,4.0,33.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C78,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C220,2026-10-13,564.85,15.0,5.0,14.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C79,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C80,2026-09-27,554.86,14.0,4.0,30.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C81,2026-09-28,240.83999999999997,22.0,5.0,29.0,1.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C82,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C83,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C84,2026-10-01,218.91000000000003,13.0,5.0,26.0,1.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C85,2026-10-02,574.8399999999999,18.0,5.0,25.0,1.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C86,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C87,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C88,2026-10-05,617.93,15.0,5.0,22.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C89,2026-10-06,703.8000000000001,20.0,5.0,21.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C90,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C91,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C92,2026-10-09,392.38,17.0,5.0,18.0,2.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C93,2026-10-10,527.8199999999999,22.0,5.0,17.0,2.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C94,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C95,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C96,2026-10-13,367.38,13.0,5.0,14.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C97,2026-10-14,334.88,18.0,5.0,13.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C98,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C99,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C100,2026-10-17,478.89,15.0,5.0,10.0,3.0,1.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C101,2026-10-18,558.8199999999999,20.0,5.0,9.0,3.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C102,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C103,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C104,2026-10-21,610.91,17.0,5.0,6.0,4.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C105,2026-10-22,717.78,22.0,5.0,5.0,4.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C106,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C107,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C108,2026-10-25,316.87,13.0,5.0,2.0,4.0,1.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C109,2026-10-26,205.86,18.0,5.0,1.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C110,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C111,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C112,2026-09-29,239.91,15.0,5.0,28.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C113,2026-09-30,678.86,20.0,5.0,27.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C114,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C115,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C116,2026-10-03,693.87,17.0,5.0,24.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C117,2026-10-04,545.78,22.0,5.0,23.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C118,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C119,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C120,2026-10-07,513.4,13.0,5.0,20.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C121,2026-10-08,356.84000000000003,18.0,5.0,19.0,2.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C122,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C123,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C124,2026-10-11,259.4,15.0,5.0,16.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C125,2026-10-12,571.84,20.0,5.0,15.0,3.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C126,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C127,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C128,2026-10-15,399.89,17.0,5.0,12.0,3.0,1.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C129,2026-10-16,676.8399999999999,22.0,5.0,11.0,3.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C130,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C131,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C132,2026-10-19,588.91,13.0,5.0,8.0,3.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C133,2026-10-20,457.82,18.0,5.0,7.0,4.0,1.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C134,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C135,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C136,2026-10-23,564.85,15.0,5.0,4.0,4.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C137,2026-10-24,230.82,20.0,5.0,3.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C138,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C139,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C140,2026-10-27,242.91,17.0,5.0,0.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C141,2026-09-28,803.82,22.0,5.0,29.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C142,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C143,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C144,2026-10-01,424.93,13.0,5.0,26.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C145,2026-10-02,597.8199999999999,18.0,5.0,25.0,1.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C146,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C147,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C148,2026-10-05,574.36,15.0,5.0,22.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C149,2026-10-06,284.86,20.0,5.0,21.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C150,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C151,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C152,2026-10-09,574.36,17.0,5.0,18.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C153,2026-10-10,478.79999999999995,22.0,5.0,17.0,2.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C154,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C155,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C156,2026-10-13,272.95,13.0,5.0,14.0,3.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C157,2026-10-14,737.86,18.0,5.0,13.0,3.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C158,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C159,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C160,2026-10-17,383.90999999999997,15.0,5.0,10.0,3.0,1.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C161,2026-10-18,599.8,20.0,5.0,9.0,3.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C162,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C163,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C164,2026-10-21,620.8299999999999,17.0,5.0,6.0,4.0,1.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C165,2026-10-22,240.84,22.0,5.0,5.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C166,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C167,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C168,2026-10-25,218.91,13.0,5.0,2.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C169,2026-10-26,574.84,18.0,5.0,1.0,4.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C170,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C171,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C172,2026-09-29,617.93,15.0,5.0,28.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C173,2026-09-30,703.8,20.0,5.0,27.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C174,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C175,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C176,2026-10-03,392.38,17.0,5.0,24.0,1.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C177,2026-10-04,527.8199999999999,22.0,5.0,23.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C178,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C179,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C180,2026-10-07,367.38,13.0,5.0,20.0,2.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C181,2026-10-08,334.88,18.0,5.0,19.0,2.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C182,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C183,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C184,2026-10-11,478.89,15.0,5.0,16.0,2.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C185,2026-10-12,558.8199999999999,20.0,5.0,15.0,3.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C186,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C187,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C188,2026-10-15,610.91,17.0,5.0,12.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C189,2026-10-16,717.78,22.0,5.0,11.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C190,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C191,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C192,2026-10-19,316.87,13.0,5.0,8.0,3.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C193,2026-10-20,205.86,18.0,5.0,7.0,4.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C194,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C195,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C196,2026-10-23,239.91,15.0,5.0,4.0,4.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C197,2026-10-24,678.86,20.0,5.0,3.0,4.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C198,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C199,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C200,2026-10-27,693.87,17.0,5.0,0.0,4.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C201,2026-09-24,545.78,22.0,5.0,33.0,1.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C202,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C203,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C204,2026-09-27,513.4,13.0,5.0,30.0,1.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C205,2026-09-28,356.84000000000003,18.0,5.0,29.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C206,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C207,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C208,2026-10-01,259.4,15.0,5.0,26.0,1.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C209,2026-10-02,571.84,20.0,5.0,25.0,1.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C210,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C211,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C212,2026-10-05,399.89,17.0,5.0,22.0,2.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C213,2026-10-06,676.84,22.0,5.0,21.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C214,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C215,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C216,2026-10-09,588.91,13.0,5.0,18.0,2.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C217,2026-10-10,457.82,18.0,5.0,17.0,2.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C218,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C219,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C221,2026-10-14,230.82,20.0,5.0,13.0,3.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C222,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C223,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C224,2026-10-17,242.91,17.0,5.0,10.0,3.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C225,2026-10-18,803.8199999999999,22.0,5.0,9.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C226,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C227,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C228,2026-10-21,424.93,13.0,5.0,6.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C229,2026-10-22,597.8199999999999,18.0,5.0,5.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C230,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C231,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C232,2026-10-25,574.36,15.0,5.0,2.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C233,2026-10-26,284.86,20.0,5.0,1.0,4.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C234,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C235,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C236,2026-09-29,574.36,17.0,5.0,28.0,1.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C237,2026-09-30,478.79999999999995,22.0,5.0,27.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C238,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C239,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C240,2026-10-03,272.95,13.0,5.0,24.0,1.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C241,2026-10-04,737.86,18.0,5.0,23.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C242,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C243,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C244,2026-10-07,383.91,15.0,5.0,20.0,2.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C245,2026-10-08,599.8,20.0,5.0,19.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C246,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C247,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C248,2026-10-11,620.83,17.0,5.0,16.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C249,2026-10-12,240.83999999999997,22.0,5.0,15.0,3.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C250,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C251,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C252,2026-10-15,218.91000000000003,13.0,5.0,12.0,3.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C253,2026-10-16,574.8399999999999,18.0,5.0,11.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C254,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C255,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C256,2026-10-19,617.93,15.0,5.0,8.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C257,2026-10-20,703.8000000000001,20.0,5.0,7.0,4.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C258,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C259,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C260,2026-10-23,392.38,17.0,5.0,4.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C261,2026-10-24,527.8199999999999,22.0,5.0,3.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C262,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C263,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C264,2026-10-27,367.38,13.0,5.0,0.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C265,2026-09-28,334.88,18.0,5.0,29.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C266,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C267,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C268,2026-10-01,478.89,15.0,5.0,26.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C269,2026-10-02,558.8199999999999,20.0,5.0,25.0,1.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C270,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C271,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C272,2026-10-05,610.91,17.0,5.0,22.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C273,2026-10-06,717.78,22.0,5.0,21.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C274,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C275,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C276,2026-10-09,316.86999999999995,13.0,5.0,18.0,2.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C277,2026-10-10,205.86,18.0,5.0,17.0,2.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C278,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C279,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C280,2026-10-13,239.91,15.0,5.0,14.0,3.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C281,2026-10-14,678.86,20.0,5.0,13.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C282,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C283,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C284,2026-10-17,693.87,17.0,5.0,10.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C285,2026-10-18,545.78,22.0,5.0,9.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C286,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C287,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C288,2026-10-21,513.4,13.0,5.0,6.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C289,2026-10-22,356.84000000000003,18.0,5.0,5.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C290,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C291,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C292,2026-10-25,259.4,15.0,5.0,2.0,4.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C293,2026-10-26,571.84,20.0,5.0,1.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C294,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C295,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C296,2026-09-29,399.89,17.0,5.0,28.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C297,2026-09-30,676.84,22.0,5.0,27.0,1.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C298,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C299,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C300,2026-10-03,588.91,13.0,5.0,24.0,1.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C301,2026-10-04,457.82,18.0,5.0,23.0,2.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C302,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C303,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C304,2026-10-07,564.85,15.0,5.0,20.0,2.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C305,2026-10-08,230.82,20.0,5.0,19.0,2.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C306,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C307,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C308,2026-10-11,242.91,17.0,5.0,16.0,2.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C309,2026-10-12,803.82,22.0,5.0,15.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C310,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C311,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C312,2026-10-15,424.93,13.0,5.0,12.0,3.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C313,2026-10-16,597.8199999999999,18.0,5.0,11.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C314,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C315,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C316,2026-10-19,574.36,15.0,5.0,8.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C317,2026-10-20,284.86,20.0,5.0,7.0,4.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C318,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C319,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C320,2026-10-23,574.36,17.0,5.0,4.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C321,2026-10-24,478.79999999999995,22.0,5.0,3.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C322,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C323,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C324,2026-10-27,272.95,13.0,5.0,0.0,4.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C325,2026-09-28,737.86,18.0,5.0,29.0,1.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C326,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C327,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C328,2026-10-01,383.90999999999997,15.0,5.0,26.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C329,2026-10-02,599.8,20.0,5.0,25.0,1.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C330,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C331,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C332,2026-10-05,620.8299999999999,17.0,5.0,22.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C333,2026-10-06,240.83999999999997,22.0,5.0,21.0,2.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C334,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C335,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C336,2026-10-09,218.91,13.0,5.0,18.0,2.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C337,2026-10-10,574.84,18.0,5.0,17.0,2.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C338,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C339,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C340,2026-10-13,617.93,15.0,5.0,14.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C341,2026-10-14,703.8,20.0,5.0,13.0,3.0,2.0,4.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C342,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C343,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C344,2026-10-17,392.38,17.0,5.0,10.0,3.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C345,2026-10-18,527.8199999999999,22.0,5.0,9.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C346,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C347,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C348,2026-10-21,367.38,13.0,5.0,6.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C349,2026-10-22,334.88,18.0,5.0,5.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C350,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C351,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C352,2026-10-25,478.89,15.0,5.0,2.0,4.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C353,2026-10-26,558.8199999999999,20.0,5.0,1.0,4.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C354,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C355,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C356,2026-09-25,610.91,17.0,5.0,32.0,1.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C357,2026-09-26,717.78,22.0,5.0,31.0,1.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C358,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C359,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C360,2026-09-29,316.87,13.0,5.0,28.0,1.0,2.0,2.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C640,2026-10-05,564.85,15.0,5.0,22.0,2.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C361,2026-09-30,205.85999999999999,18.0,5.0,27.0,1.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C362,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C363,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C364,2026-10-03,239.91,15.0,5.0,24.0,1.0,2.0,1.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C365,2026-10-04,678.86,20.0,5.0,23.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C366,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C367,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C368,2026-10-07,693.87,17.0,5.0,20.0,2.0,2.0,4.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C369,2026-10-08,545.78,22.0,5.0,19.0,2.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C370,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C371,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C372,2026-10-11,513.4,13.0,5.0,16.0,2.0,2.0,3.0,En riesgo
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C373,2026-10-12,356.84000000000003,18.0,5.0,15.0,3.0,2.0,2.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C374,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C375,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C376,2026-10-15,259.4,15.0,5.0,12.0,3.0,2.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C377,2026-10-16,571.84,20.0,5.0,11.0,3.0,2.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C378,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C379,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C380,2026-10-19,399.89,17.0,5.0,8.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C381,2026-10-20,676.84,22.0,5.0,7.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C382,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C383,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C384,2026-10-23,588.91,13.0,5.0,4.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C385,2026-10-24,457.82,18.0,5.0,3.0,4.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C386,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C387,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C388,2026-10-27,564.85,15.0,5.0,0.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C389,2026-09-28,230.82,20.0,5.0,29.0,1.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C390,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C391,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C392,2026-10-01,242.91,17.0,5.0,26.0,1.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C393,2026-10-02,803.8199999999999,22.0,5.0,25.0,1.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C394,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C395,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C396,2026-10-05,424.93,13.0,5.0,22.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C397,2026-10-06,597.8199999999999,18.0,5.0,21.0,2.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C398,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C399,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C400,2026-10-09,574.36,15.0,5.0,18.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C401,2026-10-10,284.86,20.0,5.0,17.0,2.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C402,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C403,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C404,2026-10-13,574.36,17.0,5.0,14.0,3.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C405,2026-10-14,478.79999999999995,22.0,5.0,13.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C406,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C407,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C408,2026-10-17,272.95,13.0,5.0,10.0,3.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C409,2026-10-18,737.86,18.0,5.0,9.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C410,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C411,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C412,2026-10-21,383.91,15.0,5.0,6.0,4.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C413,2026-10-22,599.8,20.0,5.0,5.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C414,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C415,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C416,2026-10-25,620.83,17.0,5.0,2.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C417,2026-10-26,240.83999999999997,22.0,5.0,1.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C418,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C419,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C420,2026-09-29,218.91,13.0,5.0,28.0,1.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C421,2026-09-30,574.8399999999999,18.0,5.0,27.0,1.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C422,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C423,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C424,2026-10-03,617.93,15.0,5.0,24.0,2.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C425,2026-10-04,703.8,20.0,5.0,23.0,2.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C426,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C427,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C428,2026-10-07,392.38,17.0,5.0,20.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C429,2026-10-08,527.82,22.0,5.0,19.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C430,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C431,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C432,2026-10-11,367.38,13.0,5.0,16.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C433,2026-10-12,334.88,18.0,5.0,15.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C434,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C435,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C436,2026-10-15,478.89,15.0,5.0,12.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C437,2026-10-16,558.8199999999999,20.0,5.0,11.0,3.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C438,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C439,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C440,2026-10-19,610.91,17.0,5.0,8.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C441,2026-10-20,717.78,22.0,5.0,7.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C442,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C443,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C444,2026-10-23,316.86999999999995,13.0,5.0,4.0,4.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C445,2026-10-24,205.86,18.0,5.0,3.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C446,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C447,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C448,2026-10-27,239.91,15.0,5.0,0.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C449,2026-09-28,678.8599999999999,20.0,5.0,29.0,1.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C450,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C451,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C452,2026-10-01,693.87,17.0,5.0,26.0,1.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C453,2026-10-02,545.78,22.0,5.0,25.0,1.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C454,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C455,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C456,2026-10-05,513.4,13.0,5.0,22.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C457,2026-10-06,356.84000000000003,18.0,5.0,21.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C458,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C459,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C460,2026-10-09,259.4,15.0,5.0,18.0,2.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C461,2026-10-10,571.84,20.0,5.0,17.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C462,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C463,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C464,2026-10-13,399.89,17.0,5.0,14.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C465,2026-10-14,676.84,22.0,5.0,13.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C466,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C467,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C468,2026-10-17,588.91,13.0,5.0,10.0,3.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C469,2026-10-18,457.82,18.0,5.0,9.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C470,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C471,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C472,2026-10-21,564.85,15.0,5.0,6.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C473,2026-10-22,230.82,20.0,5.0,5.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C474,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C475,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C476,2026-10-25,242.91,17.0,5.0,2.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C477,2026-10-26,803.82,22.0,5.0,1.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C478,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C479,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C480,2026-09-29,424.93,13.0,5.0,28.0,1.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C481,2026-09-30,597.82,18.0,5.0,27.0,1.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C482,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C483,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C484,2026-10-03,574.36,15.0,5.0,24.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C485,2026-10-04,284.86,20.0,5.0,23.0,2.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C486,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C487,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C488,2026-10-07,574.36,17.0,5.0,20.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C489,2026-10-08,478.79999999999995,22.0,5.0,19.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C490,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C491,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C492,2026-10-11,272.95,13.0,5.0,16.0,2.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C493,2026-10-12,737.86,18.0,5.0,15.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C494,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C495,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C496,2026-10-15,383.90999999999997,15.0,5.0,12.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C497,2026-10-16,599.8,20.0,5.0,11.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C498,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C499,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C500,2026-10-19,620.8299999999999,17.0,5.0,8.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C641,2026-10-06,230.82,20.0,5.0,21.0,2.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C501,2026-10-20,240.83999999999997,22.0,5.0,7.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C502,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C503,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C504,2026-10-23,218.91,13.0,5.0,4.0,4.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C505,2026-10-24,574.84,18.0,5.0,3.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C506,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C507,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C508,2026-10-27,617.93,15.0,5.0,0.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C509,2026-09-24,703.8000000000001,20.0,5.0,33.0,1.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C510,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C511,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C512,2026-09-27,392.38,17.0,5.0,30.0,1.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C513,2026-09-28,527.8199999999999,22.0,5.0,29.0,1.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C514,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C515,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C516,2026-10-01,367.38,13.0,5.0,26.0,1.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C517,2026-10-02,334.88,18.0,5.0,25.0,1.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C518,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C519,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C520,2026-10-05,478.89,15.0,5.0,22.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C521,2026-10-06,558.8199999999999,20.0,5.0,21.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C522,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C523,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C524,2026-10-09,610.91,17.0,5.0,18.0,2.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C525,2026-10-10,717.78,22.0,5.0,17.0,2.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C526,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C527,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C528,2026-10-13,316.87,13.0,5.0,14.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C529,2026-10-14,205.85999999999999,18.0,5.0,13.0,3.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C530,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C531,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C532,2026-10-17,239.91,15.0,5.0,10.0,3.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C533,2026-10-18,678.86,20.0,5.0,9.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C534,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C535,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C536,2026-10-21,693.87,17.0,5.0,6.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C537,2026-10-22,545.78,22.0,5.0,5.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C538,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C539,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C540,2026-10-25,513.4,13.0,5.0,2.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C541,2026-10-26,356.84000000000003,18.0,5.0,1.0,4.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C542,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C543,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C544,2026-09-29,259.4,15.0,5.0,28.0,1.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C545,2026-09-30,571.84,20.0,5.0,27.0,1.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C546,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C547,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C548,2026-10-03,399.89,17.0,5.0,24.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C549,2026-10-04,676.8399999999999,22.0,5.0,23.0,2.0,3.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C550,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C551,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C552,2026-10-07,588.91,13.0,5.0,20.0,2.0,3.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C553,2026-10-08,457.82,18.0,5.0,19.0,2.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C554,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C555,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C556,2026-10-11,564.85,15.0,5.0,16.0,3.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C557,2026-10-12,230.82,20.0,5.0,15.0,3.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C558,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C559,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C560,2026-10-15,242.91,17.0,5.0,12.0,3.0,3.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C561,2026-10-16,803.8199999999999,22.0,5.0,11.0,3.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C562,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C563,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C564,2026-10-19,424.93,13.0,5.0,8.0,3.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C565,2026-10-20,597.8199999999999,18.0,5.0,7.0,4.0,3.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C566,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C567,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C568,2026-10-23,574.36,15.0,5.0,4.0,4.0,3.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C569,2026-10-24,284.86,20.0,5.0,3.0,4.0,3.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C642,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C570,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C571,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C572,2026-10-27,574.36,17.0,5.0,0.0,4.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C573,2026-09-28,478.79999999999995,22.0,5.0,29.0,1.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C574,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C575,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C576,2026-10-01,272.95,13.0,5.0,26.0,1.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C577,2026-10-02,737.86,18.0,5.0,25.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C578,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C579,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C580,2026-10-05,383.90999999999997,15.0,5.0,22.0,2.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C581,2026-10-06,599.8000000000001,20.0,5.0,21.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C582,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C583,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C584,2026-10-09,620.83,17.0,5.0,18.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C585,2026-10-10,240.84,22.0,5.0,17.0,2.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C586,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C587,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C588,2026-10-13,218.91,13.0,5.0,14.0,3.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C589,2026-10-14,574.8399999999999,18.0,5.0,13.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C590,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C591,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C592,2026-10-17,617.93,15.0,5.0,10.0,3.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C593,2026-10-18,703.8,20.0,5.0,9.0,3.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C594,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C595,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C596,2026-10-21,392.38,17.0,5.0,6.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C597,2026-10-22,527.82,22.0,5.0,5.0,4.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C598,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C599,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C600,2026-10-25,367.38,13.0,5.0,2.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C601,2026-10-26,334.88,18.0,5.0,1.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C602,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C603,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C604,2026-09-29,478.89,15.0,5.0,28.0,1.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C605,2026-09-30,558.8199999999999,20.0,5.0,27.0,1.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C606,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C607,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C608,2026-10-03,610.91,17.0,5.0,24.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C609,2026-10-04,717.78,22.0,5.0,23.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C610,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C611,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C612,2026-10-07,316.87,13.0,5.0,20.0,2.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C613,2026-10-08,205.85999999999999,18.0,5.0,19.0,2.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C614,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C615,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C616,2026-10-11,239.91,15.0,5.0,16.0,3.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C617,2026-10-12,678.8599999999999,20.0,5.0,15.0,3.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C618,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C619,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C620,2026-10-15,693.87,17.0,5.0,12.0,3.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C621,2026-10-16,545.78,22.0,5.0,11.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C622,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C623,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C624,2026-10-19,513.4,13.0,5.0,8.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C625,2026-10-20,356.84000000000003,18.0,5.0,7.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C626,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C627,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C628,2026-10-23,259.4,15.0,5.0,4.0,4.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C629,2026-10-24,571.84,20.0,5.0,3.0,4.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C630,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C631,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C632,2026-10-27,399.89,17.0,5.0,0.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C633,2026-09-28,676.8399999999999,22.0,5.0,29.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C634,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C635,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C636,2026-10-01,588.91,13.0,5.0,26.0,1.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C637,2026-10-02,457.82,18.0,5.0,25.0,1.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C638,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C639,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C643,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C644,2026-10-09,242.91,17.0,5.0,18.0,2.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C645,2026-10-10,803.82,22.0,5.0,17.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C646,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C647,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C648,2026-10-13,424.93,13.0,5.0,14.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C649,2026-10-14,597.82,18.0,5.0,13.0,3.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C650,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C651,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C652,2026-10-17,574.36,15.0,5.0,10.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C653,2026-10-18,284.86,20.0,5.0,9.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C654,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C655,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C656,2026-10-21,574.36,17.0,5.0,6.0,4.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C657,2026-10-22,478.79999999999995,22.0,5.0,5.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C658,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C659,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C660,2026-10-25,272.95,13.0,5.0,2.0,4.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C661,2026-10-26,737.86,18.0,5.0,1.0,4.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C662,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C663,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C664,2026-09-25,383.90999999999997,15.0,5.0,32.0,1.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C665,2026-09-26,599.8,20.0,5.0,31.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C666,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C667,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C668,2026-09-29,620.8299999999999,17.0,5.0,28.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C669,2026-09-30,240.83999999999997,22.0,5.0,27.0,1.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C670,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C671,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C672,2026-10-03,218.91000000000003,13.0,5.0,24.0,2.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C673,2026-10-04,574.8399999999999,18.0,5.0,23.0,2.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C674,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C675,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C676,2026-10-07,617.93,15.0,5.0,20.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C677,2026-10-08,703.8000000000001,20.0,5.0,19.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C678,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C679,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C680,2026-10-11,392.38,17.0,5.0,16.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C681,2026-10-12,527.8199999999999,22.0,5.0,15.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C682,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C683,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C684,2026-10-15,367.38,13.0,5.0,12.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C685,2026-10-16,334.88,18.0,5.0,11.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C686,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C687,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C688,2026-10-19,478.89,15.0,5.0,8.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C689,2026-10-20,558.8199999999999,20.0,5.0,7.0,4.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C690,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C691,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C692,2026-10-23,610.91,17.0,5.0,4.0,4.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C693,2026-10-24,717.78,22.0,5.0,3.0,4.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C694,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C695,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C696,2026-10-27,316.87,13.0,5.0,0.0,4.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C697,2026-09-28,205.86,18.0,5.0,29.0,1.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C698,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C699,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C700,2026-10-01,239.91,15.0,5.0,26.0,1.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C701,2026-10-02,678.86,20.0,5.0,25.0,1.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C702,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C703,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C704,2026-10-05,693.87,17.0,5.0,22.0,2.0,4.0,4.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C705,2026-10-06,545.78,22.0,5.0,21.0,2.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C706,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C707,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C708,2026-10-09,513.4,13.0,5.0,18.0,2.0,4.0,3.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C709,2026-10-10,356.84000000000003,18.0,5.0,17.0,2.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C710,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C711,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C712,2026-10-13,259.4,15.0,5.0,14.0,3.0,4.0,1.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C713,2026-10-14,571.84,20.0,5.0,13.0,3.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C714,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C715,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C716,2026-10-17,399.89,17.0,5.0,10.0,3.0,4.0,2.0,Fiel
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C717,2026-10-18,676.8399999999999,22.0,5.0,9.0,3.0,4.0,4.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C718,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C719,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C720,2026-10-21,588.91,13.0,5.0,6.0,4.0,4.0,3.0,Campeón
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C721,2026-10-22,197.86,14.0,4.0,5.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C722,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C723,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C724,2026-10-25,509.85999999999996,14.0,4.0,2.0,4.0,1.0,3.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C725,2026-10-26,218.84,18.0,4.0,1.0,4.0,1.0,1.0,Reciente
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C726,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C727,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C728,2026-09-29,217.96,12.0,4.0,28.0,1.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C729,2026-09-30,725.88,16.0,4.0,27.0,1.0,1.0,4.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C730,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C731,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C732,2026-10-03,358.96,10.0,4.0,24.0,2.0,1.0,2.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C733,2026-10-04,521.86,14.0,4.0,23.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C734,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C735,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C736,2026-10-07,554.86,14.0,4.0,20.0,2.0,1.0,3.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C737,2026-10-08,164.88,18.0,4.0,19.0,2.0,1.0,1.0,Dormido
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C738,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C739,,,,,,,,,Sin compras válidas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,C740,2026-10-11,199.41,12.0,4.0,16.0,3.0,1.0,1.0,Reciente

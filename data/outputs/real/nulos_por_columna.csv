@@ -1,0 +1,27 @@
+﻿origen,generado_en,filtros,tabla,columna,nulos,filas
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,clientes,id_cliente,0,740
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,id_modelo,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,modelo,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,precio,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,stock,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,id_producto,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,modelos,categoria,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,id_pedido,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,fecha,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,id_cliente,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,estado,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,tipo,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,descuento,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,id_trabajador,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,pedidos,id_modelo,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,id_linea,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,id_pedido,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,id_modelo,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,talla,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,cantidad,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,precio_total,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,lineas,precio_unitario,0,3680
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,stock,id_modelo,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,stock,talla,28,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,stock,stock_disponible,0,28
+ACC · REAL,2026-11-12T08:35:06+00:00,ninguno,stock,fecha_corte,28,28

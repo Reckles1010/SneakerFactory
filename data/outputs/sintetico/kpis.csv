@@ -1,0 +1,16 @@
+﻿origen,generado_en,filtros,kpi,valor,formula,denominador
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos_actividad,900,Nº de id_pedido distintos (todos los estados),Todos los pedidos del filtro
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos_venta,817,id_pedido distintos con estado Entregado/Enviado (SALES_STATES),Pedidos del filtro
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos_pendientes,28,id_pedido distintos en estado pendiente / en preparación,Pedidos del filtro
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos_cancelados,55,id_pedido distintos cancelados,Pedidos del filtro
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pares,3637.0,Σ cantidad de líneas de pedidos de venta (unidades),Líneas de venta
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,ingresos,302976.87999999995,"Σ cantidad × precio_unitario de líneas de venta (bruto, sin IVA ni descuentos)",Líneas de venta
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,ticket,370.8407343941248,ingresos / pedidos_venta,Pedidos de venta (nunca líneas)
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pares_por_pedido,4.451652386780906,pares / pedidos_venta,Pedidos de venta
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,tasa_cancelacion_pct,6.111111111111111,pedidos_cancelados / pedidos_actividad × 100,Pedidos del filtro
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,custom_pct,21.333333333333336,pedidos Custom / pedidos_actividad × 100 (N/D si no hay Custom),Pedidos del filtro
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,clientes_activos,40,id_cliente distintos con alguna venta,Clientes con ventas
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,modelos_vendidos,12,id_modelo distintos con alguna venta,Modelos con ventas
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,talla_mas_vendida,42,talla con mayor Σ cantidad,Líneas de venta
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pareto_top20_modelos_pct,36.28473235317494,ingresos del 20 % de modelos con más ingresos / ingresos,Ingresos de venta
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,variacion_ultimo_mes_pct,-51.80516778818433,(ingresos mes − ingresos mes previo) / ingresos mes previo × 100,Meses con ventas

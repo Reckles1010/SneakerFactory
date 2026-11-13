@@ -1,0 +1,6 @@
+﻿origen,generado_en,filtros,tabla,filas_recibidas,filas_validas,filas_rechazadas,pct_calidad,nulos_totales,inc_bloqueantes,inc_recuperables,inc_advertencias
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,clientes,40,40,0,100.0,0,0,0,0
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,modelos,12,12,0,100.0,0,0,0,0
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,pedidos,900,900,0,100.0,0,0,0,0
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,lineas,2147,2147,0,100.0,0,0,0,12
+SINTÉTICO,2026-11-12T08:35:10+00:00,ninguno,stock,120,120,0,100.0,0,0,0,0

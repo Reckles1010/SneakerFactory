@@ -104,6 +104,21 @@ function getCurrentUser() {
 
 /* POPUP DEL CATÁLOGO */
 
+/* Tallas por categoría (cordones: sin talla) */
+const SIZES_BY_CATEGORY = {
+    zapatillas: ['39', '40', '41', '42', '43', '44'],
+    calcetines: ['39', '40', '41', '42', '43', '44'],
+    gorras: ['39', '40', '41', '42', '43', '44'],
+    cordones: []
+};
+
+const DESCRIPTION_BY_CATEGORY = {
+    zapatillas: 'una zapatilla diseñada para combinar comodidad, estilo y personalidad en cada paso.',
+    calcetines: 'unos calcetines pensados para ofrecer comodidad y buen ajuste durante todo el día.',
+    cordones: 'unos cordones resistentes para darle un toque personal a tus zapatillas.',
+    gorras: 'una gorra con el estilo MERCURY para completar tu look.'
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const productPopup = document.getElementById('productPopup');
 
@@ -122,10 +137,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const popupAdd = document.getElementById('popupAdd');
         const popupAddPrice = document.getElementById('popupAddPrice');
 
+        const popupSizesBlock = document.querySelector('.popup__sizes');
+        const popupSizesList = document.getElementById('popupSizes');
+
         const productGrid = document.getElementById('productGrid');
 
         let selectedProduct = null;
         let selectedSize = null;
+
+        /* Genera los botones de talla según la categoría */
+        function renderPopupSizes(category) {
+            const sizes = SIZES_BY_CATEGORY[category] || [];
+
+            popupSizesList.innerHTML = '';
+
+            // Cordones: se oculta todo el bloque de tallas
+            popupSizesBlock.style.display = sizes.length ? '' : 'none';
+
+            sizes.forEach(size => {
+                const button = document.createElement('button');
+
+                button.type = 'button';
+                button.className = 'popup__size';
+                button.dataset.size = size;
+                button.textContent = size;
+
+                popupSizesList.appendChild(button);
+            });
+        }
 
         if (productGrid) {
 
@@ -134,15 +173,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
-                const card = event.target.closest('.card[data-category="zapatillas"]');
+                const card = event.target.closest('.card');
 
                 if (!card) return;
 
                 selectedProduct = card;
 
+                const category = card.dataset.category;
+
                 const image = card.querySelector('.card__image');
                 const name = card.querySelector('.card__title');
-                const category = card.querySelector('.card__category');
+                const categoryLabel = card.querySelector('.card__category');
                 const badge = card.querySelector('.card__badge');
 
                 const originalButton = card.querySelector(
@@ -157,8 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 popupImage.alt = image.alt;
 
                 popupTitle.textContent = name.textContent;
-                popupCategory.textContent = category
-                    ? category.textContent
+                popupCategory.textContent = categoryLabel
+                    ? categoryLabel.textContent
                     : '';
 
                 popupPrice.textContent = currency.format(productPrice);
@@ -172,17 +213,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 popupDescription.textContent =
-                    'Descubre ' + name.textContent +
-                    ', una zapatilla diseñada para combinar comodidad, ' +
-                    'estilo y personalidad en cada paso.';
+                    'Descubre ' + name.textContent + ', ' +
+                    (DESCRIPTION_BY_CATEGORY[category] || '');
 
                 popupColor.textContent = 'Consultar variantes';
 
                 selectedSize = null;
 
-                document.querySelectorAll('.popup__size').forEach(size => {
-                    size.classList.remove('popup__size--active');
-                });
+                renderPopupSizes(category);
 
                 productPopup.classList.add('popup--active');
                 productPopup.setAttribute('aria-hidden', 'false');
@@ -191,16 +229,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        document.querySelectorAll('.popup__size').forEach(button => {
-            button.addEventListener('click', function () {
-                document.querySelectorAll('.popup__size').forEach(size => {
-                    size.classList.remove('popup__size--active');
-                });
+        /* Selección de talla */
+        popupSizesList.addEventListener('click', event => {
+            const button = event.target.closest('.popup__size');
 
-                this.classList.add('popup__size--active');
+            if (!button) return;
 
-                selectedSize = this.dataset.size;
+            popupSizesList.querySelectorAll('.popup__size').forEach(size => {
+                size.classList.remove('popup__size--active');
             });
+
+            button.classList.add('popup__size--active');
+
+            selectedSize = button.dataset.size;
         });
 
         function closeProductPopup() {
@@ -239,7 +280,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!selectedProduct) return;
 
-                if (!selectedSize) {
+                const needsSize =
+                    (SIZES_BY_CATEGORY[selectedProduct.dataset.category] || []).length > 0;
+
+                if (needsSize && !selectedSize) {
                     alert('Selecciona una talla antes de continuar.');
                     return;
                 }
@@ -250,7 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!originalButton) return;
 
-                originalButton.dataset.size = selectedSize;
+                if (selectedSize) {
+                    originalButton.dataset.size = selectedSize;
+                }
 
                 originalButton.click();
 
@@ -260,7 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 /* END REGION*/
-
 
 /* FILTROS DEL CATÁLOGO */
 
@@ -334,13 +379,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: name.textContent.trim(),
                 price: Number(btn.dataset.price) || 0,
                 size: btn.dataset.size || (
-                    category === 'zapatillas' ? 'Sin especificar' : 'Única'
+                    (SIZES_BY_CATEGORY[category] || []).length > 0 ? 'Sin especificar' : 'Única'
                 ),
                 image: image.src,
                 customization: null
             };
 
-            if (category === 'zapatillas' && product.size === 'Sin especificar') {
+            if ((SIZES_BY_CATEGORY[category] || []).length > 0 && product.size === 'Sin especificar') {
                 alert('Selecciona una talla antes de continuar.');
                 return;
             }
@@ -1056,6 +1101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: document.getElementById('recipientName').value.trim(),
                 email: document.getElementById('recipientEmail').value.trim(),
                 phone: document.getElementById('recipientPhone').value.trim(),
+                dni: document.getElementById('recipientDni').value.trim().toUpperCase(),
                 address: document.getElementById('address').value.trim(),
                 number: document.getElementById('addressNumber').value.trim(),
                 postalCode: document.getElementById('postalCode').value.trim(),
@@ -1063,6 +1109,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 province: document.getElementById('province').value.trim(),
                 notes: document.getElementById('addressNotes').value.trim()
             };
+
+            const dniRegex = /^([0-9]{8}|[XYZ][0-9]{7})[A-Z]$/;
+
+            if (!dniRegex.test(recipient.dni)) {
+                feedback.textContent = 'Introduce un DNI o NIE válido (por ejemplo, 12345678Z).';
+                feedback.style.color = '#c0392b';
+                return;
+            }
 
             if (confirmButton) confirmButton.disabled = true;
 
@@ -1133,6 +1187,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const feedback = document.getElementById('feedback');
 
+    const sizeOptions = document.getElementById('sizeOptions');
+
+    const selectedSizeLabel = document.getElementById('selectedSizeLabel');
+
     const colors = [
         { name: 'Blanco', value: '#f4f4f5', className: 'white' },
         { name: 'Negro', value: '#080808', className: 'black' },
@@ -1151,6 +1209,7 @@ document.addEventListener('DOMContentLoaded', () => {
         product: 'shoe',
         design: 'classic',
         zone: 'main',
+        size: null,
         colors: {
 
             main: '#f4f4f5',
@@ -1192,9 +1251,90 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    /* Tallas */
+
+    const shoeSizes = ['38', '39', '40', '41', '42', '43', '44', '45', '46'];
+
+    const sockSizes = ['35-38', '39-42', '43-46'];
+
+    function getAvailableSizes() {
+        return state.product === 'sock' ? sockSizes : shoeSizes;
+    }
+
+    /* En el conjunto, la talla del calcetín se deduce de la de la zapatilla */
+    function getSockSizeFor(shoeSize) {
+        const number = Number(shoeSize);
+
+        if (!number) return null;
+
+        if (number <= 38) return '35-38';
+
+        if (number <= 42) return '39-42';
+
+        return '43-46';
+    }
+
+    function getSizeLabel() {
+        if (!state.size) return '';
+
+        if (state.product === 'set') {
+            return `Zapatillas ${state.size} · Calcetines ${getSockSizeFor(state.size)}`;
+        }
+
+        return state.size;
+    }
+
+    function renderSizes() {
+        if (!sizeOptions) return;
+
+        sizeOptions.innerHTML = '';
+
+        getAvailableSizes().forEach(size => {
+            const button = document.createElement('button');
+
+            const selected = size === state.size;
+
+            button.type = 'button';
+
+            button.className = 'customizer__size';
+
+            if (selected) {
+                button.classList.add('customizer__size--selected');
+            }
+
+            button.textContent = size;
+
+            button.setAttribute('aria-pressed', String(selected));
+
+            button.addEventListener('click', () => {
+                state.size = size;
+
+                feedback.textContent = '';
+
+                renderSizes();
+
+                renderSummary();
+            });
+
+            sizeOptions.appendChild(button);
+        });
+
+        if (selectedSizeLabel) {
+            selectedSizeLabel.textContent =
+                `Talla seleccionada: ${getSizeLabel() || 'ninguna'}`;
+        }
+    }
+
+
     /* Mostrar producto */
 
     function renderProduct() {
+        if (!getAvailableSizes().includes(state.size)) {
+            state.size = null;
+        }
+
+        renderSizes();
+
         shoePreview.hidden = state.product === 'sock';
 
         sockPreview.hidden = state.product === 'shoe';
@@ -1382,6 +1522,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             `${productNames[state.product]} ${designNames[state.design]}, ` +
             `base ${color ? color.name.toLowerCase() : activeColors.main}. ` +
+            (getSizeLabel() ? `Talla: ${getSizeLabel()}. ` : '') +
             `Precio estimado: ${priceValue.textContent}`;
     }
 
@@ -1522,6 +1663,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (saveButton) {
         saveButton.addEventListener('click', () => {
 
+            if (!state.size) {
+                feedback.textContent =
+                    'Selecciona una talla antes de guardar el diseño.';
+                return;
+            }
+
             const productNames = {
 
                 shoe: 'Zapatillas personalizadas',
@@ -1534,7 +1681,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 product: state.product,
                 design: state.design,
                 colors: JSON.parse(JSON.stringify(state.colors)),
-                sockColors: JSON.parse(JSON.stringify(state.sockColors))
+                sockColors: JSON.parse(JSON.stringify(state.sockColors)),
+                size: state.size,
+                sockSize: state.product === 'set'
+                    ? getSockSizeFor(state.size)
+                    : null
             };
 
             const product = {
@@ -1542,7 +1693,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 id: 'custom-' + Date.now(),
                 name: productNames[state.product],
                 price: getProductPrice(),
-                size: 'Personalizado',
+                size: getSizeLabel(),
                 image: '',
                 customization: customization
             };
