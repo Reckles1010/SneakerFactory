@@ -104,6 +104,21 @@ function getCurrentUser() {
 
 /* POPUP DEL CATÁLOGO */
 
+/* Tallas por categoría (cordones: sin talla) */
+const SIZES_BY_CATEGORY = {
+    zapatillas: ['39', '40', '41', '42', '43', '44'],
+    calcetines: ['39', '40', '41', '42', '43', '44'],
+    gorras: ['39', '40', '41', '42', '43', '44'],
+    cordones: []
+};
+
+const DESCRIPTION_BY_CATEGORY = {
+    zapatillas: 'una zapatilla diseñada para combinar comodidad, estilo y personalidad en cada paso.',
+    calcetines: 'unos calcetines pensados para ofrecer comodidad y buen ajuste durante todo el día.',
+    cordones: 'unos cordones resistentes para darle un toque personal a tus zapatillas.',
+    gorras: 'una gorra con el estilo MERCURY para completar tu look.'
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const productPopup = document.getElementById('productPopup');
 
@@ -122,10 +137,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const popupAdd = document.getElementById('popupAdd');
         const popupAddPrice = document.getElementById('popupAddPrice');
 
+        const popupSizesBlock = document.querySelector('.popup__sizes');
+        const popupSizesList = document.getElementById('popupSizes');
+
         const productGrid = document.getElementById('productGrid');
 
         let selectedProduct = null;
         let selectedSize = null;
+
+        /* Genera los botones de talla según la categoría */
+        function renderPopupSizes(category) {
+            const sizes = SIZES_BY_CATEGORY[category] || [];
+
+            popupSizesList.innerHTML = '';
+
+            // Cordones: se oculta todo el bloque de tallas
+            popupSizesBlock.style.display = sizes.length ? '' : 'none';
+
+            sizes.forEach(size => {
+                const button = document.createElement('button');
+
+                button.type = 'button';
+                button.className = 'popup__size';
+                button.dataset.size = size;
+                button.textContent = size;
+
+                popupSizesList.appendChild(button);
+            });
+        }
 
         if (productGrid) {
 
@@ -134,15 +173,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
-                const card = event.target.closest('.card[data-category="zapatillas"]');
+                const card = event.target.closest('.card');
 
                 if (!card) return;
 
                 selectedProduct = card;
 
+                const category = card.dataset.category;
+
                 const image = card.querySelector('.card__image');
                 const name = card.querySelector('.card__title');
-                const category = card.querySelector('.card__category');
+                const categoryLabel = card.querySelector('.card__category');
                 const badge = card.querySelector('.card__badge');
 
                 const originalButton = card.querySelector(
@@ -157,8 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 popupImage.alt = image.alt;
 
                 popupTitle.textContent = name.textContent;
-                popupCategory.textContent = category
-                    ? category.textContent
+                popupCategory.textContent = categoryLabel
+                    ? categoryLabel.textContent
                     : '';
 
                 popupPrice.textContent = currency.format(productPrice);
@@ -172,17 +213,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 popupDescription.textContent =
-                    'Descubre ' + name.textContent +
-                    ', una zapatilla diseñada para combinar comodidad, ' +
-                    'estilo y personalidad en cada paso.';
+                    'Descubre ' + name.textContent + ', ' +
+                    (DESCRIPTION_BY_CATEGORY[category] || '');
 
                 popupColor.textContent = 'Consultar variantes';
 
                 selectedSize = null;
 
-                document.querySelectorAll('.popup__size').forEach(size => {
-                    size.classList.remove('popup__size--active');
-                });
+                renderPopupSizes(category);
 
                 productPopup.classList.add('popup--active');
                 productPopup.setAttribute('aria-hidden', 'false');
@@ -191,16 +229,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        document.querySelectorAll('.popup__size').forEach(button => {
-            button.addEventListener('click', function () {
-                document.querySelectorAll('.popup__size').forEach(size => {
-                    size.classList.remove('popup__size--active');
-                });
+        /* Selección de talla */
+        popupSizesList.addEventListener('click', event => {
+            const button = event.target.closest('.popup__size');
 
-                this.classList.add('popup__size--active');
+            if (!button) return;
 
-                selectedSize = this.dataset.size;
+            popupSizesList.querySelectorAll('.popup__size').forEach(size => {
+                size.classList.remove('popup__size--active');
             });
+
+            button.classList.add('popup__size--active');
+
+            selectedSize = button.dataset.size;
         });
 
         function closeProductPopup() {
@@ -239,7 +280,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!selectedProduct) return;
 
-                if (!selectedSize) {
+                const needsSize =
+                    (SIZES_BY_CATEGORY[selectedProduct.dataset.category] || []).length > 0;
+
+                if (needsSize && !selectedSize) {
                     alert('Selecciona una talla antes de continuar.');
                     return;
                 }
@@ -250,7 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!originalButton) return;
 
-                originalButton.dataset.size = selectedSize;
+                if (selectedSize) {
+                    originalButton.dataset.size = selectedSize;
+                }
 
                 originalButton.click();
 
@@ -260,7 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 /* END REGION*/
-
 
 /* FILTROS DEL CATÁLOGO */
 
@@ -334,13 +379,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: name.textContent.trim(),
                 price: Number(btn.dataset.price) || 0,
                 size: btn.dataset.size || (
-                    category === 'zapatillas' ? 'Sin especificar' : 'Única'
+                    (SIZES_BY_CATEGORY[category] || []).length > 0 ? 'Sin especificar' : 'Única'
                 ),
                 image: image.src,
                 customization: null
             };
 
-            if (category === 'zapatillas' && product.size === 'Sin especificar') {
+            if ((SIZES_BY_CATEGORY[category] || []).length > 0 && product.size === 'Sin especificar') {
                 alert('Selecciona una talla antes de continuar.');
                 return;
             }
