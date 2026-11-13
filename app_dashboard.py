@@ -224,50 +224,6 @@ section[data-testid="stSidebar"] [data-testid="stMultiSelect"] span[data-tag] bu
     background-color: #179fb5 !important;
 }
 
-/* Día seleccionado en el calendario */
-div[data-testid="stDateInput"] [data-selected="true"] {
-    background-color: #179fb5 !important;
-    color: #ffffff !important;
-    border-color: #179fb5 !important;
-}
-
-/* Día seleccionado al pasar el ratón */
-div[data-testid="stDateInput"] [data-selected="true"]:hover {
-    background-color: #117f91 !important;
-    color: #ffffff !important;
-}
-
-/* Día seleccionado al recibir el foco */
-div[data-testid="stDateInput"] [data-selected="true"]:focus {
-    outline-color: #179fb5 !important;
-}
-/* Indicador after del calendario */
-div[data-testid="stDateInput"] table td div::after {
-    background-color: #179fb5 !important;
-    border-color: #179fb5 !important;
-}
-section[data-testid="stSidebar"]
-[data-testid="stDateInputField"]
-[role="spinbutton"],
-section[data-testid="stSidebar"]
-[data-testid="stDateInputField"]
-[data-type="literal"] {
-    color: rgba(47, 45, 43, 0.7) !important;
-}
-
-/* Día seleccionado: azul */
-[role="button"][data-selected="true"] {
-    background-color: #179fb5 !important;
-    color: #ffffff !important;
-}
-
-/* Inicio y final del rango */
-[role="button"][data-selection-start="true"],
-[role="button"][data-selection-end="true"] {
-    background-color: #179fb5 !important;
-    color: #ffffff !important;
-}
-
 /* Rango comprendido entre las dos fechas */
 [role="button"][data-selected="true"]:not([data-selection-start="true"]):not([data-selection-end="true"]) {
     background-color: #d9f3f8 !important;
@@ -313,16 +269,353 @@ div[data-testid="stDateInput"] [data-selected="true"]:not([data-selection-start=
     color: #080808 !important;
 }
 
-/* Día 27: fecha inicial seleccionada */
-div[data-testid="stDateInput"] div[role="button"][data-selection-start="true"],
-div[data-testid="stDateInput"] div[role="button"][data-selection-start="true"]::before,
-div[data-testid="stDateInput"] div[role="button"][data-selection-start="true"]::after {
+/* Mantener el día seleccionado siempre en azul */
+div[data-testid="stDateInput"] [role="button"][aria-pressed="true"],
+div[data-testid="stDateInput"] [role="button"][data-selected="true"],
+div[data-testid="stDateInput"] [data-selected="true"] {
+    background-color: #179fb5 !important;
+    background: #179fb5 !important;
+    color: #ffffff !important;
+    border-color: #179fb5 !important;
+}
+
+/* Mantener el azul al pasar el ratón */
+div[data-testid="stDateInput"] [role="button"][aria-pressed="true"]:hover,
+div[data-testid="stDateInput"] [role="button"][data-selected="true"]:hover,
+div[data-testid="stDateInput"] [data-selected="true"]:hover {
+    background-color: #179fb5 !important;
+    background: #179fb5 !important;
+    color: #ffffff !important;
+}
+
+/* Mantener el azul cuando recibe el foco */
+div[data-testid="stDateInput"] [role="button"][aria-pressed="true"]:focus,
+div[data-testid="stDateInput"] [role="button"][data-selected="true"]:focus,
+div[data-testid="stDateInput"] [data-selected="true"]:focus {
+    background-color: #179fb5 !important;
+    background: #179fb5 !important;
+    color: #ffffff !important;
+    outline-color: #179fb5 !important;
+}
+
+/* FORZAR COLOR AZUL EN EL CALENDARIO MERCURY */
+
+div[data-testid="stDateInput"] button,
+div[data-testid="stDateInput"] [role="button"] {
+    --primary-color: #179fb5 !important;
+    --background-color: #179fb5 !important;
+}
+
+/* Fecha seleccionada */
+div[data-testid="stDateInput"] [aria-pressed="true"],
+div[data-testid="stDateInput"] [data-selected="true"],
+div[data-testid="stDateInput"] [data-selection-start="true"],
+div[data-testid="stDateInput"] [data-selection-end="true"] {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    color: white !important;
+    border-color: #179fb5 !important;
+}
+
+/* Todos los estados interactivos */
+div[data-testid="stDateInput"] [aria-pressed="true"]:hover,
+div[data-testid="stDateInput"] [aria-pressed="true"]:focus,
+div[data-testid="stDateInput"] [aria-pressed="true"]:active,
+div[data-testid="stDateInput"] [data-selected="true"]:hover,
+div[data-testid="stDateInput"] [data-selected="true"]:focus,
+div[data-testid="stDateInput"] [data-selected="true"]:active {
     background: #179fb5 !important;
     background-color: #179fb5 !important;
     color: #ffffff !important;
     border-color: #179fb5 !important;
     box-shadow: none !important;
 }
+
+/* Evitar indicadores internos rojos */
+div[data-testid="stDateInput"] [data-selected="true"]::before,
+div[data-testid="stDateInput"] [data-selected="true"]::after {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    border-color: #179fb5 !important;
+}
+
+/* MERCURY - SELECCIÓN DE RANGOS */
+
+/* Fecha inicial y final del rango */
+div[data-testid="stDateInput"] [data-selection-start="true"],
+div[data-testid="stDateInput"] [data-selection-end="true"],
+div[data-testid="stDateInput"] [data-selection-start="true"]:hover,
+div[data-testid="stDateInput"] [data-selection-end="true"]:hover,
+div[data-testid="stDateInput"] [data-selection-start="true"]:focus,
+div[data-testid="stDateInput"] [data-selection-end="true"]:focus {
+    background: #179fb5 !important;
+    background-color: #179fb5 !important;
+    color: #ffffff !important;
+    border-color: #179fb5 !important;
+    box-shadow: none !important;
+}
+
+/* Texto interno de los extremos */
+div[data-testid="stDateInput"] [data-selection-start="true"] *,
+div[data-testid="stDateInput"] [data-selection-end="true"] * {
+    color: #ffffff !important;
+}
+
+/* Días intermedios del rango */
+div[data-testid="stDateInput"] [data-selected="true"]:not([data-selection-start="true"]):not([data-selection-end="true"]) {
+    background: #d9f3f8 !important;
+    background-color: #d9f3f8 !important;
+    color: #080808 !important;
+    border-color: transparent !important;
+}
+
+/* Evitar que el hover vuelva rojo el rango */
+div[data-testid="stDateInput"] [data-selected="true"]:not([data-selection-start="true"]):not([data-selection-end="true"]):hover {
+    background: #d9f3f8 !important;
+    background-color: #d9f3f8 !important;
+    color: #080808 !important;
+}
+
+.st-emotion-cache-1l9k686[data-selection-start]:not([data-selection-end])::after {
+    background-color: #179fb5 !important;
+}
+
+.st-emotion-cache-1l9k686[data-selection-end]:not([data-selection-start])::after {
+    background-color: #179fb5 !important;
+}
+
+/* Al pasar el ratón */
+div[data-testid="stDateInput"] [role="spinbutton"]:hover,
+div[data-testid="stDateInput"] [role="spinbutton"][data-hovered="true"] {
+    color: #179fb5 !important;
+    background-color: transparent !important;
+}
+
+/* Al seleccionar o editar el día */
+div[data-testid="stDateInput"] [role="spinbutton"]:focus,
+div[data-testid="stDateInput"] [role="spinbutton"]:focus-visible,
+div[data-testid="stDateInput"] [role="spinbutton"][data-focused="true"] {
+    color: #179fb5 !important;
+    background-color: transparent !important;
+}
+
+/* Evitar cambios de color durante la edición */
+div[data-testid="stDateInput"] [role="spinbutton"]::selection {
+    background-color: #d9f3f8 !important;
+    color: #080808 !important;
+}
+
+/* Color normal de los números de fecha */
+div[data-testid="stDateInput"] [role="spinbutton"] {
+    color: rgba(47, 45, 43, 0.7) !important;
+    caret-color: #179fb5 !important;
+}
+
+/* Iconos SVG de todos los menús de la barra lateral */
+section[data-testid="stSidebar"] svg path:not([fill="none"]) {
+    fill: rgba(47, 45, 43, 0.7) !important;
+}
+
+/* Iconos que utilizan currentColor */
+section[data-testid="stSidebar"] svg {
+    color: rgba(47, 45, 43, 0.7) !important;
+}
+
+/* ANIMACIÓN BOTONES MERCURY */
+
+.stButton button {
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background-color 0.18s ease !important;
+    transform: scale(1);
+}
+
+/* Al pasar el ratón */
+.stButton button:hover {
+    transform: scale(1.030);
+}
+
+/* Al pulsar */
+.stButton button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(23, 159, 181, 0.2);
+}
+
+
+/* =================================
+   MERCURY · TABLETS
+   ================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .stAppViewBlockContainer,
+    [data-testid="stMainBlockContainer"],
+    .block-container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    section[data-testid="stSidebar"] {
+        width: 17rem !important;
+        min-width: 17rem !important;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 14px !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 1.3rem !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+    }
+
+}
+
+
+
+/* =================================
+   MERCURY · MÓVILES
+   ================================= */
+
+@media screen and (max-width: 600px) {
+
+    .stAppViewBlockContainer,
+    [data-testid="stMainBlockContainer"],
+    .block-container {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+        padding-top: 0.5rem !important;
+    }
+
+    /* Marca */
+    .mercury-brand {
+        font-size: 21px !important;
+    }
+
+    .mercury-y::after {
+        height: 22px !important;
+    }
+
+    .mercury-sub {
+        font-size: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 1.65rem !important;
+    }
+
+    h2 {
+        font-size: 1.35rem !important;
+    }
+
+    h3 {
+        font-size: 1.15rem !important;
+    }
+
+    /* Métricas */
+    [data-testid="stMetric"] {
+        padding: 10px !important;
+        border-radius: 9px !important;
+    }
+
+    [data-testid="stMetricLabel"] {
+        font-size: 0.75rem !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 1.1rem !important;
+    }
+
+    [data-testid="stMetricDelta"] {
+        font-size: 0.7rem !important;
+    }
+
+    /* Tablas */
+    [data-testid="stDataFrame"],
+    [data-testid="stTable"] {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+    }
+
+    /* Gráficos */
+    [data-testid="stVegaLiteChart"],
+    [data-testid="stArrowVegaLiteChart"],
+    [data-testid="stPlotlyChart"] {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+    }
+
+    /* Pestañas */
+    .stTabs [data-testid="stTab"] {
+        padding: 6px 9px !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Botones */
+    .stButton button,
+    .stDownloadButton button {
+        min-height: 42px !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Texto */
+    .stCaption {
+        font-size: 0.75rem !important;
+    }
+
+}
+
+
+/* =================================
+   MERCURY · MÓVILES PEQUEÑOS
+   ================================= */
+
+@media screen and (max-width: 380px) {
+
+    .stAppViewBlockContainer,
+    [data-testid="stMainBlockContainer"],
+    .block-container {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .mercury-brand {
+        font-size: 19px !important;
+    }
+
+    h1 {
+        font-size: 1.4rem !important;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 8px !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 0.95rem !important;
+    }
+
+    .stTabs [data-testid="stTab"] {
+        padding: 5px 6px !important;
+        font-size: 0.68rem !important;
+    }
+
+}
+
+
+
+
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -358,24 +651,28 @@ if st.session_state.last_good_snapshot is None:
         st.session_state.last_valid_at = datetime.now().astimezone().isoformat()
     except Exception:
         pass                              # el fragmento mostrará el error con detalle
+
+def reset_filters():
+    st.session_state["date_range"] = (
+        st.session_state["default_date_range"]
+    )
+    st.session_state["models_filter"] = []
+    st.session_state["sizes_filter"] = []
+    st.session_state["types_filter"] = []
+    st.session_state["states_filter"] = []
+
+
 with st.sidebar:
     st.markdown("## MERCURY")
-    st.caption("ACC · REAL")
     st.markdown("---")
     st.markdown("### Filtros transversales")
-    reset = st.button(
+
+    st.button(
         "Restablecer filtros",
+        on_click=reset_filters,
         **STRETCH
     )
-    if reset:
-        for key in [
-            "date_range",
-            "models_filter",
-            "sizes_filter",
-            "types_filter",
-            "states_filter"
-        ]:
-            st.session_state.pop(key, None)
+
     st.caption(
         "Los filtros afectan a KPIs, tablas y gráficos del mismo snapshot."
     )
@@ -393,9 +690,15 @@ with st.sidebar:
             if not lineas.empty
             else datetime.now().date()
         )
+        default_date_range = (min_date, max_date)
+
+        st.session_state["default_date_range"] = default_date_range
+
+        if "date_range" not in st.session_state:
+            st.session_state["date_range"] = default_date_range
+
         date_range = st.date_input(
             "Periodo",
-            value=(min_date, max_date),
             key="date_range"
         )
         models = sorted(
@@ -514,9 +817,15 @@ def dashboard_refresh():
         check_at.strftime("%d/%m/%Y %H:%M:%S")
     )
     c4.metric(
-        "Última actualización válida",
-        st.session_state.last_valid_at or "Sin actualización"
+    "Última actualización válida",
+    (
+        datetime.fromisoformat(
+            st.session_state.last_valid_at
+        ).astimezone().strftime("%d/%m/%Y %H:%M:%S")
+        if st.session_state.last_valid_at
+        else "Sin actualización"
     )
+)
     if st.session_state.last_error:
         st.error(
             f"{st.session_state.last_status.upper()}: "

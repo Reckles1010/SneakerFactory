@@ -16,7 +16,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <schema name="public" layers="0" fill-color="#e1e1e1" sql-disabled="true">
 </schema>
 
-<table name="Clientes" layers="0" collapse-mode="1" max-obj-count="6" z-value="0">
+<table name="Clientes" layers="0" collapse-mode="1" max-obj-count="8" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="20" y="400"/>
@@ -34,6 +34,12 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</column>
 	<column name="telefono">
 		<type name="numeric" length="0"/>
+	</column>
+	<column name="correo">
+		<type name="text" length="0"/>
+	</column>
+	<column name="password_hash">
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="Clientes_pk" type="pk-constr" table="public.&quot;Clientes&quot;">
 		<columns names="id_cliente" ref-type="src-columns"/>
