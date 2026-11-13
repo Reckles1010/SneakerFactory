@@ -150,9 +150,9 @@ app.post("/api/auth/register", async (req, res) => {
         const hash = await bcrypt.hash(passwordRecibida, SALT_ROUNDS);
 
         await db.query(
-            `INSERT INTO "Clientes" (id_cliente,dni, nombre, direccion, telefono, correo, password_hash)
-            VALUES ($1, $2, $3, $4, $5, $6, $7)`,
-            [nuevoId("CLI"), null, `${nombreLimpio} ${apellidosLimpios}`, null, null, emailLimpio, hash]
+            `INSERT INTO "Clientes" (id_cliente, nombre, correo, password_hash)
+            VALUES ($1, $2, $3, $4)`,
+            [nuevoId("CLI"), `${nombreLimpio} ${apellidosLimpios}`, emailLimpio, hash]
         );
 
         res.status(201).json({ ok: true });
@@ -218,12 +218,37 @@ app.post("/api/auth/login", async (req, res) => {
 
 /* API - PEDIDOS (tablas Pedido y Linea de pedido) */
 
-/* Busca un color en la personalización probando varios nombres de clave */
-function colorDe(personalizacion, ...claves) {
-    for (const clave of claves) {
-        if (personalizacion[clave]) return String(personalizacion[clave]);
-    }
-    return "Estándar";
+/* Limpia el DNI/NIE: mayúsculas y sin espacios ni guiones */
+function normalizarDni(dni) {
+    return String(dni || "").toUpperCase().replace(/[\s-]/g, "");
+}
+
+/* Valida DNI (8 números + letra) o NIE (X/Y/Z + 7 números + letra) */
+function dniValido(dni) {
+    if (!/^([0-9]{8}|[XYZ][0-9]{7})[A-Z]$/.test(dni)) return false;
+
+    const numero = dni
+        .slice(0, -1)
+        .replace("X", "0")
+        .replace("Y", "1")
+        .replace("Z", "2");
+
+    return "TRWAGMYFPDXBNJZSQVHLCKE"[Number(numero) % 23] === dni.slice(-1);
+}
+
+/* Extrae el número de una talla ("42", "35-38", "Zapatillas 42 · ...") */
+function tallaNumerica(talla) {
+    const coincidencia = String(talla || "").match(/\d+/);
+    return coincidencia ? Number(coincidencia[0]) : 0;
+}
+
+/* Color de una zona según la personalización del Custom Lab */
+function colorDe(personalizacion, zona) {
+    const colores = personalizacion.product === "sock"
+        ? (personalizacion.sockColors || {})
+        : (personalizacion.colors || {});
+
+    return colores[zona] ? String(colores[zona]) : "Estándar";
 }
 
 app.post("/api/pedidos", async (req, res) => {
@@ -235,6 +260,12 @@ app.post("/api/pedidos", async (req, res) => {
 
         if (!usuarioId || !destinatario || !Array.isArray(productos) || productos.length === 0) {
             return res.status(400).json({ message: "Pedido no válido." });
+        }
+
+        const dni = normalizarDni(destinatario.dni);
+
+        if (!dniValido(dni)) {
+            return res.status(400).json({ message: "Introduce un DNI o NIE válido." });
         }
 
         const cliente = await client.query(
@@ -256,6 +287,12 @@ app.post("/api/pedidos", async (req, res) => {
 
         await client.query("BEGIN");
 
+        /* El DNI se guarda en la ficha del cliente */
+        await client.query(
+            `UPDATE "Clientes" SET dni = $1 WHERE id_cliente = $2`,
+            [dni, String(usuarioId)]
+        );
+
         const pedidosIds = [];
         let total = 0;
 
@@ -276,12 +313,12 @@ app.post("/api/pedidos", async (req, res) => {
                 VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
                 [
                     idLinea,
-                    Number(p.size) || 0,
+                    tallaNumerica(p.size),
                     cantidad,
-                    colorDe(c, "base", "colorBase"),
-                    colorDe(c, "panel", "colorPanel"),
-                    colorDe(c, "suela", "sole", "colorSuela"),
-                    colorDe(c, "cordones", "laces", "colorCordones"),
+                    colorDe(c, "main"),
+                    colorDe(c, "panel"),
+                    colorDe(c, "sole"),
+                    colorDe(c, "laces"),
                     precioLinea.toFixed(2)
                 ]
             );

@@ -1186,6 +1186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 email: document.getElementById('recipientEmail').value.trim(),
                 phone: document.getElementById('recipientPhone').value.trim(),
                 dni: document.getElementById('recipientDni').value.trim().toUpperCase(),
+                dni: document.getElementById('recipientDni').value.trim().toUpperCase(),
                 address: document.getElementById('address').value.trim(),
                 number: document.getElementById('addressNumber').value.trim(),
                 postalCode: document.getElementById('postalCode').value.trim(),
