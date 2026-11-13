@@ -5,6 +5,7 @@ const { Pool } = require("pg");
 const bcrypt = require("bcrypt");
 const dotenv = require("dotenv");
 const path = require("path");
+const crypto = require("crypto");
 
 
 /* CONFIGURACIÓN */
@@ -15,6 +16,9 @@ const PORT = Number(process.env.PORT || 3001);
 const SALT_ROUNDS = 10;
 const MIN_PASSWORD_LENGTH = 8;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/* Genera ids de texto para Clientes, Pedido y Linea de pedido (ej: CLI-3f9a1b2c) */
+const nuevoId = (prefijo) => `${prefijo}-${crypto.randomUUID().slice(0, 8)}`;
 
 const app = express();
 
@@ -27,9 +31,31 @@ const db = new Pool({
     host: process.env.DB_HOST || "localhost",
     port: Number(process.env.DB_PORT || 5432),
     database: process.env.DB_NAME || "Mercury",
-    user: process.env.DB_USER || "D@m1234",
+    user: process.env.DB_USER || "postgres",
     password: process.env.DB_PASSWORD
 });
+
+/* Comprueba la conexión y adapta las tablas existentes a la web */
+async function inicializarBaseDeDatos() {
+
+    await db.query("SELECT 1");
+
+    /* El registro web no pide dirección */
+    await db.query(`ALTER TABLE "Clientes" ALTER COLUMN direccion DROP NOT NULL`);
+
+    /* Datos de envío del pedido web (opcionales) */
+    await db.query(`ALTER TABLE "Pedido" ADD COLUMN IF NOT EXISTS direccion_envio TEXT`);
+    await db.query(`ALTER TABLE "Pedido" ADD COLUMN IF NOT EXISTS notas TEXT`);
+
+    /* Correo único para detectar duplicados */
+    try {
+        await db.query(
+            `CREATE UNIQUE INDEX IF NOT EXISTS clientes_correo_uq ON "Clientes" (correo)`
+        );
+    } catch (error) {
+        console.warn("No se pudo crear el índice único de correo:", error.message);
+    }
+}
 
 
 /* ODOO 19 - API JSON-2 */
@@ -78,7 +104,7 @@ app.get("/", (req, res) => {
 });
 
 
-/* API - AUTENTICACIÓN */
+/* API - AUTENTICACIÓN (tabla Clientes) */
 
     /* Registro de usuarios */
 app.post("/api/auth/register", async (req, res) => {
@@ -109,12 +135,24 @@ app.post("/api/auth/register", async (req, res) => {
             });
         }
 
+        /* Correo duplicado */
+        const existente = await db.query(
+            `SELECT 1 FROM "Clientes" WHERE correo = $1`,
+            [emailLimpio]
+        );
+
+        if (existente.rowCount > 0) {
+            return res.status(409).json({
+                message: "Ese correo ya está registrado."
+            });
+        }
+
         const hash = await bcrypt.hash(passwordRecibida, SALT_ROUNDS);
 
         await db.query(
-            `INSERT INTO usuarios (nombre, apellidos, email, password_hash)
+            `INSERT INTO "Clientes" (id_cliente, nombre, correo, password_hash)
             VALUES ($1, $2, $3, $4)`,
-            [nombreLimpio, apellidosLimpios, emailLimpio, hash]
+            [nuevoId("CLI"), `${nombreLimpio} ${apellidosLimpios}`, emailLimpio, hash]
         );
 
         res.status(201).json({ ok: true });
@@ -142,9 +180,9 @@ app.post("/api/auth/login", async (req, res) => {
         const passwordRecibida = String(req.body.password || "");
 
         const resultado = await db.query(
-            `SELECT id, nombre, apellidos, email, rol, password_hash
-            FROM usuarios
-            WHERE email = $1`,
+            `SELECT id_cliente AS id, nombre, correo AS email, password_hash
+            FROM "Clientes"
+            WHERE correo = $1`,
             [emailLimpio]
         );
 
@@ -152,6 +190,7 @@ app.post("/api/auth/login", async (req, res) => {
 
         const credencialesValidas =
             usuario &&
+            usuario.password_hash &&
             await bcrypt.compare(passwordRecibida, usuario.password_hash);
 
         if (!credencialesValidas) {
@@ -161,6 +200,10 @@ app.post("/api/auth/login", async (req, res) => {
         }
 
         delete usuario.password_hash;
+
+        /* El nombre completo va en "nombre" */
+        usuario.apellidos = "";
+        usuario.rol = "cliente";
 
         res.json({ user: usuario });
 
@@ -173,7 +216,40 @@ app.post("/api/auth/login", async (req, res) => {
 });
 
 
-/* API - PEDIDOS*/
+/* API - PEDIDOS (tablas Pedido y Linea de pedido) */
+
+/* Limpia el DNI/NIE: mayúsculas y sin espacios ni guiones */
+function normalizarDni(dni) {
+    return String(dni || "").toUpperCase().replace(/[\s-]/g, "");
+}
+
+/* Valida DNI (8 números + letra) o NIE (X/Y/Z + 7 números + letra) */
+function dniValido(dni) {
+    if (!/^([0-9]{8}|[XYZ][0-9]{7})[A-Z]$/.test(dni)) return false;
+
+    const numero = dni
+        .slice(0, -1)
+        .replace("X", "0")
+        .replace("Y", "1")
+        .replace("Z", "2");
+
+    return "TRWAGMYFPDXBNJZSQVHLCKE"[Number(numero) % 23] === dni.slice(-1);
+}
+
+/* Extrae el número de una talla ("42", "35-38", "Zapatillas 42 · ...") */
+function tallaNumerica(talla) {
+    const coincidencia = String(talla || "").match(/\d+/);
+    return coincidencia ? Number(coincidencia[0]) : 0;
+}
+
+/* Color de una zona según la personalización del Custom Lab */
+function colorDe(personalizacion, zona) {
+    const colores = personalizacion.product === "sock"
+        ? (personalizacion.sockColors || {})
+        : (personalizacion.colors || {});
+
+    return colores[zona] ? String(colores[zona]) : "Estándar";
+}
 
 app.post("/api/pedidos", async (req, res) => {
 
@@ -186,64 +262,98 @@ app.post("/api/pedidos", async (req, res) => {
             return res.status(400).json({ message: "Pedido no válido." });
         }
 
-        const usuario = await client.query(
-            "SELECT id FROM usuarios WHERE id = $1",
-            [usuarioId]
+        const dni = normalizarDni(destinatario.dni);
+
+        if (!dniValido(dni)) {
+            return res.status(400).json({ message: "Introduce un DNI o NIE válido." });
+        }
+
+        const cliente = await client.query(
+            `SELECT id_cliente FROM "Clientes" WHERE id_cliente = $1`,
+            [String(usuarioId)]
         );
 
-        if (usuario.rowCount === 0) {
+        if (cliente.rowCount === 0) {
             return res.status(401).json({ message: "Debes iniciar sesión para comprar." });
         }
 
-        const total = productos.reduce((suma, p) => {
-            return suma + (Number(p.price) || 0) * Math.max(1, Number(p.quantity) || 1);
-        }, 0);
+        const direccionEnvio = [
+            destinatario.address,
+            destinatario.number,
+            destinatario.postalCode,
+            destinatario.city,
+            destinatario.province
+        ].filter(Boolean).join(", ");
 
         await client.query("BEGIN");
 
-        const pedido = await client.query(
-            `INSERT INTO pedidos
-                (usuario_id, nombre, email, telefono, direccion, numero,
-                codigo_postal, ciudad, provincia, notas, total)
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
-            RETURNING id`,
-            [
-                usuarioId,
-                destinatario.name,
-                destinatario.email,
-                destinatario.phone || null,
-                destinatario.address,
-                destinatario.number || null,
-                destinatario.postalCode,
-                destinatario.city,
-                destinatario.province,
-                destinatario.notes || null,
-                total.toFixed(2)
-            ]
+        /* El DNI se guarda en la ficha del cliente */
+        await client.query(
+            `UPDATE "Clientes" SET dni = $1 WHERE id_cliente = $2`,
+            [dni, String(usuarioId)]
         );
 
-        const pedidoId = pedido.rows[0].id;
+        const pedidosIds = [];
+        let total = 0;
 
+        /* Cada producto del carrito genera una línea y un pedido */
         for (const p of productos) {
+
+            const cantidad = Math.max(1, Number(p.quantity) || 1);
+            const precioLinea = (Number(p.price) || 0) * cantidad;
+            const c = p.customization || {};
+
+            const idLinea = nuevoId("LIN");
+            const idPedido = nuevoId("PED");
+
             await client.query(
-                `INSERT INTO pedido_lineas
-                    (pedido_id, producto_id, nombre, talla, precio, cantidad, personalizacion)
-                VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+                `INSERT INTO "Linea de pedido"
+                    (id_linea, talla, cantidad, "colorBase", "colorPanel",
+                    "colorSuela", "colorCordones", "PrecioTotal")
+                VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
                 [
-                    pedidoId,
-                    String(p.id || ""),
-                    p.name,
-                    p.size || null,
-                    Number(p.price) || 0,
-                    Math.max(1, Number(p.quantity) || 1),
-                    p.customization ? JSON.stringify(p.customization) : null
+                    idLinea,
+                    tallaNumerica(p.size),
+                    cantidad,
+                    colorDe(c, "main"),
+                    colorDe(c, "panel"),
+                    colorDe(c, "sole"),
+                    colorDe(c, "laces"),
+                    precioLinea.toFixed(2)
                 ]
             );
+
+            await client.query(
+                `INSERT INTO "Pedido"
+                    (id_pedido, tipo, estado, descuento, fecha,
+                    "id_linea_Linea de pedido", "id_modelo_Modelo", "id_cliente_Clientes",
+                    direccion_envio, notas)
+                VALUES ($1, $2, $3, $4, CURRENT_DATE, $5, $6, $7, $8, $9)`,
+                [
+                    idPedido,
+                    p.customization ? "Personalizado" : "Estándar",
+                    "Pendiente",
+                    false,
+                    idLinea,
+                    String(p.id || ""),
+                    String(usuarioId),
+                    direccionEnvio,
+                    destinatario.notes || null
+                ]
+            );
+
+            pedidosIds.push(idPedido);
+            total += precioLinea;
         }
 
         await client.query("COMMIT");
 
-        res.status(201).json({ ok: true, pedidoId, total });
+        res.status(201).json({
+            ok: true,
+            pedidoId: pedidosIds[0],
+            pedidos: pedidosIds,
+            total
+        });
 
     } catch (error) {
 
@@ -354,8 +464,11 @@ app.get("/api/odoo/clientes", async (req, res) => {
 
 async function iniciarServidor() {
 
+    let postgresOk = false;
+
     try {
         await inicializarBaseDeDatos();
+        postgresOk = true;
     } catch (error) {
         console.error("No se pudo preparar PostgreSQL:", error.message);
     }
@@ -363,8 +476,12 @@ async function iniciarServidor() {
     app.listen(PORT, () => {
         console.log("MERCURY - SERVIDOR INICIADO");
         console.log(`Servidor: http://localhost:${PORT}`);
-        console.log("PostgreSQL: configurado");
-        console.log("Odoo 19: API JSON-2 configurada");
+        console.log(`PostgreSQL: ${postgresOk ? "conectado" : "NO disponible"}`);
+        console.log(
+            ODOO_URL && ODOO_API_KEY
+                ? "Odoo 19: API JSON-2 configurada"
+                : "Odoo 19: sin configurar (faltan variables en .env)"
+        );
     });
 }
 

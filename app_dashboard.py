@@ -20,7 +20,7 @@ from data.analiticas import build_analytics
 from data.visualizaciones import show_df, line_chart, bar_chart, heatmap, histograma, STRETCH
 from data.segmentacion import kmeans_clientes
 
-_ICONO = next((str(p) for p in [Path(__file__).resolve().parent / "frontend" / "assets" / "SinFondo.png"] if p.exists()), "👟")
+_ICONO = next((str(p) for p in [Path(__file__).resolve().parent / "frontend" / "assets" / "SinFondo.png"] if p.exists()), "")
 
 st.set_page_config(
     page_title="MERCURY · Dashboard operacional",
