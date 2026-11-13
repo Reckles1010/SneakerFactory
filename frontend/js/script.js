@@ -1185,6 +1185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: document.getElementById('recipientName').value.trim(),
                 email: document.getElementById('recipientEmail').value.trim(),
                 phone: document.getElementById('recipientPhone').value.trim(),
+                dni: document.getElementById('recipientDni').value.trim().toUpperCase(),
                 address: document.getElementById('address').value.trim(),
                 number: document.getElementById('addressNumber').value.trim(),
                 postalCode: document.getElementById('postalCode').value.trim(),
@@ -1192,6 +1193,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 province: document.getElementById('province').value.trim(),
                 notes: document.getElementById('addressNotes').value.trim()
             };
+
+            /* Validación de DNI / NIE (formato y letra de control) */
+            const dniRegex = /^([0-9]{8}|[XYZ][0-9]{7})[A-Z]$/;
+
+            const dniNumero = recipient.dni
+                .slice(0, -1)
+                .replace('X', '0')
+                .replace('Y', '1')
+                .replace('Z', '2');
+
+            const dniLetraCorrecta =
+                'TRWAGMYFPDXBNJZSQVHLCKE'[Number(dniNumero) % 23] === recipient.dni.slice(-1);
+
+            if (!dniRegex.test(recipient.dni) || !dniLetraCorrecta) {
+                feedback.textContent = 'Introduce un DNI o NIE válido (por ejemplo, 12345678Z).';
+                feedback.style.color = '#c0392b';
+                return;
+}
 
             if (confirmButton) confirmButton.disabled = true;
 
