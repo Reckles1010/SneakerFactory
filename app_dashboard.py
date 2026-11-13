@@ -238,21 +238,7 @@ section[data-testid="stSidebar"] [data-testid="stMultiSelect"] span[data-tag] bu
     border-color: #179fb5 !important;
 }
 
-/* Evitar que el hover cambie el azul */
-[role="button"][data-selected="true"]:hover {
-    background-color: #117f91 !important;
-    color: #ffffff !important;
-}
 
-div[data-testid="stDateInput"] [data-selected="true"],
-div[data-testid="stDateInput"] [data-selected="true"]::before,
-div[data-testid="stDateInput"] [data-selected="true"]::after {
-    background: #179fb5 !important;
-    background-color: #179fb5 !important;
-    color: #ffffff !important;
-    border-color: #179fb5 !important;
-    box-shadow: none !important;
-}
 
 /* Inicio y final del rango */
 div[data-testid="stDateInput"] [data-selection-start="true"],
@@ -269,34 +255,6 @@ div[data-testid="stDateInput"] [data-selected="true"]:not([data-selection-start=
     color: #080808 !important;
 }
 
-/* Mantener el día seleccionado siempre en azul */
-div[data-testid="stDateInput"] [role="button"][aria-pressed="true"],
-div[data-testid="stDateInput"] [role="button"][data-selected="true"],
-div[data-testid="stDateInput"] [data-selected="true"] {
-    background-color: #179fb5 !important;
-    background: #179fb5 !important;
-    color: #ffffff !important;
-    border-color: #179fb5 !important;
-}
-
-/* Mantener el azul al pasar el ratón */
-div[data-testid="stDateInput"] [role="button"][aria-pressed="true"]:hover,
-div[data-testid="stDateInput"] [role="button"][data-selected="true"]:hover,
-div[data-testid="stDateInput"] [data-selected="true"]:hover {
-    background-color: #179fb5 !important;
-    background: #179fb5 !important;
-    color: #ffffff !important;
-}
-
-/* Mantener el azul cuando recibe el foco */
-div[data-testid="stDateInput"] [role="button"][aria-pressed="true"]:focus,
-div[data-testid="stDateInput"] [role="button"][data-selected="true"]:focus,
-div[data-testid="stDateInput"] [data-selected="true"]:focus {
-    background-color: #179fb5 !important;
-    background: #179fb5 !important;
-    color: #ffffff !important;
-    outline-color: #179fb5 !important;
-}
 
 /* FORZAR COLOR AZUL EN EL CALENDARIO MERCURY */
 
@@ -331,13 +289,7 @@ div[data-testid="stDateInput"] [data-selected="true"]:active {
     box-shadow: none !important;
 }
 
-/* Evitar indicadores internos rojos */
-div[data-testid="stDateInput"] [data-selected="true"]::before,
-div[data-testid="stDateInput"] [data-selected="true"]::after {
-    background: #179fb5 !important;
-    background-color: #179fb5 !important;
-    border-color: #179fb5 !important;
-}
+
 
 /* MERCURY - SELECCIÓN DE RANGOS */
 
@@ -411,6 +363,9 @@ div[data-testid="stDateInput"] [role="spinbutton"] {
     caret-color: #179fb5 !important;
 }
 
+
+
+
 /* Iconos SVG de todos los menús de la barra lateral */
 section[data-testid="stSidebar"] svg path:not([fill="none"]) {
     fill: rgba(47, 45, 43, 0.7) !important;
@@ -420,6 +375,8 @@ section[data-testid="stSidebar"] svg path:not([fill="none"]) {
 section[data-testid="stSidebar"] svg {
     color: rgba(47, 45, 43, 0.7) !important;
 }
+
+
 
 /* ANIMACIÓN BOTONES MERCURY */
 
@@ -441,6 +398,8 @@ section[data-testid="stSidebar"] svg {
     transform: scale(0.98);
     box-shadow: 0 2px 5px rgba(23, 159, 181, 0.2);
 }
+
+
 
 
 /* =================================
