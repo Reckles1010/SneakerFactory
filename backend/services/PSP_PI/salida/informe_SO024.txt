@@ -1,0 +1,22 @@
+INFORME DE PROCESAMIENTO
+Generado: 15/11/2026 21:30:09
+
+Pedido SO024 (C:\Users\carlo\Clase\2º DAM\SneakerFactory\backend\services\PSP_PI\datos\pedido_SO024.csv)
+
+## Validador (código 0)
+VALIDO: pedido correcto con 40 pares
+
+## ResumenTallas (código 0)
+Talla 38 -> 3 pares
+Talla 39 -> 5 pares
+Talla 40 -> 7 pares
+Talla 41 -> 4 pares
+Talla 42 -> 2 pares
+Talla 43 -> 4 pares
+Talla 44 -> 5 pares
+Talla 45 -> 7 pares
+Talla 46 -> 3 pares
+TOTAL -> 40 pares
+
+## FichaTaller (código 0)
+Ficha generada en salida\ficha_SO024.txt
