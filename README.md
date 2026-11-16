@@ -1,4 +1,4 @@
-# 👟 MERCURY
+# MERCURY
 
 > **Pisa fuera del Molde**
 
