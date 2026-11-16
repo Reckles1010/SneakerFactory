@@ -216,32 +216,95 @@ El proyecto combina programación, bases de datos, diseño web y herramientas de
 
 ## 🚀 Instalación y ejecución
 
-### 1. Clonar el repositorio
+### Clonar el repositorio
 
 ```bash
 git clone https://github.com/Reckles1010/SneakerFactory.git
 ```
 
-### 2. Acceder al proyecto
+### Acceder al proyecto
 
 ```bash
 cd SneakerFactory
 ```
 
-### 3. Configurar la base de datos
+### Configurar la base de datos
 
-- Crear la base de datos `Mercury` en PostgreSQL.
-- Ejecutar los scripts SQL de la carpeta `database/sql/` (`DDL.sql` y `DML.sql`).
-- Comprobar que las tablas y relaciones se han creado correctamente.
+Este repositorio incluye la base de datos **Mercury**, que usa el servidor de la web (`server.js`, Node + Express + PostgreSQL). La base de datos contiene 12 tablas con su estructura y sus datos.
 
-### 4. Abrir el proyecto
+Se entrega como un script SQL en texto plano (`MercuryDB.sql`) que, al ejecutarlo con `psql`, **crea la base de datos automáticamente** y carga todas las tablas y los datos.
+
+### Requisitos
+
+- PostgreSQL instalado (el proyecto se ha desarrollado con la versión 17). Incluye el programa `psql`.
+- pgAdmin 4 (para visualizar la base de datos y el modelo E-R).
+- La contraseña del usuario `postgres` de tu instalación.
+
+### 1. Abrir PowerShell
+
+Pulsa la tecla Windows, escribe `powershell` y pulsa Enter.
+
+### 2. Ejecutar el comando
+
+```powershell
+& "C:\Program Files\PostgreSQL\17\bin\psql.exe" -U postgres -f "C:\DAM\2º DAM\1ºPROYECTO\database\sql\MercuryDB.sql"
+```
+
+Hay que adaptar **dos rutas** a tu equipo:
+
+| Parte del comando | Qué es | Qué poner |
+|---|---|---|
+| `"C:\Program Files\PostgreSQL\17\bin\psql.exe"` | **Primera ruta:** dónde está instalado PostgreSQL | La ruta a `psql.exe` de tu instalación. Cambia `17` por tu versión si es distinta. |
+| `"C:\DAM\2º DAM\1ºPROYECTO\database\sql\MercuryDB.sql"` | **Segunda ruta:** dónde está el script SQL descargado | La ruta donde hayas guardado `MercuryDB.sql`. |
+
+**Consejos:**
+
+- Mantén las comillas, porque las rutas tienen espacios.
+- Para copiar la ruta del script: clic derecho sobre `MercuryDB.sql` en el Explorador de archivos → **Copiar como ruta de acceso**.
+- Para ver qué versión de PostgreSQL tienes instalada, ejecuta:
+  ```powershell
+  Get-ChildItem "C:\Program Files\PostgreSQL" -Directory
+  ```
+
+### 3. Introducir la contraseña
+
+PowerShell pedirá la contraseña del usuario `postgres`. Al escribirla no se ve nada en pantalla; es normal. Pulsa Enter.
+
+Al terminar, `psql` mostrará una serie de mensajes (`CREATE DATABASE`, `CREATE TABLE`, `INSERT`...). Si no aparece ningún mensaje de `ERROR`, la restauración ha sido correcta.
+
+### 4. Abrir la base de datos en pgAdmin
+
+1. Abre pgAdmin y conéctate a tu servidor.
+2. Clic derecho sobre **Databases** → **Refresh**.
+3. Aparecerá la base de datos **Mercury**. Las tablas están en `Mercury → Schemas → public → Tables`.
+
+### Ver el modelo E-R
+
+No hace falta pgModeler. pgAdmin genera el diagrama directamente:
+
+1. Clic derecho sobre la base de datos **Mercury** → **ERD For Database**.
+2. Se muestran las tablas y sus relaciones.
+3. Si se incluye el archivo `modelo_er.pgerd`, también se puede abrir desde la herramienta ERD con el icono de abrir archivo.
+4. La imagen `modelo_er.png` permite ver el modelo sin abrir pgAdmin.
+
+### Problemas frecuentes
+
+| Error | Causa | Solución |
+|---|---|---|
+| `El término '...psql.exe' no se reconoce` | La primera ruta es incorrecta (otra versión o carpeta) | Comprueba la versión instalada y corrige la ruta a `psql.exe`. |
+| `No such file or directory` | La segunda ruta es incorrecta | Copia la ruta exacta del `.sql` con *Copiar como ruta de acceso*. |
+| `password authentication failed` | Contraseña incorrecta | Usa la contraseña del usuario `postgres` de tu instalación. |
+| `database "Mercury" already exists` | La base de datos ya existe en tu servidor | Elimínala antes desde pgAdmin (clic derecho → **Delete**) o renómbrala, y vuelve a ejecutar el comando. |
+
+
+### 5. Abrir el proyecto
 
 Abrir los archivos con el entorno de desarrollo correspondiente:
 
 - **IntelliJ IDEA:** para el backend Java.
 - **Visual Studio Code:** para el frontend web, el servidor Node.js y Python.
 
-### 5. Ejecutar la aplicación
+### 6. Ejecutar la aplicación
 
 - Web y servidor: seguir los pasos de la sección **Aplicación web MERCURY**.
 - Dashboard: seguir los pasos de la sección **Dashboard operacional**.
