@@ -125,90 +125,80 @@ El proyecto combina programación, bases de datos, diseño web y herramientas de
 ## 📂 Estructura del repositorio
 
 ```text
-📦 SneakerFactory
-│
-├── 📁 .venv/
-│   ├── 📁 etc/
-│   ├── 📁 Include/
-│   ├── 📁 Lib/
-│   ├── 📁 Scripts/
-│   ├── 📁 share/
-│   ├── 📄 .gitignore
-│   └── 📄 pyvenv.cfg
-│
-├── 📁 database/
-│   ├── 📁 csv/
-│       ├── 📄 Almacen.csv
-│       ├── 📄 Clientes.csv
-│       ├── 📄 Fabrica.csv
-│       ├── 📄 Linea_pedido.csv
-│       ├── 📄 many_Fabrica_has_many_Almacen.csv
-│       ├── 📄 Modelo.csv
-│       ├── 📄 Pedido.csv
-│       ├── 📄 Productos.csv
-│       ├── 📄 Sucursal.csv
-│       └── 📄 Trabajador.csv
-│   ├── 📁 diagrams/
-│       └── 📄 Modelo E-R.dbm
-│   └── 📁 sql/
-│       ├── 📄 DDL.sql
-│       └── 📄 DML.sql
-│
-├── 📁 backend/
-│   ├── 📁 controllers/
-│   ├── 📁 middlewares/
-│   ├── 📁 models/
-│   ├── 📁 routes/
-│   ├── 📁 scripts/
-│   ├── 📁 services/
-│   └── 📁 utils/
-│
-├── 📁 frontend/
-│   ├── 📁 assets/
-│       ├── 📄 LogoM.png
-│       ├── 📄 LogotipoFondoBlanco.png
-│       └── 📄 SinFondo.png
-│   ├── 📁 css/
-│        └── 📄 styles.css
-│   ├── 📁 js/
-│        └── 📄 script.js
-│   ├── 📁 views/
-│       ├── 📄 adminUsuarios.html
-│       ├── 📄 carrito.html
-│       ├── 📄 catalogo.html
-│       ├── 📄 historia.html
-│       ├── 📄 inicio.html
-│       ├── 📄 login.html
-│       └── 📄 registro.html
-│   ├── 📄 server.js
-│   ├── 📄 package.json
-│   └── 📄 .env            (no se sube al repositorio)
-│
-├── 📁 data/
-│   ├── 📁 __pycache__/
-│   ├── 📁 datos_sinteticos/
-│   ├── 📁 entrada_acc/
-│   ├── 📁 logs/
-│    │   └── 📄 refrescos.jsonl
-│   ├── 📁 outputs/
-│       ├── 📄 incidencias.csv
-│       └── 📄 manifiesto_origen.csv
-│   ├── 📄 __init__.py
-│   ├── 📄 analiticas.py
-│   ├── 📄 app_dashboard.py
-│   ├── 📄 config.py
-│   ├── 📄 diccionario_datos.md
-│   ├── 📄 main.py
-│   ├── 📄 pipeline.py
-│   ├── 📄 requirements.txt
-│   └── 📄 visualizaciones.py
-│
-├── 📁 docs/
-│   ├── 📄 incidencias_2026-10-28_20-58-17.txt
-│   └── 📄 incidencias_2026-10-28_21-01-19.txt
-│
-├── 📁 tests/
-└── 📄 README.md
+📁 PSP_PI/
+├── 🐍 .venv/                          # Entorno virtual de Python
+├── ⚙️ backend/
+│   └── 📁 services/
+│       └── 📁 PSP_PI/
+│           ├── 📂 datos/
+│           └── 📂 src/
+├── 📊 data/                           # Pipeline analítico en Python
+│   ├── 📋 logs/                       # Registros de ejecución
+│   ├── 📈 outputs/                    # Resultados generados (figuras, informes)
+│   ├── 🐍 __init__.py
+│   ├── 🐍 analiticas.py               # Cálculo de métricas e indicadores
+│   ├── 🐍 config.py                   # Configuración general
+│   ├── 🐍 figuras.py                  # Generación de gráficos
+│   ├── 🐍 generador_datos.py          # Generador de datos sintéticos
+│   ├── 🐍 informes.py                 # Generación de informes
+│   ├── 🐍 pipeline.py                 # Orquestación del flujo de datos
+│   ├── 🐍 segmentacion.py             # Segmentación de clientes
+│   └── 🐍 visualizaciones.py          # Visualizaciones del dashboard
+├── 🗄️ database/
+│   ├── 📑 csv/                        # Datos en CSV
+│   ├── 🧩 diagrams/                   # Diagramas de la base de datos
+│   └── 🛢️ sql/                        # Scripts SQL
+├── 🧬 datos_sinteticos/               # Dataset sintético base
+│   ├── 📊 clientes.csv
+│   ├── 📊 lineas_pedido.csv
+│   ├── 🧾 metadatos_sinteticos.json
+│   ├── 📊 modelos.csv
+│   ├── 📊 pedidos.csv
+│   └── 📊 stock.csv
+├── 🧬 datos_sinteticos_con_incidencias/   # Dataset sintético con errores inyectados
+│   ├── 📊 clientes.csv
+│   ├── 📊 lineas_pedido.csv
+│   ├── 🧾 metadatos_sinteticos.json
+│   ├── 📊 modelos.csv
+│   ├── 📊 pedidos.csv
+│   └── 📊 stock.csv
+├── 📚 docs/                           # Informes de calidad de datos
+│   ├── ⚠️ incidencias_<fecha>.csv     # Incidencias detectadas
+│   ├── 🧾 manifiesto_<fecha>.json     # Manifiesto de cada generación
+│   └── ✅ resumenCalidad_<fecha>.*    # Resumen de calidad
+├── 🌐 frontend/                       # Web MERCURY
+│   ├── 🖼️ assets/                     # Imágenes y recursos
+│   ├── 🎨 css/
+│   │   └── 🎨 styles.css
+│   ├── ⚡ js/
+│   │   └── ⚡ script.js
+│   ├── 📦 node_modules/               # Dependencias de Node (no se sube a Git)
+│   ├── 🖥️ views/                      # Páginas HTML
+│   │   ├── 👥 adminUsuarios.html
+│   │   ├── 🛒 carrito.html
+│   │   ├── 👟 catalogo.html
+│   │   ├── 📖 historia.html
+│   │   ├── 🏠 inicio.html
+│   │   ├── 🔑 login.html
+│   │   └── 📝 registro.html
+│   ├── 🔐 .env                        # Variables de entorno
+│   ├── 📦 package.json
+│   ├── 🔒 package-lock.json
+│   └── 🚀 server.js                   # Servidor Node + Express
+├── 📕 MemoriaTécnica/
+│   └── 📄 MemoriaPsp_Odoo_DI.pdf
+├── 🧪 tests/                          # Pruebas automáticas (pytest)
+│   ├── 🐍 conftest.py
+│   ├── 🧪 test_calculos.py
+│   ├── 🧪 test_carga_esquema.py
+│   ├── 🧪 test_integridad.py
+│   ├── 🧪 test_refresco.py
+│   └── 🧪 test_reproducibilidad.py
+├── 📈 app_dashboard.py                # Dashboard Streamlit
+├── 📘 diccionario_datos.md            # Diccionario de datos
+├── ▶️ main.py                         # Punto de entrada del pipeline
+├── 📖 README.md
+└── 📋 requirements.txt                # Dependencias de Python
 ```
 
 
@@ -295,12 +285,11 @@ DB_USER=postgres
 DB_PASSWORD=tu_contraseña
 ```
 
-> ⚠️ El archivo `.env` contiene credenciales. No debe subirse a GitHub: añadir `.env` al `.gitignore`.
-
 Arrancar el servidor:
 
 ```bash
-node server.js
+cd frontend
+npm start
 ```
 
 La web queda disponible en `http://localhost:3001`. Al arrancar, la consola indica si PostgreSQL está conectado.
@@ -355,7 +344,7 @@ python -m venv .venv
 # Windows
 .venv\Scripts\activate
 # Linux/macOS
-source .venv/bin/activate
+source .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
@@ -374,7 +363,7 @@ Formato inicial configurado: UTF-8-SIG, delimitador coma, decimal punto. Modific
 ### 3. Ejecución
 ```bash
 python main.py --modo real
-python -m streamlit run .\frontend\data\app_dashboard.py   
+python -m streamlit run .\app_dashboard.py   
 ```
 
 ### 4. Actualización
