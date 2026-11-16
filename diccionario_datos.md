@@ -1,6 +1,6 @@
 # Diccionario de datos · Contrato ACC
 
-Los nombres canónicos internos se obtienen de las cabeceras reales de las exportaciones de Acceso a Datos mediante `ALIASES` (`data/config.py`).
+Los nombres internos se obtienen de las cabeceras reales de las exportaciones de Acceso a Datos mediante `ALIASES` (`data/config.py`).
 Los ID se conservan como **texto**; nunca se usan como magnitudes. **Dato personal:** `Clientes.csv` (dni, nombre, dirección, teléfono, email) se descarta al leerlo; solo se conserva `id_cliente`.
 
 ## Formato CSV
@@ -28,7 +28,7 @@ UTF-8 con BOM opcional (`utf-8-sig`), separador `,`, decimal `.`, fechas ISO `AA
 | Linea_pedido.csv | col. 3 | cantidad | entero > 0 | Unidades (pares en zapatillas) |
 | Linea_pedido.csv | col. 4–7 | color, color_panel, color_suela, color_cordones | texto | Personalización |
 | Linea_pedido.csv | col. 8 | precio_total | decimal ≥ 0 | = cantidad × precio unitario; `precio_unitario = precio_total / cantidad` |
-| Almacen, Fabrica, Sucursal, Trabajador, many_Fabrica_has_many_Almacen | — | id_* | texto | Tablas auxiliares: se validan claves y relaciones (ADVERTENCIA si huérfanas) |
+| Almacen, Fabrica, Sucursal, Trabajador, many_Fabrica_has_many_Almacen | — | id_* | texto | Tablas auxiliares: se validan claves y relaciones |
 
 ## Campos derivados (≥ 10, nivel línea salvo indicación)
 | Familia | Campo | Fórmula |

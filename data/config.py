@@ -108,7 +108,7 @@ FALLBACK_COLUMNS = {
 }
 
 # --- Reglas de negocio ---
-SALES_STATES = ["entregado", "enviado", "en preparación", "pendiente", "cancelado"]            # estados que reconocen ingreso
+SALES_STATES = ["entregado", "enviado", "en preparación", "pendiente", "cancelado"]  # estados que reconocen ingreso("en preparación", "pendiente", "cancelado" no son venta pero afectan stock)
 CANCEL_STATES = ["cancelado", "cancelada"]
 PENDING_STATES = ["pendiente", "en preparacion", "en preparación"]
 STATE_CATALOG = SALES_STATES + CANCEL_STATES + PENDING_STATES + ["confirmado"]
