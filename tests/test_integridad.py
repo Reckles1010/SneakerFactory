@@ -1,4 +1,4 @@
-"""Integridad: ID huérfano, duplicado, cardinalidad del merge, cantidad negativa (casos D)."""
+"""Integridad: ID huérfano, duplicado, cardinalidad del merge, cantidad negativa."""
 import pandas as pd
 import pytest
 

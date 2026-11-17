@@ -15,7 +15,7 @@ def _ped(extra=""):
 def test_22_R1_pedido_nuevo_suma_sin_doble_conteo(acc):
     antes = build_analytics(load_and_validate(acc, escribir_salidas=False))["kpis"]
     escribir_acc(acc, pedidos=_ped("P5,Online,Entregado,f,2026-02-10,L5,M1,T1,C2\n"),
-                 lineas="\nL1,42,2,B,N,B,A,100\nL2,40,1,N,R,B,A,80\nL3,41,1,N,R,B,A,50\nL4,43,3,N,R,B,A,240\nL5,40,2,N,R,B,A,100\n")
+                lineas="\nL1,42,2,B,N,B,A,100\nL2,40,1,N,R,B,A,80\nL3,41,1,N,R,B,A,50\nL4,43,3,N,R,B,A,240\nL5,40,2,N,R,B,A,100\n")
     despues = build_analytics(load_and_validate(acc, escribir_salidas=False))["kpis"]
     assert despues["pedidos_venta"] == antes["pedidos_venta"] + 1
     assert despues["pares"] == antes["pares"] + 2 and despues["ingresos"] == pytest.approx(antes["ingresos"] + 100)

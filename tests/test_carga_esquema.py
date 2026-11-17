@@ -26,7 +26,7 @@ def test_03_columna_ausente_bloquea_y_no_publica(tmp_path):
 
 def test_04_fecha_corrupta_se_excluye_y_se_registra(tmp_path):
     ped = ("id_pedido,tipo,estado,descuento,fecha,id_linea_Linea de pedido,id_modelo_Modelo,id_trabajador_Trabajador,id_cliente_Clientes\n"
-           "P1,Tienda,Entregado,f,2026-01-10,L1,M1,T1,C1\nP2,Online,Entregado,f,31/02/2026,L2,M2,T1,C2\n")
+            "P1,Tienda,Entregado,f,2026-01-10,L1,M1,T1,C1\nP2,Online,Entregado,f,31/02/2026,L2,M2,T1,C2\n")
     lin = "\nL1,42,2,B,N,B,A,100\nL2,40,1,N,R,B,A,80\n"
     s = load_and_validate(escribir_acc(tmp_path / "x", pedidos=ped, lineas=lin), escribir_salidas=False)
     assert s["valid_rows"]["pedidos"] == 1 and s["valid_rows"]["lineas"] == 1

@@ -1,4 +1,4 @@
-"""Cálculo: cancelados, pedido multilínea (Caso A), ticket sin duplicaciones, filtros, RFM (Caso F)."""
+"""Cálculo: cancelados, pedido multilínea (Caso A), ticket sin duplicaciones, filtros, RFM."""
 import pytest
 
 from data.analiticas import build_analytics
