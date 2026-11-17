@@ -3,7 +3,7 @@
 CAUTION: Do not modify this file unless you know what you are doing.
  Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="0.5" max-obj-count="12"
+<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="0.7" max-obj-count="12"
 	 default-schema="public" default-owner="postgres"
 	 layers="Default layer"
 	 active-layers="0"
@@ -103,7 +103,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="Linea de pedido" layers="0" collapse-mode="2" max-obj-count="9" z-value="0">
 	<schema name="public"/>
 	<role name="postgres"/>
-	<position x="560" y="120"/>
+	<position x="564.706" y="34.1176"/>
 	<column name="id_linea" not-null="true">
 		<type name="text" length="0"/>
 	</column>
@@ -113,16 +113,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="cantidad" not-null="true">
 		<type name="numeric" length="0"/>
 	</column>
-	<column name="colorBase" not-null="true">
+	<column name="colorBase">
 		<type name="text" length="0"/>
 	</column>
-	<column name="colorPanel" not-null="true">
+	<column name="colorPanel">
 		<type name="text" length="0"/>
 	</column>
-	<column name="colorSuela" not-null="true">
+	<column name="colorSuela">
 		<type name="text" length="0"/>
 	</column>
-	<column name="colorCordones" not-null="true">
+	<column name="colorCordones">
 		<type name="text" length="0"/>
 	</column>
 	<column name="PrecioTotal">

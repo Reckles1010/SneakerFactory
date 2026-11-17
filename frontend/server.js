@@ -8,7 +8,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 
-/* CONFIGURACIÓN */
+/* CONFIGURACIÓN del server*/
 
 dotenv.config({ path: path.join(__dirname, ".env") });
 
@@ -32,7 +32,7 @@ const db = new Pool({
     port: Number(process.env.DB_PORT || 5432),
     database: process.env.DB_NAME || "Mercury",
     user: process.env.DB_USER || "postgres",
-    password: process.env.DB_PASSWORD
+    password: "1234"
 });
 
 /* Comprueba la conexión y adapta las tablas existentes a la web */
@@ -92,7 +92,7 @@ async function consultarOdoo(modelo, metodo, datos = {}) {
 }
 
 
-/* ARCHIVOS ESTÁTICOS */
+/* ARCHIVOS ESTÁTICOS Permite que la web acceda a los archivos */ 
 
 app.use("/css", express.static(path.join(__dirname, "css")));
 app.use("/js", express.static(path.join(__dirname, "js")));

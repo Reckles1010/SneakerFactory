@@ -1,6 +1,6 @@
-[21:30:08] Inicio del procesamiento del pedido SO024 desde C:\Users\carlo\Clase\2º DAM\SneakerFactory\backend\services\PSP_PI\datos\pedido_SO024.csv
-[21:30:08] Validador -> código 0 OK (205 ms)
-[21:30:08] ResumenTallas -> código 0 OK (145 ms)
-[21:30:09] FichaTaller -> código 0 OK (197 ms)
-[21:30:09] Informe -> código 0 OK (189 ms)
-[21:30:09] Fin del procesamiento, completado correctamente
+[21:48:55] Inicio del procesamiento del pedido SO024 desde C:\Users\carlo\Clase\2º DAM\SneakerFactory\backend\services\PSP_PI\datos\pedido_SO024.csv
+[21:48:55] Validador -> código 0 OK (272 ms)
+[21:48:55] ResumenTallas -> código 0 OK (185 ms)
+[21:48:55] FichaTaller -> código 0 OK (271 ms)
+[21:48:56] Informe -> código 0 OK (281 ms)
+[21:48:56] Fin del procesamiento, completado correctamente
