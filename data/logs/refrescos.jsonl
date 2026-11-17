@@ -502,3 +502,5 @@
 {"comprobacion": "2026-11-16T10:43:56.244923+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.23074910000286764}
 {"comprobacion": "2026-11-16T10:44:56.246733+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.2845528999969247}
 {"comprobacion": "2026-11-16T10:45:56.250760+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.2817700000014156}
+{"comprobacion": "2026-11-16T13:14:31.498354+01:00", "origen": "ACC · REAL", "estado": "correcto", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.151694200001657}
+{"comprobacion": "2026-11-16T13:15:04.429622+01:00", "origen": "ACC · REAL", "estado": "sin cambios", "filas": {"clientes": 740, "modelos": 28, "pedidos": 3680, "lineas": 3680, "stock": 28}, "duracion_segundos": 0.5800789999993867}

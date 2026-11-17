@@ -239,64 +239,81 @@
                             <p class="customizer__price" id="priceValue">89,99 €</p>
                         </div>
                     </div>
+                    <p class="customizer__summary" id="designSummary"></p>
                 </section>
 
                 <section class="customizer__controls" aria-label="Opciones de personalización">
-                    <div class="customizer__section">
-                        <div class="customizer__section-heading">
-                            <span class="customizer__step">01</span>
-                            <div>
-                                <h2 class="customizer__section-title">Elige tu diseño</h2>
-                                <p class="common__description">Empieza con una combinación base.</p>
-                            </div>
-                        </div>
 
-                        <div class="customizer__designs">
-                            <button class="customizer__design customizer__design--selected" type="button"
-                                data-design="classic"><span
-                                    class="customizer__design-sample customizer__design-sample--classic"></span><span
-                                    class="customizer__design-name">Essential</span></button>
-                            <button class="customizer__design" type="button" data-design="ocean"><span
-                                    class="customizer__design-sample customizer__design-sample--ocean"></span><span
-                                    class="customizer__design-name">Ocean</span></button>
-                            <button class="customizer__design" type="button" data-design="lavander"><span
-                                    class="customizer__design-sample customizer__design-sample--lavander"></span><span
-                                    class="customizer__design-name">Lavander</span></button>
-                            <button class="customizer__design" type="button" data-design="graphic"><span
-                                    class="customizer__design-sample customizer__design-sample--graphic"></span><span
-                                    class="customizer__design-name">Graphic</span></button>
+                <!-- 01 DISEÑO -->
+                <div class="customizer__section">
+                    <div class="customizer__section-heading">
+                        <span class="customizer__step">01</span>
+                        <div>
+                            <h2 class="customizer__section-title">Elige tu diseño</h2>
+                            <p class="common__description">Empieza con una combinación base.</p>
                         </div>
                     </div>
 
-                    <div class="customizer__section">
-                        <div class="customizer__section-heading">
-                            <span class="customizer__step">02</span>
-                            <div>
-                                <h2 class="customizer__section-title">Personaliza los colores</h2>
-                                <p class="common__description">Selecciona una zona y aplica un color.</p>
-                            </div>
-                        </div>
+                    <div class="customizer__designs">
+                        <button class="customizer__design customizer__design--selected" type="button"
+                            data-design="classic"><span
+                                class="customizer__design-sample customizer__design-sample--classic"></span><span
+                                class="customizer__design-name">Essential</span></button>
+                        <button class="customizer__design" type="button" data-design="ocean"><span
+                                class="customizer__design-sample customizer__design-sample--ocean"></span><span
+                                class="customizer__design-name">Ocean</span></button>
+                        <button class="customizer__design" type="button" data-design="lavander"><span
+                                class="customizer__design-sample customizer__design-sample--lavander"></span><span
+                                class="customizer__design-name">Lavander</span></button>
+                        <button class="customizer__design" type="button" data-design="graphic"><span
+                                class="customizer__design-sample customizer__design-sample--graphic"></span><span
+                                class="customizer__design-name">Graphic</span></button>
+                    </div>
+                </div>
 
-                        <div class="customizer__zones" id="zoneOptions">
-                            <button class="customizer__zone customizer__zone--selected" type="button"
-                                data-zone="main">Base</button>
-                            <button class="customizer__zone" type="button" data-zone="panel">Panel</button>
-                            <button class="customizer__zone" type="button" data-zone="sole">Suela</button>
-                            <button class="customizer__zone" type="button" data-zone="laces">Cordones</button>
+                <!-- 02 COLORES -->
+                <div class="customizer__section">
+                    <div class="customizer__section-heading">
+                        <span class="customizer__step">02</span>
+                        <div>
+                            <h2 class="customizer__section-title">Personaliza los colores</h2>
+                            <p class="common__description">Selecciona una zona y aplica un color.</p>
                         </div>
-
-                        <div class="customizer__palette" id="colorPalette" aria-label="Paleta de colores"></div>
-                        <p class="customizer__selected-color" id="selectedColorLabel">Color seleccionado: Blanco</p>
                     </div>
 
-                    <div class="customizer__actions">
-                        <button class="common__btn-black " id="resetButton"
-                            type="button">Restablecer</button>
-                        <button class="common__btn-black " id="saveButton"
-                            type="button">Guardar diseño</button>
+                    <div class="customizer__zones" id="zoneOptions">
+                        <button class="customizer__zone customizer__zone--selected" type="button"
+                            data-zone="main">Base</button>
+                        <button class="customizer__zone" type="button" data-zone="panel">Panel</button>
+                        <button class="customizer__zone" type="button" data-zone="sole">Suela</button>
+                        <button class="customizer__zone" type="button" data-zone="laces">Cordones</button>
                     </div>
-                    <p class="customizer__feedback" id="feedback" role="status" aria-live="polite"></p>
-                </section>
+
+                    <div class="customizer__palette" id="colorPalette" aria-label="Paleta de colores"></div>
+                    <p class="customizer__selected-color" id="selectedColorLabel">Color seleccionado: Blanco</p>
+                </div>
+
+                <!-- 03 TALLA (NUEVO) -->
+                <div class="customizer__section">
+                    <div class="customizer__section-heading">
+                        <span class="customizer__step">03</span>
+                        <div>
+                            <h2 class="customizer__section-title">Elige tu talla</h2>
+                            <p class="common__description">Selecciona la talla de tu diseño.</p>
+                        </div>
+                    </div>
+
+                    <div class="customizer__sizes" id="sizeOptions" aria-label="Tallas disponibles"></div>
+                    <p class="customizer__selected-color" id="selectedSizeLabel">Talla seleccionada: ninguna</p>
+                </div>
+
+                <!-- ACCIONES -->
+                <div class="customizer__actions">
+                    <button class="common__btn-black" id="resetButton" type="button">Restablecer</button>
+                    <button class="common__btn-black" id="saveButton" type="button">Guardar diseño</button>
+                </div>
+                <p class="customizer__feedback" id="feedback" role="status" aria-live="polite"></p>
+            </section>
             </div>
         </section>
     </main>
