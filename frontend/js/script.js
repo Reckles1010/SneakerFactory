@@ -1659,6 +1659,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Guardar diseño */
 
+        /* Guardar diseño */
+
     const saveButton = document.getElementById('saveButton');
 
     if (saveButton) {
@@ -1677,6 +1679,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 set: 'Conjunto personalizado'
             };
 
+            /* Modelos base de la tabla "Modelo" (deben existir en la BD) */
+            const modelIds = {
+
+                shoe: 'CUSTOM-SHOE',
+                sock: 'CUSTOM-SOCK',
+                set: 'CUSTOM-SET'
+            };
+
             const customization = {
 
                 product: state.product,
@@ -1691,7 +1701,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const product = {
 
-                id: 'custom-' + Date.now(),
+                id: modelIds[state.product],
                 name: productNames[state.product],
                 price: getProductPrice(),
                 size: getSizeLabel(),
@@ -1706,7 +1716,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
     }
-
 
     /* Inicializar */
 
