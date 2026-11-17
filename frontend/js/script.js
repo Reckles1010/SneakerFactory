@@ -12,21 +12,27 @@ const currency = new Intl.NumberFormat('es-ES', {
     currency: 'EUR'
 });
 
-// Ejemplo de cómo pedir los productos al servidor desde tu script.js del navegador
+/* Ids de la tabla Modelo (M1, M2...) indexados por nombre */
+const modelIdByName = {};
+
+const normalizarNombre = texto =>
+    String(texto || '').trim().toLowerCase().replace(/\s+/g, ' ');
+
+/* Pide los productos al servidor y guarda su id de Modelo por nombre */
 async function cargarProductos() {
     try {
-        const respuesta = await fetch('/api/productos');
-        const Productos = await respuesta.json();
-        
-        console.log("Productos obtenidos de la base de datos:", Productos);
-        
+        const respuesta = await fetch(`${API_URL}/productos`);
+        const productos = await respuesta.json();
+
+        productos.forEach(p => {
+            modelIdByName[normalizarNombre(p.nombre)] = p.id;
+        });
     } catch (error) {
-        console.error("Error al cargar los productos:", error);
+        console.error('Error al cargar los productos:', error);
     }
 }
 
-// Ejecutar al cargar la página
-document.addEventListener("DOMContentLoaded", cargarProductos);
+const productosListos = cargarProductos();
 
 /* END REGION*/
 
@@ -362,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* AÑADIR PRODUCTOS DEL CATÁLOGO */
 
     document.querySelectorAll('.card__overlay-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', async () => {
             const card = btn.closest('.card');
 
             if (!card) return;
@@ -373,26 +379,37 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!name || !image) return;
 
             const category = card.dataset.category;
+            const nombre = name.textContent.trim();
 
-            const product = {
-                id: btn.dataset.id || name.textContent.trim(),
-                name: name.textContent.trim(),
-                price: Number(btn.dataset.price) || 0,
-                size: btn.dataset.size || (
-                    (SIZES_BY_CATEGORY[category] || []).length > 0 ? 'Sin especificar' : 'Única'
-                ),
-                image: image.src,
-                customization: null
-            };
+            const needsSize = (SIZES_BY_CATEGORY[category] || []).length > 0;
 
-            if ((SIZES_BY_CATEGORY[category] || []).length > 0 && product.size === 'Sin especificar') {
+            const size = btn.dataset.size || (needsSize ? 'Sin especificar' : 'Única');
+
+            delete btn.dataset.size;
+
+            if (needsSize && size === 'Sin especificar') {
                 alert('Selecciona una talla antes de continuar.');
                 return;
             }
 
-            addProductToCart(product);
+            /* El id sale de la tabla Modelo (por nombre); data-id solo como respaldo */
+            await productosListos;
 
-            delete btn.dataset.size;
+            const modelId = modelIdByName[normalizarNombre(nombre)] || btn.dataset.id;
+
+            if (!modelId) {
+                alert('Este producto no está disponible en la base de datos.');
+                return;
+            }
+
+            addProductToCart({
+                id: modelId,
+                name: nombre,
+                price: Number(btn.dataset.price) || 0,
+                size: size,
+                image: image.src,
+                customization: null
+            });
 
             const spanText = btn.querySelector('span');
 
@@ -1122,13 +1139,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if (confirmButton) confirmButton.disabled = true;
 
             try {
+                /* Corrige productos que ya estaban en el carrito con el nombre como id */
+                await productosListos;
+
+                const productos = cart.map(item => {
+                    if (item.customization) return item;
+
+                    const id = modelIdByName[normalizarNombre(item.name)];
+
+                    return id ? { ...item, id } : item;
+                });
+
                 const response = await fetch(`${API_URL}/pedidos`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         usuarioId: user.id,
                         destinatario: recipient,
-                        productos: cart
+                        productos: productos
                     })
                 });
 
@@ -1658,8 +1686,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* Guardar diseño */
-
-        /* Guardar diseño */
 
     const saveButton = document.getElementById('saveButton');
 
