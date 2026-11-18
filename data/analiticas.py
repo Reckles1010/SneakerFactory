@@ -324,9 +324,20 @@ KPI_DEFINICIONES = [
 ]
 
 
+def _fmt_kpi(v):
+    if v is None or (isinstance(v, float) and np.isnan(v)):
+        return "N/D"
+    if isinstance(v, (int, np.integer)):
+        return f"{v:,}"
+    if isinstance(v, (float, np.floating)):
+        return f"{v:,.2f}"
+    return str(v)
+
+
 def kpis_tabla(kpis, lineas):
-    return _meta(pd.DataFrame([(n, kpis.get(n), f, d) for n, f, d in KPI_DEFINICIONES],
-                                columns=["kpi", "valor", "formula", "denominador"]), "analiticas.kpis_tabla", lineas)
+    df = pd.DataFrame([(n, _fmt_kpi(kpis.get(n)), f, d) for n, f, d in KPI_DEFINICIONES],
+                        columns=["kpi", "valor", "formula", "denominador"])
+    return _meta(df, "analiticas.kpis_tabla", lineas)
 
 
 # orquestador
