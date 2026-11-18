@@ -32,7 +32,7 @@ const db = new Pool({
     port: Number(process.env.DB_PORT || 5432),
     database: process.env.DB_NAME || "Mercury",
     user: process.env.DB_USER || "postgres",
-    password: "1234"
+    password: process.env.DB_PASSWORD || "D@M1234"
 });
 
 /* Comprueba la conexión y adapta las tablas existentes a la web */
