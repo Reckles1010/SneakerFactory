@@ -1,3 +1,7 @@
 ﻿tabla,registro,regla,gravedad,tratamiento,detalle
-clientes,Clientes.csv,01_cabecera_ausente_inferida,ADVERTENCIA,Se asignan nombres por posición,El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna
 lineas,Linea_pedido.csv,01_cabecera_ausente_inferida,ADVERTENCIA,Se asignan nombres por posición,El CSV no trae cabecera; pedir a ACC que exporte los nombres de columna
+lineas,id_linea,09_ausencia_modelo,BLOQUEANTE,Rechazo del snapshot,
+lineas,id_linea,03_huerfana_pedido,BLOQUEANTE,Rechazo del snapshot,Línea sin pedido
+lineas,id_linea,05_cantidad_nula_cero_o_negativa,RECUPERABLE,Se excluye la línea,
+lineas,id_linea,06_precio_no_numerico_o_negativo,RECUPERABLE,Se excluye la línea,
+lineas,id_linea,08_talla_no_valida,ADVERTENCIA,Se conserva marcada fuera de contrato,

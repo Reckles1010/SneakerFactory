@@ -1,6 +1,6 @@
 ﻿tabla,filas_recibidas,filas_validas,filas_rechazadas,pct_calidad,nulos_totales,inc_bloqueantes,inc_recuperables,inc_advertencias
-clientes,740,740,0,100.0,0,0,0,1
-modelos,28,28,0,100.0,0,0,0,0
-pedidos,3680,3680,0,100.0,0,0,0,0
-lineas,3680,3680,0,100.0,0,0,0,1
-stock,28,28,0,100.0,56,0,0,0
+clientes,1740,1740,0,100.0,0,0,0,0
+modelos,32,32,0,100.0,0,0,0,0
+pedidos,3680,3680,0,100.0,1840,0,0,0
+lineas,3681,3680,1,99.97,0,2,2,2
+stock,32,32,0,100.0,64,0,0,0
